@@ -3,5 +3,5 @@ remote_theme: pmarsceill/just-the-docs
 search_enabled: false
 heading_anchors: true
 aux_links:
-  "Toluna Group":
-    - "//toluna-group.com"
+  "Toluna":
+    - "//www.tolunacorporate.com/"
