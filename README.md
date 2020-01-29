@@ -1,5 +1,3 @@
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
 ## Integrated Panel API Docs
 
 You can use the [editor on GitHub](https://github.com/pmarsceill/test-jtd/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
