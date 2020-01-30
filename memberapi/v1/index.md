@@ -110,11 +110,9 @@ The following parameters are required for MemberGET
 
 
 #### Route:
-```http
 
-GET http://{IP-Core-URL/IntegratedPanelService/api/Respondent/?memberCode={memberCode}&partnerGuid={partnerGUID}
+ - GET http://{IP-Core-URL/IntegratedPanelService/api/Respondent/?memberCode={memberCode}&partnerGuid={partnerGUID}
 
-````
 
 #### Possible Responses
 
@@ -179,3 +177,15 @@ Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberC
 | PostalCode | (Optional) |
 | IsTest | (Optional) Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. |
 | IsPIIDataRegulated | (Optional) Defaults FALSE. When TRUE, all personally identifiable information is removed. |
+
+#### Route
+**PUT** http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+
+#### Possible Responses
+
+| Response Code | Etiology, actions |
+| :--- | :--- |
+| 200 | OK. Request processed normally, existing Member Panelist was updated without issue |
+| 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
+| 404 | Not Found. An attempt to update a Member that does not exist. Existence is determined by the combination of MemberCode and PartnerGUID |
+| 500 | Internal Error. An exception occured while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
