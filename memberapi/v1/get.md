@@ -1,9 +1,9 @@
 ---
-title: GET
+title: Get Member
 has_children: true
 parent: Static (v1)
 grand_parent: Member API
-nav_order: 1
+nav_order: 2
 ---
 
 
