@@ -8,66 +8,15 @@ nav_order: 2
 
 # V2 - Dynamic
 
-details
+Version 2 of the Member API is focused on speed, simplicity, improved support for demographic characteristics. It’s “closer to the metal” of the underlying Toluna Panel Management System and is optimized to remove internal dependencies. To the Partner, it’s faster and has more capability. It is independent of Static v1 and is managed separately. For the time being, both versions will continue to exist and be supported. To access v2 of a route, supply the “Accept” header in your request as directed below.
 
+## Member Add / POST
 
-## Member GET
+#### Headers
 
-A partner can receive details for members in the Toluna IP database using an HTTP **GET**.
-
-URL to **GET** new member info: http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
-
-Speak to your Toluna representative to recieve your Partner-specific {IP-Core-URL}.
-
-
-### Parameters:
- 
-
-| Name        | Description          | Required |
-|:-------------|:------------------|:------|
-| memberCode           | Unique Respondent Code from the Partner | Y  |
-| partnerGuid | Unique Partner Code   | Y  |
-
-
-
-### Route:
-```http
-
-GET http://ip.surveyrouter.com/IntegratedPanelService/api/ Respondent
-/?memberCode=1601440000&partnerGuid=CC265C63-F887-4366-9ED1-7B2B3BD94C2B
-
-````
-
-### Sample Response:
-``` 
-{
-    "MemberCode": "1601440000",
-    "LanguageID": 2000245,
-    "Language": "Français",
-    "CountryID": 2000073,
-    "Country": "France",
-    "GenderID": 2000247,
-    "Gender": "Homme",
-    "EducationID": 2002274,
-    "Education": "Bac+4",
-    "IncomeID": 2002335,
-    "Income": "Je ne sais pas / préfère ne pas répondre",
-    "EthnicityID": 0,
-    "Ethnicity": "",
-    "RaceID": 0,
-    "Race": "",
-    "WorkPositionID": 0,
-    "WorkPosition": "",
-    "Active": true,
-    "Email": "",
-    "BirthDate": "Tuesday, July 11, 2000",
-    "PostalCode": "75001",
-    "PanelistStatusTypeID": 0,
-    "CultureID": 6,
-    "SubProvinceID": "3091832"
-}
-
+All requests made using Dynamic management must include the following header:
+```json
+Accept: application/json;version=2.0
 ```
-
 
 
