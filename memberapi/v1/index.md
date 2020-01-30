@@ -1,8 +1,8 @@
 ---
-title: Dynamic (v2)
+title: Static (v1)
 has_children: false
-parent: Member API
-nav_order: 2
+#parent: Member API
+nav_order: 1
 ---
 
 
