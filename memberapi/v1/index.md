@@ -93,7 +93,7 @@ A partner can receive details for members in the Toluna IP database using an HTT
 
 URL to **GET** new member info
  - For Partners using Notification or Dashboard Intergration Offering: http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
- **- For Parters using External Sample (ES) Integration Offering: http://{ES-Core-URL}/ExternalSample/**
+ - **For Parters using External Sample (ES) Integration Offering: http://{ES-Core-URL}/ExternalSample/**
 
 Speak to your Toluna representative to recieve your Partner-specific {IP-Core-URL} or {ES-Core-URL}.
 
@@ -109,15 +109,22 @@ The following parameters are required for MemberGET
 
 
 
-### Route:
+#### Route:
 ```http
 
-GET http://ip.surveyrouter.com/IntegratedPanelService/api/ Respondent
-/?memberCode=1601440000&partnerGuid=CC265C63-F887-4366-9ED1-7B2B3BD94C2B
+GET http://{IP-Core-URL/IntegratedPanelService/api/Respondent/?memberCode={memberCode}&partnerGuid={partnerGUID}
 
 ````
 
-### Sample Response:
+#### Possible Responses
+
+| Response Code | Etiology, actions |
+| :--- | :--- |
+| 200 | OK. Request processed normally, existing Member Panelist was updated without issue |
+| 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
+| 500 | Internal Error. An exception occured while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs | 
+
+#### Example Response:
 ``` 
 {
     "MemberCode": "1601440000",
@@ -148,5 +155,27 @@ GET http://ip.surveyrouter.com/IntegratedPanelService/api/ Respondent
 
 ```
 
+## Member Update (PUT)
 
+Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberCode” are required. Combine them with optional properties to update a Member according to your requirements.
 
+#### Parameters
+ - None
+ 
+#### Request Details
+
+| Property | Description |
+| :--- | :--- |
+| PartnerGUID | Unique Partner Code (Please request from Toluna if you don't have one |
+| MemberCode | Unique Respondent Code from the Partner (alphanumeric 256 character limit |
+| Active | (Optional) Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool |
+| GenderID | (Optional) Values from the data mapping file |
+| EducastionID | (Optional) Values from the data mapping file |
+| EthicityID | (Optional) Values from the data mapping file |
+| RaceID | (Optional) Values from the data mapping file |
+| SubProvinceID | (Optional) Values from the data mapping file |
+| Email | (Optional) |
+| BirthDate | (Optional) MM/DD/YYYY format |
+| PostalCode | (Optional) |
+| IsTest | (Optional) Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. |
+| IsPIIDataRegulated | (Optional) Defaults FALSE. When TRUE, all personally identifiable information is removed. |
