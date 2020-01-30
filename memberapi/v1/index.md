@@ -1,7 +1,7 @@
 ---
 title: Static (v1)
 has_children: false
-#parent: Member API
+parent: Member API
 nav_order: 1
 ---
 
