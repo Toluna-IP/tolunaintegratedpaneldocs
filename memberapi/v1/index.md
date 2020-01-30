@@ -19,6 +19,7 @@ URL to **GET** new member info: http://{IP-Core-URL}/IntegratedPanelService/api/
 
 Speak to your Toluna representative to recieve your Partner-specific {IP-Core-URL}.
 
+one line of text
 
 ### Parameters:
  
