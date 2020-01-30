@@ -11,6 +11,7 @@ nav_order: 2
 Version 2 of the Member API is focused on speed, simplicity, improved support for demographic characteristics. It’s “closer to the metal” of the underlying Toluna Panel Management System and is optimized to remove internal dependencies. To the Partner, it’s faster and has more capability. It is independent of Static v1 and is managed separately. For the time being, both versions will continue to exist and be supported. To access v2 of a route, supply the “Accept” header in your request as directed below.
 
 ## Question / AnswerIDs
+
 Please note the primary difference with v1 is that demographic characteristics are listed as a series of Question and Answer IDs. Though less readable in JSON notation, this provides true extensibility (all Toluna Demographic information is supported), and provides for much faster results. Every Question has a static QuestionID, which maps to a series of possible static AnswerIDs. This information is clearly noted in the mapping document each partner receives during the integration period. These are the most relevant Questions for IP:
 
 | Question Name | QuestionID | Possible AnswerIDs |
@@ -26,14 +27,14 @@ Please note the primary difference with v1 is that demographic characteristics a
 
 ## Member Add / POST
 
-#### Headers
+### Headers
 
 All requests made using Dynamic member management (v2) must include the following header:
 ```json
 Accept: application/json;version=2.0
 ```
 
-#### Request Details
+### Request Details
 
 | Property | Description |
 | :--- | :--- |
@@ -47,10 +48,13 @@ Accept: application/json;version=2.0
 | IsPIIDataRegulated | (Optional) Defaults FALSE. When TRUE, all personally identifiable information is removed. |
 | AnsweredQuestions | (Optional) A collection of 0:M demographic Question and Answer ID pairs, |
 
-#### Route
-POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+### Route
 
-#### Possible Responses
+```plaintext
+POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+```
+
+### Possible Request Responses
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
@@ -59,11 +63,13 @@ POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 | 409 | Conflict. An attempt to add a Member that already exists. Duplication is determined by the combination of MemberCode and PartnerGUID |
 | 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
 
-#### Notes
+### Notes
+
 > - Only new Members can be added. To update, use the PUT route noted below
 > - Invalid Property data typically returns a 400 response that contains explanation for the rejection
 
-#### Example
+### Example
+
 ```json
 {
  "PartnerGUID": "93A6D55C-D4E7-49FC-8D68-671165ADE463",
@@ -87,3 +93,56 @@ POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 
 ## Member Get
 
+## Request Parameters
+
+| Name | Description |
+| :--- | :--- |
+| memberCode | Unique Respondent Code from the Partner |
+| partnerGUID | Unique Partner Code (Please request this from Toluna if you don't have one) |
+
+### Headers
+
+All requests made using Dynamic member management (v2) must include the following header:
+```json
+Accept: application/json;version=2.0
+```
+
+### Route
+```plaintext
+GET http://{IP-Core-URL}/IntegratedPanelService/api/Respondent/?memberCode={memberCode}&partnerGUID={partnerGUID}
+```
+
+### Possible Request Responses
+
+| Response Code | Etiology, actions |
+| :--- | :--- |
+| 200 | OK. Request processed normally, existing Member Panelist was updated without issue |
+| 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
+| 500 | Internal Error. An exception occurrec while processing the request. Contact Toluna for resolution. Toluna will likely have the details caputred in its logs |
+
+### Member Update / PUT
+
+Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberCode” are required. Combine them with optional properties to update a Member according to your requirements.
+
+### Request Parameters
+
+ - None
+ 
+### Headers
+
+All requests made using Dynamic member management (v2) must include the following header:
+```json
+Accept: application/json;version=2.0
+```
+
+### Request Details
+
+| Property | Description |
+| :--- | :--- |
+| PartnerGUID | Unique Partner Code (Please request from Toluna if you don’t have one) |
+| MemberCOde | Unique Respondent Code from the Partner |
+| IsActive | (Optional) Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.|
+| Email | (Optional) NOTE: When Supplied, this must have a valid email format |
+| BirthDate | (Optional) MM/DD/YYYY format |
+| PostalCode | (Optional) |
+| IsTest | (Optional) Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. |
