@@ -73,14 +73,14 @@ POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
  "PostalCode": "15235",
  “IsPIIDataRegulated”: false
  "AnsweredQuestions":
-  [
-   {"QuestionID":1001007,"AnswerID":2000247},
-   {"QuestionID":1001101,"AnswerID":2002275},
-   {"QuestionID":1001107,"AnswerID":2002330},
-   {"QuestionID":1001012,"AnswerID":2000270},
-   {"QuestionID":1005145,"AnswerID":2796316},
-   {"QuestionID":1001102,"AnswerID":2002280},
-   {"QuestionID":1012395,"AnswerID":3056609}
-  ]
+   [
+    {"QuestionID":1001007,"AnswerID":2000247},
+    {"QuestionID":1001101,"AnswerID":2002275},
+    {"QuestionID":1001107,"AnswerID":2002330},
+    {"QuestionID":1001012,"AnswerID":2000270},
+    {"QuestionID":1005145,"AnswerID":2796316},
+    {"QuestionID":1001102,"AnswerID":2002280},
+    {"QuestionID":1012395,"AnswerID":3056609}
+   ]
 }
 ```
