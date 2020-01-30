@@ -84,3 +84,6 @@ POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
    ]
 }
 ```
+
+## Member Get
+
