@@ -10,6 +10,7 @@ nav_order: 1
 
 Within the Toluna IP Database, the Partner has a couple options on how they manage member date. The partner can choose to use either static or dymanic data. Below are insructions on using static data. Information on managing members with dynamic data can be found [here](https://josh-toluna.github.io/tolunaintegratedpaneldocs/memberapi/v2/ "v2-Dyanamic Member Management"). 
 
+---
 
 ## Adding a Member (POST)
 
@@ -86,16 +87,14 @@ A partner can add new members to the Toluna IP Database using an HTTP POST. This
  "SubProvinceID": "3091832"
 }
 ```
+---
 
 ## Member GET
 
 A partner can receive details for members in the Toluna IP database using an HTTP **GET**.
 
-URL to **GET** new member info
- - For Partners using Notification or Dashboard Intergration Offering: http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
- - **For Parters using External Sample (ES) Integration Offering: http://{ES-Core-URL}/ExternalSample/**
+URL to **GET** new member info: http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 
-Speak to your Toluna representative to recieve your Partner-specific {IP-Core-URL} or {ES-Core-URL}.
 
 
 #### Parameters:
@@ -152,6 +151,7 @@ The following parameters are required for MemberGET
 }
 
 ```
+---
 
 ## Member Update (PUT)
 
