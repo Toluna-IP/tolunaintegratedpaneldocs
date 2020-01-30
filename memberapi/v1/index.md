@@ -16,10 +16,18 @@ Within the Toluna IP Database, the Partner has a couple options on how they mana
 
 A partner can add new members to the Toluna IP Database using an HTTP POST. This must be done by the partner before requesting or receiving survey opportunity links.
 
-### Parameters
- - None
  
-### Request Details
+ ### Route
+
+```plaintext
+POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+```
+
+### Request Parameters
+
+ - None
+
+### Request Body Details
 
 | Property | Description                                                     |
 | :--------| :--- |
@@ -37,9 +45,8 @@ A partner can add new members to the Toluna IP Database using an HTTP POST. This
 | PostalCode | (Optional) |
 | IsTest | (Optional) Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. |
 
-#### Route
- - POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
- - Example
+### Example Request
+
  ```json
 {
  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",  
@@ -57,7 +64,7 @@ A partner can add new members to the Toluna IP Database using an HTTP POST. This
 }
 ```
 
-#### Possible Responses
+### Possible Request Responses
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
@@ -66,12 +73,15 @@ A partner can add new members to the Toluna IP Database using an HTTP POST. This
 | 409 | Conflict. An attempt to add a Member that already exists. Duplication is determined by the combination of MemberCode and PartnerGUID |
 | 500 | Internal Error. An exception occured while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
 
-#### Notes
+### Notes
+
 > - Only new Members can be added. To update, use the PUT route noted below
 > - Option Properties can be excluded from the request. "GenderID," "EducationID," "IncomeID," "EthnicityID," "RaceID," and "SubProvinceID" can also take "0" to indicate "no value."
 > - Invalid Property data typically returns a 400 response
 
-#### Examples
+### Examples
+**To-Do** Add more examples where partner adds member with varying properties
+
  ```json
 {
  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",  
@@ -98,7 +108,7 @@ URL to **GET** new member info: http://{IP-Core-URL}/IntegratedPanelService/api/
 
 
 
-#### Parameters:
+### Parameters:
  
 The following parameters are required for MemberGET
 
@@ -109,12 +119,12 @@ The following parameters are required for MemberGET
 
 
 
-#### Route:
+### Route:
 
  - GET http://{IP-Core-URL/IntegratedPanelService/api/Respondent/?memberCode={memberCode}&partnerGuid={partnerGUID}
 
 
-#### Possible Responses
+### Possible Responses
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
@@ -122,7 +132,7 @@ The following parameters are required for MemberGET
 | 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
 | 500 | Internal Error. An exception occured while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs | 
 
-#### Example Response:
+### Example Response:
 ``` 
 {
     "MemberCode": "1601440000",
@@ -158,10 +168,10 @@ The following parameters are required for MemberGET
 
 Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberCode” are required. Combine them with optional properties to update a Member according to your requirements.
 
-#### Parameters
+### Parameters
  - None
  
-#### Request Details
+### Request Details
 
 | Property | Description |
 | :--- | :--- |
@@ -179,10 +189,10 @@ Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberC
 | IsTest | (Optional) Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. |
 | IsPIIDataRegulated | (Optional) Defaults FALSE. When TRUE, all personally identifiable information is removed. |
 
-#### Route
+### Route
 **PUT** http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 
-#### Possible Responses
+### Possible Responses
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
@@ -191,12 +201,12 @@ Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberC
 | 404 | Not Found. An attempt to update a Member that does not exist. Existence is determined by the combination of MemberCode and PartnerGUID |
 | 500 | Internal Error. An exception occured while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
 
-#### Notes
+### Notes
 > - Only Updates Existing Members. To Add a new Member, use the POST route noted above.
 > - Optional Properties can be excluded from the request. "GenderID," "EducationID," "EthnicityID," "RaceID," and "SubProvinceID" can also take "0" to indicate "no value."
 > - Invalid Property data typically returns a 400 response.
 
-#### Examples
+### Examples
 >All examples below shown in JSON
 
 Deactivate Member
