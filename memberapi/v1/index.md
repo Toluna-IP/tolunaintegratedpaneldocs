@@ -189,3 +189,47 @@ Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberC
 | 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
 | 404 | Not Found. An attempt to update a Member that does not exist. Existence is determined by the combination of MemberCode and PartnerGUID |
 | 500 | Internal Error. An exception occured while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
+
+#### Notes
+> - Only Updates Existing Members. To Add a new Member, use the POST route noted above.
+> - Optional Properties can be excluded from the request. "GenderID," "EducationID," "EthnicityID," "RaceID," and "SubProvinceID" can also take "0" to indicate "no value."
+> - Invalid Property data typically returns a 400 response.
+
+#### Examples
+>All examples below shown in JSON
+
+Deactivate Member
+```json
+{
+ "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+ "MemberCode": "111",
+ "Active": "false"
+}
+```
+
+Change Email
+```json
+{
+ "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+ "MemberCode": "111",
+ "Email": "test@test.com"
+}
+```
+
+Use Member for Testing
+```json
+{
+ "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+ "MemberCode": "111",
+ "IsTest": "true"
+}
+```
+
+Remove Personal Information
+```json
+{
+ "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+ "MemberCode": "111",
+ "IsPIIDataRegulated": true
+}
+```
