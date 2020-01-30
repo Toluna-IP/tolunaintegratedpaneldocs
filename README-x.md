@@ -1,3 +1,0 @@
-# tolunaintegratedpaneldocs
-
-details here
