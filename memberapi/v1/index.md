@@ -16,10 +16,10 @@ Within the Toluna IP Database, the Partner has a couple options on how they mana
 
 A partner can add new members to the Toluna IP Database using an HTTP POST. This must be done by the partner before requesting or receiving survey opportunity links.
 
-#### Parameters
+### Parameters
  - None
  
-#### Request Details
+### Request Details
 
 | Property | Description                                                     |
 | :--------| :--- |
@@ -56,6 +56,7 @@ A partner can add new members to the Toluna IP Database using an HTTP POST. This
  "SubProvinceID": "3091832"
 }
 ```
+
 #### Possible Responses
 
 | Response Code | Etiology, actions |
