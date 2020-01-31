@@ -38,11 +38,9 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 
 
-
-
 <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
 <script>
   var myLandbot = new LandbotLivechat({
-    index: 'https://landbot.io/u/H-358054-567A9RCC6D7GUVSZ/index.html',
+    index: 'https://landbot.io/u/H-358105-OKLQO3VH1XESNAME/index.html',
   });
 </script>
