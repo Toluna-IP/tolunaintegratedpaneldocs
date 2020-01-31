@@ -11,7 +11,9 @@ nav_order: 1
 
 ### Headers
 
-{:IMPORTANT .label-red }
+IMPORTANT
+{: .label .label-red }
+
 All requests made using Dynamic member management (v2) must include the following header:
 ```json
 Accept: application/json;version=2.0
