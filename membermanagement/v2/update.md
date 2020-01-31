@@ -11,16 +11,19 @@ nav_order: 3
 
 Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberCode” are required. Combine them with optional properties to update a Member according to your requirements.
 
-### Request Parameters
-
- - None
- 
 ### Headers
 
+{: .label .label-rainbow}
+IMPORTANT
 All requests made using Dynamic member management (v2) must include the following header:
 ```json
 Accept: application/json;version=2.0
 ```
+
+### Request Parameters
+
+ - None
+ 
 
 ### Request Details
 
@@ -34,10 +37,6 @@ Accept: application/json;version=2.0
 | PostalCode | (Optional) |
 | IsTest | (Optional) Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. |
 
-
-### Request Parameters
-
- - None
  
 ### Route
 
@@ -45,7 +44,7 @@ Accept: application/json;version=2.0
 PUT http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 ```
 
-### Possible Request Responses
+### Possible Responses
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
