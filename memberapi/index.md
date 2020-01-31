@@ -12,5 +12,12 @@ No personal information regarding the partner’s panel is received or stored by
 
 Toluna can receive the partner’s panel data via RESTful APIs. A partner can use these APIs to add new members or deactivate    members. Please request the mapping values for the demographics from your Toluna account representative. Most values vary by    country. The API details are outlined below.
 
->**Please Note:** Once members are added to the Toluna IP Database, they cannot be removed. Members may only be updated or deactivated. Details on how to peform these actions are outlined below.
-
+>The following are important notes on the practice of Member Management:
+> - All members are created in an unregulated state.
+> - A Member's data regulation is immutable; once done, it is permanent.
+> - All versions of the Member API support PII regulation.
+>   - Once regulated, Members will no longer surface via API.
+>   - Once regulated, Members are no longer eligible for survey invites. 
+> - A PUT request for a regulated Member will result in "no member found."
+> - A GET request for a regulated Member will result in "no member found."
+> - A "GetSurveys" request for a regulated Member will result in "no member found."
