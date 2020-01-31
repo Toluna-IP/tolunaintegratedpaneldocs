@@ -13,8 +13,9 @@ Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberC
 
 ### Headers
 
-{: .label .label-rainbow}
+{: .label .label-red}
 IMPORTANT
+
 All requests made using Dynamic member management (v2) must include the following header:
 ```json
 Accept: application/json;version=2.0
