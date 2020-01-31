@@ -2,7 +2,7 @@
 title: Add Member
 has_children: true
 parent: Static (v1)
-grand_parent: Member API
+grand_parent: Member Management
 nav_order: 1
 ---
 

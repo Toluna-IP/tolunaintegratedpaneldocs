@@ -2,7 +2,7 @@
 title: Update Member
 has_children: true
 parent: Dynamic (v2)
-grand_parent: Member API
+grand_parent: Member Management
 nav_order: 3
 ---
 

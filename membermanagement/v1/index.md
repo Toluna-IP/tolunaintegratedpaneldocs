@@ -1,7 +1,7 @@
 ---
 title: Static (v1)
 has_children: true
-parent: Member API
+parent: Member Management
 nav_order: 1
 ---
 

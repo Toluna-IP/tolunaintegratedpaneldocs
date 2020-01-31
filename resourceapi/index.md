@@ -1,9 +1,9 @@
 ---
-title: Resource API
+title: Resources
 has_children: true
 nav_order: 3
 ---
 
-# Resource API 
+# Resources
 
 Details 
