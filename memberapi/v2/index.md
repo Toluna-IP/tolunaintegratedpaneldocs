@@ -1,6 +1,6 @@
 ---
 title: Dynamic (v2)
-has_children: false
+has_children: true
 parent: Member API
 nav_order: 2
 ---
