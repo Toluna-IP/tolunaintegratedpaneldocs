@@ -35,3 +35,23 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+<script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+<script>
+  var myLandbot = new LandbotLivechat({
+    index: 'https://landbot.io/u/H-358054-567A9RCC6D7GUVSZ/index.html',
+  });
+</script><script>
+  // Show a proactive message after 5 seconds
+  setTimeout(function() {
+    myLandbot.sendProactive({
+  "message": "Have a question?",
+  "author": "landbot",
+  "avatar": "https://storage.googleapis.com/media.helloumi.com/brands/helloumi.png",
+  "extra": {
+    "hide_textbox": true
+  }
+});
+  }, 5000);
+</script>
