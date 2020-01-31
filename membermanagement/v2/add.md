@@ -11,8 +11,8 @@ nav_order: 1
 
 ### Headers
 
-IMPORTANT
 {: .label .label-red }
+IMPORTANT
 
 All requests made using Dynamic member management (v2) must include the following header:
 ```json
