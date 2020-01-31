@@ -1,10 +1,10 @@
 ---
-title: Member API
+title: Member Management
 has_children: true
 nav_order: 1
 ---
 
-# Member Management API 
+# Member Management 
 
 Integrated Panel (IP) is an offering for our partners that allow them to receive a request to invite their own panel to Toluna      surveys that have demographics (Age, Gender, Country, and Language etc.) that will match those of the individual panelist.
 
