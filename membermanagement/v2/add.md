@@ -19,7 +19,17 @@ All requests made using Dynamic member management (v2) must include the followin
 Accept: application/json;version=2.0
 ```
 
-### Request Details
+### Route
+
+```plaintext
+POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+```
+
+### Request Parameters
+ - None
+ 
+
+### Request Body Details
 
 | Property | Description |
 | :--- | :--- |
@@ -33,28 +43,7 @@ Accept: application/json;version=2.0
 | IsPIIDataRegulated | (Optional) Defaults FALSE. When TRUE, all personally identifiable information is removed. |
 | AnsweredQuestions | (Optional) A collection of 0:M demographic Question and Answer ID pairs, |
 
-### Route
-
-```plaintext
-POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
-```
-
-### Possible Request Responses
-
-| Response Code | Etiology, actions |
-| :--- | :--- |
-| 201 | Created. Request processed normally, resulting in a new Member |
-| 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
-| 409 | Conflict. An attempt to add a Member that already exists. Duplication is determined by the combination of MemberCode and PartnerGUID |
-| 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
-
-
-### Notes
-
-> - Only new Members can be added. To update, use the PUT route noted below
-> - Invalid Property data typically returns a 400 response that contains explanation for the rejection
-
-### Example
+### Example Request
 
 ```json
 {
@@ -76,3 +65,23 @@ POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
    ]
 }
 ```
+
+
+### Possible Request Responses
+
+| Response Code | Etiology, actions |
+| :--- | :--- |
+| 201 | Created. Request processed normally, resulting in a new Member |
+| 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
+| 409 | Conflict. An attempt to add a Member that already exists. Duplication is determined by the combination of MemberCode and PartnerGUID |
+| 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
+
+
+### Notes
+
+> - Only new Members can be added. To update, use the PUT route noted below
+> - Invalid Property data typically returns a 400 response that contains explanation for the rejection
+
+### Examples
+**To-do** add more examples where partner adds member with varying properties
+
