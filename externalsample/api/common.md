@@ -1,5 +1,5 @@
 ---
-title: Common
+title: Common Items
 has_children: false
 parent: ES API
 grand_parent: External Sample Offering
@@ -7,7 +7,7 @@ nav_order: 5
 ---
 
 
-## ES API Common Details
+## ES API Common Items
 
 content here 
 
