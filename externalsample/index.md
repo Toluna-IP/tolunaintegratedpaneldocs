@@ -90,7 +90,7 @@ These are the additional points needed to achieve the full IP integration:
   - Provide some basic information and receive an invite from Toluna for your Member
 - *Create API to Receive Quota Status Notifications from Toluna*
   - Toluna will broadcast changes to its Quotas. Subscrube by establishing an API to handle these events.
-  - >PLease note: you will receive status changes for all open Quotas, not just those with which you are engaged.
+  - >Please note: you will receive status changes for all open Quotas, not just those with which you are engaged.
 
 
 ## Notification / Webhooks
@@ -99,11 +99,19 @@ This describes several support processes Toluna will operate in the background o
 
 ### Member Status Link
 
-*To do*
+When a Partner's Member has completed interaction with a Toluna Survey, Toluna will deliver a notification signifying this even and its details. For the most part, these are identical to the "real-time" notifications described in the [Main Integration Guide](*To do*).
+
+{: .label .label-red }
+Suscription to these notifications is mandatory for ES Partners.
 
 ### Quota Status Link
 
-*To do*
+When a Quota is no longer available or a previously on-hold Quota becomes available/live, Toluna will broadcast this information to its Partners.
+
+{: .label .label-red }
+Suscription to these notifications is mandatory for ES Partners.
+
+> Please note: Subscribers will receive updates for all Quotas, not just those with which they are engaged. Partners should integrate in a manner in which non-relevant Quota updates are ignored.
 
 ## Sampling Rules
 
@@ -120,14 +128,16 @@ These rules can be consolidated into simple boolean conditions:
  - SubQuotas are "OR" conditions
  - AnswerIDs are "OR" conditions
  - Within a SubQuota
-  - "OR" for the same QuestionID
-  - "AND" for multiple QuestionIDs
+   - "OR" for the same QuestionID
+   - "AND" for multiple QuestionIDs
 
 **Example Quotas**
 
 [Example Quota with Multiple Layers](){: .btn }
 
-[Example Quota with Single Layer](){: .btn }
+[Example Quota with Single Layer, SubQuota with Multple QuestionIDs](){: .btn }
+
+[Example Quota with Single lyaer, SubQuota with Single QuestionIDs](){: .btn}
 
 ## API Documentation
 
@@ -141,6 +151,17 @@ These rules can be consolidated into simple boolean conditions:
 | Sample Request | ``` GET http://{ES-Root-URL}/ExternalSample/96B52BEE-32FE-4A23-8FEE-821F6AAA5CA5/Quotas API_AUTH_KEY: 10B1BF48-F141-41CD-850F-4DE5A8BA44EB``` |
 | Sample 200 Response | Full request can be seen [here](https://josh-toluna.github.io/tolunaintegratedpaneldocs/externalsample/getquotasresponse.json "Sample 200 Response") |
 | Possible Request Response Codes | <table> <thead> <tr> <th style="text-align: left">Code</th> <th style="text-align: left">Etiology, actions</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">200</td> <td style="text-align: left">Request processed normally</td> </tr> <tr> <td style="text-align: left">400</td> <td style="text-align: left">Bad Request. See response for details</td> </tr> <tr> <td style="text-align: left">500</td> <td style="text-align: left">Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs</td> </tr> <tr> <td style="text-align: left">403</td> <td style="text-align: left">Forbidden: Invalid <code class="language-plaintext highlighter-rouge">API_AUTH_KEY</code> See response for details</td> </tr> </tbody> </table> |
+
+### Sample 400 Response
+```json
+HTTP/1.1 400
+Content-Type: application/json; charset=utf-8
+
+ {
+   "Result": "PANEL_DOES_NOT_EXIST",
+   "ResultCode": 3
+ }
+```
 
 ### Response Properties
 
@@ -179,6 +200,7 @@ These rules can be consolidated into simple boolean conditions:
 | QuesitonAndAnswers.AnswerIDs |	```list<int>``` |	List of Toluna internal profile attribute identifiers. When sampling, at least one AnswerID must match. See mapping document for details |
 | QuestionAndAnswers.AnswerValues |	```string<int>``` |	List of Answer values of an open ended answers.Example: Custom Age values “18-100”, Postal codes, DMA and MSA. Note: “Age” will be range based. “DMA and MSA” will be comma separated Answer IDs. “Postal codes” will be comma separated postal code values. It can contain partial values. ‘Starts with’ must be applied to match it. API is limited to expose only first 1000 postal codes. |
 | QuestionAndAnswers.IsRoutable |	boolean |	Indicates whether the question is Routable or not |
+
 
 ### "Bad Request" Response Codes
 
@@ -222,15 +244,66 @@ These rules can be consolidated into simple boolean conditions:
 
 ## Notifications
 
-A) Member Status Notification
+In order to complete the ES Integrated experience, Toluna will issue notifications when conclive events occur within its system. To ensure the best possible experience and performance, Toluna required that its ES IP Partners host and API capable of consuming and activing upon its Member and Quota Status Notifications.
+
+### A) Member Status Notification
 
 When a Partner Member has completed interaction with a Toluna Survey, Toluna will deliver a notification signifying this event and its details. For the most part, these are identical to the "real-time" notifications described in the main Integration Guide. Subscription to these notification are required for ES Partners.
 
-B) Quota Status Notifications
+The following is information on the two types of Member Status Notification
+ - Terminated: *To do*
+ - Completed: *To do*
 
-When a Quota is no longer available or a previosly on-hold Quota becomes available/live, Toluna will broadcase this information to its Partners. Subscription to this notiifcatoin is required for all ES Partners.
-> Please note: Subscribers will receive updates for all Quotas, not just those with which they are engaged. Partners should integrate in a manner in which non-relevant Quota updates are ignored.
+### B) Quota Status Notifications
 
+A new feature for the ES Integration, Toluna will deliver these notifications when one of its Quotas is not longer available for sompling or any of its perviously on-hold Quotas become available for sampling. 
+>A Partner must consume this event so that its sampling efforts can be discontinued when no longer viable.
 
+#### Notification from Toluna to Partner API
 
+Toluna will deliver this via HTTP POST when one of its Quotas is no longer available for sampling or any of its previously on-hold Quota becomes available for sampling. It is the Partner’s responsibility to create an endpoint capable of consuming this information. Please note that subscribers will receive updates for all Quotas, not just those with which they are engaged. Partners should construct their endpoint in a manner in which non-relevant Quota updates are ignored.
+
+#### Route(s)
+
+- Specified by Partner; Toluna will confingure accordingly
+ 
+#### HTTP Verb
+
+- POST
+ 
+#### Sample Request
+```json
+POST [Partner-Specified URL]
+```
+
+#### Sample POST
+```json
+ {
+  "QuotaID": 3445365,
+  "SurveyID": 45367678,
+  "WaveID": 45367678,
+  "IsLive": false,
+  "UpdateDateTimeUTC": “2018-10-22 19:58:42.99 +00:00“
+ }
+```
+
+#### Response Properties
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| QuotaID | int | Toluna's unique identifier for a Quota |
+| SurveyID | int | Toluna's internal unique identifier for a Survey |
+| WaveID | int | Toluna's internal unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
+| IsLive | Bool | Is the Quota currently capable of accepting Sample? |
+| UpdateDateTimeUTC | dateTime | The date/time, in UTC, of the quota status change |
+
+### C) Invite
+
+### D) Survey Closed
+
+### E) Prestart
+
+## "Tracker" Surveys
+
+A "Tracker" is a series of related Surveys. Toluna calls each iteration of these Surveys a "Wave." Each iteration will share a common SurveyID and its own WaveID. Toluna recommends that the Partner considers the combination of SurveyID+WaveID as the "unique identifier" for a Member's interation with a Survey. For the complete details of trackers and their benefits, pleae refer to the main Integration Guide.
 ### SuveyID + WaveID
