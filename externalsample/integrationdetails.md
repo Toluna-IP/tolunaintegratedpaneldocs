@@ -6,7 +6,7 @@ parent: External Sample Offering
 ---
 
 
-# External Sample - Standard Flow
+# ES Integration Details
 
 ### What is the Flow?
 
@@ -29,9 +29,15 @@ These are the additional points needed to achieve the full IP integration:
 
 - *Get Quotas from Toluna*
   - Call the "GetQuotas" route for an inventory of current, open Quotas.
+- Sampling / Member Selection 
+  - handled by Partners' platform
 - *Once Member is Sampled for Quota, Get Invite From Toluna*
   - Provide some basic information and receive an invite from Toluna for your Member
-- *Create API to Receive Quota Status Notifications from Toluna*
+
+
+- *Create API to Receive 
+  - Quota Status Notifications from Toluna*
+
   - Toluna will broadcast changes to its Quotas. Subscrube by establishing an API to handle these events.
   - >Please note: you will receive status changes for all open Quotas, not just those with which you are engaged.
 
@@ -61,11 +67,12 @@ These rules can be consolidated into simple boolean conditions:
 In order to complete the ES Integrated experience, Toluna will issue notifications when conclive events occur within its system. To ensure the best possible experience and performance, Toluna required that its ES IP Partners host and API capable of consuming and activing upon its Member and Quota Status Notifications.
 
 
-{: .label .label-red }
-Suscription to these notifications is mandatory for ES Partners.
+
+{: .label .label-green }
+Suscription to these notifications is strongly recommended for ES Partners.
 
 
 {: .label .label-red }
-Suscription to these notifications is mandatory for ES Partners.
+Suscription to these notifications is strongly recommended for ES Partners.
 
 > Please note: Subscribers will receive updates for all Quotas, not just those with which they are engaged. Partners should integrate in a manner in which non-relevant Quota updates are ignored.
