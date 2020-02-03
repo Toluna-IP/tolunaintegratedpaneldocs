@@ -1,5 +1,5 @@
 ---
-title: Member Status Notifications
+title: Member Status
 has_children: false
 parent: Notifications
 nav_order: 1

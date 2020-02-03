@@ -1,5 +1,5 @@
 ---
-title: Pre-start Status Notifications
+title: Pre-Start
 has_children: false
 parent: Notifications
 nav_order: 5

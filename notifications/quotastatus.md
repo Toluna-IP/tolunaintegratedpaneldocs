@@ -1,5 +1,5 @@
 ---
-title: Quota Status Notifications
+title: Quota Status
 has_children: false
 parent: Notifications
 nav_order: 4
