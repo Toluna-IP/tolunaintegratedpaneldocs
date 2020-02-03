@@ -1,9 +1,9 @@
 ---
-title: Resource API
+title: Mapping
 has_children: true
 nav_order: 6
 ---
 
-# Resource API
+# Mapping
 
 Details 
