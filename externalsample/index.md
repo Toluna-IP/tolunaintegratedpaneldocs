@@ -38,9 +38,9 @@ Once Quota data is obtained, use your own sampling capability to match a Toluna 
 
 *Description*: Once a Member has been matched to a Toluna Quota, this reoute can be used to generate an invitation.
 
-*Route(s)*: GET /ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}
+*Route(s)*: ```GET /ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}```
 
-*Header(s)* API_AUTH_KEY: A Partner-specifc GUID providen by Toluna that must accompany every request.
+*Header(s)* ```API_AUTH_KEY```: A Partner-specifc GUID providen by Toluna that must accompany every request.
 
 *Parameters*
 
@@ -65,10 +65,11 @@ Once Quota data is obtained, use your own sampling capability to match a Toluna 
 
 *Sample Request*
 ```json
-GET http://[APIROOT]/ExternalSample/96B52BEE-32FE-4A23-8FEE-821F6AAA5CA5/MyMemberCode/Invite/12345
-API_AUTH_KEY: 10B1BF48-F141-41CD-850F-4DE5A8BA44EB
+GET http://[APIROOT]/ExternalSample/{PanelGUID:Guid}/[MemberCode:string}/Invite/{QuotaID:int}
+API_AUTH_KEY: {API_AUTH_KEY}
 cache-control: no-cache
 ```
+
 *Sample 200 Response*
 ```json
 HTTP/1.1 200 OK
@@ -154,7 +155,7 @@ GET /ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/MemberCodes?maxResu
 ```
 *Header(s)*
 
-API_AUTH_KEY: A Partner-specific GUID prvoided by Toluna that must accompany every request
+```API_AUTH_KEY: A Partner-specific GUID prvoided by Toluna that must accompany every request```
 
 *Parameters*
 
@@ -215,7 +216,7 @@ Content-Type: application/json; charset=utf-8
 
 Use the Toluna invites according to the Partner's own requirements/workflow. Once executed, the Member's experience is consistent witht he traditional, "real-time" flow.
 
-#### How ES Different than other offerings?
+#### How is ES Different than other offerings?
 
 *To Do*
 
@@ -357,8 +358,8 @@ Content-Type: application/json; charset=utf-8
 | MEMBER_NOT_ROUTABLE | 13 | The requested MemberCode is not in a state eligible for routing to a Quota |
 | MEMBER_BLOCKED | 14 | The requested MemberCode is currently blocked from taking Surveys. Contact your Toluna representative for details |
 | SURVEY_NOT_ENABLED_FOR_IP_ES | 15 | The Survey to which the Quota belongs is not enabled for Integrated Panel External Sample use. |
-| MEMBER_DOES_NOT_MATCH_QUOTA | 16  The requested MemberCode does not match the requested QuotaID |
-| NO_RECONTACT_GID | 17  A request for a Recontact Invite could not be fulfilled due to missing information from the Survey's sponsor |
+| MEMBER_DOES_NOT_MATCH_QUOTA | 16 | The requested MemberCode does not match the requested QuotaID |
+| NO_RECONTACT_GID | 17 | A request for a Recontact Invite could not be fulfilled due to missing information from the Survey's sponsor |
 | PANEL_INVALID_ES_REQUEST | 20 | The requested panel is not configured to ES-based invitations to Toluna Quotas |
 | NON_QUOTA_DEMOGRAPHIC_REJECTION | 21 | The request to get an Invite is rejected due to non-quota demographic reasons. Examples: Prior participation in Quota, Device Type Mismatch, etc |
 | MEMBER_NOT_ACTIVE | 22 | The member is not active in the Toluna system. This can be due to several reasons. Examples: Suspended User, BlockedForAbuse. Contact your Toluna representative for details |
@@ -439,11 +440,16 @@ POST [Partner-Specified URL]
 
 ### C) Invite
 
+*To Do*
+
 ### D) Survey Closed
 
+*To Do*
+
 ### E) Prestart
+
+*To Do*
 
 ## "Tracker" Surveys
 
 A "Tracker" is a series of related Surveys. Toluna calls each iteration of these Surveys a "Wave." Each iteration will share a common SurveyID and its own WaveID. Toluna recommends that the Partner considers the combination of SurveyID+WaveID as the "unique identifier" for a Member's interation with a Survey. For the complete details of trackers and their benefits, pleae refer to the main Integration Guide.
-### SuveyID + WaveID
