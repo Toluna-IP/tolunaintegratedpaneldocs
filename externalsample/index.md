@@ -8,29 +8,22 @@ nav_order: 2
 
 ## Introduction
 
-### Background
+### What is External Sample?
 
 Toluna’s “External Sample” (ES) capability is an integration option offered as part of the Integrated Panel program. Its adoption permits the Partner to receive near real-time details about Toluna’s open quotas. Once obtained, Partners can use their own sampling capabilities to target the most appropriate respondents. This differs from the traditional IP model where Toluna maintains complete control over the sampling, routing, and invitation processes.
 
-### Incremental Option
-
 Internally at Toluna, the existing IP Framework views ES as simply another option for getting survey invitations into the hands of its Partners. As such, Partners choosing to adopt this capability requires only a few additional integration points beyond the traditional model.
 
-### Additional Integration Requirements
+### What is the Flow?
 
-When evaluating IP Partnership, the Partner should choose ES as the method of invitation (as opposed to Dashboard or Notification). After doing so, these are the additional points needed to achieve the full IP integration:
+Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses with its Partners. The first is the Standard Quota, similar to our traditional offerings, but with ES-specific parameters. The second kind is the Recontact Quota, the definition of which will be explained further below, along with the Quota-specific flow.
 
-- *Get Quotas from Toluna*
-  - Call the "GetQuotas" route for an inventory of current, open Quotas.
-- *Once Member is Sampled for Quota, Get Invite From Toluna*
-  - Provide some basic information and receive an invite from Toluna for your Member
-- *Create API to Receive Quota Status Notifications from Toluna*
-  - Toluna will broadcast changes to its Quotas. Subscrube by establishing an API to handle these events.
-  - >PLease note: you will receive status changes for all open Quotas, not just those with which you are engaged.
+#### Standard Flow
 
-## Real-Time Flow
+**Real-Time Flow Diagram**
 
 ![Input ES Flow Here](https://upload.wikimedia.org/wikipedia/en/8/84/Flo_from_Progressive_Insurance.jpg)
+
 
 **Get Quotas**
 
@@ -56,18 +49,83 @@ Once the invitation is exercised, the Partner Member takes a Survey in the Tolun
 
 Upon conclusion of the Survey, the Partner Member is redirected ack to a Partner-specific landing page. The options for redirection are identical to non-ES integration and can be found in Toluna's main integration guide.
 
-## What happens in the Back-end?
+#### "Recontact" Flow
+
+At times, Tluna will seek to "reconnect" specific Members for a Quoa. Typically this is done to facilitate follow-up information for an original study. Since the target Members are already known, the partner has not requirement to sample its membership for the Quota. Instead, they query a Toluna API which will return the list of MemberCodes applicable for recontact. Once Obtained, the Partner should saple the list against the Recontact Quota to validate the targeting and generate an invite request for each match. From here, the process is identical to the interaction with a typical Quota.
+
+**Real-Time Flow Diagram**
+
+![Input Recontact Flow Here](https://via.placeholder.com/150)
+
+**Recontact Quotas**
+
+Using your culture-specific "PanelGUID" provided by Toluna, call this route to obtain a current inventory of the applicable open Toluna quotas
+
+**Is Survey Recontact**
+
+Once Quota data is obtained, each Survey applicable for Recontact will have the “IsSurveyRecontact” property set to “true”. This is an indication to disregard your own sampling capability and, instead, obtain the Quota’s list of “invite-able” MemberCodes from Toluna. Toluna will expose Recontact Surveys to Partners only if they have Members targetedfor Recontact; otherwise these Surveys will not appear in the results.
+
+As the list of Recontact-eligible Members can be large, Toluna uses a separate API route (“GetRecontactMembersForQuota”) route to provide this information. This takes the Recontact Toluna QuotaID as a parameter and returns, by default, up to 10000 results per-call. It supports batching via the “lastMemberCodeReceived” parameter: provide your last MemberCode obtained for the Quota, and Toluna will begin the result set at the next Member (ordered alphanumerically, ascending). This route also allows consumers to define their own batch size via the “maxResults” parameter. If not provided, the default “maxResults” of 10000 is used. Toluna recommends restricting results to less than this value and does not guarantee performance about this limit. As a single Recontact Survey can have multiple Quotas, repeat this step for each Quota
+
+**Validate, Sample, Get Invites**
+
+When the list of MemberCodes has been obtained, perform any rquired local validation (e.g. Are the members still active on your end?). Once validated, execute your sampling process against the target recontact Quota for every Member. This will ensure that the targeting is correct and that each Recontact Member mataches the Quota Criteria. Finally, call the Toluna "GenerateInvite" route to obtain a standard Toluna IP invite for each matched Member. Once obtained, these invites are identical to any other in the IP Program.
+
+**Execute Invite**
+
+Use the Toluna invites according to the Partner's own requirements/workflow. Once executed, the Member's experience is consistent witht he traditional, "real-time" flow.
+
+#### How ES Different than other offerings?
+
+
+#### What is needed to integrate?
+
+These are the additional points needed to achieve the full IP integration:
+
+- *Get Quotas from Toluna*
+  - Call the "GetQuotas" route for an inventory of current, open Quotas.
+- *Once Member is Sampled for Quota, Get Invite From Toluna*
+  - Provide some basic information and receive an invite from Toluna for your Member
+- *Create API to Receive Quota Status Notifications from Toluna*
+  - Toluna will broadcast changes to its Quotas. Subscrube by establishing an API to handle these events.
+  - >PLease note: you will receive status changes for all open Quotas, not just those with which you are engaged.
+
+
+## Notification / Webhooks
 
 This describes several support processes Toluna will operate in the background of an ES integration.
 
-A) Member Status Notification
+### Member Status Link
 
-When a Partner Member has completed interaction with a Toluna Survey, Toluna will deliver a notification signifying this event and its details. For the most part, these are identical to the "real-time" notifications described in the main Integration Guide. Subscription to these notification are required for ES Partners.
+**To do**
 
-B) Quota Status Notifications
+### Quota Status Link
 
-When a Quota is no longer available or a previosly on-hold Quota becomes available/live, Toluna will broadcase this information to its Partners. Subscription to this notiifcatoin is required for all ES Partners.
-> Please note: Subscribers will receive updates for all Quotas, not just those with which they are engaged. Partners should integrate in a manner in which non-relevant Quota updates are ignored.
+**To do**
+
+## Sampling Rules
+
+External Sample Partners must comply with Toluna's samplingrules. To be sampled for a Quota, each member must:
+ - Be targted for only 1 Quota per Survey
+ - Match ALL Layers in the Quota
+ - Match ONE of the SubQuotas
+ - Match at least one "AnswerID" (SubQuotaAttribute) per SubQuota with the single QuestionID
+ - Match at least one "AnswerID" (SubQuotaAttribute) per QuestionID in the SubQuota with multiple QuestionIDs
+ 
+These rules can be consolidated into simple boolean conditions:
+ - Quotas are "OR" conditions
+ - Layers are "AND" conditions
+ - SubQuotas are "OR" conditions
+ - AnswerIDs are "OR" conditions
+ - Within a SubQuota
+  - "OR" for the same QuestionID
+  - "AND" for multiple QuestionIDs
+
+**Example Quotas**
+
+[Example Quota with Multiple Layers](){: .btn }
+
+[Example Quota with Single Layer](){: .btn }
 
 ## API Documentation
 
@@ -119,3 +177,18 @@ When a Quota is no longer available or a previosly on-hold Quota becomes availab
 | QuesitonAndAnswers.AnswerIDs |	```list<int>``` |	List of Toluna internal profile attribute identifiers. When sampling, at least one AnswerID must match. See mapping document for details |
 | QuestionAndAnswers.AnswerValues |	```string<int>``` |	List of Answer values of an open ended answers.Example: Custom Age values “18-100”, Postal codes, DMA and MSA. Note: “Age” will be range based. “DMA and MSA” will be comma separated Answer IDs. “Postal codes” will be comma separated postal code values. It can contain partial values. ‘Starts with’ must be applied to match it. API is limited to expose only first 1000 postal codes. |
 | QuestionAndAnswers.IsRoutable |	boolean |	Indicates whether the question is Routable or not |
+
+## Notificatins
+
+A) Member Status Notification
+
+When a Partner Member has completed interaction with a Toluna Survey, Toluna will deliver a notification signifying this event and its details. For the most part, these are identical to the "real-time" notifications described in the main Integration Guide. Subscription to these notification are required for ES Partners.
+
+B) Quota Status Notifications
+
+When a Quota is no longer available or a previosly on-hold Quota becomes available/live, Toluna will broadcase this information to its Partners. Subscription to this notiifcatoin is required for all ES Partners.
+> Please note: Subscribers will receive updates for all Quotas, not just those with which they are engaged. Partners should integrate in a manner in which non-relevant Quota updates are ignored.
+
+
+
+### SuveyID + WaveID
