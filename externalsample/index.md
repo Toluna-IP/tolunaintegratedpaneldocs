@@ -20,32 +20,105 @@ Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses 
 
 #### Standard Flow
 
-**Real-Time Flow Diagram**
+##### Real-Time Flow Diagram
 
 ![ES Flow](https://upload.wikimedia.org/wikipedia/en/8/84/Flo_from_Progressive_Insurance.jpg)
 
 
-**Get Quotas**
+##### Get Quotas
 
 Using your culture-specific "PanelGUID" provided by Toluna, call this route to obtain a current inventory of the application open Toluna Quotas.
 
 
-**Sample, Invite**
+##### Sample, Invite
 
 Once Quota data is obtained, use your own sampling capability to match a Toluna Quota with one of your Members. Toluna will provide a document that links its profile attributes to a series of "AnswerIDs" found on each Quota. Partners can use this to map these details to their own standards. When a match is found, call Toluna and get an invite for the Member/Quota combination. Among other things, Toluna will provide a pre-formatted and "ready-to-go" invitation link.
 
+**Generating Invite**
 
-**Execute Invitation**
+*Description*: Once a Member has been matched to a Toluna Quota, this reoute can be used to generate an invitation.
+
+*Route(s)*: GET /ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}
+
+*Header(s)* API_AUTH_KEY: A Partner-specifc GUID providen by Toluna that must accompany every request.
+
+*Parameters*
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| PanelGUID | Guid | A Toluna-issued unique identifier for a Partner's culture-specific panel |
+| MemberCode | string | Partner's unique identifier for the Member as define when registered with Toluna. The PanelGUID+MemberCode is always unique within the Toluna system |
+| QuotaID | int | Toluna's unqiue identifier for a Quota |
+
+*Properties*
+
+ - None
+ 
+*Responses*
+
+| Code | Etiology, actions |
+| :--- | :--- |
+| 200 | Request processed normally |
+| 400 | Bad Request: see response for details |
+| 500 | Internal Error: An exception occured while processing the request. Toluna likely has captured details in its logs |
+| 403 | Forbidden: Invalid API_AUTH_KEY. See response for details |
+
+*Sample Request*
+```json
+GET http://[APIROOT]/ExternalSample/96B52BEE-32FE-4A23-8FEE-821F6AAA5CA5/MyMemberCode/Invite/12345
+API_AUTH_KEY: 10B1BF48-F141-41CD-850F-4DE5A8BA44EB
+cache-control: no-cache
+```
+*Sample 200 Response*
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+ {
+  "SurveyId": 2349720,
+  "WaveID": 34839308,
+  "QuotaID": 3445365,
+  "MemberAmount": 0.5,
+  "PartnerAmount": 1,
+  "URL": "http://[ROOT]/TrafficUI/MSCUI/Page.aspx?pgtid=20&od=kqe0mda072UagaQSVQIlgUX1QE4E41107",
+  "LOI": 5,
+  "IR": 40
+ }
+```
+
+*Response Properties*
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| SurveyID | int | Toluna's internal unique identifier for a Survey |
+| WaveID | int | Toluna's internal unique indentifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
+| QuotaID | int | Toluna's unqiue identifier for a Quota |
+| Member Amount | double | Amount Partner has agreed to pay it’s Member for a complete. This is rarely used and Toluna prefers to avoid direct engagement with the Partner-Member relationship |
+| Partner Amount | double | Amount Toluna has agreed to pay Partner for a complete |
+| URL | string | Link to Invite Member to Quota |
+| LOI | int | Length of Interview at the time fo invite generation |
+| IR | int | Incidence Rate at the time fo invite generation |
+
+*Sample 400 Response*
+```json
+HTTP/1.1 400
+Content-Type: application/json; charset=utf-8
+ {
+  "Result": "NO_QUOTA_ID",
+  "ResultCode": 10
+ }
+```
+
+##### Execute Invitation
 
 Place the Invitation link in your Member's possession according to your internal workflow. Once executed, it behaves like any other (non-ES) IP invite.
 
 
-**Take Survey**
+##### Take Survey
 
 Once the invitation is exercised, the Partner Member takes a Survey in the Toluna ecosystem. This process is identical to any other in the IP Program; no special provisions or action are required for ES-based experience
 
 
-**Survey Conclusion**
+##### Survey Conclusion
 
 Upon conclusion of the Survey, the Partner Member is redirected ack to a Partner-specific landing page. The options for redirection are identical to non-ES integration and can be found in Toluna's main integration guide.
 
@@ -53,25 +126,92 @@ Upon conclusion of the Survey, the Partner Member is redirected ack to a Partner
 
 At times, Tluna will seek to "reconnect" specific Members for a Quoa. Typically this is done to facilitate follow-up information for an original study. Since the target Members are already known, the partner has not requirement to sample its membership for the Quota. Instead, they query a Toluna API which will return the list of MemberCodes applicable for recontact. Once Obtained, the Partner should saple the list against the Recontact Quota to validate the targeting and generate an invite request for each match. From here, the process is identical to the interaction with a typical Quota.
 
-**Real-Time Flow Diagram**
+##### Real-Time Flow Diagram
 
 ![Recontact Flow](https://via.placeholder.com/150)
 
-**Recontact Quotas**
+##### Recontact Quotas
 
 Using your culture-specific "PanelGUID" provided by Toluna, call this route to obtain a current inventory of the applicable open Toluna quotas
 
-**Is Survey Recontact**
+##### Is Survey Recontact
 
 Once Quota data is obtained, each Survey applicable for Recontact will have the “IsSurveyRecontact” property set to “true”. This is an indication to disregard your own sampling capability and, instead, obtain the Quota’s list of “invite-able” MemberCodes from Toluna. Toluna will expose Recontact Surveys to Partners only if they have Members targetedfor Recontact; otherwise these Surveys will not appear in the results.
 
 As the list of Recontact-eligible Members can be large, Toluna uses a separate API route (“GetRecontactMembersForQuota”) route to provide this information. This takes the Recontact Toluna QuotaID as a parameter and returns, by default, up to 10000 results per-call. It supports batching via the “lastMemberCodeReceived” parameter: provide your last MemberCode obtained for the Quota, and Toluna will begin the result set at the next Member (ordered alphanumerically, ascending). This route also allows consumers to define their own batch size via the “maxResults” parameter. If not provided, the default “maxResults” of 10000 is used. Toluna recommends restricting results to less than this value and does not guarantee performance about this limit. As a single Recontact Survey can have multiple Quotas, repeat this step for each Quota
 
-**Validate, Sample, Get Invites**
+##### Validate, Sample, Get Invites
 
 When the list of MemberCodes has been obtained, perform any rquired local validation (e.g. Are the members still active on your end?). Once validated, execute your sampling process against the target recontact Quota for every Member. This will ensure that the targeting is correct and that each Recontact Member mataches the Quota Criteria. Finally, call the Toluna "GenerateInvite" route to obtain a standard Toluna IP invite for each matched Member. Once obtained, these invites are identical to any other in the IP Program.
 
-**Execute Invite**
+##### GET RecontactMembersForQuota
+
+For the requested Quota, returns a list of MemberCodes eligible for a recontact.
+
+*Route(s)* 
+```json
+GET /ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/MemberCodes?maxResults={maxResults:int}&lastMemberCodeReceived={lastMemberCodeReceived:string}
+```
+*Header(s)*
+
+API_AUTH_KEY: A Partner-specific GUID prvoided by Toluna that must accompany every request
+
+*Parameters*
+
+| Name | Type | Description |
+| :--- | :-- | :--- |
+| panelGUID | Guid | A Toluna-issued unique identifier for a Partner's culture-specific panel |
+| quotaID | int | Tluna's unique identifier for a Quota |
+| [OPTIONAL] The maximum number of MemberCodes that will be returned for the request. If not provided, defaults to a Toluna-configurable value (for, v0.1:10000) |
+| lastMemberCodeReceived | string | [OPTIONAL] When dealing with batched results for a single Quota, supply this value to signal the last result received. The batch results will start with the MemberCode AFTER this value. Note that MemberCodes for recontact are ordered alphanumerically |
+
+*Properties*
+
+ - None
+ 
+*Responses*
+
+| Code | Etiology, actions |
+| :--- | :--- |
+| 200 | Request processed normally |
+| 400 | Bad Request: see response for details |
+| 500 | Internal Error. An exception occurred while processing this request. Toluna has likely captured details in its logs |
+| 403 | Forbidden: invalid API_AUTH_KEY. See response for details |
+
+*Sample Request*
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+ {
+  "MaxResults": 25,
+  "HasAdditionalMembers": false,
+  "MemberCodes": [
+    "MemberCode1",
+    "MemberCode2",
+    "MemberCode3"
+  ]
+ }
+```
+
+*Response Properties*
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| MaxResults | int | The number of MemberCodes included in the response |
+| HasAdditionalMembers | bool | When true, the Quota has more MemberCodes for recontact. Obtain them by repeating the request with the "lastMemberCodeReceived" parameter. |
+| Member codes | ```list<string>``` | The MemberCodes Toluna would like to recontact for the Quota |
+
+*Sample 400 Response*
+```json
+HTTP/1.1 400
+Content-Type: application/json; charset=utf-8
+ {
+  "Result": "NO_QUOTA_ID",
+  "ResultCode": 10
+ }
+```
+
+##### Execute Invite
 
 Use the Toluna invites according to the Partner's own requirements/workflow. Once executed, the Member's experience is consistent witht he traditional, "real-time" flow.
 
