@@ -36,25 +36,6 @@ These are the additional points needed to achieve the full IP integration:
   - >Please note: you will receive status changes for all open Quotas, not just those with which you are engaged.
 
 
-## Notification / Webhooks
-
-This describes several support processes Toluna will operate in the background of an ES integration.
-
-### Member Status Link
-
-When a Partner's Member has completed interaction with a Toluna Survey, Toluna will deliver a notification signifying this even and its details. For the most part, these are identical to the "real-time" notifications described in the [Main Integration Guide](*To do*).
-
-{: .label .label-red }
-Suscription to these notifications is mandatory for ES Partners.
-
-### Quota Status Link
-
-When a Quota is no longer available or a previously on-hold Quota becomes available/live, Toluna will broadcast this information to its Partners.
-
-{: .label .label-red }
-Suscription to these notifications is mandatory for ES Partners.
-
-> Please note: Subscribers will receive updates for all Quotas, not just those with which they are engaged. Partners should integrate in a manner in which non-relevant Quota updates are ignored.
 
 ## Sampling Rules
 
@@ -79,3 +60,12 @@ These rules can be consolidated into simple boolean conditions:
 
 In order to complete the ES Integrated experience, Toluna will issue notifications when conclive events occur within its system. To ensure the best possible experience and performance, Toluna required that its ES IP Partners host and API capable of consuming and activing upon its Member and Quota Status Notifications.
 
+
+{: .label .label-red }
+Suscription to these notifications is mandatory for ES Partners.
+
+
+{: .label .label-red }
+Suscription to these notifications is mandatory for ES Partners.
+
+> Please note: Subscribers will receive updates for all Quotas, not just those with which they are engaged. Partners should integrate in a manner in which non-relevant Quota updates are ignored.

@@ -4,6 +4,6 @@ has_children: true
 nav_order: 5
 ---
 
-# Notifications
+# Notification (aka Webhooks)
 
-Details 
+This describes several support processes Toluna will operate in the background of an ES integration.
