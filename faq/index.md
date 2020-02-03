@@ -68,7 +68,7 @@ The panelGUID and ES_AUTH_KEY will be issued once our RnD integrates the panel o
 
 > Note: If you are an existing IP Partner, then the ES option will be enable to your existing panel and the GUID will remain the same.
 
-What are Sampling rules? How do I Sample against a Quota?
+### What are Sampling rules? How do I Sample against a Quota?
 
 External Sample Partners must comply with Toluna’s sampling rules. To be sampled for a  Quota, each Member must:
 
@@ -78,7 +78,7 @@ External Sample Partners must comply with Toluna’s sampling rules. To be sampl
  - Match at least one (1) "AnswerID" (SubQuotaAttribute) per SubQuota with the single QuestionID
  - Match at least one (1) "AnswerID" (SubQuotaAttribute) per QuestionID in the SubQUota with multiple QuestionIDs
 
-For more details, please refer to the [Integration Details](https://josh-toluna.github.io/tolunaintegratedpaneldocs/externalsample/integrationdetails.html "Integration Details")
+For more details, please refer to the [Integration Details.](https://josh-toluna.github.io/tolunaintegratedpaneldocs/externalsample/integrationdetails.html "Integration Details")
 
 ---
 
