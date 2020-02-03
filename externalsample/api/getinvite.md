@@ -1,7 +1,7 @@
 ---
 title: Get Invite
 has_children: false
-parent: External Sample API
+parent: ES API
 grand_parent: External Sample
 nav_order: 2
 ---

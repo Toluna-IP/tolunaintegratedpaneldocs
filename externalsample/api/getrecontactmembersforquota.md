@@ -1,13 +1,13 @@
 ---
-title: GetRecontact Members For Quota
+title: Get Recontact Members For Quota
 has_children: false
-parent: External Sample API
+parent: ES API
 grand_parent: External Sample
 nav_order: 3
 ---
 
 
-## GetRecontact Members For Quota
+## Get Recontact Members For Quota
 
 content here 
 
