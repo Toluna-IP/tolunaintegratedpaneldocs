@@ -71,3 +71,14 @@ Content-Type: application/json; charset=utf-8
 | QuesitonAndAnswers.AnswerIDs |	```list<int>``` |	List of Toluna internal profile attribute identifiers. When sampling, at least one AnswerID must match. See mapping document for details |
 | QuestionAndAnswers.AnswerValues |	```string<int>``` |	List of Answer values of an open ended answers.Example: Custom Age values “18-100”, Postal codes, DMA and MSA. Note: “Age” will be range based. “DMA and MSA” will be comma separated Answer IDs. “Postal codes” will be comma separated postal code values. It can contain partial values. ‘Starts with’ must be applied to match it. API is limited to expose only first 1000 postal codes. |
 | QuestionAndAnswers.IsRoutable |	```boolean``` |	Indicates whether the question is Routable or not |
+
+
+
+
+**Example Quotas**
+
+[Example Quota with Multiple Layers](){: .btn }
+
+[Example Quota with Single Layer, SubQuota with Multple QuestionIDs](){: .btn }
+
+[Example Quota with Single lyaer, SubQuota with Single QuestionIDs](){: .btn}
