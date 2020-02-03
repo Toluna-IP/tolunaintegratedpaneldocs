@@ -65,7 +65,7 @@ Once Quota data is obtained, use your own sampling capability to match a Toluna 
 
 *Sample Request*
 ```json
-GET http://[APIROOT]/ExternalSample/{PanelGUID:Guid}/[MemberCode:string}/Invite/{QuotaID:int}
+GET http://[APIROOT]/ExternalSample/{PanelGUID:Guid}/{MemberCode:string}/Invite/{QuotaID:int}
 API_AUTH_KEY: {API_AUTH_KEY}
 cache-control: no-cache
 ```
