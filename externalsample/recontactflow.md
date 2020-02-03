@@ -1,8 +1,8 @@
 ---
 title: Recontact Flow
 has_children: true
-nav_order: 2
-parent: External Sample
+nav_order: 3
+parent: External Sample Offering
 ---
 
 

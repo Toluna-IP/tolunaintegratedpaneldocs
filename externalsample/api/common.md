@@ -11,10 +11,7 @@ nav_order: 5
 
 content here 
 
-
-
-
-### "Bad Request" Response Codes
+## Bad Request Response Codes
 
 | Result | ResultCode | Description |
 | :--- | :--- | :--- |

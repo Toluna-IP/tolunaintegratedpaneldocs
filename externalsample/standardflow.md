@@ -1,8 +1,8 @@
 ---
 title: Standard Flow
 has_children: true
-nav_order: 1
-parent: External Sample
+nav_order: 2
+parent: External Sample Offering
 ---
 
 

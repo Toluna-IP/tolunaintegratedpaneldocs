@@ -5,7 +5,7 @@ parent: Notifications
 nav_order: 4
 ---
 
-### B) Quota Status Notifications
+# Quota Status Notifications
 
 A new feature for the ES Integration, Toluna will deliver these notifications when one of its Quotas is not longer available for sompling or any of its perviously on-hold Quotas become available for sampling. 
 >A Partner must consume this event so that its sampling efforts can be discontinued when no longer viable.
