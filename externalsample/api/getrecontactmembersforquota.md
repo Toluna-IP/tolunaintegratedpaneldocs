@@ -2,7 +2,7 @@
 title: Get Recontact Members For Quota
 has_children: false
 parent: ES API
-grand_parent: External Sample
+grand_parent: External Sample Offering
 nav_order: 3
 ---
 
