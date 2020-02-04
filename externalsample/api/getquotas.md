@@ -7,7 +7,7 @@ nav_order: 1
 ---
 
 
-## Get Quotas Call
+## Get Quotas
 
 For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated Quotas in need of supply.
 
