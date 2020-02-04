@@ -105,12 +105,11 @@ GET http://{IP_ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:b
 | QuestionAndAnswers.IsRoutable |	```boolean``` |	Indicates whether the question is Routable or not |
 
 
-### Sample 200 Response
+### Examples
 
-[Sample 200 Response](){: .btn }
+#### [Get Quota 200 Response](){: .btn }
 
-
-### Sample 400 Response
+#### 400 Response
 ```json
 HTTP/1.1 400
 Content-Type: application/json; charset=utf-8
