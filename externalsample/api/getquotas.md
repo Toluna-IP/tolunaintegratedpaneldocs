@@ -11,7 +11,7 @@ nav_order: 1
 
 For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated Quotas in need of supply.
 
-{: label. .label-red}
+{: .label .label-red}
 IMPORTANT
 
 All requests made must include the Partner-specific GUID ```API_AUTH_KEY```. Contact your Toluna representative if you have not received this 
