@@ -12,11 +12,17 @@ parent: External Sample Offering
 * TOC
 {:toc}
 
+## Introduction / Conceptual Diagram
+
+The following is a conceptual representation of an ES Integration with Toluna. It describes components in a general manner and is not meant as instructions/requirements for the development of Partner infrastructure. Detailed instruction is found further in this page.
+
+![ES Integration Diagram](https://tolunaonline-my.sharepoint.com/personal/garret_mcdannald_toluna_com/Documents/Microsoft%20Teams%20Chat%20Files/Screenshot%202020-02-04%20at%2016.40.55.png "ES Integration Diagram")
+
 ---
 
 ## What is the Flow?
 
-Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses with its Partners. The first is the Standard Quota, similar to our traditional offerings, but with ES-specific parameters. The second kind is the Recontact Quota, the definition of which will be explained further below. Quota-specific flows can be found [here.](https://josh-toluna.github.io/tolunaintegratedpaneldocs/externalsample/api/ "ES API")
+Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses with its Partners. The first is the Standard Quota, similar to our traditional offerings, but with ES-specific parameters. The second kind is the Recontact Quota, the definition of which will be explained further below. Detailed information on the Standard Flow can be found [here.](https://josh-toluna.github.io/tolunaintegratedpaneldocs/externalsample/standardflow.html "Standard ES Flow")
 
 ---
 
@@ -24,11 +30,13 @@ Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses 
 
 At times, Tluna will seek to "reconnect" specific Members for a Quoa. Typically this is done to facilitate follow-up information for an original study. Since the target Members are already known, the partner has not requirement to sample its membership for the Quota. Instead, they query a Toluna API which will return the list of MemberCodes applicable for recontact. Once Obtained, the Partner should saple the list against the Recontact Quota to validate the targeting and generate an invite request for each match. From here, the process is identical to the interaction with a typical Quota.
 
+Detailed information on the Recontact Flow can be found [here.](https://josh-toluna.github.io/tolunaintegratedpaneldocs/externalsample/recontactflow.html "Recontact ES Flow")
+
 ---
 
 ## How is ES Different than other offerings?
 
-*To Do*
+Toluna’s “External Sample” (ES) capability is an integration option offered as part of the Integrated Panel program. Its adoption permits the Partner to receive near real-time details about Toluna’s open quotas. Once obtained, Partners can use their own sampling capabilities to target the most appropriate respondents. This differs from the traditional IP model where Toluna maintains complete control over the sampling, routing, and invitation processes.
 
 ---
 
