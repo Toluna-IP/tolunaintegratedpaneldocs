@@ -11,6 +11,8 @@ nav_order: 1
 
 For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated Quotas in need of supply.
 
+### Header
+
 {: .label .label-red }
 IMPORTANT
 
@@ -67,22 +69,19 @@ GET /ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:bool
 | QuestionAndAnswers.IsRoutable |	```boolean``` |	Indicates whether the question is Routable or not |
 
 ### Example Request
-```json
-GET http://{ES-Root-URL}/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/Quotas API_AUTH_KEY:XXXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX
-```
 
-### Possible Request
+[Example GetQuotasCall](){: .btn }
 
-| Name | GetQuotas |
+### Possible Request Responses
+
+| Code | Etiology, action |
 | :--- | :--- |
-|Description | For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated Quotas in need of supply. |
-| Route(s) | ``` GET /ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:bool``` |
-| Header(s) | ``` API_AUTH_KEY ``` A partner-specific GUID provided by Toluna that must accompany every request |
-| Parameters | <div class="table-wrapper"><table> <thead> <tr> <th style="text-align: left">Name</th> <th style="text-align: left">Type</th> <th style="text-align: left">Description</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">PanelGUID</td> <td style="text-align: left">Guid</td> <td style="text-align: left">A Toluna-issue unique identifier for a Partner’s culture-specific panel.</td> </tr> <tr> <td style="text-align: left">includeRoutables</td> <td style="text-align: left">bool</td> <td style="text-align: left">(Optional) Indicates whether to include Routable questions in the result or not. This will take precedence over the panel-level setting which is OFF by default. Opt in to set Panel-level setting to be ON.</td> </tr> </tbody> </table></div> |
-| Properties | N/A |
-| Sample Request | ``` GET http://{ES-Root-URL}/ExternalSample/96B52BEE-32FE-4A23-8FEE-821F6AAA5CA5/Quotas API_AUTH_KEY: 10B1BF48-F141-41CD-850F-4DE5A8BA44EB``` |
-| Sample 200 Response | Full request can be seen [here](https://josh-toluna.github.io/tolunaintegratedpaneldocs/externalsample/getquotasresponse.json "Sample 200 Response") |
-| Possible Request Response Codes | <table> <thead> <tr> <th style="text-align: left">Code</th> <th style="text-align: left">Etiology, actions</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">200</td> <td style="text-align: left">Request processed normally</td> </tr> <tr> <td style="text-align: left">400</td> <td style="text-align: left">Bad Request. See response for details</td> </tr> <tr> <td style="text-align: left">500</td> <td style="text-align: left">Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs</td> </tr> <tr> <td style="text-align: left">403</td> <td style="text-align: left">Forbidden: Invalid <code class="language-plaintext highlighter-rouge">API_AUTH_KEY</code> See response for details</td> </tr> </tbody> </table> |
+| 200 | Request processed normally |
+| 400 | Bad Request: See response for details |
+| 500 | Internal Error. An exception has occured while processing the request. Toluna likely has captured the details in its logs |
+| 403 | Forbidden: invalid API_AUTH_KEY. See response for details |
+
+
 
 ### Sample 400 Response
 ```json
