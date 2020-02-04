@@ -96,53 +96,6 @@ Click each button to open a new page with the JSON file for the specific example
 
 ## Notifications
 
-In order to complete the ES Integrated experience, Toluna will issue notifications when conclive events occur within its system. To ensure the best possible experience and performance, Toluna required that its ES IP Partners host and API capable of consuming and activing upon its Member and Quota Status Notifications.
+In order to complete the ES Integrated experience, Toluna will issue notifications when conclive events occur within its system. To ensure the best possible experience and performance, Toluna requires that its ES IP Partners host an API capable of consuming and activing upon its Member and Quota Status Notifications.
 
-### Member Status Notifications
-
-These are issued upon conclusion of a Partner Member’s experience with a Toluna Survey. Partners must consume them in order to understand the outcome of their Member’s invitation to the Survey. In general, they take two forms: Termination and Completion. Both are existing features of the Toluna IP System, and documentation regarding their details can be found in the standard integration guide. ES partners also get ‘QuotaID’ in their notifications.
-
-{: .label .label-green }
-Suscription to these notifications is strongly recommended for ES Partners.
-
-### Quota Status Notifications
-
-A new feature for the ES integration, Toluna will deliver these notifications when one of its Quotas is no longer available for sampling or any of its previously on-hold Quota becomes available for sampling. A Partner must consume this event so that its sampling efforts can be discontinued when no longer viable.
-
-Toluna will deliver this via HTTP POST when one of its Quotas is no longer available for sampling or any of its previously on-hold Quotas become available for sampling. It is the Partner’s responsibility to create an endpoint capable of consuming this information. 
-
->Please note that subscribers will receive updates for all Quotas, not just those with which they are engaged. Partners should construct their endpoint in a manner in which non-relevant Quota updates are ignored.
-
-{: .label .label-green }
-Suscription to these notifications is strongly recommended for ES Partners.
-
-#### Route
-
-Specified by Partner; Toluna will configure accordingly.
-
-#### HTTP Verb
-```POST```
-
-#### Example Request
-
-```POST [Partner-specified URL]```
-
-#### Example POST Content
-```json
- {
-  "QuotaID": 3445365,
-  "SurveyID": 45367678,
-  "WaveID": 45367678,
-  "IsLive": false,
-  "UpdateDateTimeUTC": “2018-10-22 19:58:42.99 +00:00“
- }
- ```
-#### Response Body Details
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| QuotaID | ```int``` | Toluna's unique identifier for a Quota |
-| SurveyID | ```int``` | Toluna's unique identifier for a Survey |
-| WaveID | ```int``` | Toluna's  unqiue identifier for a single iteration of a Survey. The SurveyID+WaveID is always unqiue |
-| IsLive | ```bool``` | Is the Quota currently capable of accepting Sample? |
-| UpdateDateTimeUTC | ```dateTime``` | The date/time, in UTC, of the quota status change |
+Detailed inforation on notifications can be found [here.](https://josh-toluna.github.io/tolunaintegratedpaneldocs/notifications/ "Notifications/Webhooks")
