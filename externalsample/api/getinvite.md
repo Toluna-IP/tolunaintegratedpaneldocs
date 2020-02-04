@@ -1,5 +1,5 @@
 ---
-title: Get Invite
+title: Generate Invite
 has_children: false
 parent: ES API
 grand_parent: External Sample Offering
@@ -7,33 +7,35 @@ nav_order: 2
 ---
 
 
-## Get Invite
+## Generate Invite
 
-content here 
+Once a Member has been matched to a Toluna Quota, this reoute can be used to generate an invitation.
+
+### Route
+
+```GET http:///{IP_ES_URL}/ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}```
 
 
+### Request Parameters
 
-**Generating Invite**
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| PanelGUID | Guid | A Toluna-issued unique identifier for a Partner's culture-specific panel | Yes |
+| MemberCode | string | Partner's unique identifier for the Member as define when registered with Toluna. The PanelGUID+MemberCode is always unique within the Toluna system | Yes |
+| QuotaID | int | Toluna's unqiue identifier for a Quota | Yes |
 
-*Description*: Once a Member has been matched to a Toluna Quota, this reoute can be used to generate an invitation.
+## Header(s) 
 
-*Route(s)*: ```GET /ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}```
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| API_AUTH_KEY | ```GUID``` | A Partner-specific GUID provided by Toluna | Yes |
 
-*Header(s)* ```API_AUTH_KEY```: A Partner-specifc GUID providen by Toluna that must accompany every request.
 
-*Parameters*
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| PanelGUID | Guid | A Toluna-issued unique identifier for a Partner's culture-specific panel |
-| MemberCode | string | Partner's unique identifier for the Member as define when registered with Toluna. The PanelGUID+MemberCode is always unique within the Toluna system |
-| QuotaID | int | Toluna's unqiue identifier for a Quota |
-
-*Properties*
+## Request Body Details
 
  - None
  
-*Responses*
+## Possible Request Responses
 
 | Code | Etiology, actions |
 | :--- | :--- |
@@ -42,30 +44,12 @@ content here
 | 500 | Internal Error: An exception occured while processing the request. Toluna likely has captured details in its logs |
 | 403 | Forbidden: Invalid API_AUTH_KEY. See response for details |
 
-*Sample Request*
-```json
-GET http://[APIROOT]/ExternalSample/{PanelGUID:Guid}/{MemberCode:string}/Invite/{QuotaID:int}
-API_AUTH_KEY: {API_AUTH_KEY}
-cache-control: no-cache
-```
+## Example Request
 
-*Sample 200 Response*
-```json
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
- {
-  "SurveyId": 2349720,
-  "WaveID": 34839308,
-  "QuotaID": 3445365,
-  "MemberAmount": 0.5,
-  "PartnerAmount": 1,
-  "URL": "http://[ROOT]/TrafficUI/MSCUI/Page.aspx?pgtid=20&od=kqe0mda072UagaQSVQIlgUX1QE4E41107",
-  "LOI": 5,
-  "IR": 40
- }
-```
+[Example GenerateInvite](){: .btn }
 
-*Response Properties*
+
+## Response Properties
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -78,7 +62,11 @@ Content-Type: application/json; charset=utf-8
 | LOI | int | Length of Interview at the time fo invite generation |
 | IR | int | Incidence Rate at the time fo invite generation |
 
-*Sample 400 Response*
+## Sample 200 Response
+
+[Sample 200 Response](){: .btn }
+
+## Sample 400 Response
 ```json
 HTTP/1.1 400
 Content-Type: application/json; charset=utf-8
@@ -87,3 +75,7 @@ Content-Type: application/json; charset=utf-8
   "ResultCode": 10
  }
 ```
+
+**OR**
+
+[Sample 400 Response](){: .btn }
