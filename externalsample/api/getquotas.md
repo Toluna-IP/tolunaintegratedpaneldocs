@@ -102,4 +102,4 @@ Content-Type: application/json; charset=utf-8
 
 **OR**
 
-[Sample 400 Response](){ .btn }
+[Sample 400 Response](){: .btn }
