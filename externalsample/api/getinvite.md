@@ -7,16 +7,26 @@ nav_order: 2
 ---
 
 
-## Generate Invite
+# Generate Invite
+{: .no_toc }
+
+* TOC
+[.toc}
+
+## Introduction
 
 Once a Member has been matched to a Toluna Quota, this reoute can be used to generate an invitation.
+
+---
+
+## Request
 
 ### Route
 
 ```GET http:///{IP_ES_URL}/ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}```
 
 
-### Request Parameters
+### Parameters
 
 | Name | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
@@ -24,18 +34,29 @@ Once a Member has been matched to a Toluna Quota, this reoute can be used to gen
 | MemberCode | ```string``` | Partner's unique identifier for the Member as define when registered with Toluna. The PanelGUID+MemberCode is always unique within the Toluna system | Yes |
 | QuotaID | ```int``` | Toluna's unqiue identifier for a Quota | Yes |
 
-## Header(s) 
+### Header(s) 
 
 | Name | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
 | API_AUTH_KEY | ```GUID``` | A Partner-specific GUID provided by Toluna | Yes |
 
 
-## Request Body Details
+### Body Details
 
  - None
+
+### Example Request
+```json
+GET http://{IP_ES_URL}/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/MyMemberCode/Invite/12345
+API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
+cache-control: no-cache
+```
+
+---
+
+## Responses
  
-## Possible Request Responses
+### Possible Codes
 
 | Code | Etiology, actions |
 | :--- | :--- |
@@ -44,12 +65,9 @@ Once a Member has been matched to a Toluna Quota, this reoute can be used to gen
 | 500 | Internal Error: An exception occured while processing the request. Toluna likely has captured details in its logs |
 | 403 | Forbidden: Invalid API_AUTH_KEY. See response for details |
 
-## Example Request
-
-[Example GenerateInvite](){: .btn }
 
 
-## Response Properties
+### Body Details
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -62,11 +80,25 @@ Once a Member has been matched to a Toluna Quota, this reoute can be used to gen
 | LOI | int | Length of Interview at the time fo invite generation |
 | IR | int | Incidence Rate at the time fo invite generation |
 
-## Sample 200 Response
+### Examples
 
-[Sample 200 Response](){: .btn }
+#### 200 Response
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+{
+ "SurveyId": 2349720,
+ "WaveID": 34839308,
+ "QuotaID": 3445365,
+ "MemberAmount": 0.5,
+ "PartnerAmount": 1,
+ "URL": "http://[ROOT]/TrafficUI/MSCUI/Page.aspx?pgtid=20&od=kqe0mda072UagaQSVQIlgUX1QE4E41107",
+ "LOI": 5,
+ "IR": 40
+}
+```
 
-## Sample 400 Response
+#### 400 Response
 ```json
 HTTP/1.1 400
 Content-Type: application/json; charset=utf-8
@@ -75,7 +107,3 @@ Content-Type: application/json; charset=utf-8
   "ResultCode": 10
  }
 ```
-
-**OR**
-
-[Sample 400 Response](){: .btn }
