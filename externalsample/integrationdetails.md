@@ -142,7 +142,7 @@ Specified by Partner; Toluna will configure accordingly.
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | QuotaID | ```int``` | Toluna's unique identifier for a Quota |
-| SurveyID | ```int``` | Toluna's ~~internal~~ unique identifier for a Survey |
-| WaveID | ```int``` | Toluna's ~~internal~~ unqiue identifier for a single iteration of a Survey. The SurveyID+WaveID is always unqiue |
+| SurveyID | ```int``` | Toluna's unique identifier for a Survey |
+| WaveID | ```int``` | Toluna's  unqiue identifier for a single iteration of a Survey. The SurveyID+WaveID is always unqiue |
 | IsLive | ```bool``` | Is the Quota currently capable of accepting Sample? |
 | UpdateDateTimeUTC | ```dateTime``` | The date/time, in UTC, of the quota status change |
