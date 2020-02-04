@@ -11,7 +11,9 @@ nav_order: 2
 {: .no_toc }
 
 * TOC
-{.toc}
+{:toc}
+
+---
 
 ## Introduction
 
