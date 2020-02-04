@@ -86,7 +86,7 @@ GET http://{IP-ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:b
 
 ### Sample 200 Response
 
-[Sample 200 Response](){ .btn }
+[Sample 200 Response](){: .btn }
 
 
 ### Sample 400 Response
