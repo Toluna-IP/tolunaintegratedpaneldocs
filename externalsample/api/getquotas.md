@@ -8,6 +8,7 @@ nav_order: 1
 
 
 # Get Quotas
+{: .no_toc }
 
 * TEST
 {:toc}
