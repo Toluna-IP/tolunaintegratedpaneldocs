@@ -8,7 +8,7 @@ nav_order: 3
 
 
 # Get Recontact Members For Quota
-{: .no-toc }
+{: .no_toc }
 
 * TOC
 {:toc}
