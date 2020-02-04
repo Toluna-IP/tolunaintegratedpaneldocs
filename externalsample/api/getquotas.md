@@ -9,10 +9,13 @@ nav_order: 1
 
 # Get Quotas
 
-For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated Quotas in need of supply.
-
-1. TEST
+* TEST
 {:toc}
+
+
+## Introduction
+
+For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated Quotas in need of supply.
 
 ---
 
@@ -24,7 +27,7 @@ For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated 
 GET http://{IP_ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:bool
 ```
 
-### Request Parameters
+### Parameters
 
 | Name | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
@@ -39,7 +42,7 @@ GET http://{IP_ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:b
 | API_AUTH_KEY | ```GUID``` | A Partner-specific GUID provided by Toluna | Yes |
 
 
-### Request Body Details
+### Body Details
 
  - None
 
@@ -47,7 +50,11 @@ GET http://{IP_ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:b
 
 [Example GetQuotasCall](){: .btn }
 
-### Possible Request Responses
+---
+
+## Response
+
+### Possible Codes
 
 | Code | Etiology, action |
 | :--- | :--- |
@@ -57,7 +64,7 @@ GET http://{IP_ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:b
 | 403 | Forbidden: invalid API_AUTH_KEY. See response for details |
 
 
-### Response Body Details
+### Body Details
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -111,7 +118,3 @@ Content-Type: application/json; charset=utf-8
    "ResultCode": 3
  }
 ```
-
-**OR**
-
-[Sample 400 Response](){: .btn }
