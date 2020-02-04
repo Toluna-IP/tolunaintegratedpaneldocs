@@ -121,7 +121,6 @@ Suscription to these notifications is strongly recommended for ES Partners.
 Specified by Partner; Toluna will configure accordingly.
 
 #### HTTP Verb
-
 ```POST```
 
 #### Example Request
