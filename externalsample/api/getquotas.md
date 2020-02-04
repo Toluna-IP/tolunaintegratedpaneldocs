@@ -50,8 +50,11 @@ GET http://{IP_ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:b
 
 ### Example Request
 
-[Example GetQuotasCall](){: .btn }
-
+```
+GET http://{IP_ES_URL}/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/Quotas
+API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
+cache-control: no-cache
+```
 ---
 
 ## Response
@@ -107,7 +110,7 @@ GET http://{IP_ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:b
 
 ### Examples
 
-#### [Get Quota 200 Response](){: .btn }
+#### [200 Response](){: .btn }
 
 #### 400 Response
 ```json
