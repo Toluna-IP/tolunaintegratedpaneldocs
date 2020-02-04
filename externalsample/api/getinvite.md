@@ -20,9 +20,9 @@ Once a Member has been matched to a Toluna Quota, this reoute can be used to gen
 
 | Name | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
-| PanelGUID | Guid | A Toluna-issued unique identifier for a Partner's culture-specific panel | Yes |
-| MemberCode | string | Partner's unique identifier for the Member as define when registered with Toluna. The PanelGUID+MemberCode is always unique within the Toluna system | Yes |
-| QuotaID | int | Toluna's unqiue identifier for a Quota | Yes |
+| PanelGUID | ```Guid``` | A Toluna-issued unique identifier for a Partner's culture-specific panel | Yes |
+| MemberCode | ```string``` | Partner's unique identifier for the Member as define when registered with Toluna. The PanelGUID+MemberCode is always unique within the Toluna system | Yes |
+| QuotaID | ```int``` | Toluna's unqiue identifier for a Quota | Yes |
 
 ## Header(s) 
 
