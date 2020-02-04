@@ -7,7 +7,7 @@ parent: External Sample Offering
 
 
 # ES Integration Details
-{: .no-toc }
+{: .no_toc }
 
 * TOC
 {:toc}
