@@ -34,6 +34,24 @@ GET http://{IP_ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:b
 
 ### Request Body Details
 
+ - None
+
+### Example Request
+
+[Example GetQuotasCall](){: .btn }
+
+### Possible Request Responses
+
+| Code | Etiology, action |
+| :--- | :--- |
+| 200 | Request processed normally |
+| 400 | Bad Request: See response for details |
+| 500 | Internal Error. An exception has occured while processing the request. Toluna likely has captured the details in its logs |
+| 403 | Forbidden: invalid API_AUTH_KEY. See response for details |
+
+
+### Response Body Details
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | CountryID |	```int``` |	Toluna’s unique identifier for the country in which the available Quotas are located. |
@@ -69,19 +87,6 @@ GET http://{IP_ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:b
 | QuesitonAndAnswers.AnswerIDs |	```list<int>``` |	List of Toluna internal profile attribute identifiers. When sampling, at least one AnswerID must match. See mapping document for details |
 | QuestionAndAnswers.AnswerValues |	```string<int>``` |	List of Answer values of an open ended answers.Example: Custom Age values “18-100”, Postal codes, DMA and MSA. Note: “Age” will be range based. “DMA and MSA” will be comma separated Answer IDs. “Postal codes” will be comma separated postal code values. It can contain partial values. ‘Starts with’ must be applied to match it. API is limited to expose only first 1000 postal codes. |
 | QuestionAndAnswers.IsRoutable |	```boolean``` |	Indicates whether the question is Routable or not |
-
-### Example Request
-
-[Example GetQuotasCall](){: .btn }
-
-### Possible Request Responses
-
-| Code | Etiology, action |
-| :--- | :--- |
-| 200 | Request processed normally |
-| 400 | Bad Request: See response for details |
-| 500 | Internal Error. An exception has occured while processing the request. Toluna likely has captured the details in its logs |
-| 403 | Forbidden: invalid API_AUTH_KEY. See response for details |
 
 
 ### Sample 200 Response
