@@ -11,12 +11,6 @@ nav_order: 1
 
 For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated Quotas in need of supply.
 
-### Header
-
-{: .label .label-red }
-IMPORTANT
-
-All requests made must include the Partner-specific GUID ```API_AUTH_KEY```. Contact your Toluna representative if you have not received this 
 
 ### Route
 ```
@@ -26,9 +20,17 @@ GET /ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:bool
 ### Request Parameters
 
 | Name | Type | Description | Required? |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :---: |
 | PanelGUID | ```Guid``` | A Toluna-issued unique identifier for a Partner’s culture-specific panel. | Yes |
 | IncludeRoutables | ```bool``` | (Optional) Indicates whether to include Routable questions in the result or not. This will take precedence over the panel-level setting which is OFF by default. Opt in to set Panel-level setting to be ON | No |
+
+
+### Header
+
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| API_AUTH_KEY | ```GUID``` | A Partner-specific GUID provided by Toluna | Yes |
+
 
 ### Request Body Details
 
@@ -93,6 +95,10 @@ Content-Type: application/json; charset=utf-8
    "ResultCode": 3
  }
 ```
+
+**OR**
+
+[Sample 400 Response](){ .btn }
 
 ### Response Properties
 
