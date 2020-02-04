@@ -7,17 +7,25 @@ nav_order: 3
 ---
 
 
-## Get Recontact Members For Quota
+# Get Recontact Members For Quota
+{: .no-toc }
+
+* {:toc}
+
+## Introduction
 
 For the requested Quota, returns a list of MemberCodes eligible for a recontact.
 
+---
+
+## Request
 
 ### Route 
 ```json
 GET http://{IP_ES_URL}/ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/MemberCodes?maxResults={maxResults:int}&lastMemberCodeReceived={lastMemberCodeReceived:string}
 ```
 
-### Request Parameters
+### Parameters
 
 | Name | Type | Description | Required? |
 | :--- | :-- | :--- | :---: |
@@ -32,14 +40,21 @@ GET http://{IP_ES_URL}/ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/M
 | :--- | :--- | :--- | :---: |
 | API_AUTH_KEY | ```GUID``` | A Partner-specific GUID provided by Toluna | Yes|
 
-### Request Body Details
+### Body Details
  - None
  
 ### Example Request
+```json
+GET http://{IP_ES_URL}/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/Recontact/12345/MemberCodes?maxResults=25&lastMemberCodeReceived=myLastResult
+API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
+cache-control: no-cache
+```
 
-[Example Request](){: .btn }
+---
 
-### Possible Request Responses
+## Responses
+
+### Possible Responses
 
 | Code | Etiology, actions |
 | :--- | :--- |
@@ -49,7 +64,7 @@ GET http://{IP_ES_URL}/ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/M
 | 403 | Forbidden: invalid API_AUTH_KEY. See response for details |
 
 
-### Response Body Details
+### Body Details
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -58,19 +73,29 @@ GET http://{IP_ES_URL}/ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/M
 | Member codes | ```list<string>``` | The MemberCodes Toluna would like to recontact for the Quota |
 
 
-### Sample 200 Response
+### Examples
 
-[Sample 200 Response](){: .btn }
+#### 200 Response
+```json
+
 
 ### Sample 400 Response
 ```json
 HTTP/1.1 400
 Content-Type: application/json; charset=utf-8
+
  {
   "Result": "NO_QUOTA_ID",
   "ResultCode": 10
  }
 ```
-**OR**
 
-[Sample 400 Response](){: .btn }
+#### 400 Response
+```json
+HTTP/1.1 400
+Content-Type: application/json; charset=utf-8
+
+{
+ "Result": "NO_QUOTA_ID",
+ "ResultCode": 10
+}
