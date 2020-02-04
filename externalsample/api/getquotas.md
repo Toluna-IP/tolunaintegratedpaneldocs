@@ -22,7 +22,7 @@ GET http://{IP-ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:b
 | Name | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
 | PanelGUID | ```Guid``` | A Toluna-issued unique identifier for a Partner’s culture-specific panel. | Yes |
-| IncludeRoutables | ```bool``` | (Optional) Indicates whether to include Routable questions in the result or not. This will take precedence over the panel-level setting which is OFF by default. Opt in to set Panel-level setting to be ON | No |
+| IncludeRoutables | ```bool``` | Indicates whether to include Routable questions in the result or not. This will take precedence over the panel-level setting which is OFF by default. Opt in to set Panel-level setting to be ON | No |
 
 
 ### Header
