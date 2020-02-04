@@ -1,6 +1,7 @@
 
 # Introduction
 
+![test](http://g.recordit.co/pcxBSHFHA7.gif)
 
 ## trackers
 
