@@ -110,7 +110,9 @@ cache-control: no-cache
 
 ### Examples
 
-#### [200 Response](){: .btn }
+#### 200 Response
+
+[Click Here to Access JSON File](){: .btn }
 
 #### 400 Response
 ```json
