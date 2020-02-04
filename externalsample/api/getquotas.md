@@ -25,10 +25,10 @@ GET /ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:bool
 
 ### Request Parameters
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| PanelGUID | ```Guid``` | A Toluna-issued unique identifier for a Partner’s culture-specific panel. |
-| IncludeRoutables | ```boool``` | (Optional) Indicates whether to include Routable questions in the result or not. This will take precedence over the panel-level setting which is OFF by default. Opt in to set Panel-level setting to be ON |
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :--- |
+| PanelGUID | ```Guid``` | A Toluna-issued unique identifier for a Partner’s culture-specific panel. | Yes |
+| IncludeRoutables | ```bool``` | (Optional) Indicates whether to include Routable questions in the result or not. This will take precedence over the panel-level setting which is OFF by default. Opt in to set Panel-level setting to be ON | No |
 
 ### Request Body Details
 
