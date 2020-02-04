@@ -9,35 +9,37 @@ nav_order: 3
 
 ## Get Recontact Members For Quota
 
-content here 
-
-
-##### GET RecontactMembersForQuota
-
 For the requested Quota, returns a list of MemberCodes eligible for a recontact.
 
-*Route(s)* 
+
+### Route 
 ```json
-GET /ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/MemberCodes?maxResults={maxResults:int}&lastMemberCodeReceived={lastMemberCodeReceived:string}
+GET http://{IP_ES_URL}/ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/MemberCodes?maxResults={maxResults:int}&lastMemberCodeReceived={lastMemberCodeReceived:string}
 ```
-*Header(s)*
 
-```API_AUTH_KEY: A Partner-specific GUID prvoided by Toluna that must accompany every request```
+### Request Parameters
 
-*Parameters*
+| Name | Type | Description | Required? |
+| :--- | :-- | :--- | :---: |
+| panelGUID | ```Guid``` | A Toluna-issued unique identifier for a Partner's culture-specific panel | Yes |
+| quotaID | ```int``` | Tluna's unique identifier for a Quota | Yes |
+| maxResult| ```int``` | The maximum number of MemberCodes that will be returned for the request. If not provided, defaults to a Toluna-configurable value (for, v0.1:10000) | No |
+| lastMemberCodeReceived | ```string``` | When dealing with batched results for a single Quota, supply this value to signal the last result received. The batch results will start with the MemberCode AFTER this value. Note that MemberCodes for recontact are ordered alphanumerically | No |
 
-| Name | Type | Description |
-| :--- | :-- | :--- |
-| panelGUID | Guid | A Toluna-issued unique identifier for a Partner's culture-specific panel |
-| quotaID | int | Tluna's unique identifier for a Quota |
-| [OPTIONAL] The maximum number of MemberCodes that will be returned for the request. If not provided, defaults to a Toluna-configurable value (for, v0.1:10000) |
-| lastMemberCodeReceived | string | [OPTIONAL] When dealing with batched results for a single Quota, supply this value to signal the last result received. The batch results will start with the MemberCode AFTER this value. Note that MemberCodes for recontact are ordered alphanumerically |
+### Header
 
-*Properties*
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| API_AUTH_KEY | ```GUID``` | A Partner-specific GUID provided by Toluna | Yes|
 
+### Request Body Details
  - None
  
-*Responses*
+### Example Request
+
+[Example Request](){: .btn }
+
+### Possible Request Responses
 
 | Code | Etiology, actions |
 | :--- | :--- |
@@ -46,30 +48,21 @@ GET /ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/MemberCodes?maxResu
 | 500 | Internal Error. An exception occurred while processing this request. Toluna has likely captured details in its logs |
 | 403 | Forbidden: invalid API_AUTH_KEY. See response for details |
 
-*Sample Request*
-```json
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
- {
-  "MaxResults": 25,
-  "HasAdditionalMembers": false,
-  "MemberCodes": [
-    "MemberCode1",
-    "MemberCode2",
-    "MemberCode3"
-  ]
- }
-```
 
-*Response Properties*
+### Response Body Details
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| MaxResults | int | The number of MemberCodes included in the response |
+| MaxResults | ```int``` | The number of MemberCodes included in the response |
 | HasAdditionalMembers | bool | When true, the Quota has more MemberCodes for recontact. Obtain them by repeating the request with the "lastMemberCodeReceived" parameter. |
 | Member codes | ```list<string>``` | The MemberCodes Toluna would like to recontact for the Quota |
 
-*Sample 400 Response*
+
+### Sample 200 Response
+
+[Sample 200 Response](){: .btn }
+
+### Sample 400 Response
 ```json
 HTTP/1.1 400
 Content-Type: application/json; charset=utf-8
@@ -78,3 +71,6 @@ Content-Type: application/json; charset=utf-8
   "ResultCode": 10
  }
 ```
+**OR**
+
+[Sample 400 Response](){: .btn }
