@@ -7,40 +7,51 @@ nav_order: 1
 ---
 
 
-## Adding a Member (POST)
+# Adding a Member (POST)
+{: .no_toc }
+
+* TOC
+{:toc}
+
+---
+
+## Introduction
 
 A partner can add new members to the Toluna IP Database using an HTTP POST. This must be done by the partner before requesting or receiving survey opportunity links.
 
- 
+---
+
+## Request
+
 ### Route
 
 ```plaintext
 POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 ```
 
-### Request Parameters
+### Parameters
 
  - None
 
-### Request Body Details
+### Body Details
 
-| Property | Description                                                     |
-| :--------| :--- |
-| PartnerGUID | Unique Partner Code (Please request from Toluna if you don’t have one) |
-| MemberCode | Unique Respondent Code from the Partner |
-| Active | (Optional) Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool. |
-| GenderID | (Optional) Values from the data mapping file |
-| EducationID | (Optional) Values from the data mapping file |
-| IncomeID | (Optional) Values from the data mapping file |
-| EthnicityID | (Optional) Values from the data mapping file |
-| RaceID | (Optional) Values from the data mapping file |
-| SubProvinceID | (Optional) Values from the data mapping file |
-| Email | (Optional) |
-| BirthDate | (Optional) MM/DD/YYYY format |
-| PostalCode | (Optional) |
-| IsTest | (Optional) Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. |
+| Property | Description | Required? |
+| :--------| :--- | :---: |
+| PartnerGUID | Unique Partner Code (Please request from Toluna if you don’t have one) | Yes |
+| MemberCode | Unique Respondent Code from the Partner | Yes |
+| Active | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool. | No |
+| GenderID | Values from the data mapping file | No |
+| EducationID | Values from the data mapping file | No |
+| IncomeID | Values from the data mapping file | No |
+| EthnicityID | Values from the data mapping file | No |
+| RaceID | Values from the data mapping file | No |
+| SubProvinceID | Values from the data mapping file | No |
+| Email | Member email | No |
+| BirthDate | MM/DD/YYYY format | No |
+| PostalCode | Member postal code | No |
+| IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. | No |
 
-### Example Request
+### Example
 
  ```json
 {
@@ -59,7 +70,11 @@ POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 }
 ```
 
-### Possible Request Responses
+---
+
+## Responses
+
+### Possible Codes
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
