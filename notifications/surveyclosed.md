@@ -7,7 +7,7 @@ nav_order: 3
 
 
 # Survey Closed Notifications 
-{: .no_toc |
+{: .no_toc }
 
 * TOC
 {:toc}
