@@ -32,6 +32,9 @@ POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 ### Parameters
 
  - None
+ 
+### Header
+ - None
 
 ### Body Details
 
@@ -108,4 +111,3 @@ POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
  "SubProvinceID": "3091832"
 }
 ```
----
