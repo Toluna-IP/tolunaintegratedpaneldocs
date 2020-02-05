@@ -7,45 +7,58 @@ nav_order: 3
 ---
 
 
-## Member Update / PUT
+# Member Update / PUT (v2)
+{: .no_toc}
+
+* TOC
+{:toc}
+
+---
+
+## Introduction
 
 Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberCode” are required. Combine them with optional properties to update a Member according to your requirements.
 
-### Headers
+---
 
-{: .label .label-red}
-IMPORTANT
+## Request
 
-All requests made using Dynamic member management (v2) must include the following header:
-```json
-Accept: application/json;version=2.0
+### Route
+```plaintext
+**PUT** http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 ```
 
 ### Request Parameters
 
- - None
- 
+ - None 
 
-### Request Details
+### Headers
 
-| Property | Description |
-| :--- | :--- |
-| PartnerGUID | Unique Partner Code (Please request from Toluna if you don’t have one) |
-| MemberCOde | Unique Respondent Code from the Partner |
-| IsActive | (Optional) Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.|
-| Email | (Optional) NOTE: When Supplied, this must have a valid email format |
-| BirthDate | (Optional) MM/DD/YYYY format |
-| PostalCode | (Optional) |
-| IsTest | (Optional) Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. |
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| ```Accept: application/json;version=2.0``` | ```string``` | Declaration of api version | Yes |
 
- 
-### Route
 
-```plaintext
-PUT http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
-```
+### Body Details
 
-### Possible Responses
+| Property | Description | Type | Required? |
+| :--- | :--- | :--- | :---: |
+| PartnerGUID | ```GUID``` | Unique Partner Code (Please request from Toluna if you don’t have one) | Yes |
+| MemberCOde | ```string``` | Unique Respondent Code from the Partner | Yes |
+| IsActive | ```bool``` | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.| No |
+| Email | ```string``` | Member email. NOTE: When Supplied, this must have a valid email format | No |
+| BirthDate | ```string``` | MM/DD/YYYY format | No |
+| PostalCode | ```int``` | Member postal code | No |
+| IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
+
+### Examples
+*To do*
+
+---
+
+## Response
+
+### Possible Codes
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
@@ -53,6 +66,18 @@ PUT http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 | 400 | Bad Request. Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
 | 404 | Not Found. An attempt to update a Member that does not exist. Existence is determined by the combination of MemberCode and PartnerGUID |
 | 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
+
+### Body Details
+
+| Property | Description |
+| :--- | :--- |
+| PartnerGUID | Unique Partner Code (Please request from Toluna if you don’t have one) |
+| MemberCOde | Unique Respondent Code from the Partner |
+| IsActive | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.|
+| Email | Member email. NOTE: When Supplied, this must have a valid email format |
+| BirthDate | MM/DD/YYYY format |
+| PostalCode | Member postal code |
+| IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing |
 
 
 ### Notes
