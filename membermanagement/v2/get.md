@@ -8,38 +8,51 @@ nav_order: 2
 
 
 
-## Member Get
+# Member Get
+{: .no_toc}
+
+* TOC
+{:toc}
+
+---
+
+## Introduction
+
 Adds new Members to the Toluna IP database using an HTTP POST
 
 URL to **GET** member info: http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 
+---
 
-### Headers
-
-{: .label .label-red}
-IMPORTANT
-
-All requests made using Dynamic member management (v2) must include the following header:
-```json
-Accept: application/json;version=2.0
-```
-
-### Request Parameters
-
-| Name | Description |
-| :--- | :--- |
-| memberCode | Unique Respondent Code from the Partner |
-| partnerGUID | Unique Partner Code (Please request this from Toluna if you don't have one) |
-
-
-
+## Request
 
 ### Route
 ```plaintext
-GET http://{IP-Core-URL}/IntegratedPanelService/api/Respondent/?memberCode={memberCode}&partnerGUID={partnerGUID}
+**GET** http://{IP-Core-URL}/IntegratedPanelService/api/Respondent/?memberCode={memberCode}&partnerGUID={partnerGUID}
 ```
 
-### Possible Request Responses
+### Parameters
+
+| Name | Description | Required? |
+| :--- | :--- | :---: |
+| memberCode | Unique Respondent Code from the Partner | Yes |
+| partnerGUID | Unique Partner Code (Please request this from Toluna if you don't have one) | Yes |
+
+### Headers
+
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| ```Accept: application/json;version=2.0``` | ```string``` | Declaration of api version | Yes |
+
+
+### Body Details 
+ - None
+
+---
+
+## Response
+
+### Possible Codes
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
@@ -47,7 +60,21 @@ GET http://{IP-Core-URL}/IntegratedPanelService/api/Respondent/?memberCode={memb
 | 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
 | 500 | Internal Error. An exception occurrec while processing the request. Contact Toluna for resolution. Toluna will likely have the details caputred in its logs |
 
-### Example Response
+### Body Details
+
+| Property | Description |
+| :--- | :--- |
+| PartnerGUID | Unique Parnter Code (Please request from Toluna if you don't have one) |
+| MemberCode | Unique Respondent Code from the Partner |
+| IsActive | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool |
+| Email | Member email. NOTE: when supplied, this must have a valid email format |
+| BirthDate | MM/DD/YYYY format |
+| PostalCode | Member postal code |
+| IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing |
+| IsPIIDataRegulated | Defaults FALSE. When TRUE, all personally identifiable information is removed |
+| AnsweredQuestions | A collection of 0:M demographic Question and Answer ID pairs, |
+
+### Example
 ```
  {
   "PartnerGUID": "93A6D55C-D4E7-49FC-8D68-671165ADE463",
