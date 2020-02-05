@@ -7,37 +7,62 @@ nav_order: 2
 ---
 
 
-## Member GET (v1)
+# Member GET (v1)
+{: .no_toc |
+
+* TOC
+{:toc}
+
+---
+
+## Introduction
 
 A partner can receive details for members in the Toluna IP database using an HTTP **GET**.
 
-URL to **GET** new member info: http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+---
 
+## Request
+
+### Route
+
+```GET http://{IP-Core-URL}/IntegratedPanelService/api/Respondent```
 
 
 ### Parameters:
+
+| Name | Description | Required? |
+| :--- | :--- | :---: |
+| memberCode | Unique Respondent Code from the Partner | Yes |
+| partnerGuid | Unique Partner Code | Yes |
+
+### Header
+
+ - None
  
-The following parameters are required for MemberGET
+### Body Details
 
-| Name        | Description          |
-| :------------- | :------------------ |
-| memberCode           | Unique Respondent Code from the Partner |
-| partnerGuid | Unique Partner Code   |
+ - None
+ 
+### Example
+```json
+GET http://{IP_Core_URL}/IntegratedPanelService/api/Respondent/?memberCode={MemberCode}&partnerGuid={partnerGUID}
+```
 
+---
 
+## Responses
 
-### Route:
-
- - GET http://{IP-Core-URL/IntegratedPanelService/api/Respondent/?memberCode={memberCode}&partnerGuid={partnerGUID}
-
-
-### Possible Responses
+### Possible Codes
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
 | 200 | OK. Request processed normally, existing Member Panelist was updated without issue |
 | 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
 | 500 | Internal Error. An exception occured while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs | 
+
+### Body Details
+
+*To do*
 
 ### Example Response:
 ``` 
