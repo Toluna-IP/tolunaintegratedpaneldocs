@@ -7,5 +7,54 @@ nav_order: 3
 
 
 # Survey Closed Notifications 
+{: .no_toc |
 
-content
+* TOC
+{:toc}
+
+---
+
+## Introduction
+
+Toluna provides a notification service to alert the partner when a survey closes. This helps the partner to manage the panelist experience by preventing the panelist from attempting to enter a survey that is no longer available.
+
+### Route
+```json
+**POST** http://myPartnerApi/TolunaNotify
+```
+
+### Notiication Body Details
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| SurveyID | ```int``` | Tuluna Survey identifier |
+| SurveyRef | ```string``` | Toluna Survey name |
+| Status | ```string``` | Toluna Survey status - Always "Closed" |
+| DateTime | ```string``` | Date and time the Survey was closed. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
+| WaveID | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member experiences as unique surveys. SurveyID+WaveID will always be unique |
+
+>Note: v2.1 required Partners to opt-in to the WaveID feature. It will not appear by default.
+
+### Example XML Notification
+```xml
+<?xml version="1.0"?>
+<survey xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <SurveyId>99</SurveyId>
+   <SurveyRef>123560-US</SurveyRef>
+   <Status>Closed</Status>
+   <DateTime>2014-09-11 16:06:27</DateTime>
+   <WaveId>100</WaveId>
+</survey>
+```
+
+### Example JSON Notification
+```json
+{
+ "SurveyID": 99,
+ "SurveyRef": "123560-US",
+ "Status": "Closed",
+ "DateTime": "2014-09-11 16:06:27"
+ "WaveId": 100
+}
+```
