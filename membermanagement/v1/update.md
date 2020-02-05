@@ -8,7 +8,7 @@ nav_order: 3
 
 
 # Member Update (PUT)
-{: .no_toc |
+{: .no_toc }
 
 * TOC
 {:toc}
