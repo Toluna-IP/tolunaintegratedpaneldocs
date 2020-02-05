@@ -8,7 +8,12 @@ nav_order: 2
 
 # V2 - Dynamic
 
-Version 2 of the Member API is focused on speed, simplicity, improved support for demographic characteristics. It’s “closer to the metal” of the underlying Toluna Panel Management System and is optimized to remove internal dependencies. To the Partner, it’s faster and has more capability. It is independent of Static v1 and is managed separately. For the time being, both versions will continue to exist and be supported. To access v2 of a route, supply the “Accept” header in your request as directed below.
+Version 2 of the Member API is focused on speed, simplicity, improved support for demographic characteristics. It’s “closer to the metal” of the underlying Toluna Panel Management System and is optimized to remove internal dependencies. To the Partner, it’s faster and has more capability. It is independent of Static v1 and is managed separately. For the time being, both versions will continue to exist and be supported. 
+
+{: .label .label-red }
+IMPORTANT
+
+To access v2 of a route, supply the “Accept” header in your request as directed in the "Add Member," "Get Member," and "Update Member" pages. **This header is required for all Dynamic API Management calls.**
 
 ## Question / AnswerIDs
 
