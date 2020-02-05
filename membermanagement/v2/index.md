@@ -13,7 +13,7 @@ Version 2 of the Member API is focused on speed, simplicity, improved support fo
 {: .label .label-red }
 IMPORTANT
 
-To access v2 of a route, supply the “Accept” header in your request as directed in the "Add Member," "Get Member," and "Update Member" pages. **This header is required for all Dynamic API Management calls.**
+To access v2 of a route, supply the “Accept” header in your request as directed in the "Add Member," "Get Member," and "Update Member" pages. **This header is required for all Dynamic API Management routes.**
 
 ## Question / AnswerIDs
 
