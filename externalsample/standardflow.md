@@ -10,8 +10,8 @@ parent: External Sample Offering
 
 ##### Real-Time Flow Diagram
 
-![ES Standard Flow](https://tolunaonline-my.sharepoint.com/personal/joshua_austin_toluna_com/Documents/Microsoft%20Teams%20Chat%20Files/IP%20Flow%20Diagrams%20(2).png)
-
+![ES Standard Flow](https://github.com/josh-toluna/tolunaintegratedpaneldocs/blob/master/resources/flows/IP%20Flow%20Diagrams-ES%20Standard%20Flow.png?raw=true)
+)
 
 ##### Get Quotas
 
