@@ -44,7 +44,7 @@ Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberC
 | Property | Description | Type | Required? |
 | :--- | :--- | :--- | :---: |
 | PartnerGUID | ```GUID``` | Unique Partner Code (Please request from Toluna if you don’t have one) | Yes |
-| MemberCOde | ```string``` | Unique Respondent Code from the Partner | Yes |
+| MemberCode | ```string``` | Unique Respondent Code from the Partner | Yes |
 | IsActive | ```bool``` | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.| No |
 | Email | ```string``` | Member email. NOTE: When Supplied, this must have a valid email format | No |
 | BirthDate | ```string``` | MM/DD/YYYY format | No |
@@ -72,7 +72,7 @@ Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberC
 | Property | Description |
 | :--- | :--- |
 | PartnerGUID | Unique Partner Code (Please request from Toluna if you don’t have one) |
-| MemberCOde | Unique Respondent Code from the Partner |
+| MemberCode | Unique Respondent Code from the Partner |
 | IsActive | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.|
 | Email | Member email. NOTE: When Supplied, this must have a valid email format |
 | BirthDate | MM/DD/YYYY format |
