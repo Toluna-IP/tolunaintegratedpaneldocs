@@ -10,7 +10,7 @@ parent: External Sample Offering
 
 ##### Real-Time Flow Diagram
 
-![ES Flow](https://upload.wikimedia.org/wikipedia/en/8/84/Flo_from_Progressive_Insurance.jpg)
+![ES Standard Flow](https://tolunaonline-my.sharepoint.com/personal/joshua_austin_toluna_com/Documents/Microsoft%20Teams%20Chat%20Files/IP%20Flow%20Diagrams%20(2).png)
 
 
 ##### Get Quotas
