@@ -7,43 +7,54 @@ nav_order: 1
 ---
 
 
-## Member Add / POST
+# Member Add / POST (v2)
+{: .no_toc}
 
-### Headers
+* TOC
+{:toc}
 
-{: .label .label-red }
-IMPORTANT
+---
 
-All requests made using Dynamic member management (v2) must include the following header:
-```json
-Accept: application/json;version=2.0
-```
+## Introduction
+
+A partner can add new members to the Toluna IP Database using an HTTP POST. This must be done by the partner before requesting or receiving survey opportunity links. 
+
+This request is almost an exact parallel to that in the Static Member Management section, with a few key differences. The most important being the Header, shown below.
+
+---
+
+## Request
 
 ### Route
-
 ```plaintext
-POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+**POST** http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 ```
 
 ### Request Parameters
  - None
- 
 
-### Request Body Details
+### Headers
 
-| Property | Description |
-| :--- | :--- |
-| PartnerGUID | Unique Parnter Code (Please request from Toluna if you don't have one) |
-| MemberCode | Unique Respondent Code from the Partner |
-| IsActive | (Optional) Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool |
-| Email | (Optional) NOTE: when supplied, this must have a valid email format |
-| BirthDate | (Optional) MM/DD/YYYY format |
-| PostalCode | (Optional) |
-| IsTest | (Optional) Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. |
-| IsPIIDataRegulated | (Optional) Defaults FALSE. When TRUE, all personally identifiable information is removed. |
-| AnsweredQuestions | (Optional) A collection of 0:M demographic Question and Answer ID pairs, |
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| ```Accept: application/json;version=2.0``` | ```string``` | Declaration of api version | Yes |
 
-### Example Request
+
+### Body Details
+
+| Property | Description | Required? |
+| :--- | :--- | :---: |
+| PartnerGUID | Unique Parnter Code (Please request from Toluna if you don't have one) | Yes |
+| MemberCode | Unique Respondent Code from the Partner | Yes |
+| IsActive | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool | Yes |
+| Email | Member email. NOTE: when supplied, this must have a valid email format | No |
+| BirthDate | MM/DD/YYYY format | No |
+| PostalCode | Member postal code | No |
+| IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
+| IsPIIDataRegulated | Defaults FALSE. When TRUE, all personally identifiable information is removed | No |
+| AnsweredQuestions | A collection of 0:M demographic Question and Answer ID pairs, | No |
+
+### Example
 
 ```json
 {
@@ -66,8 +77,12 @@ POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 }
 ```
 
+---
 
-### Possible Request Responses
+## Response
+
+
+### Possible Codes
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
@@ -76,12 +91,23 @@ POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 | 409 | Conflict. An attempt to add a Member that already exists. Duplication is determined by the combination of MemberCode and PartnerGUID |
 | 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
 
+### Body Details
+
+| Property | Description |
+| :--- | :--- |
+| PartnerGUID | Unique Parnter Code (Please request from Toluna if you don't have one) |
+| MemberCode | Unique Respondent Code from the Partner |
+| IsActive | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool |
+| Email | Member email. NOTE: when supplied, this must have a valid email format |
+| BirthDate | MM/DD/YYYY format |
+| PostalCode | Member postal code |
+| IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing |
+| IsPIIDataRegulated | Defaults FALSE. When TRUE, all personally identifiable information is removed |
+| AnsweredQuestions | A collection of 0:M demographic Question and Answer ID pairs, |
+
 
 ### Notes
 
 > - Only new Members can be added. To update, use the PUT route noted below
 > - Invalid Property data typically returns a 400 response that contains explanation for the rejection
-
-### Examples
-**To-do** add more examples where partner adds member with varying properties
 
