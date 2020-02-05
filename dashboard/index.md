@@ -16,6 +16,12 @@ Toluna provides a RESTful way to get surveys to display to your panel on your ow
 
 ---
 
+## Flow Diagram
+
+![Dashboard Flow Diagram](https://github.com/josh-toluna/tolunaintegratedpaneldocs/blob/master/resources/flows/IP%20Flow%20Diagrams-Dashboard.png?raw=true)
+
+---
+
 ## Request
 
 ### Route
