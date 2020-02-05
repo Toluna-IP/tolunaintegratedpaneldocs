@@ -11,7 +11,7 @@ parent: External Sample Offering
 
 ##### recontcat Flow Diagram
 
-![Recontact Flow](https://via.placeholder.com/150)
+![Recontact Flow](https://github.com/josh-toluna/tolunaintegratedpaneldocs/blob/master/resources/flows/IP%20Flow%20Diagrams-ES%20Recontact%20Flow.png?raw=true)
 
 ##### Recontact Quotas
 
