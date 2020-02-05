@@ -8,7 +8,7 @@ nav_order: 2
 
 
 # Member GET (v1)
-{: .no_toc |
+{: .no_toc }
 
 * TOC
 {:toc}
