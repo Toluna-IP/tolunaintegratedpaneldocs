@@ -62,17 +62,17 @@ URL to **GET** member info: http://{IP-Core-URL}/IntegratedPanelService/api/Resp
 
 ### Body Details
 
-| Property | Description |
-| :--- | :--- |
-| PartnerGUID | Unique Parnter Code (Please request from Toluna if you don't have one) |
-| MemberCode | Unique Respondent Code from the Partner |
-| IsActive | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool |
-| Email | Member email. NOTE: when supplied, this must have a valid email format |
-| BirthDate | MM/DD/YYYY format |
-| PostalCode | Member postal code |
-| IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing |
-| IsPIIDataRegulated | Defaults FALSE. When TRUE, all personally identifiable information is removed |
-| AnsweredQuestions | A collection of 0:M demographic Question and Answer ID pairs, |
+| Property | Description | Type | Required? |
+| :--- | :--- | :--- | :---: |
+| PartnerGUID | ```GUID``` | Unique Partner Code (Please request from Toluna if you don’t have one) | Yes |
+| MemberCode | ```string``` | Unique Respondent Code from the Partner | Yes |
+| IsActive | ```bool``` | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.| No |
+| Email | ```string``` | Member email. NOTE: When Supplied, this must have a valid email format | No |
+| BirthDate | ```string``` | MM/DD/YYYY format | No |
+| PostalCode | ```int``` | Member postal code | No |
+| IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
+| IsPIIDataRegulated | ```bool``` | Defaults FALSE. When TRUE, all personally identifiable information is removed | No |
+| AnsweredQuestions | ```string``` | A collection of 0:M demographic Question and Answer ID pairs, | No |
 
 ### Example
 ```
