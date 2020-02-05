@@ -7,35 +7,93 @@ nav_order: 3
 ---
 
 
-## Member Update (PUT)
+# Member Update (PUT)
+{: .no_toc |
+
+* TOC
+{:toc}
+
+---
+
+## Introduction
 
 Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberCode” are required. Combine them with optional properties to update a Member according to your requirements.
+
+---
+
+## Request
+
+### Route
+```json
+**PUT** http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+```
 
 ### Parameters
  - None
  
-### Request Details
+### Body Details
 
-| Property | Description |
-| :--- | :--- |
-| PartnerGUID | Unique Partner Code (Please request from Toluna if you don't have one |
-| MemberCode | Unique Respondent Code from the Partner (alphanumeric 256 character limit |
-| Active | (Optional) Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool |
-| GenderID | (Optional) Values from the data mapping file |
-| EducastionID | (Optional) Values from the data mapping file |
-| EthicityID | (Optional) Values from the data mapping file |
-| RaceID | (Optional) Values from the data mapping file |
-| SubProvinceID | (Optional) Values from the data mapping file |
-| Email | (Optional) |
-| BirthDate | (Optional) MM/DD/YYYY format |
-| PostalCode | (Optional) |
-| IsTest | (Optional) Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing. |
-| IsPIIDataRegulated | (Optional) Defaults FALSE. When TRUE, all personally identifiable information is removed. |
+| Property | Description | Required? |
+| :--- | :--- | :---: |
+| PartnerGUID | Unique Partner Code (Please request from Toluna if you don't have one | Yes |
+| MemberCode | Unique Respondent Code from the Partner (alphanumeric 256 character limit | Yes |
+| Active | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool | No |
+| GenderID | Values from the data mapping file | No |
+| EducastionID | Values from the data mapping file | No |
+| EthicityID | Values from the data mapping file | No |
+| RaceID | Values from the data mapping file | No |
+| SubProvinceID | Values from the data mapping file | No |
+| Email | Member email | No |
+| BirthDate | MM/DD/YYYY format | No |
+| PostalCode | Member postal code | No |
+| IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
+| IsPIIDataRegulated | Defaults FALSE. When TRUE, all personally identifiable information is removed. | No |
 
-### Route
-**PUT** http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+### Example
 
-### Possible Responses
+>All examples below shown in JSON
+
+#### Deactivate Member
+```json
+{
+ "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+ "MemberCode": "111",
+ "Active": "false"
+}
+```
+
+#### Change Email
+```json
+{
+ "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+ "MemberCode": "111",
+ "Email": "test@test.com"
+}
+```
+
+#### Use Member for Testing
+```json
+{
+ "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+ "MemberCode": "111",
+ "IsTest": "true"
+}
+```
+
+#### Remove Personal Information
+```json
+{
+ "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+ "MemberCode": "111",
+ "IsPIIDataRegulated": true
+}
+```
+
+---
+
+## Responses
+
+### Possible Codes
 
 | Response Code | Etiology, actions |
 | :--- | :--- |
@@ -50,40 +108,5 @@ Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberC
 > - Invalid Property data typically returns a 400 response.
 
 ### Examples
->All examples below shown in JSON
 
-Deactivate Member
-```json
-{
- "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
- "MemberCode": "111",
- "Active": "false"
-}
-```
-
-Change Email
-```json
-{
- "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
- "MemberCode": "111",
- "Email": "test@test.com"
-}
-```
-
-Use Member for Testing
-```json
-{
- "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
- "MemberCode": "111",
- "IsTest": "true"
-}
-```
-
-Remove Personal Information
-```json
-{
- "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
- "MemberCode": "111",
- "IsPIIDataRegulated": true
-}
-```
+*To do*
