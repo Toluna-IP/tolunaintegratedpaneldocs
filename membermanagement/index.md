@@ -28,6 +28,7 @@ All versions of the Member API support PII regulation. For technical details, pl
 documentation.
 
 When PII regulation is requested, Toluna removes the following items:
+
 | Toluna QuestionID | Name |
 | :--- | :--- |
 | 1001003 | FirstName |
