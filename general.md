@@ -76,3 +76,18 @@ When a Respondent attempts to take a Survey they have been invited to, there are
 7) If the Respondent terminates from the new Survey, the Partner is notified through the Terminates Notiication method desribed [here.]() *To do: Add link to Notification page*
 
 8) If the routing is turned ON, the Respondent can be offered another Survey directly from the system. The routing feature can be turned on/off at the request of the Partner within 4-8 hours during USA business hours (8am - 5pm EST).
+
+
+---
+
+## "Tracking" Surveys and the WaveID Property
+
+A “Tracker” is a series of related surveys. Toluna calls each iteration of these Surveys a “Wave”. From the Respondent’s perspective, each Wave is experienced like an individual Survey. To the Partner, each Wave of a Tracker carries its own “WaveID” but shares a common SurveyID. All new partners are opted-in to use WaveID by default. WaveID will appear on Invites, Reports, Redirects, and in all Notifications (completion, termination, and surveyClosed).
+
+### Benefits of Using WaveID
+
+Since each iteration of the Tracker shares the same SurveyID, a Survey can be interpreted as duplicate if the WaveID is not included. Including WaveID eliminates the potential for "false duplicates" and increases the number of invites and the potential for a corresponding increase in completes.
+
+### Removing WaveID from Your Integration Profile
+
+toluna recommends that the Partner considers the combination of SurveyID+WaveID as the "unique identifier" for a Respondent's interaction with a Survey. If you wish to remove WaveID from your profile, please contact your Toluna representative. This requires a simple configuration change on the Toluna side.
