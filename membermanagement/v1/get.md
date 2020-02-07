@@ -60,7 +60,32 @@ A partner can receive details for members in the Toluna IP database using an HTT
 
 ### Body Details
 
-*To do*
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| MemberCode | ```int``` | Toluna's unique identifier for a Member |
+| LanguageID | ```int``` | Member's selected language profiler code |
+| Language | ```string``` | Member's selected language profiler identification |
+| CountryID | ```int``` | Member's selected country profiler code |
+| Country | ```string``` | Member's selected country profiler identification |
+| GenderID | ```int``` | Member's selected gender profiler code |
+| Gender | ```string``` | Member's selected gender profiler identification |
+| EducationID | ```int``` | Member's selected education profiler code |
+| Education | ```string``` | Member's selected education profiler identification |
+| IncomeID | ```int``` | Member's selected income profiler code |
+| Income | ```string``` | Member's selected income profiler identification |
+| EthnicityID | ```int``` | Member's selected ethnicity profiler code |
+| Ethnicity | ```string``` | Member's selected ethnicity profiler identification |
+| RaceID | ```int``` | Member's selected race profiler code |
+| Race | ```string``` | Member's selected race profiler identification |
+| WorkPositionID | ```int``` | Member's selected work position profiler code |
+| WorkPosition | ```int``` | Member's selected work position profiler identification |
+| IsActive | ```bool``` | Defaults TRUE. Allows member to be selected for Surveys. If Members opts out of Survey, use PUT call to disallow Surveys sent to Member |
+| Email | ```string``` | Member's email |
+| BirthDate | ```date``` | Member's birthdate. Format: {DayofWeek}, {Month} DD, YYYY |
+| PostalCode | ```int``` | Member's selected postal code profiler |
+| PanelistStatusTypeID | ```int``` | to do |
+| CultureID | ```int``` | to do |
+| SubProvinceID | ```int``` | to do |
 
 ### Example Response:
 ``` 
