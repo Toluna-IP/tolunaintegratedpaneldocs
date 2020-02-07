@@ -12,12 +12,6 @@ parent: External Sample Offering
 * TOC
 {:toc}
 
-## Introduction / Conceptual Diagram
-
-The following is a conceptual representation of an ES Integration with Toluna. It describes components in a general manner and is not meant as instructions/requirements for the development of Partner infrastructure. Detailed instruction is found further in this page.
-
-![ES Integration Diagram](https://tolunaonline-my.sharepoint.com/personal/garret_mcdannald_toluna_com/Documents/Microsoft%20Teams%20Chat%20Files/Screenshot%202020-02-04%20at%2016.40.55.png "ES Integration Diagram")
-
 ---
 
 ## What is the Flow?
@@ -88,14 +82,14 @@ Click each button to open a new page with the JSON file for the specific example
 
 #### [Quota with Multiple Layers](){: .btn }
 
-#### [Quota with Single Layer, SubQuota with Multiple QuestionIDs](){ .btn }
+#### [Quota with Single Layer, SubQuota with Multiple QuestionIDs](){: .btn }
 
-#### [Quota with Single Layer, SubQuota with Single QuestionID](){ .btn }
+#### [Quota with Single Layer, SubQuota with Single QuestionID](){: .btn }
 
 ---
 
 ## Notifications
 
-In order to complete the ES Integrated experience, Toluna will issue notifications when conclive events occur within its system. To ensure the best possible experience and performance, Toluna requires that its ES IP Partners host an API capable of consuming and activing upon its Member and Quota Status Notifications.
+In order to complete the ES Integrated experience, Toluna will issue notifications when conclive events occur within its system. To ensure the best possible experience and performance, Toluna recommends that its ES IP Partners host an API capable of consuming and activing upon its Member and Quota Status Notifications.
 
 Detailed inforation on notifications can be found [here.](https://josh-toluna.github.io/tolunaintegratedpaneldocs/notifications/ "Notifications/Webhooks")
