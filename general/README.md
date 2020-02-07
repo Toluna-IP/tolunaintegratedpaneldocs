@@ -10,6 +10,9 @@ If you know what you're looking for, then click away; otherwise it's best to sta
 
 Any questions? Please reach out to {insert email address}
 
+Thank you,
+Toluna IP Team
+
 
 <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
 <script>
