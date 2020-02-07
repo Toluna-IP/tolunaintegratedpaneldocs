@@ -5,8 +5,14 @@ nav_order: 8
 ---
 
 # FAQs
+{: .no_toc }
 
-## External Sample Integration
+* TOC
+{:toc}
+
+---
+
+# External Sample Integration
 
 ---
 

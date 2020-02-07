@@ -12,7 +12,7 @@ Returns the summary of the successfully started Surveys in the given date range.
 
 ### Route
 ```json
-**GET** http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/PanelActivitySummary?SamplePartnerGUID={PartnerGUID}&StartDate={StartDate}&EndDate={EndDate}
+GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/PanelActivitySummary?SamplePartnerGUID={PartnerGUID}&StartDate={StartDate}&EndDate={EndDate}
 ```
 
 ### Request Parameters

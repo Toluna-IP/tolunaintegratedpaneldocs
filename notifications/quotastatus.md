@@ -13,24 +13,24 @@ A new feature for the ES Integration, Toluna will deliver these notifications wh
 
 When a Quota is no longer available or a previously on-hold Quota becomes available/live, Toluna will broadcast this information to its Partners.
 
-#### Notification from Toluna to Partner API
+## Notification from Toluna to Partner API
 
 Toluna will deliver this via HTTP POST when one of its Quotas is no longer available for sampling or any of its previously on-hold Quota becomes available for sampling. It is the Partner’s responsibility to create an endpoint capable of consuming this information. Please note that subscribers will receive updates for all Quotas, not just those with which they are engaged. Partners should construct their endpoint in a manner in which non-relevant Quota updates are ignored.
 
-#### Route(s)
+## Route(s)
 
 - Specified by Partner; Toluna will confingure accordingly
  
-#### HTTP Verb
+## HTTP Verb
 
 - POST
  
-#### Sample Request
+## Example Request
 ```json
 POST [Partner-Specified URL]
 ```
 
-#### Sample POST
+#### Example POST
 ```json
  {
   "QuotaID": 3445365,
@@ -41,12 +41,12 @@ POST [Partner-Specified URL]
  }
 ```
 
-#### Response Properties
+## Response Properties
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| QuotaID | int | Toluna's unique identifier for a Quota |
-| SurveyID | int | Toluna's internal unique identifier for a Survey |
-| WaveID | int | Toluna's internal unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
-| IsLive | Bool | Is the Quota currently capable of accepting Sample? |
-| UpdateDateTimeUTC | dateTime | The date/time, in UTC, of the quota status change |
+| QuotaID | ```int``` | Toluna's unique identifier for a Quota |
+| SurveyID | ```int``` | Toluna's internal unique identifier for a Survey |
+| WaveID | ```int``` | Toluna's internal unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
+| IsLive | ```Bool``` | Is the Quota currently capable of accepting Sample? |
+| UpdateDateTimeUTC | ```dateTime``` | The date/time, in UTC, of the quota status change |

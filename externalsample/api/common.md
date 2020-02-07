@@ -7,9 +7,8 @@ nav_order: 5
 ---
 
 
-## ES API Common Items
+# ES API Common Items
 
-content here 
 
 ## Bad Request Response Codes
 

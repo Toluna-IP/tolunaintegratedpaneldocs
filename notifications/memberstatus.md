@@ -30,7 +30,7 @@ revenue generating survey completion by one of their members.
 
 ### Route
 ```
-**POST http://myPartnerApi/TolunaComplete
+POST http://myPartnerApi/TolunaComplete
 ```
 
 ### Body Details
@@ -92,7 +92,7 @@ are sent this way. This implementation on the partner end is not mandatory.
 
 ### Route
 ```
-**POST** http://myPartnerAPI/TolunaTerminate
+POST http://myPartnerAPI/TolunaTerminate
 ```
 
 ### Body Details

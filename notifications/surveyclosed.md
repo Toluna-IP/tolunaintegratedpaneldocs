@@ -20,7 +20,7 @@ Toluna provides a notification service to alert the partner when a survey closes
 
 ### Route
 ```json
-**POST** http://myPartnerApi/TolunaNotify
+POST http://myPartnerApi/TolunaNotify
 ```
 
 ### Notiication Body Details
