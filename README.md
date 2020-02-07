@@ -1,11 +1,11 @@
 
-# Introduction
 
-![test](http://g.recordit.co/pcxBSHFHA7.gif)
+![Toluna IP Logo](resources/toluna_integratedpanel_stacked.png)
 
-## trackers
 
-A "Tracker" is a series of related Surveys. Toluna calls each iteration of these Surveys a "Wave." Each iteration will share a common SurveyID and its own WaveID. Toluna recommends that the Partner considers the combination of SurveyID+WaveID as the "unique identifier" for a Member's interation with a Survey. For the complete details of trackers and their benefits, pleae refer to the main Integration Guide.
+## Introduction 
+
+## Getting Started
 
 
 

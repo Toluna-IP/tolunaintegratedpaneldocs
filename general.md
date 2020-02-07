@@ -99,3 +99,11 @@ toluna recommends that the Partner considers the combination of SurveyID+WaveID 
 An IP Member can be blocked for abuse by the Toluna Administrators due to several reasons. Some of the indicators to block a Member are multiple fraudulent attempts, multiple terminations due to internal qualify check failture, encrypted URL mismatch, and more.
 
 IP APIs will return 400 Bad Requests (except Member ```POST(s)```, which will return 401 Conflict) along with an appropriate message in the response when a request is received for a Member in a blocked status. Please review the response message details and take appropriate action.
+
+
+---
+
+
+## trackers
+
+A "Tracker" is a series of related Surveys. Toluna calls each iteration of these Surveys a "Wave." Each iteration will share a common SurveyID and its own WaveID. Toluna recommends that the Partner considers the combination of SurveyID+WaveID as the "unique identifier" for a Member's interation with a Survey. For the complete details of trackers and their benefits, pleae refer to the main Integration Guide.
