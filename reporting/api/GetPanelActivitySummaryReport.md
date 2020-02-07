@@ -2,6 +2,7 @@
 title: GetPanelActivitySummaryReport
 has_children: false
 parent: Reporting API
+grand_parent: Reporting
 nav_order: 5
 ---
 

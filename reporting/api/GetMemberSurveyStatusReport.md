@@ -2,6 +2,7 @@
 title: GetMemberSurveyStatusReport
 has_children: false
 parent: Reporting API
+grand_parent: Reporting
 nav_order: 4
 ---
 
