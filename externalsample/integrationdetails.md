@@ -93,3 +93,32 @@ Click each button to open a new page with the JSON file for the specific example
 In order to complete the ES Integrated experience, Toluna will issue notifications when conclive events occur within its system. To ensure the best possible experience and performance, Toluna recommends that its ES IP Partners host an API capable of consuming and activing upon its Member and Quota Status Notifications.
 
 Detailed inforation on notifications can be found [here.](https://josh-toluna.github.io/tolunaintegratedpaneldocs/notifications/ "Notifications/Webhooks")
+
+
+---
+
+
+### Components 
+
+|  | Notification | Dashboard | External Sample |
+| :--- | :---: | :---: | :---: |
+| Member Management | Required | Required | Required |
+| End Pages | Required | Required | Required |
+| Dashboard API | - | Required | - |
+| External Survey API | - | - | Required |
+| Reporting API | Optional | Optional | Optional |
+
+<br>
+
+---
+
+
+### Notifications 
+
+|  | Notification | Dashboard | External Sample |
+| :--- | :---: | :---: | :---: |
+| Invite | Required | - | - |
+| Survey Closed | Recommended | Recommended | Recommended |
+| Member-Status  | Recommended | Recommended | Recommended |
+| Quota Status  | - | - | Required  |
+| Pre-Start  | - | - | Recommended |
