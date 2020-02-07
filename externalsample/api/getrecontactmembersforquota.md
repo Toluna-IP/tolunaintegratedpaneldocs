@@ -70,7 +70,7 @@ cache-control: no-cache
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | MaxResults | ```int``` | The number of MemberCodes included in the response |
-| HasAdditionalMembers | bool | When true, the Quota has more MemberCodes for recontact. Obtain them by repeating the request with the "lastMemberCodeReceived" parameter. |
+| HasAdditionalMembers | ```bool``` | When true, the Quota has more MemberCodes for recontact. Obtain them by repeating the request with the "lastMemberCodeReceived" parameter. |
 | Member codes | ```list<string>``` | The MemberCodes Toluna would like to recontact for the Quota |
 
 
@@ -78,13 +78,23 @@ cache-control: no-cache
 
 #### 200 Response
 ```json
-
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+{
+ "MaxResults": 25,
+ "HasAdditionalMembers": false,
+ "MemberCodes": [
+ "memberCode1",
+ "memberCode2",
+ "memberCode3"
+ ]
+}
+```
 
 ### Sample 400 Response
 ```json
 HTTP/1.1 400
 Content-Type: application/json; charset=utf-8
-
  {
   "Result": "NO_QUOTA_ID",
   "ResultCode": 10
@@ -100,3 +110,4 @@ Content-Type: application/json; charset=utf-8
  "Result": "NO_QUOTA_ID",
  "ResultCode": 10
 }
+```
