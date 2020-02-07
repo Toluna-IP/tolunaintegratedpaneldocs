@@ -1,11 +1,11 @@
 ---
 title: Getting Started
 has_children: false
-parent: genera
+parent: General
 nav_order: 1
 ---
 
-# General
+# Getting Started
 {: no_toc}
 
 * TOC
@@ -14,4 +14,4 @@ nav_order: 1
 ---
 
 
-## Getting Started
+## Step 1 
