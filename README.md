@@ -1,10 +1,9 @@
 
-# Getting Started
+
 
 ![Toluna IP Logo](resources/toluna_integratedpanel_stacked.png)
 
 
----
 
 cool  words here
 
