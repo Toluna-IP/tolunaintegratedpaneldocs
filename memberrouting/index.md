@@ -1,6 +1,5 @@
 ---
 title: Member Routing
-parent: General
 has_children: false
 nav_order: 3
 ---
