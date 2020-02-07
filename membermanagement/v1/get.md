@@ -1,6 +1,6 @@
 ---
 title: Get Member
-has_children: true
+has_children: false
 parent: Static (v1)
 grand_parent: Member Management
 nav_order: 2
@@ -25,7 +25,7 @@ A partner can receive details for members in the Toluna IP database using an HTT
 
 ### Route
 
-```GET http://{IP-Core-URL}/IntegratedPanelService/api/Respondent```
+```GET http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent```
 
 ### Parameters:
 
@@ -117,4 +117,3 @@ A partner can receive details for members in the Toluna IP database using an HTT
 }
 
 ```
----

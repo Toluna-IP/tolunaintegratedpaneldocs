@@ -1,6 +1,6 @@
 ---
 title: Get Member
-has_children: true
+has_children: false
 parent: Dynamic (v2)
 grand_parent: Member Management
 nav_order: 2
@@ -20,7 +20,7 @@ nav_order: 2
 
 Adds new Members to the Toluna IP database using an HTTP POST
 
-URL to **GET** member info: http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+URL to **GET** member info: http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 
 ---
 
@@ -28,7 +28,7 @@ URL to **GET** member info: http://{IP-Core-URL}/IntegratedPanelService/api/Resp
 
 ### Route
 ```plaintext
-**GET** http://{IP-Core-URL}/IntegratedPanelService/api/Respondent/?memberCode={memberCode}&partnerGUID={partnerGUID}
+GET http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent/?memberCode={memberCode}&partnerGUID={partnerGUID}
 ```
 
 ### Parameters

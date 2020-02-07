@@ -1,6 +1,6 @@
 ---
 title: Add Member
-has_children: true
+has_children: false
 parent: Static (v1)
 grand_parent: Member Management
 nav_order: 1
@@ -26,7 +26,7 @@ A partner can add new members to the Toluna IP Database using an HTTP POST. This
 ### Route
 
 ```plaintext
-POST http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 ```
 
 ### Parameters

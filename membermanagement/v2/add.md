@@ -1,6 +1,6 @@
 ---
 title: Add Member
-has_children: true
+has_children: false
 parent: Dynamic (v2)
 grand_parent: Member Management
 nav_order: 1
@@ -27,7 +27,7 @@ This request is almost an exact parallel to that in the Static Member Management
 
 ### Route
 ```plaintext
-**POST** http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 ```
 
 ### Request Parameters
