@@ -25,7 +25,7 @@ Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberC
 
 ### Route
 ```json
-**PUT** http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
+PUT http://{IP-Core-URL}/IntegratedPanelService/api/Respondent
 ```
 
 ### Parameters
