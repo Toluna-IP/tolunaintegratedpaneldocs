@@ -1,6 +1,6 @@
 ---
 title: Dashboard Offering
-has_children: true
+has_children: false
 nav_order: 3
 ---
 
@@ -26,7 +26,7 @@ Toluna provides a RESTful way to get surveys to display to your panel on your ow
 
 ### Route
 ```
-**GET:**  http://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={MemberCode}&partnerGuid={PartnerGUID}&numberOfSurveys=2&mobileCompatible=false&deviceTypeIDs=1&deviceTypeIDs=2
+GET  http://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={MemberCode}&partnerGuid={PartnerGUID}&numberOfSurveys=2&mobileCompatible=false&deviceTypeIDs=1&deviceTypeIDs=2
 ```
 
 ### Parameters
