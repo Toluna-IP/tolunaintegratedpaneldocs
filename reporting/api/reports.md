@@ -243,11 +243,135 @@ Returns the summary of the successfully started Surveys in the given date range.
 **GET** http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/PanelActivitySummary?SamplePartnerGUID={PartnerGUID}&StartDate={StartDate}&EndDate={EndDate}
 ```
 
+### Request Parameters
+
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| PartnerGUID | ```Guid``` | API key provided by Toluna | Yes |
+| StartDate | ```dateTime``` | UTC date/time at which report should begin. Format: YYYY-MM-DD HH:MM:SS | Yes |
+| EndDate | ```dateTime``` | UTC date/time at which report should end. Format: YYYY-MM--DD HH:MM:SS | Yes |
+
+### Response Body Details
+
+| Name | Type | Desscription |
+| :--- | :--- | :--- |
+| PartnerGUID | ```GUID``` | Partner API key |
+| CreatedUTC | ```dateTime``` | UTC date/time report created |
+| StartSearchUTC | ```dateTime``` | UTC date/time start report |
+| EndSearchUTC | ```dateTime``` | UTC date/time end report |
+| Summary[] | ```array``` | List of statuses of successfully started Surveys |
+| Summary[n].Status | ```string``` | Satus of the surveys. Result range: Qualified, QuotaFull, Terminated, Started, Abandoned, FraudTerminated, QualifiedIncomplete |
+| Summary[n].StatusCount | ```int``` | Number of Surveys having designated "Summary[n].Status" |
+
+### Possible Response Codes
+
+| 200 | OK. Request processed normally; results returned without issue |
+| 400 | {StartDate} must precede {EndDate} |
+| 400 | Search date range cannot exceed 30 days |
+| 400 | Could not find Partner for {PartnerGUID} |
+| 500 | Internal Error. An exception occurred while processing the request. Toluna likely has details captured in its logs |
+
+### Example Response
+```json
+{
+  "Name": "SurveyTrackingSummary",
+  "Description": "Shows Summary of Outcomes of all Surveys within a data range",
+  "PartnerGUID": "b89268bf-5f68-470e-ac50-9ff6998cb93b",
+  "CreatedUTC": "2017-11-01T18:04:27.2743459Z",
+  "StartSearchUTC": "2017-02-23T21:54:03.16",
+  "EndSearchUTC": "2017-03-15T21:54:03.16",
+  "Summary": [
+    {
+    "Status": "Started",
+    "StatusCount": 2
+    },
+    {
+    "Status": "Terminated",
+    "StatusCount": 3
+    },
+    {
+    "Status": "Qualified",
+    "StatusCount": 7
+    },
+    {
+    "Status": "QuotaFull",
+    "StatusCount": 1
+    }
+  ]
+}
+```
+
 ---
 
 ## GetMemberActivityDetailsReport
+
+For a given Member and Survey, returns a list of Member responses tot he survey.
+
+### Route
+```
+**GET** http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/{MemberCode}/{SurveyName}/ActivityDetails?SamplePartnerGuid={PartnerGUID}
+```
+
+### Request Parameters
+
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| PartnerGUID | ```Guid``` | API key provided by Toluna | Yes |
+| MemberCode | ```string``` | Partner's unique identifier for Member | Yes |
+| SurveyName | ```string``` | Unique name of Survey for which Member status report is required | Yes |
+| WaveID | ```int``` | When supplied restricts report result to the SurveyName+WaveID combination and WaveID is returned in the result. to use, append "&WaveId={WaveID}" | No |
+
+### Response Body Details
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| PartnerGUID | ```GUID``` | Partner API Key |
+| MemberCode | ```string``` | Partner's unique identifier for Member |
+| SurveyID | ```int``` | Toluna's unique identifier for Survey |
+| SurveyName | ```string``` | Toluna's unique name for Survey |
+| WaveID | ```int``` | Iteration of Survey; returned only when Panel is configured for WaveID use |
+| CreatedUTC | ```dateTime``` | UTC date/time report created |
+| MemberResponse[] | ```array``` | List of Member responses to the given Survey |
+| MemberResponse[n].Status | ```string``` | The Member's last status with the Survey. Result range: Success, QuotaFull, SurveyOnHold, QuotaOnHold, SurveyClosed, SurveyNotFound, SurveyNotLive, SurveyTaken, MemberBlocked, DuplicateMember, RejectedOther, Abandoned |
+| MemberResponse[n].EventDate | ```dateTime``` | Date/time of last status change |
+| MemberResponse[n].ReferenceID | ```GUID``` | Toluna's identifier for Member's response to a Survey; useful for support tickets |
+
+### Example Response
+```json
+{
+  "Name": "MemberActivityDetailsReport",
+  "Description": "Shows individual Member experience to the requested Survey",
+   "PartnerGUID": "b89268bf-5f68-470e-ac50-9ff6998cb93b",
+  "MemberCode": "1701440138",
+  "SurveyID": 33217,
+  "SurveyName": "1074437-US",
+  "CreatedUTC": "2017-11-01T18:26:04.693398Z",
+  "MemberResponse": [
+    {
+    "Status": "Success",
+    "EventDate": "2017-10-02T21:50:58.113+00:00",
+    "ReferenceID": "f50806ef-1bb7-49cc-a401-2c355534d091"
+    },
+    {
+    "Status": "SurveyTaken",
+    "EventDate": "2017-10-03T10:06:38.277+00:00",
+    "ReferenceID": "d40cd8e0-b271-40a4-8671-8154bd41e973"
+    },
+    {
+    "Status": "SurveyTaken",
+    "EventDate": "2017-10-03T10:30:06.67+00:00",
+    "ReferenceID": "53e31cca-26ec-46c8-bf44-53444f02cc4d"
+    }
+  ]
+}
+```
+
 
 ---
 
 ## GetPanelCompletesReport
 
+Returns all completes generated by a panel in the given date range.
+>Please note: the date range is restricted to 30 days.
+
+### Route
