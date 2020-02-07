@@ -1,6 +1,6 @@
 
 
-![Tolaun IP](//resources/toluna_integratedpanel_stacked.png)
+![Tolaun IP](resources/toluna_integratedpanel_stacked.png)
 
 # Introduction
 
