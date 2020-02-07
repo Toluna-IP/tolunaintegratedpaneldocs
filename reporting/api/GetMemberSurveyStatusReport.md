@@ -2,7 +2,7 @@
 title: GetMemberSurveyStatusReport
 has_children: false
 parent: Reporting
-nav_order: 3
+nav_order: 4
 ---
 
 ## GetMemberSurveyStatusReport

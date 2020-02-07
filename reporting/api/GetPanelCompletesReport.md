@@ -2,7 +2,7 @@
 title: GetPanelCompletesReport
 has_children: false
 parent: Reporting
-nav_order: 6
+nav_order: 7
 ---
 
 ## GetPanelCompletesReport

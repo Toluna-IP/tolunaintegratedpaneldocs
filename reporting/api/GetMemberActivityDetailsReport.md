@@ -2,7 +2,7 @@
 title: GetMemberActivityDetailsReport
 has_children: false
 parent: Reporting
-nav_order: 5
+nav_order: 6
 ---
 
 ## GetMemberActivityDetailsReport
