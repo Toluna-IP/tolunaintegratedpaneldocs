@@ -43,9 +43,8 @@ A partner can receive details for members in the Toluna IP database using an HTT
  - None
  
 ### Example
-```wrap
-GET http://{IP_Core_URL}/IntegratedPanelService/api/Respondent/?memberCode={MemberCode}&partnerGuid={partnerGUID}
-```
+
+```GET http://{IP_Core_URL}/IntegratedPanelService/api/Respondent/?memberCode={MemberCode}&partnerGuid={partnerGUID}```
 
 ---
 
