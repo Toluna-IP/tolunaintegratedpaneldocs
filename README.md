@@ -1,7 +1,12 @@
 
+
+![Tolaun IP](//resources/toluna_integratedpanel_stacked.png)
+
 # Introduction
 
-![test](http://g.recordit.co/pcxBSHFHA7.gif)
+really good words here
+
+
 
 ## trackers
 
