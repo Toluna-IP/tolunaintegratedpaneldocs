@@ -1,6 +1,7 @@
 ---
 title: Change Log
 has_children: false
+parent: General
 nav_order: 100
 ---
 
