@@ -22,70 +22,10 @@ Toluna provides a RESTful way to get surveys to display to your panel on your ow
 
 ---
 
-## Request
+## Integration Requirments 
 
-### Route
-```
-GET  http://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={MemberCode}&partnerGuid={PartnerGUID}&numberOfSurveys=2&mobileCompatible=false&deviceTypeIDs=1&deviceTypeIDs=2
-```
 
-### Parameters
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| MemberCode | ```int``` | Unique Respondent Code from the Partner |
-| PartnerGUID | ```Guid``` | Unique Partner code provided by Toluna |
-| NumberOfSurveys | ```string``` | Number of Surveys the Partner is requesting to receive to show the Member (maximum 5 available) |
-| MobileCombatible | ```bool``` | When TRUE, only mobile combatible surveys will be shown. *Depreciate as of v2.3. Use DeviceTypeIDs instead* |
-| DeviceTypeIDs | ```int``` | Indicated the device types for which Surveys should be returned. Supported values: 1=Desktop/Laptop, 2=Tablet, 3=Phone. *When "DeviceTypeIDs" are supplied, the "MobileCombatible" parameter is ignored* |
-
----
-
-## Response
-
-### Possible Codes
-
-| Code | Etiology, actions |
-| :--- | :--- |
-| 200 | OK. Request processed normally, results returned without issue |
-| 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
-| 500 | Internal Error. An exception occurred while processing the request. Toluna likely has the details captured in its logs |
-
-### Body Details
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| SurveyID | ```int``` | Toluna-specified Survey identifier |
-| Name | ```string``` | Toluna-specified Survey name |
-| URL | ```string``` | Clicking on the URL will take this specific Respondent to the survey. URL’s are unique to the respondent and are **NOT** to be used by other respondents. |
-| Desription | ```string``` | Description of the Survey |
-| Duration | ```int``` | Estimated length of interview |
-| IR | ```int``` | Incidence rate fo the Survey |
-| MemberAmount | ```decimal``` | This is currently only returned as a value > 0 if the partner has a specific amount that is paid to each of their respondents for a survey |
-| PartnerAmount | ```decimal``` | This is what the negotiated amount Toluna will pay the partner if the respondent successfully completes and the responses qualify for our client |
-| WaveID | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member experiences as unique surveys. SurveyID+WaveID is always unique |
-| IsTqsSurvey | ```bool``` | Indicates whether the Survey returned from Dashboard belongs to Toluna Quick Survey. For non-TQS surveys, this property will not appear |
-
->Note: v2.1 requires Partners to opt-in to WaveID and IsTqsSurvey features. They will not appear by default
-
-### Example Response
-```json
-[
- {
- "SurveyID": 21737,
- "Name": "1063626-US-IP1",
- "URL":
-"http://ups.surveyrouter.com/TrafficUI/MSCUI/Page.aspx?pgtid=20&di=zi19HDWwzDwhDXE2DjZ8NIlZX8LPjuUJh
-kV37eSE1dC3kE4",
- "Description": "Entertainment",
- "Duration": 0,
- "MemberAmount": 0,
- "PartnerAmount": 2,
- "WaveId": 100,
- "IsTqsSurvey": true
- }
-]
-```
 
 ---
 
@@ -107,42 +47,3 @@ In order to place a Member into a Survey, Toluna must know - at a minimum - the 
 }
 ```
 
-
-
-## Survey Profiles
-
-Toluna’s client Surveys are always looking for rich profile information for all Respondents. Additional profile information for a Respondent increases the likelihood of a respondent qualifying for a Survey. Toluna provides a RESTful way to get access to these Survey Profiles that can be filled out by your Respondents.
-
-### Route
-```
-**GET**  http://{IP_CORE_URL/IntegratedPanelService/api/Profile/GetNextProfileURL/
-```
-
->Note: This request can be made multiple times. Toluna keeps track of the profiles filled by each respondent and will not offer to fill an already filled profile for a respondent.
-
-### Request Parameters
-
-| Name | Description |
-| :--- | :--- |
-| MemberCode | Unique Respondent code from the Partner |
-| PartnerGUID | Unique Partner code provided by Toluna |
-| cancelURl | URL the Respondent should be redirected to if they click cancel on the Profiler |
-| returnURL | URL the Respondent should be redirected to if tey click save on teh Profiler |
-
-### Possible Response Codes
-
-| Code | Etiology, actions |
-| :--- | :--- |
-| 200 | OK. Request processed normally; results returned without issue |
-| 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
-| 500 | Internal Error. An exception occurred while processing the request. Toluna likely has details captured in its logs |
-
-### Example Response
-
-To view a sample result, paste the following URL in your browser.
-
-http://ups.surveyrouter.com/TrafficUI/MSCUI/Profilepage.aspx?guid=ce009f76-2076-4a16-89a1-714fe356af38&rt=9&pt=1000080&bid=200&cid=1&brandcss=1&redirect=http%3a%2f%2fwww.google.com&cancel=http%3a%2f%2fwww.google.com
-
-This page can be hosted in an iframe on your website. When the respondent clicks save, the data will be saved on Toluna’s site and the user will be able to qualify for more surveys
-
----

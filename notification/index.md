@@ -6,10 +6,13 @@ nav_order: 4
 
 # Notification Offering 
 
-content 
-
-## Introduction
+Description 
 
 ## Flow Diagram
 
 ![Notiication Offering Flow](https://github.com/josh-toluna/tolunaintegratedpaneldocs/blob/master/resources/flows/IP%20Flow%20Diagrams-Notification.png?raw=true)
+
+
+## Integration Requirments 
+
+
