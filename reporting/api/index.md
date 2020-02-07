@@ -1,6 +1,6 @@
 ---
 title: Reporting API
-has_children: true
+has_children: false
 parent: Reporting
 nav_order: 1
 ---
