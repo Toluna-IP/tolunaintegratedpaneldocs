@@ -4,6 +4,7 @@ has_children: true
 nav_order: 7
 ---
 
-# Notification (aka Webhooks)
+# Notifications
 
-The following pages describe several support processes Toluna will operate in the background of an ES integration.
+The Toluna IP Platform issues notifications (aka Wehbooks) when certain events transpire. These notifications are very helpful in monitoring performance and increaseing security due to the server-to-server nature. 
+

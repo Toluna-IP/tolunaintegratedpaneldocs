@@ -1,7 +1,7 @@
 ---
 title: GetSurveyStatus
 has_children: false
-parent: Reporting
+parent: Reporting API
 nav_order: 2
 ---
 
