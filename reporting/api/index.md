@@ -1,16 +1,12 @@
 ---
 title: Reporting API
-has_children: false
+has_children: true
 parent: Reporting
 nav_order: 1
 ---
 
 
 # Reporting API Detail
-{: .no_toc}
-
-* TOC
-{:toc}
 
 ---
 
