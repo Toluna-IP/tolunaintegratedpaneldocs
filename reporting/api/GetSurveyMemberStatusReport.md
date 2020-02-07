@@ -12,7 +12,7 @@ For a given Survey, returns a list of all associated Members who, at a minimum, 
 
 ### Route
 ```
-**GET** http://{IP_CORE_URL}/IntergratedPanelService/api/Reports/Surveys/{SurveyName}/MemberStatus/?SamplePartnerGUID={PartnerGUID}&StartDate={StartDate}&EndDate={EndDate}
+GET http://{IP_CORE_URL}/IntergratedPanelService/api/Reports/Surveys/{SurveyName}/MemberStatus/?SamplePartnerGUID={PartnerGUID}&StartDate={StartDate}&EndDate={EndDate}
 ```
 
 ### Request Parameters

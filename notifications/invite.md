@@ -21,7 +21,7 @@ Toluna provides a real time automated invite service that finds panelists with m
 
 Toluna can integrate the invite process with an existing Partner web service:
 
-![Partner Web Service](https://github.com/josh-toluna/tolunaintegratedpaneldocs/blob/master/resources/Screenshot%202020-02-05%20at%2011.21.03.png)
+![Partner Web Service](https://github.com/josh-toluna/tolunaintegratedpaneldocs/blob/master/resources/Screenshot%202020-02-05%20at%2011.21.03.png?raw=true)
 
 ---
 
@@ -32,7 +32,7 @@ without encoding
 
 ### Route
 ```plaintext
-**POST** http://myPartherApi/tolunaInvite
+POST http://myPartherApi/tolunaInvite
 ```
 
 #### XML

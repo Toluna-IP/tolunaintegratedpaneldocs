@@ -18,7 +18,7 @@ Returns status information for the request survey. Two options available: by ID 
 
 #### Route
 ```
-**GET** http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/{SurveyID}/StatusByID/?SamplePartnerGuid={ParnerGUID}
+GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/{SurveyID}/StatusByID/?SamplePartnerGuid={ParnerGUID}
 ```
 
 #### Parameters
@@ -32,7 +32,7 @@ Returns status information for the request survey. Two options available: by ID 
 
 #### Route
 ```
-**GET** http://{PI_CORE_URL}/IntegratedPanelService/api/Reports/Survey/{SurveyName}/StatusByName/?SamplePartnerGUID={PartnerGUID}
+GET http://{PI_CORE_URL}/IntegratedPanelService/api/Reports/Survey/{SurveyName}/StatusByName/?SamplePartnerGUID={PartnerGUID}
 ```
 
 #### Parameters
