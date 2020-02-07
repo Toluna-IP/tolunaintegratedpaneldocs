@@ -1,16 +1,15 @@
----
-title: Introduction
-has_children: false
-nav_order: 99
----
+
+# Getting Started
 
 ![Toluna IP Logo](resources/toluna_integratedpanel_stacked.png)
 
-# Introduction 
+
+---
+
 cool  words here
 
 
-## Getting Started
+## Headers
 
 
 
