@@ -15,3 +15,6 @@ Toluna’s “External Sample” (ES) capability is an integration option offere
 Internally at Toluna, the existing IP Framework views ES as simply another option for getting survey invitations into the hands of its Partners. As such, Partners choosing to adopt this capability requires only a few additional integration points beyond the traditional model.
 
 
+### Getting Started
+
+To begin integrating with our External Sample offering start by checking out the [integration details](/externalsample/integrationdetails) and the [underlying flows](/externalsample/standardflow).
