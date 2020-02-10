@@ -33,7 +33,6 @@ POST http://myPartnerApi/TolunaNotify
 | DateTime | ```string``` | Date and time the Survey was closed. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
 | WaveID | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member experiences as unique surveys. SurveyID+WaveID will always be unique |
 
->Note: v2.1 required Partners to opt-in to the WaveID feature. It will not appear by default.
 
 ### Example XML Notification
 ```xml

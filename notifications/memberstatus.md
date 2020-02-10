@@ -46,7 +46,6 @@ POST http://myPartnerApi/TolunaComplete
 | IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
 
->Note: v2.1 requires Partners to opt-in to WaveID feature; it will not appear by default
 
 ### Example XML Response
 ```xml
@@ -108,7 +107,6 @@ POST http://myPartnerAPI/TolunaTerminate
 | IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
 
->Note: v2.1 requires Partners to opt-in to WaveID feature; it will not appear by default
 
 ### Example XML Termination
 ```xml

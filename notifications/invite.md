@@ -87,5 +87,3 @@ POST http://myPartherApi/tolunaInvite
 | WaveID | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member will experience as a unique Survey |
 | DeviceTypeID | ```int``` | Indicates the device types for which the survey is enabled. Supported values: 1: Desktop/Laptop, 2: Tablet, 3: Phone |
 
-> Note: v2.1 required Partners to opt-in to thw WaveID feature. It will not appear by default.
-> Note: All new partners will be receiving DeviceTypeIDs in the invites. If a new Partner wishes to remove DeviceTypeID from invites, or if an existing Partner wishes to receive DeviceTypeIDs, please contact Toluna.

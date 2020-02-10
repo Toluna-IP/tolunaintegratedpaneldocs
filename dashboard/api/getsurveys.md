@@ -60,7 +60,6 @@ GET  http://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={Member
 | WaveID | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member experiences as unique surveys. SurveyID+WaveID is always unique |
 | IsTqsSurvey | ```bool``` | Indicates whether the Survey returned from Dashboard belongs to Toluna Quick Survey. For non-TQS surveys, this property will not appear |
 
->Note: v2.1 requires Partners to opt-in to WaveID and IsTqsSurvey features. They will not appear by default
 
 ### Example Response
 ```json
