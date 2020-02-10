@@ -10,7 +10,5 @@ nav_order: 1
 
 Within the Toluna IP Database, the Partner has a couple options on how they manage member data. The partner can choose to use either static or dymanic data. In the pages listed below are insructions on using static data. Information on managing members with dynamic data can be found [here.](http://docs.integratedpanel.toluna.com/membermanagement/v2/ "Member Management v2")
 
----
-
 
 
