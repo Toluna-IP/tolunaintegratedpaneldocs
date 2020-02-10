@@ -37,7 +37,7 @@ The following are important notes on the practice of Member Management:
 ## Member Management API Options
 Toluna can receive the partner’s panel data via RESTful APIs. A partner can use these APIs to add new members or deactivate  members. Please request the mapping values for the demographics from your Toluna account representative. Most values vary by culture.
 
-We currently offer a Member management API in two versions: [Static(v1)](/membermanagement/api/v1/) and [Dynamic(v2)](/membermanagement/api/v2/). The core difference in the two is the flexibility in hthe level of member information is able to be conveyed to the Toluna platform. 
+We currently offer a Member management API in two versions: [Static(v1)](/membermanagement/v1/) and [Dynamic(v2)](/membermanagement/v2/). The core difference in the two is the flexibility in hthe level of member information is able to be conveyed to the Toluna platform. 
 
 We recommended v2 as it will lead to better survey qualification and higher conversion rate. The details of these two version are outlined in their respective sections. 
 
