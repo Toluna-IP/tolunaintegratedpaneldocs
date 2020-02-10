@@ -8,15 +8,6 @@ nav_order: 0
 # Quick Start
 To quickly get integrated with out platform, here's how to go about it. 
 
-{: .no_toc}
-
-
-* TOC
-{:toc}
-
----
-
-
 # Dashboard 
 
 1. Register Member to [Member Management API](/membermanagement/v2/add)
