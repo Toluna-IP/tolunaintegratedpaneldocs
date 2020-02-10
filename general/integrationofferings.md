@@ -2,11 +2,11 @@
 title: Integration Offerings
 has_children: false
 parent: General
-nav_order: 3
+nav_order: 1
 ---
 
 # Integration offerings
-{: no_toc}
+{: .no_toc}
 
 * TOC
 {:toc}
