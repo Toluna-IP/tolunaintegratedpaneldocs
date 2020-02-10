@@ -49,9 +49,9 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
 | IsPIIDataRegulated | Defaults FALSE. When TRUE, all personally identifiable information is removed. | No |
 
-### Example
+### Examples
 
->All examples below shown in JSON
+All examples below shown in JSON
 
 #### Deactivate Member
 ```json

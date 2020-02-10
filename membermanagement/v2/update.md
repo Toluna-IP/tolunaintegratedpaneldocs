@@ -82,9 +82,9 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 
 ### Notes
 
-> - Only updates existing members. To add a new Member, use thne POST route noted [here]().
+> - Only updates existing members. To add a new Member, use the POST route noted [here](http://docs.integratedpanel.toluna.com/membermanagement/v2/add.html "v2 Post").
 > - Optional Properties can be excluded from the request. "GenderID," "EducationID," "EthnicityID," "RaceID," and "SubProvinceID" can also take "0" to indicate "no value."
-> - Invalud Property data typically returns a 400 response.
+> - Invalid Property data typically returns a 400 response.
 
 ### Examples
 
