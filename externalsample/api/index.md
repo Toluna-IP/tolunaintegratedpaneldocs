@@ -7,4 +7,4 @@ nav_order: 4
 
 # External Sample API
 
-*To Do* 
+Below are links explaining the additional ES-specific API features and instructions on using them from the Partner's perspective.
