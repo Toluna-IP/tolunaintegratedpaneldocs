@@ -2,7 +2,6 @@
 title: GetMemberActivityDetailsReport
 has_children: false
 parent: api
-grand_parent: Reporting
 nav_order: 6
 ---
 
