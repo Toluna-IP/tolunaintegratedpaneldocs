@@ -18,12 +18,12 @@ nav_order: 3
 
 Toluna provides a notification service to alert the partner when a survey closes. This helps the partner to manage the panelist experience by preventing the panelist from attempting to enter a survey that is no longer available.
 
-### Route
+## Route
 ```json
 POST http://myPartnerApi/TolunaNotify
 ```
 
-### Notiication Body Details
+## Notiication Body Details
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
