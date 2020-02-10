@@ -6,7 +6,7 @@ nav_order: 2
 ---
 
 # Common Items
-{:no_toc}
+{: .no_toc}
 
 
 * TOC

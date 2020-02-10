@@ -2,11 +2,11 @@
 title: Getting Started
 has_children: false
 parent: General
-nav_order: 2
+nav_order: 0
 ---
 
 # Getting Started
-{:no_toc}
+{: .no_toc}
 
 
 * TOC
