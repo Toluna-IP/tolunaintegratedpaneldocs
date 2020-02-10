@@ -10,12 +10,10 @@ nav_order: 3
 # Get Recontact Members For Quota
 {: .no_toc }
 
+For the requested Quota, returns a list of MemberCodes eligible for a recontact.
+
 * TOC
 {:toc}
-
-## Introduction
-
-For the requested Quota, returns a list of MemberCodes eligible for a recontact.
 
 ---
 

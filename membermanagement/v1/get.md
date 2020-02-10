@@ -10,14 +10,10 @@ nav_order: 2
 # Member GET (v1)
 {: .no_toc }
 
+A partner can receive details for members in the Toluna IP database using an HTTP **GET**.
+
 * TOC
 {:toc}
-
----
-
-## Introduction
-
-A partner can receive details for members in the Toluna IP database using an HTTP **GET**.
 
 ---
 

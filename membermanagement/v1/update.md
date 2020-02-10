@@ -10,14 +10,11 @@ nav_order: 3
 # Member Update (PUT)
 {: .no_toc }
 
+Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberCode” are required. Combine them with optional properties to update a Member according to your requirements.
+
+
 * TOC
 {:toc}
-
----
-
-## Introduction
-
-Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberCode” are required. Combine them with optional properties to update a Member according to your requirements.
 
 ---
 

@@ -6,7 +6,7 @@ nav_order: 6
 
 # External Sample Offering
 
-## Introduction
+*introduction*
 
 ### What is External Sample?
 

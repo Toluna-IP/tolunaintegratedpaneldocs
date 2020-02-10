@@ -7,16 +7,12 @@ nav_order: 2
 # Member Management
 {: .no_toc }
 
-* TOC
-{:toc}
-
----
-
-## Introduction
-
 Integrated Panel (IP) is an offering for our partners that allow them to receive a request to invite their own panel to Toluna surveys that have demographics (Age, Gender, Country, and Language etc.) that will match those of the individual panelist.
 
 No personal information regarding the partner’s panel is received or stored by Toluna. The partner need only supply a unique numeric “Member ID”  that will be used to identify the member when interacting with the Toluna platform. 
+
+* TOC
+{:toc}
 
 ---
 

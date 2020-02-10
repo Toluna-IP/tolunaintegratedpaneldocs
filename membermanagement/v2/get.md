@@ -11,16 +11,12 @@ nav_order: 2
 # Member Get
 {: .no_toc}
 
-* TOC
-{:toc}
-
----
-
-## Introduction
-
 Adds new Members to the Toluna IP database using an HTTP POST
 
 URL to **GET** member info: http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
+
+* TOC
+{:toc}
 
 ---
 

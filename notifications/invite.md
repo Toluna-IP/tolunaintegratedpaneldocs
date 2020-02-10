@@ -8,12 +8,11 @@ nav_order: 2
 # Invite  Notifications
 {: .no_toc }
 
+Toluna provides a real time automated invite service that finds panelists with matching profiles.
+
+
 * TOC
 {:toc}
-
-## Introduction
-
-Toluna provides a real time automated invite service that finds panelists with matching profiles.
 
 ---
 

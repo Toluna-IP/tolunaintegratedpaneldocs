@@ -10,14 +10,11 @@ nav_order: 2
 # Generate Invite
 {: .no_toc }
 
+Once a Member has been matched to a Toluna Quota, this reoute can be used to generate an invitation.
+
 * TOC
 {:toc}
 
----
-
-## Introduction
-
-Once a Member has been matched to a Toluna Quota, this reoute can be used to generate an invitation.
 
 ---
 

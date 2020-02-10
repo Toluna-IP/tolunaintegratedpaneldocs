@@ -8,16 +8,13 @@ nav_order: 4
 # Quota Status Notifications
 {: .no_toc}
 
+A new feature for the ES Integration, Toluna will deliver these notifications when one of its Quotas is not longer available for sompling or any of its perviously on-hold Quotas become available for sampling. 
+
 * TOC
 {:toc}
 
 ---
 
-## Introduction
-
-A new feature for the ES Integration, Toluna will deliver these notifications when one of its Quotas is not longer available for sompling or any of its perviously on-hold Quotas become available for sampling. 
-
----
 
 ## Notification from Toluna to Partner API
 

@@ -10,14 +10,11 @@ nav_order: 1
 # Get Quotas
 {: .no_toc }
 
+For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated Quotas in need of supply.
+
 * TEST
 {:toc}
 
----
-
-## Introduction
-
-For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated Quotas in need of supply.
 
 ---
 

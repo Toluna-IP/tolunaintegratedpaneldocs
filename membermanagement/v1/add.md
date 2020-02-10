@@ -10,14 +10,10 @@ nav_order: 1
 # Adding a Member (POST)
 {: .no_toc }
 
+A partner can add new members to the Toluna IP Database using an HTTP POST. This must be done by the partner before requesting or receiving survey opportunity links.
+
 * TOC
 {:toc}
-
----
-
-## Introduction
-
-A partner can add new members to the Toluna IP Database using an HTTP POST. This must be done by the partner before requesting or receiving survey opportunity links.
 
 ---
 

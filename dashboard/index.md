@@ -7,12 +7,10 @@ nav_order: 5
 # Dashboard Offering 
 {: .no_toc }
 
+Toluna provides a RESTful way to get surveys to display to your panel on your own website. This can be accomplished once the respondent data is loaded into Toluna’s system. Please note that Toluna caches the results of this call for 1 minute; repeated calls within this timeframe will NOT consult the Toluna router and will instead return the latest results from cache.
+
 * TOC
 {:toc}
-
-## Introduction
-
-Toluna provides a RESTful way to get surveys to display to your panel on your own website. This can be accomplished once the respondent data is loaded into Toluna’s system. Please note that Toluna caches the results of this call for 1 minute; repeated calls within this timeframe will NOT consult the Toluna router and will instead return the latest results from cache.
 
 ---
 
