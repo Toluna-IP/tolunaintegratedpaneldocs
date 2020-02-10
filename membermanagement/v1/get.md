@@ -83,9 +83,9 @@ A partner can receive details for members in the Toluna IP database using an HTT
 | Email | ```string``` | Member's email |
 | BirthDate | ```date``` | Member's birthdate. Format: {DayofWeek}, {Month} DD, YYYY |
 | PostalCode | ```int``` | Member's selected postal code profiler |
-| PanelistStatusTypeID | ```int``` | to do |
-| CultureID | ```int``` | to do |
-| SubProvinceID | ```int``` | to do |
+| PanelistStatusTypeID | ```int``` | Integer value defining the current state of the Member in the Toluna platform. Possible values are: 1=Active, 2=OptOut, 3=Suspended, 4=BlockedForAbuse, 5=PIIDateRegulated. **Note:** Any value other that "1" will prohibit Members from participating in Toluna's Surveys |
+| CultureID | ```int``` | Integer identifier for the culture the Member is associated with. See data mapping document for further detailsInte |
+| SubProvinceID | ```int``` | Integer identifier for the Sub Province the Member is associated with. See data mapping document for further details |
 
 ### Example Response:
 ``` 
