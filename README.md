@@ -6,9 +6,9 @@
 
 This site is intended to help guide you through the process of integrating with Toluna's Integrated Panel (IP) Platform. 
 
-If you know what you're looking for, then click away; otherwise it's best to start with our [Getting Started](gettingstarted.html) section. 
+If you know what you're looking for, then click away; otherwise it's best to start with our [Getting Started](http://docs.integratedpanel.toluna.com/general/gettingstarted.html) section. 
 
-Any questions? Please reach out to {insert email address}
+Any questions? Please reach out to {ip_support@toluna.com}
 
 Thank you,
 Toluna IP Team

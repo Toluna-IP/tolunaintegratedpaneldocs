@@ -1,7 +1,8 @@
 ---
 title: GetPanelCompletesReport
 has_children: false
-parent: Reporting
+parent: Reporting API
+grand_parent: Reporting
 nav_order: 7
 ---
 
