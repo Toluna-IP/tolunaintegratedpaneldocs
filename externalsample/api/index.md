@@ -2,7 +2,7 @@
 title: ES API
 has_children: true
 parent: External Sample Offering
-nav_order: 4
+nav_order: 5
 ---
 
 # External Sample API
