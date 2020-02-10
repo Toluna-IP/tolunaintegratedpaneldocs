@@ -6,6 +6,4 @@ nav_order: 8
 
 # Reporting 
 
-
-month-end billing 
-api 
+Toluna offers monthly activity reporting as well as a limited set of reporting API end points, found below.
