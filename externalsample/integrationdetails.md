@@ -16,7 +16,7 @@ parent: External Sample Offering
 
 ## What is the Flow?
 
-Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses with its Partners. The first is the Standard Quota, similar to our traditional offerings, but with ES-specific parameters. The second kind is the Recontact Quota, the definition of which will be explained further below. Detailed information on the Standard Flow can be found [here.](https://josh-toluna.github.io/tolunaintegratedpaneldocs/externalsample/standardflow.html "Standard ES Flow")
+Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses with its Partners. The first is the Standard Quota, similar to our traditional offerings, but with ES-specific parameters. The second kind is the Recontact Quota, the definition of which will be explained further below. Detailed information on the Standard Flow can be found [here.](/standardflow)
 
 ---
 
