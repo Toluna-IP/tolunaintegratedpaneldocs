@@ -5,7 +5,9 @@ parent: General
 nav_order: 2
 ---
 
-# Getting Started
+# Integration Process
+This section outlines the full integration process from cold start to completes in production. If you're looking for how to quickly wire up the technical side of the integration, try our [Quick Start](/general/quickstart) guide.
+
 {: .no_toc}
 
 
@@ -27,7 +29,7 @@ Once provided with culture-specific panel guids to our Sandbox environment, the 
 
 Review the [Member Routing](/memberrouting) section as it outlines the flow of the member experience once an inviture url is procured. 
 
-## Step 4 - Specific Integration Offering
+## Step 4 - Select Integration Offering
 
 Begin integrating the needed connection points for the desired integrating offering. We currently offer the following options:
 
