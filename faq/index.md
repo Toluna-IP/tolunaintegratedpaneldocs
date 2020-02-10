@@ -1,11 +1,7 @@
 ---
 title: FAQ
 has_children: false
-<<<<<<< HEAD
 nav_order: 99
-=======
-nav_order: 9
->>>>>>> fcd064b5e03590b5f9345409e23139a434887e46
 ---
 
 # FAQs
