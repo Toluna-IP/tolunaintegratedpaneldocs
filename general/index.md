@@ -5,7 +5,7 @@ nav_order: 0
 ---
 
 # General
-{: no_toc}
+{: .no_toc}
 
 * TOC
 {:toc}
