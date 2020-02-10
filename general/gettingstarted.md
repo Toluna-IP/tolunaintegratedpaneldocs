@@ -25,7 +25,7 @@ Once provided with culture-specific panel guids to our Sandbox environment, the 
 
 ## Step 3 - Member Routing
 
-Review the [Member Routing](/memberroutiung) section as it outlines the flow of the member experience once an inviture url is procured. 
+Review the [Member Routing](/memberrouting) section as it outlines the flow of the member experience once an inviture url is procured. 
 
 ## Step 4 - Specific Integration Offering
 
@@ -41,10 +41,10 @@ Each of these offerings have their own requirements and flows - please be sure t
 Mapping your platform's data to our platform's is a critical part of the integration process. Please check out the [Mapping](/mapping) section which demonstrates how to go about translationg data points between our two platforms. 
 
 ## Step 6 - Notifications
-Along with each integration offering there comes notifications (webhooks) that can be consumed by your platform to help performance and security. Check our the [notifications](/notifications) section to learn about the various notification types and their needed integration points. 
+Along with each integration offering there come notifications (webhooks) that can be consumed by your platform to help with performance and security. Check our the [notifications](/notifications) section to learn about the various notification types and their needed integration points. 
 
 ## Step 7 - Test
 Once the required integration pints have been setup, please test the integration through mimicing member behaviour and tracing the flow from start to finish. Please reach out with any questions or for help assistance. 
 
-## Step 8 - Go Live
-Once tested and ready to go live, Toluna will move your integration to Production and issue updated culture-specific panel-guids and api key. You are then ready to route member throug the integration. 
+## Step 8 - Go Live!
+Once tested and ready to go live, Toluna will move your integration to Production and issue updated culture-specific panel-guids and an api key. You are then ready to route members through the integration. 
