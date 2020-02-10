@@ -5,10 +5,6 @@ nav_order: 0
 ---
 
 # General
-{: .no_toc}
-
-* TOC
-{:toc}
 
 ---
 
