@@ -75,6 +75,7 @@ cache-control: no-cache
 | Surveys |	```list<object>``` |	A JSON object containing 1:M Surveys for which Toluna has open Quotas |
 
 #### Survey Object
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | SurveyID |	```int``` |	Toluna’s unique identifies for a Survey |
@@ -93,12 +94,14 @@ cache-control: no-cache
 | Quotas |	```list<object>``` |	A JSON object containing 1:M Quotas for the Survey. Members can be targeted only to one quota within the Survey |
 
 #### Price Object
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | Amount |	```double``` |	The monetary amount of the payment per complete |
 | CurrencyID |	```int``` |	Currency in which the payment per complete is denoted. See mapping document for details |
 
 #### Quota Object
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | QuotaID |	```int``` |	Toluna’s unique identifier for a Quota |
@@ -107,12 +110,14 @@ cache-control: no-cache
 | Layers |	```list<object>``` |	A JSON object containing groups of Quotas. When sampling, all Layers must be matched |
 
 #### Layer Object
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | LayerID |	```int``` |	Toluna’s unique identifier for a Layer |
 | SubQuotas |	```list<object>``` |	A JSON object contains 1:M SubQuotas. When sampling, one SubQuota must be matched |
 
 #### SubQuota
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | SubQuotaID |	```int``` |	Toluna’s unique identifier for a SubQuota |
@@ -121,6 +126,7 @@ cache-control: no-cache
 | QuestionsAndAnswers |	```list<object>``` |	A JSON object contains collection of Question and Answers per SubQuota |
 
 #### QuestionAndAnswers Object
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | QuestionID |	```int``` |	Toluna's profile attribute identifier |
