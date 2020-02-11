@@ -84,7 +84,7 @@ External Sample Partners must comply with Toluna’s sampling rules. To be sampl
  - Match at least one (1) "AnswerID" (SubQuotaAttribute) per SubQuota with the single QuestionID
  - Match at least one (1) "AnswerID" (SubQuotaAttribute) per QuestionID in the SubQUota with multiple QuestionIDs
 
-For more details, please refer to the [Integration Details.](https://josh-toluna.github.io/tolunaintegratedpaneldocs/externalsample/integrationdetails.html "Integration Details")
+For more details, please refer to the [Integration Details.](/externalsample/integrationdetails "Integration Details")
 
 ---
 
