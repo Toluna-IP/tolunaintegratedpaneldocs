@@ -139,7 +139,7 @@ cache-control: no-cache
 
 #### 200 Response
 
-[Click Here to Access JSON File](){: .btn }
+[Click Here to Access JSON File](/externalsample/api/getquotasresponse.json){: .btn }
 
 #### 400 Response
 ```json
