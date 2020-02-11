@@ -91,7 +91,7 @@ POST http://myPartherApi/tolunaInvite
 | SurveyRef | ```string``` | Toluna Survey Name |
 | Topic | ```string``` | Tolujna Survey Topic |
 | LOI | ```int``` | Length of the Survey (interview) in Minutes |
-| IR | ```int``` | Incidence Rate of the Survey |
+| IR | ```int``` | Incidence Rate of the Survey in % |
 | Revenue | ```int``` | Amount of Revenue in 1/100 of the currency units (eg 100=100 cents or $1 USD) |
 | InviteType | ```int``` | Type of Invite (1 - New ) |
 | ExpiryDate | ```string``` | The date until which the Survey will be open. Format YYYY-DD-MM HH:MM:SS in UTC Time |
