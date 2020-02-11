@@ -70,13 +70,13 @@ cache-control: no-cache
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| SurveyID | int | Toluna's internal unique identifier for a Survey |
-| WaveID | int | Toluna's internal unique indentifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
+| SurveyID | int | Toluna's unique identifier for a Survey |
+| WaveID | int | Toluna's unique indentifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
 | QuotaID | int | Toluna's unqiue identifier for a Quota |
 | Member Amount | double | Amount Partner has agreed to pay it’s Member for a complete. This is rarely used and Toluna prefers to avoid direct engagement with the Partner-Member relationship |
 | Partner Amount | double | Amount Toluna has agreed to pay Partner for a complete |
 | URL | string | Link to Invite Member to Quota |
-| LOI | int | Length of Interview at the time fo invite generation |
+| LOI | int | Length of Interview at the time of invite generation. Valued in minutes |
 | IR | int | Incidence Rate at the time fo invite generation |
 
 ### Examples

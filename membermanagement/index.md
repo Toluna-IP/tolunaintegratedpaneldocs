@@ -56,7 +56,7 @@ Every member that is registered on the Toluna platform has a correspoding status
 
 ### Blocked For Abuse
 
-An IP Member can be blocked for abuse by the Toluna Administrators due to several reasons. Some of the indicators to block a Member are multiple fraudulent attempts, multiple terminations due to internal qualify check failture, encrypted URL mismatch, and more.
+An IP Member can be blocked for abuse by the Toluna Administrators due to several reasons. Some of the indicators to block a Member are multiple fraudulent attempts, multiple terminations due to Toluna Platform qualify check failture, encrypted URL mismatch, and more.
 
 IP APIs will return 400 Bad Requests (except Member ```POST(s)```, which will return 401 Conflict) along with an appropriate message in the response when a request is received for a Member in a blocked status. Please review the response message details and take appropriate action.
 

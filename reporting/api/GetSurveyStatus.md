@@ -21,7 +21,7 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/{SurveyID}/S
 
 | Name | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
-| SurveyID | ```int``` | Toluna Internal SurveyID | Yes |
+| SurveyID | ```int``` | Toluna's SurveyID | Yes |
 | PartnerGUID | ```GUID``` | API key provided by Toluna | Yes |
 
 ### By Name Parameters

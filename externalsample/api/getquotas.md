@@ -71,17 +71,17 @@ cache-control: no-cache
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | CountryID |	```int``` |	Toluna’s unique identifier for the country in which the available Quotas are located. |
-| CacheExpires |	```dateTime``` |	Date at which Toluna’s internal cache of this Quota data expired. Repreating API calls after this time guarentees an updated result set |
+| CacheExpires |	```dateTime``` |	Date at which Toluna’s cache of this Quota data expired. Repreating API calls after this time guarentees an updated result set |
 | Surveys |	```list<object>``` |	A JSON object containing 1:M Surveys for which Toluna has open Quotas |
 
-
-| Survey Object | Type | Description |
+#### Survey Object
+| Name | Type | Description |
 | :--- | :--- | :--- |
-| SurveyID |	```int``` |	Toluna’s internal unique identifies for a Survey |
-| SurveyName |	```string``` |	Toluna’s internal name for a Survey |
+| SurveyID |	```int``` |	Toluna’s unique identifies for a Survey |
+| SurveyName |	```string``` |	Toluna’s name for a Survey |
 | SurveyTopic |	```string``` |	Study type of a Survey |
-| WaveID |	```int``` |	Toluna’s internal unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
-| LOI |	```int``` |	Length of interview |
+| WaveID |	```int``` |	Toluna’s unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
+| LOI |	```int``` |	Length of interview in minutes |
 | IR |	```int``` |	Incidence Rate |
 | StudyTypeID |	```int``` |	The Survey’s “category.” See mapping document for values |
 | ScheduledCompletionDate |	```dateTime``` |	Date at which Survey is set to close |
@@ -92,39 +92,39 @@ cache-control: no-cache
 | Price |	```<object>``` |	A JSON object containing details about price Toluna will pay per complete |
 | Quotas |	```list<object>``` |	A JSON object containing 1:M Quotas for the Survey. Members can be targeted only to one quota within the Survey |
 
-
-| Price Object | Type | Description |
+#### Price Object
+| Name | Type | Description |
 | :--- | :--- | :--- |
 | Amount |	```double``` |	The monetary amount of the payment per complete |
 | CurrencyID |	```int``` |	Currency in which the payment per complete is denoted. See mapping document for details |
 
-
-| Quota Object | Type | Description |
+#### Quota Object
+| Name | Type | Description |
 | :--- | :--- | :--- |
 | QuotaID |	```int``` |	Toluna’s unique identifier for a Quota |
 | CompletesRequired |	```int``` |	The total number of completes required to fill the Quota |
 | EstimatedCompletesRemaining |	```int``` |	The estimated number of completes remaining until the Quota is filled |
 | Layers |	```list<object>``` |	A JSON object containing groups of Quotas. When sampling, all Layers must be matched |
 
-
-| Layer Object | Type | Description |
+#### Layer Object
+| Name | Type | Description |
 | :--- | :--- | :--- |
 | LayerID |	```int``` |	Toluna’s unique identifier for a Layer |
 | SubQuotas |	```list<object>``` |	A JSON object contains 1:M SubQuotas. When sampling, one SubQuota must be matched |
 
-
-| SubQuota Object | Type | Description |
+#### SubQuota
+| Name | Type | Description |
 | :--- | :--- | :--- |
 | SubQuotaID |	```int``` |	Toluna’s unique identifier for a SubQuota |
 | CurrentCompletes |	```int``` |	Current complete received for a SubQuota |
 | MaxTargetCompletes |	```int``` |	Maximum target completes required for a SubQuota |
 | QuestionsAndAnswers |	```list<object>``` |	A JSON object contains collection of Question and Answers per SubQuota |
 
-
-| QuestionAndAnswers Object | Type | Description |
+#### QuestionAndAnswers Object
+| Name | Type | Description |
 | :--- | :--- | :--- |
-| QuestionID |	```int``` |	Toluna internal profile attribute identifier |
-| AnswerIDs |	```list<int>``` |	List of Toluna internal profile attribute identifiers. When sampling, at least one AnswerID must match. See mapping document for details |
+| QuestionID |	```int``` |	Toluna's profile attribute identifier |
+| AnswerIDs |	```list<int>``` |	List of Toluna's profile attribute identifiers. When sampling, at least one AnswerID must match. See mapping document for details |
 | AnswerValues |	```string<int>``` |	List of Answer values of an open ended answers.Example: Custom Age values “18-100”, Postal codes, DMA and MSA. Note: “Age” will be range based. “DMA and MSA” will be comma separated Answer IDs. “Postal codes” will be comma separated postal code values. It can contain partial values. ‘Starts with’ must be applied to match it. API is limited to expose only first 1000 postal codes. |
 | IsRoutable |	```boolean``` |	Indicates whether the question is Routable or not |
 

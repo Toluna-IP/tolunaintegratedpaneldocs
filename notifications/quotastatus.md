@@ -33,8 +33,8 @@ Toluna will deliver this via HTTP POST when one of its Quotas is no longer avail
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | QuotaID | ```int``` | Toluna's unique identifier for a Quota |
-| SurveyID | ```int``` | Toluna's internal unique identifier for a Survey |
-| WaveID | ```int``` | Toluna's internal unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
+| SurveyID | ```int``` | Toluna's unique identifier for a Survey |
+| WaveID | ```int``` | Toluna's unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
 | IsLive | ```Bool``` | Is the Quota currently capable of accepting Sample? |
 | UpdateDateTimeUTC | ```dateTime``` | The date/time, in UTC, of the quota status change |
 
