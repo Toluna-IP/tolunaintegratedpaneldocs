@@ -37,11 +37,14 @@ POST http://myPartherApi/tolunaInvite
 #### XML
 ```XML
 <?xml version="1.0"?>
-<invite xmlns:xsd="http://www.w3.org/2001/XMLSchema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <UniqueCode>myCode</UniqueCode>
+<invite xmlns:xsd="http://www.w3.org/2001/  XMLSchema"xmlns:xsi="http://www.w3.org/2001/  XMLSchema-instance"> 
+  <UniqueCode>myCode</UniqueCode>
 <SamplePartnerGuid>CC265C63-F887-4366-9ED1-7B2B3BD94C2B</SamplePartnerGuid><SurveyURL>http://myPartnerService.com</SurveyURL><SurveyId>99</SurveyId><SurveyRef>mySurveyRef</SurveyRef><Topic>myTopic</Topic><LOI>99</LOI><IR>50</IR><Revenue>99</Revenue><Recontact>1</Recontact><InviteType>1</InviteType>
- <ExpiryDate>20201231</ExpiryDate>
- <WaveId>1</WaveId>
-  <DeviceTypeIDs><DeviceTypeID>2 </DeviceTypeIDs><DeviceTypeID>3 </DeviceTypeIDs>
+<ExpiryDate>20201231</ExpiryDate>
+<WaveId>1</WaveId>
+<DeviceTypeIDs>
+  <DeviceTypeID>2 </DeviceTypeIDs>
+  <DeviceTypeID>3 </DeviceTypeIDs>
  </DeviceTypeIDs>
 </invite>
 ```
