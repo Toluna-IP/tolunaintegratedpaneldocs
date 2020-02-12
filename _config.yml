@@ -3,5 +3,5 @@ remote_theme: pmarsceill/just-the-docs
 search_enabled: true
 heading_anchors: true
 aux_links:
-  "Help":
-    - "https://landbot.io/u/H-358105-OKLQO3VH1XESNAME/index.html"
+  "Contact Us":
+    - "http://docs.integratedpanel.toluna.com/contactus/""
