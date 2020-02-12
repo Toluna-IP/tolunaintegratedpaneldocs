@@ -41,7 +41,7 @@ GET {IP_ES_URL}/IPExternalSamplingService/ExternalSample/{panelGUID}/QuotaStatus
 
 ### Example Request
 ```
-GET {IP_ES_URL}/IPExternalSamplingService/ExternalSample/{{panelGUID}}/QuotaStatus/42386
+GET {IP_ES_URL}/IPExternalSamplingService/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/QuotaStatus/42386
 ```
 
 ## Response
