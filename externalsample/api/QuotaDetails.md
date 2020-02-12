@@ -20,7 +20,7 @@ The method, explained below, reveals if the requested Quota is available for ES,
 
 ### Route
 ```
-GET {IP_ES_URL}/IPExternalSamplingService/ExternalSample/{{panelGUID}}/QuotaStatus/{{quotaID}}
+GET {IP_ES_URL}/IPExternalSamplingService/ExternalSample/{panelGUID}/QuotaStatus/{quotaID}
 ```
 
 ### Parameters
