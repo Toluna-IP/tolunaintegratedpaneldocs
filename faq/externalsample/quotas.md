@@ -54,3 +54,10 @@ For more details, please refer to the [Integration Details.](/externalsample/int
 
 ---
 
+## Can I send users/members/panelists to Quotas with unanswered/unknown SubQuotas?
+
+The Tolunma Platform requires complete match to all questions on a Quota unless the question is marked as isRoutable = true. With routable questions, Toluna will ask the Member a preliminary question before sending them to the Survey if the platform does not have an answer to a Quota.
+
+---
+
+## 

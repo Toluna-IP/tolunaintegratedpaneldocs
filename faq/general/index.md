@@ -64,3 +64,7 @@ Example: There are two "Decatur" values, 2040 and 2030. The first refers to Deca
 Similar cases can be seen showing multiple MSA values that resolve the cities of the same name but are located in different states. Toluna's recommendation is to match on the MSA Answer Integer instead of the associated text.
 
 ---
+
+## Is there a service or documentation that will help us derive regional mappings, such as DMA and MSA?
+
+Toluna provides documents to all of its Partners to assist with mapping. Contact your Toluna representative if you require these documents.

@@ -67,3 +67,5 @@ After obtaining the invite link via Invite API (please refer Integration Guide f
 ## Is there some property of a survey that indicates that panelists need to be restricted if they participated in some other survey or set of surveys?
 
 For Recontact Surveys and WaveIDs, Toluna allows Members to be excluded from participating based on their answers on previous Surveys or Waves. Detailed information on how to use this feature can be seen [here.](/externalsample/api/surveyexclusion.html)
+
+---
