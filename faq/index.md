@@ -1,7 +1,7 @@
 ---
 title: FAQ
 has_children: true
-nav_order: 99
+nav_order: 98
 ---
 
 # Frequently Asked Questions (FAQs)
