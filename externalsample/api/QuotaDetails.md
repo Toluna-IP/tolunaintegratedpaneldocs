@@ -1,12 +1,12 @@
 ---
-title: Quota Details
+title: Get Quota Details
 has_children: false
 parent: ES API
 grand_parent: External Sample Offering
 nav_order: 7
 ---
 
-# Quota Details Endpoint
+# Get Quota Details
 {: .no_toc}
 
 At times, it is beneficial for a Partner to obtain the status of a single Quota regardless of whether or not it would be included in the [GetQuotas](/externalsample/api/getquotas) request. This is the purpose of QuotaDetails, an exclusive feature for Partners using ES Integration.
