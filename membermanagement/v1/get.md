@@ -21,14 +21,14 @@ A partner can receive details for members in the Toluna IP database using an HTT
 
 ### Route
 
-```GET http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent```
+```GET http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent/?memberCode={MemberCode}&partnerGuid={partnerGUID}```
 
 ### Parameters:
 
-| Name | Description | Required? |
-| :--- | :--- | :---: |
-| memberCode | Unique Respondent Code from the Partner | Yes |
-| partnerGuid | Unique Partner Code | Yes |
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| memberCode | ```int``` | Unique Respondent Code from the Partner | Yes |
+| partnerGuid | ```GUID``` | Unique Partner Code | Yes |
 
 ### Header
 
@@ -40,7 +40,7 @@ A partner can receive details for members in the Toluna IP database using an HTT
  
 ### Example
 
-```GET http://{IP_Core_URL}/IntegratedPanelService/api/Respondent/?memberCode={MemberCode}&partnerGuid={partnerGUID}```
+```GET http://{IP_Core_URL}/IntegratedPanelService/api/Respondent/?memberCode=1601440000&partnerGuid=XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX```
 
 ---
 
