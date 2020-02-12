@@ -35,3 +35,32 @@ The route for a Partner to obtain their set(s) of questions and answers differs 
 
 ---
 
+## Is there an API to get the current stats of a survey, such as conversion rate?
+
+Toluna has a significant inventory of Reporting APIs that Partners can use to obtain information on Surveys, Members, and Panels, such as the details of a Survey, including LOI and IR.
+
+Detailed information on this and other useful Reports can be found [here.](/reporting/api)
+
+---
+
+## I don’t see any indication of what country or locale a panelist belongs to. How does Toluna handle that?
+
+Toluna includes these values with PartnerGUID property, which is tied to a specific culture (country-language).
+
+---
+
+## What is the distinction between "Unique Partner Code," PartnerGUID, and PanelGUID?
+
+There is not distinction between these values. The terms are equivalent and interchangeable in discussion, but PanelGUID should be used with Toluna's API.
+
+---
+
+## Why am I seeing some duplicates of answers with separate, unique IDs regarding question 1001569 (MSA)?
+
+The MSA answer value uniqueness is driven by the MSA code instead of the text that it is associated with.
+
+Example: There are two "Decatur" values, 2040 and 2030. The first refers to Decatur, IL, USA, while the second refers to Decatur, AL, USA.
+
+Similar cases can be seen showing multiple MSA values that resolve the cities of the same name but are located in different states. Toluna's recommendation is to match on the MSA Answer Integer instead of the associated text.
+
+---
