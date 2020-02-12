@@ -2,6 +2,7 @@
 title: Get Quota Details
 has_children: false
 parent: ES API
+grand_parent: External Sample Offering
 nav_order: 7
 ---
 
