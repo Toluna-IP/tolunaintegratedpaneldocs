@@ -44,7 +44,7 @@ The following explains the addition of the Survey Wave Exclusions feature for ES
 
  ---
 
- ## Details
+## Details
 
  - SurveyWaveExclusions can be empty if no Exclusions are utilized by a Survey
  - SurveyID is the integer identifier of the excluded Survey
