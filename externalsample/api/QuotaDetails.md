@@ -83,7 +83,7 @@ For response details, please refer to the [Get Quotas Page](/externalsample/api/
 }
 ```
 
-### Survey Not Available for Partner
+#### Survey Not Available for Partner
 ```json
 {
 "Result": "SURVEY_NOT_AVAILABLE_FOR_PARTNER",
