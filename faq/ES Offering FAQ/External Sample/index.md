@@ -5,4 +5,4 @@ parent: FAQ
 nav_order: 4
 ---
 
-ES FAQs
+Use the links below to narrow the results of the question you're looking for regarding External Sample.
