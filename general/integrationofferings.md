@@ -8,19 +8,6 @@ nav_order: 1
 # Integration offerings
 We offer several ways to integrate into our platform and they are listed below. Each of these has their own approaches and require varylying level of needed integrated approaches and connection points. Please consult with a Toluna representative on which offering is the desired appoach. 
 
-<<<<<<< HEAD
-
-{: .no_toc}
-
-We offer several ways to integrate into our platform and they are listed below. Each of these has their own approaches and require varylying level of needed integrated approaches and connection points. Please consult with a Toluna representative on which offering is the desired appoach. 
-
-* TOC
-{:toc}
-
----
-
-=======
->>>>>>> 8a59e754472596960ba82699c83fb938142230a9
 ## [Notification Offering](/notification)
 This is the oldest integration offering in which Toluna performs the sampling and sends [invite notifications](/notifications/invite.html) to the partner and they are able to pass along the opportunity to the member.
 
