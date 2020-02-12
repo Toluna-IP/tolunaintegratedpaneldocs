@@ -2,6 +2,7 @@
 title: Invite
 has_children: true
 parent: External Sample FAQ
+grand_parent: FAQ
 nav_order: 3
 ---
 
