@@ -1,11 +1,11 @@
 ---
-title: General FAQ
+title: General
 has_children: false
 parent: FAQ
 nav_order: 1
 ---
 
-# General FAQ
+# General FAQs
 {: .no_toc}
 
 * TOC
