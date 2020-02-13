@@ -3,6 +3,7 @@ title: Status Pages
 has_children: false
 nav_order: 99
 nav_exclude: true
+search_exclude: true
 ---
 
 # Status Pages
