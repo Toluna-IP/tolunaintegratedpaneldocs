@@ -8,7 +8,7 @@ nav_exclude: true
 # Status Pages
 {: .no_toc}
 
-Use the following pages to view the statuses various API features.
+Use the following pages to view the statuses of various API features.
 
 * TOC
 {:toc}
