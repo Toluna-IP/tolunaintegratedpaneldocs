@@ -100,3 +100,12 @@ We do not currently have an API which provides metrics on conversion rate. The c
 1. Desktop/laptop
 2. Tablet
 3. Phone
+
+---
+
+## Does Toluna require its Partners to implement IP whitelists?
+
+No, Toluna does not require its Partners use IP whitelists.
+
+---
+

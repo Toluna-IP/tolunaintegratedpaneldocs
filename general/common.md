@@ -15,6 +15,14 @@ The following are important features and notes on the Toluna Platform that are u
 
 ---
 
+## Jargon
+
+The following is a list of Jargon commonly within Toluna's platform.
+
+| Name | Description |
+| :--- | :--- |
+| jargon | jargon descriptor |
+
 ## Pricing
 
 *to do* by Josh
