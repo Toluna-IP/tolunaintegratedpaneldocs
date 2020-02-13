@@ -1,6 +1,6 @@
 ---
 title: Invite
-has_children: true
+has_children: false
 parent: External Sample FAQ
 grand_parent: FAQ
 nav_order: 3
