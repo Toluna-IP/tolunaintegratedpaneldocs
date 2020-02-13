@@ -8,12 +8,20 @@ nav_order: 3
 # Common Items
 {: .no_toc}
 
-The following are important features of the Toluna Platform that are useful to all Partners, regardless of Integration Offering Selection.
+The following are important features and notes on the Toluna Platform that are useful to all Partners, regardless of Integration Offering Selection.
 
 * TOC
 {:toc}
 
 ---
+
+## Pricing
+
+*to do* by Josh
+
+ - Business will decided
+ - Approaches: fixed, dynamic, grid
+ - Pricing done by culture
 
 ## "Tracking" Surveys and the WaveID Property
 
