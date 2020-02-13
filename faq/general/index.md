@@ -132,4 +132,8 @@ See [Member-Survey Flow](/memberrouting/membersurveyflow#autorouting.html) for m
 
 ---
 
-## 
+## What are DMA and MSA?
+
+These are both computed demographic values that are based off of a Member's zip code (US members) that provide additional context. More details can be found [here.](https://www.digitaladvertising-101.com/blog/digital-101-dma-vs-msa)
+
+---
