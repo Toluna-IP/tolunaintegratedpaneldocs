@@ -19,7 +19,7 @@ Use the following pages to view the statuses various API features.
 
 [IP Dashboard Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/5418829){: .btn }
 
-[IP Get Quptas](http://stats.pingdom.com/oushrv8s0ynu/5418881){: .btn }
+[IP Get Quotas](http://stats.pingdom.com/oushrv8s0ynu/5418881){: .btn }
 
 ---
 
