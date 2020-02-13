@@ -109,3 +109,27 @@ No, Toluna does not require its Partners use IP whitelists.
 
 ---
 
+## If a Panelist  a Survey and, upon completion, is routed directly a separate Survey, how can a Partner update the transactions for bothn Surveys?
+
+Example:
+
+* Panelist starts Survey A
+* Upon completion, Panelist is automatically routed to Survey B
+* After completing Survey B, panelist is routed to the endpage for Survey B
+* Panelist is never routed to/through the endpage for Survey A
+
+The complete/termination notification for Survey B would contain additional data to indicate this is for a re-route and have the original survey info.
+
+Ex:
+```
+...
+"IsAutoRouted": true,
+OriginalSurveyID: {SurveyID of Survey A}
+...
+```
+
+See [Member-Survey Flow](/memberrouting/membersurveyflow#autorouting.html) for more details on the AutoRouting feature.
+
+---
+
+## 
