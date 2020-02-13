@@ -39,7 +39,7 @@ The preferred content type is json. Any new notification developed will only be 
 
 ## "Tracking" Surveys and the WaveID Property
 
-A “Tracker” is a series of related surveys. Toluna calls each iteration of these Surveys a “Wave”. From the Respondent’s perspective, each Wave is experienced like an individual Survey. To the Partner, each Wave of a Tracker carries its own “WaveID” but shares a common SurveyID. All new partners are opted-in to use WaveID by default. WaveID will appear on Invites, Reports, Redirects, and in all Notifications (completion, termination, and surveyClosed).
+A “Tracker” is a series of related surveys. Toluna calls each iteration of these Surveys a “Wave." From the Respondent’s perspective, each Wave is experienced like an individual Survey. To the Partner, each Wave of a Tracker carries its own “WaveID” but shares a common SurveyID. All new partners are opted-in to use WaveID by default. WaveID will appear on Invites, Reports, Redirects, and in all Notifications (completion, termination, and surveyClosed).
 
 ### Benefits of Using WaveID
 
