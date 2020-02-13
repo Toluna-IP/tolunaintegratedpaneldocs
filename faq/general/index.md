@@ -68,3 +68,35 @@ Similar cases can be seen showing multiple MSA values that resolve the cities of
 ## Is there a service or documentation that will help us derive regional mappings, such as DMA and MSA?
 
 Toluna provides documents to all of its Partners to assist with mapping. Contact your Toluna representative if you require these documents.
+
+---
+
+## Will Toluna provide us a daily inventory count?
+
+At Partner request, Toluna may set up a profiler to keep track of the Partner’s average daily inventory. Please note: Toluna may not recall average daily inventories retroactively - averages will only be recorded from the date of profiler setup.
+
+---
+
+## Why am I receiving different return values in production than I did in sandbox testing?
+
+Surveys have a category/SurveyTopic (denoted internally as StudyType), which can have a different translated value for each culture. Sandbox and Production environments are consistent in many things but it is possible for Survey translations, both the values and presence of them, to vary between the two environments.
+
+---
+
+## Does Toluna provide any metrics around Survey conversion rates?
+
+We do not currently have an API which provides metrics on conversion rate. The closest indicator of performance we have is the project IR, or Incidence Rate, which adjusts in real time once a particular threshold has been reached for a particular Survey.
+
+---
+
+## What is the difference between a Redirect URL and a Notification URL?
+
+[Redirect URL](/memberrouting/) is where Toluna’s platform is sending Respondents in certain situations. A [Notification])(/notifications/quotastatus.html) is Toluna’s platform sending information to a Partner about an event.
+
+---
+
+## What do DeviceTypeIDs 1, 2, and 3 stand for?
+
+1) Desktop/laptop
+2) Tablet
+3) Phone

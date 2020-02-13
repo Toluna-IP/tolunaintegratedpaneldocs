@@ -20,6 +20,12 @@ Toluna’s “External Sample” (ES) capability is an integration option offere
 
 ---
 
+## We’ve recently changed to External Sample offering from Notification or Dashboard. Do we need to re-PUT all panelists to a new panel? If so, can they be copied over on your end?
+
+
+
+---
+
 ## Can other integration option(s) can be operated in parallel with IP ES? Will the current Integration work?
 
 Yes. This is just another integration option. If you are a Dashboard partner and willing to integrate as an ES partner, it is possible, and both the integrations will work seamlessly.
@@ -69,3 +75,7 @@ After obtaining the invite link via Invite API (please refer Integration Guide f
 For Recontact Surveys and WaveIDs, Toluna allows Members to be excluded from participating based on their answers on previous Surveys or Waves. Detailed information on how to use this feature can be seen [here.](/externalsample/api/surveyexclusion.html)
 
 ---
+
+## For our Age profiler, sometimes Toluna uses only AnswerIDs, and other times they use AnswerValues. What is and where is there this distinction?
+
+If Toluna some custom age range defined, we send the age range in the AnswerValues, otherwise we send AnswerIDs. You will need to accommodate both on your end.

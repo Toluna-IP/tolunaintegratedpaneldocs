@@ -60,4 +60,6 @@ The Tolunma Platform requires complete match to all questions on a Quota unless 
 
 ---
 
-## 
+## What happens when Toluna attempts to send us a notification and we do not receive it due to connection issues?
+
+If an error occurs in sending the Quota notification, Toluna will try the message again after processing the rest of the current message Queue.
