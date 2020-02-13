@@ -97,6 +97,6 @@ We do not currently have an API which provides metrics on conversion rate. The c
 
 ## What do DeviceTypeIDs 1, 2, and 3 stand for?
 
-1) Desktop/laptop
-2) Tablet
-3) Phone
+1. Desktop/laptop
+2. Tablet
+3. Phone
