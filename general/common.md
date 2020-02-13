@@ -27,9 +27,15 @@ The following is a list of Jargon commonly within Toluna's platform.
 
 *to do* by Josh
 
- - Business will decided
+ - Business will decide
  - Approaches: fixed, dynamic, grid
  - Pricing done by culture
+
+---
+
+## Content Type
+
+The preferred content type is json. Any new notification developed will only be available in JSON format. Existing content that is also available in XML format will be explicitly described.
 
 ## "Tracking" Surveys and the WaveID Property
 

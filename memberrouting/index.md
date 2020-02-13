@@ -19,6 +19,19 @@ nav_order: 3
 
 When a Respondent attempts to take a Survey they have been invited to, there are times when the Survey is no longer available (e.g. if the quota fills before the Respondent responds). The Toluna system offers the Partner and the respondent and automated routing capability in this scenario where the Respondent can be automatically routed to another Survey that the Respondent may qualify for in the system. This routing mechanism is also available to the Partner and Respondent when a Respondent terminates from a Survey as well. In both cases, the Partner is notified with the new SurveyID and Revenue amounts based on the notification HTTP POST mechanism outline [here.](/notifications/memberstatus)
 
+## Routing Parameters
+
+Toluna can return back to the Partner any query string paramaters that they pass in when routing a member to a Survey. For example, if the Partner passes in "...toluna.com?di=1adsfadf&foo=bar123" we can return "partnerendpage.com/foo=bar123." 
+
+Additionally, Toluna can return the following value on the query string even if the Partner does not pass them in:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| SurveyID | ```int``` | Toluna's identifier of a Survey |
+| SurveyName | ```string``` | Toluna's name of Survey |
+| WaveID | ```int``` | Toluna's identifier of the Wave |
+| MemberCode | ```string``` | Memeber's unique identifier |
+
 ### Example Scenario
 
 1) Respondent gets an invite for a Survey
