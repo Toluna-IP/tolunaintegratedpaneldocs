@@ -19,15 +19,41 @@ Since the Member does not start the Survey experience before they are Terminated
 
 ## Route
 
+ - None
+
 
 ## Body Details
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
+| UniqueCode | ```string``` | Unique Respondent Code from the Partner |
+| SurveyID | ```int``` | Tolujna Survey identifier |
+| SurveyRef | ```string``` | Toluna Survey name |
+| Reason | ```string``` | Reason for the Termination. Possible values: "QuotaFull," "SurveyTaken," "Terminated," "SurveyNotAvailable," "NoSurveysAvailable," "NoCookie," "MaxSurveysReached," or "NotQualified" |
+| DateTime | ```string``` | Date and time of Respondent Termination. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
+| WaveiD | ```int``` | Current iteration of the Survey. Studies related to one another can be sent in "waves" that the Member will experience as a unique Survey |
+| Incidence Rate | ```int``` | Incidence Rate of the Survey |
+| AdditionalData | ```string``` | Query string argument in the completion URL with its data replaced |
+| IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
+| OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
 
 
-## Example XML Pre-Start
+## Example XML Pre-Start 
+
+Pre-start notifications are only available in JSON format.
 
 
 ## Example JSON Pre-Start
-
+```json
+{
+ "UniqueCode": "111",
+ "SurveyId": 123,
+ "SurveyRef": "123560-US",
+ "Reason": "QuotaFull",
+ "DateTime": "2014-09-11 16:06:27",
+ "WaveId": 100,
+ "AdditionalData": "clickid=1234",
+"IsAutoRouted": true,
+"OriginalSurveyID": 100
+}
+```
