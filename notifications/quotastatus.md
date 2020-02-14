@@ -43,12 +43,12 @@ Toluna will deliver this via HTTP POST when one of its Quotas is no longer avail
 Quota status notifications are avialable in JSON and XML formats. Below are examples in the JSON format.
 
 ### Example JSON Request
-```json
+```plaintext
 POST {Partner-Specified URL}
 ```
 
 ### Example JSON Notification
-```json
+```plaintext
  {
   "QuotaID": 3445365,
   "SurveyID": 45367678,

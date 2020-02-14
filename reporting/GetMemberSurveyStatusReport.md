@@ -52,7 +52,7 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Members/{Membercode}
 | 500 | Internal Error. An exception occurred while processing the request. Toluna will likely have details capture in its logs |
 
 ### Example Response
-```json
+```plaintext
 {
     "Name": "MemberSurveyStatusReport",
     "Description": "Shows Member Responses to all Surveys within a data range",

@@ -52,7 +52,7 @@ For response details, please refer to the [Get Quotas Page](/externalsample/api/
 ### Example Responses
 
 #### Survey Available for Partner
-```json
+```plaintext
 {
 "QuotaID": 42387,
 "CountryID": 2000223,
@@ -85,7 +85,7 @@ For response details, please refer to the [Get Quotas Page](/externalsample/api/
 ```
 
 #### Survey Not Available for Partner
-```json
+```plaintext
 {
 "Result": "SURVEY_NOT_AVAILABLE_FOR_PARTNER",
 "ResultCode": 42

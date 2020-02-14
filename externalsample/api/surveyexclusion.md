@@ -17,7 +17,7 @@ The following explains the addition of the Survey Wave Exclusions feature for ES
 ---
 
 ## Updated Survey Object returned by GET Quotas response
-```json
+```plaintext
 {
 “SurveyID": 48506,
 "SurveyName": "1087571-US-Quota",

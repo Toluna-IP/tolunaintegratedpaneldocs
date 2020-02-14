@@ -44,7 +44,7 @@ Pre-start notifications are only available in JSON format.
 
 
 ## Example JSON Pre-Start
-```json
+```plaintext
 {
  "UniqueCode": "111",
  "SurveyId": 123,

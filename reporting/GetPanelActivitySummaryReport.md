@@ -44,7 +44,7 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/PanelActivit
 | 500 | Internal Error. An exception occurred while processing the request. Toluna likely has details captured in its logs |
 
 ### Example Response
-```json
+```plaintext
 {
   "Name": "SurveyTrackingSummary",
   "Description": "Shows Summary of Outcomes of all Surveys within a data range",

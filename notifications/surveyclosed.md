@@ -46,7 +46,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 ```
 
 ### Example JSON Notification
-```json
+```plaintext
 {
  "SurveyID": 99,
  "SurveyRef": "123560-US",

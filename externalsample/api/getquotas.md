@@ -141,7 +141,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 [Click Here to Access JSON File](){: .btn }
 
 #### 400 Response
-```json
+```plaintext
 HTTP/1.1 400
 Content-Type: application/json; charset=utf-8
 

@@ -52,7 +52,7 @@ POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 
 ### Example
 
- ```json
+ ```plaintext
 {
  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",  
  "MemberCode": "111", 
@@ -91,7 +91,7 @@ POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 ### Examples
 **To-Do** Add more examples where partner adds member with varying properties
 
- ```json
+ ```plaintext
 {
  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",  
  "MemberCode": "111", 

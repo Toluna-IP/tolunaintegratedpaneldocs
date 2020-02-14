@@ -85,7 +85,7 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 ### Examples
 
 #### Deactivate Member
-```json
+```plaintext
  {
   "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
   "MemberCode": "111",
@@ -94,7 +94,7 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
  ```
  
 #### Change Email
- ```json
+ ```plaintext
  {
   "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
   "MemberCode": "111",
@@ -103,7 +103,7 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
  ```
  
 #### Use Member for Testing
- ```json
+ ```plaintext
  {
   "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
   "MemberCode": "111",
@@ -112,7 +112,7 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
  ```
  
 #### Change Member EducationID
- ```json
+ ```plaintext
  {
   "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
   "MemberCode": "111",
@@ -124,7 +124,7 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 ```
 
 #### Remove Personal Information
-```json
+```plaintext
  {
   "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
   "MemberCode": "111",

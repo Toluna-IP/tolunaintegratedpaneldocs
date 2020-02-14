@@ -74,7 +74,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 ### Examples
 
 #### 200 Response
-```json
+```plaintext
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 {
@@ -89,7 +89,7 @@ Content-Type: application/json; charset=utf-8
 ```
 
 ### Sample 400 Response
-```json
+```plaintext
 HTTP/1.1 400
 Content-Type: application/json; charset=utf-8
  {
@@ -99,7 +99,7 @@ Content-Type: application/json; charset=utf-8
 ```
 
 #### 400 Response
-```json
+```plaintext
 HTTP/1.1 400
 Content-Type: application/json; charset=utf-8
 

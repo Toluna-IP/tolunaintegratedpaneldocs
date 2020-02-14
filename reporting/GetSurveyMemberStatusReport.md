@@ -55,7 +55,7 @@ GET http://{IP_CORE_URL}/IntergratedPanelService/api/Reports/Surveys/{SurveyName
 | 400 | "WaveID" is included and the Panel has not yet been configured to use WaveID |
 
 ### Example Response
-```json
+```plaintext
 {
     "Name": "SurveyMemberStatusReport",
     "Description": "Shows Member responses to the requested Survey",

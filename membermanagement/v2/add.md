@@ -52,7 +52,7 @@ POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 
 ### Example
 
-```json
+```plaintext
 {
  "PartnerGUID": "93A6D55C-D4E7-49FC-8D68-671165ADE463",
  "MemberCode": "AUniquePartnerCode",

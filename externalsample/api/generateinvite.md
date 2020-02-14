@@ -98,7 +98,7 @@ Content-Type: application/json; charset=utf-8
 ```
 
 #### 400 Response
-```json
+```plaintext
 HTTP/1.1 400
 Content-Type: application/plaintext; charset=utf-8
  {

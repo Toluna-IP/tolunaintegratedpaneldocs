@@ -51,7 +51,7 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 All examples below shown in JSON
 
 #### Deactivate Member
-```json
+```plaintext
 {
  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
  "MemberCode": "111",
@@ -60,7 +60,7 @@ All examples below shown in JSON
 ```
 
 #### Change Email
-```json
+```plaintext
 {
  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
  "MemberCode": "111",
@@ -69,7 +69,7 @@ All examples below shown in JSON
 ```
 
 #### Use Member for Testing
-```json
+```plaintext
 {
  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
  "MemberCode": "111",
@@ -78,7 +78,7 @@ All examples below shown in JSON
 ```
 
 #### Remove Personal Information
-```json
+```plaintext
 {
  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
  "MemberCode": "111",

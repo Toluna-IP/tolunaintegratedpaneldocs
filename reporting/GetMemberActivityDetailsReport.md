@@ -39,7 +39,7 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/{MemberCode}
 | MemberResponse[n].ReferenceID | ```GUID``` | Toluna's identifier for Member's response to a Survey; useful for support tickets |
 
 ### Example Response
-```json
+```plaintext
 {
   "Name": "MemberActivityDetailsReport",
   "Description": "Shows individual Member experience to the requested Survey",

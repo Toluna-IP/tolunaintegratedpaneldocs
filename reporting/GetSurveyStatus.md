@@ -44,7 +44,7 @@ GET http://{PI_CORE_URL}/IntegratedPanelService/api/Reports/Survey/{SurveyName}/
 | 500 | Internal Error. An exception occurred while processing the request. Toluna likey has details captured in its logs |
 
 ### Example Response
-```json
+```plaintext
 {
  "Status": "CLOSED",
  "SurveyName": "1072552-BR",

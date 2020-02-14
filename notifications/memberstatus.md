@@ -60,7 +60,7 @@ POST http://myPartnerApi/TolunaComplete
 ```
 
 ### Example JSON Response
-```json
+```plaintext
 {
  "UniqueCode": "111",
  "SurveyId": 123,
@@ -122,7 +122,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 ```
 
 ### Example JSON Termination
-```json
+```plaintext
 {
  "UniqueCode": "111",
  "SurveyId": 123,
