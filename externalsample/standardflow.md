@@ -9,7 +9,6 @@ parent: External Sample Offering
 # External Sample - Standard Flow
 
 ![ES Standard Flow](https://github.com/josh-toluna/tolunaintegratedpaneldocs/blob/master/resources/flows/IP%20Flow%20Diagrams-ES%20Standard%20Flow.png?raw=true)
-)
 
 ### Get Quotas
 

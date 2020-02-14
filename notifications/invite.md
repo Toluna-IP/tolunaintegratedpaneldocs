@@ -34,7 +34,7 @@ POST http://myPartherApi/tolunaInvite
 ```
 
 #### XML
-```XML
+```
 <?xml version="1.0"?>
 <invite xmlns:xsd="http://www.w3.org/2001/XMLSchema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
   <UniqueCode>myCode</UniqueCode>

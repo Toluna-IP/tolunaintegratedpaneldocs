@@ -43,10 +43,9 @@ GET http://{IP_ES_URL}/ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/M
  - None
  
 ### Example Request
-```json
+```plaintext
 GET http://{IP_ES_URL}/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/Recontact/12345/MemberCodes?maxResults=25&lastMemberCodeReceived=myLastResult
 API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
-cache-control: no-cache
 ```
 
 ---
