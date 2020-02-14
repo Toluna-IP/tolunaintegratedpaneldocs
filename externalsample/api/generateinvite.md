@@ -82,7 +82,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 ### Examples
 
 #### 200 Response
-```json
+```plaintext
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 {
@@ -100,7 +100,7 @@ Content-Type: application/json; charset=utf-8
 #### 400 Response
 ```json
 HTTP/1.1 400
-Content-Type: application/json; charset=utf-8
+Content-Type: application/plaintext; charset=utf-8
  {
   "Result": "NO_QUOTA_ID",
   "ResultCode": 10

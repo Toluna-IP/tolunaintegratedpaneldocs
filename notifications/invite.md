@@ -58,7 +58,7 @@ POST http://myPartherApi/tolunaInvite
 ```
 
 #### JSON
-```json
+```plaintext
 {
   "UniqueCode": "111",
   "SamplePartnerGuid”: “CC265C63-F887-4366-9ED1-7B2B3BD94C2B”,

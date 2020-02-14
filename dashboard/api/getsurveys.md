@@ -62,7 +62,7 @@ GET  http://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={Member
 
 
 ### Example Response
-```json
+```plaintext
 [
  {
  "SurveyID": 21737,
