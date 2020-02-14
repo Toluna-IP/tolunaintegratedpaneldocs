@@ -1,7 +1,7 @@
 ---
 title: Quotas
 has_children: false
-parent: External Sample FAQ
+parent: External Sample
 grand_parent: FAQ
 nav_order: 2
 ---
