@@ -20,7 +20,7 @@ For the requested Quota, returns a list of MemberCodes eligible for a recontact.
 ## Request
 
 ### Route 
-```json
+```plaintext
 GET http://{IP_ES_URL}/ExternalSample/{panelGuid:GUID}/Recontact/{quotaID:int}/MemberCodes?maxResults={maxResults:int}&lastMemberCodeReceived={lastMemberCodeReceived:string}
 ```
 

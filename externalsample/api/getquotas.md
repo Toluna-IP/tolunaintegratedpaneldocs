@@ -22,7 +22,7 @@ For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated 
 
 
 ### Route
-```
+```plaintext
 GET http://{IP_ES_URL}/ExternalSample/{PanelGUID:GUID}/Quotas?includeRoutables:bool
 ```
 

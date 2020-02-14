@@ -11,7 +11,7 @@ Returns the summary of the successfully started Surveys in the given date range.
 >Please note: the date range is restricted to 30 days
 
 ### Route
-```json
+```plaintext
 GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/PanelActivitySummary?SamplePartnerGUID={PartnerGUID}&StartDate={StartDate}&EndDate={EndDate}
 ```
 

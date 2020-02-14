@@ -19,8 +19,8 @@ nav_order: 2
 Toluna’s client Surveys are always looking for rich profile information for all Respondents. Additional profile information for a Respondent increases the likelihood of a respondent qualifying for a Survey. Toluna provides a RESTful way to get access to these Survey Profiles that can be filled out by your Respondents.
 
 ### Route
-```
-**GET**  http://{IP_CORE_URL/IntegratedPanelService/api/Profile/GetNextProfileURL/
+```plaintext
+GET http://{IP_CORE_URL/IntegratedPanelService/api/Profile/GetNextProfileURL/
 ```
 
 >Note: This request can be made multiple times. Toluna keeps track of the profiles filled by each respondent and will not offer to fill an already filled profile for a respondent.

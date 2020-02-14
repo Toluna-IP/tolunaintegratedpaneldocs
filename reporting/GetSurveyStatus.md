@@ -12,7 +12,7 @@ Returns status information for the request survey. Two options available: by ID 
 ### By ID Parameters
 
 #### Route
-```
+```plaintext
 GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/{SurveyID}/StatusByID/?SamplePartnerGuid={ParnerGUID}
 ```
 
@@ -26,8 +26,8 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/{SurveyID}/S
 ### By Name Parameters
 
 #### Route
-```
-**GET** http://{PI_CORE_URL}/IntegratedPanelService/api/Reports/Survey/{SurveyName}/StatusByName/?SamplePartnerGUID={PartnerGUID}
+```plaintext
+GET http://{PI_CORE_URL}/IntegratedPanelService/api/Reports/Survey/{SurveyName}/StatusByName/?SamplePartnerGUID={PartnerGUID}
 ```
 
 #### Parameters

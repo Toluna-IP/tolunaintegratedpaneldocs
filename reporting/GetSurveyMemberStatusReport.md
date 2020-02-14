@@ -11,7 +11,7 @@ For a given Survey, returns a list of all associated Members who, at a minimum, 
 >Please note: the date range is restricted to 30 days and this report does not produce data for clicks which were terminated before the Survey could be started.
 
 ### Route
-```
+```plaintext
 GET http://{IP_CORE_URL}/IntergratedPanelService/api/Reports/Surveys/{SurveyName}/MemberStatus/?SamplePartnerGUID={PartnerGUID}&StartDate={StartDate}&EndDate={EndDate}
 ```
 

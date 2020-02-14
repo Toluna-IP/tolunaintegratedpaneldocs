@@ -11,7 +11,7 @@ For a given Member, returns a list of all associated Survey responses.
 >Please note: date range is restricted to 30 days
 
 ### Route
-```json
+```plaintext
 GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Members/{Membercode}/SurveyStatus/?SamplePartnerGuid={PartnerGUID}&StartDate={StartDate}&EndDate={EndDate}
 ```
 

@@ -21,8 +21,9 @@ Once a Member has been matched to a Toluna Quota, this reoute can be used to gen
 ## Request
 
 ### Route
-
-```GET http:///{IP_ES_URL}/ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}```
+```plaintext
+GET http:///{IP_ES_URL}/ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}
+```
 
 
 ### Parameters

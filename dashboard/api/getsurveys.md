@@ -19,7 +19,7 @@ nav_order: 1
 ## Request
 
 ### Route
-```
+```plaintext
 GET  http://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={MemberCode}&partnerGuid={PartnerGUID}&numberOfSurveys=2&mobileCompatible=false&deviceTypeIDs=1&deviceTypeIDs=2
 ```
 
