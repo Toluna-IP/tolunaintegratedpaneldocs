@@ -15,6 +15,12 @@ The following are important features and notes on the Toluna Platform that are u
 
 ---
 
+# Culture (Panel) Driven
+
+Within Toluna's API, all endpoints are "culture driven," meaning that Toluna requires and organizes it's information based on a Partner's culture (a combination of language and counntry, such as "en-gb" for "English-Great Britain") and a PanelGUID (provided by Toluna).
+
+---
+
 ## Jargon
 
 The following is a list of Jargon commonly within Toluna's platform.

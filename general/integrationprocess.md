@@ -6,9 +6,9 @@ nav_order: 2
 ---
 
 # Integration Process
-This section outlines the full integration process from cold start to completes in production. If you're looking for how to quickly wire up the technical side of the integration, try our [Quick Start](/general/quickstart) guide.
-
 {: .no_toc}
+
+This section outlines the full integration process from cold start to completes in production. If you're looking for how to quickly wire up the technical side of the integration, try our [Quick Start](/general/quickstart) guide.
 
 
 * TOC
