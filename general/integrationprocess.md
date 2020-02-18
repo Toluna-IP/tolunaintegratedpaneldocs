@@ -23,7 +23,7 @@ Contact Toluna to discuss details and the integration offering that best fits yo
 
 ## Step 2 - Member Management
 
-Once provided with culture-specific panel guids to our Sandbox environment, the best place to start integrating is on [Member Management](/membermanagement). This component is central to integrating with our platform and is a required connection pointin in all integration offerings. 
+Once provided with culture-specific panel guids to our Sandbox environment, the best place to start integrating is on [Member Management](/membermanagement). This component is central to integrating with our platform and is a required connection point in in all integration offerings. 
 
 ## Step 3 - Member Routing
 
