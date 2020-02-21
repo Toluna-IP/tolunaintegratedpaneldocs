@@ -23,7 +23,7 @@ Contact Toluna to discuss details and the integration offering that best fits yo
 
 ## Step 2 - Member Management
 
-Once provided with culture-specific panel guids to our Sandbox environment, the best place to start integrating is on [Member Management](/membermanagement). This component is central to integrating with our platform and is a required connection point in in all integration offerings. 
+Once provided with culture-specific panel guids to our Sandbox environment, the best place to start integrating is on [Member Management](/membermanagement). This component is central to integrating with our platform and is a required connection point in all integration offerings. 
 
 ## Step 3 - Member Routing
 
@@ -39,14 +39,17 @@ Begin integrating the needed connection points for the desired integrating offer
 
 Each of these offerings have their own requirements and flows - please be sure to understand the underlying integration flow. 
 
-## Step 5 - Mapping
+## Step 6 - End Urls 
+Our platform will need to know where to send members throughout the [member survey flow](/memberrouting/membersurveyflow). The various urls will need to be provided so the partner's members are routed accordingly. 
+
+## Step 7 - Mapping
 Mapping your platform's data to our platform's is a critical part of the integration process. Please check out the [Mapping](/mapping) section which demonstrates how to go about translationg data points between our two platforms. 
 
-## Step 6 - Notifications
+## Step 8 - Notifications
 Along with each integration offering there come notifications (webhooks) that can be consumed by your platform to help with performance and security. Check our the [notifications](/notifications) section to learn about the various notification types and their needed integration points. 
 
-## Step 7 - Test
+## Step 9 - Test
 Once the required integration pints have been setup, please test the integration through mimicing member behaviour and tracing the flow from start to finish. Please reach out with any questions or for help assistance. 
 
-## Step 8 - Go Live!
+## Step 10 - Go Live!
 Once tested and ready to go live, Toluna will move your integration to Production and issue updated culture-specific panel-guids and an api key. You are then ready to route members through the integration. 

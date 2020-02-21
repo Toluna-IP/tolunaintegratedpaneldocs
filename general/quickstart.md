@@ -6,7 +6,7 @@ nav_order: 0
 ---
 
 # Quick Start
-To quickly get integrated with out platform, here's how to go about it.
+To quickly get integrated with our platform, here's how to go about it. In all cases, API access to the platform will have to be given by Toluna representatives.
 
 
 # Dashboard 

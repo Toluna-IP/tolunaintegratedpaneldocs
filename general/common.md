@@ -15,7 +15,7 @@ The following are important features and notes on the Toluna Platform that are u
 
 ---
 
-## Culture (Panel) Driven
+## Culture Driven
 
 Within Toluna's API, all endpoints are "culture driven," meaning that Toluna requires and organizes it's information based on a Partner's culture (a combination of language and counntry, such as "en-gb" for "English-Great Britain") and a PanelGUID (provided by Toluna).
 
@@ -27,15 +27,28 @@ The following is a list of Jargon commonly within Toluna's platform.
 
 | Name | Description |
 | :--- | :--- |
-| jargon | jargon descriptor |
+| LOI | length of Interview |
+| IR | Incidence Rate |
+| ES | External Sample |
+
+
 
 ## Pricing
 
-*to do* by Josh
+There are three approaches for pricing that are currently available on the Toluna platform.  This will be decided through a conversation and contract with Toluna - please see your Toluna Representative for more details on pricing specifics. 
 
- - Business will decide
- - Approaches: fixed, dynamic, grid
- - Pricing done by culture
+- Pricing is by Culture
+- Pricing is across all integrations for a Partner
+- Grid pricing is the standard 
+
+### Pricing Models
+
+| Name | Description |
+| :--- | :--- |
+| Fixed |  Pricing that is consistent across all surveys regardless of LOI or IR.|
+| Dyanmic |  Pricing that is based off of a calculation/set function and uses LOI, IR, and other paramaters.  |
+| Grid | Pricing that is based off a survey's LOI and IR values.  |
+
 
 ---
 
