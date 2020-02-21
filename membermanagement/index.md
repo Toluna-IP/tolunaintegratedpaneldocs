@@ -7,9 +7,17 @@ nav_order: 2
 # Member Management
 {: .no_toc }
 
-Integrated Panel (IP) is an offering for our partners that allow them to receive a request to invite their own panel to Toluna surveys that have demographics (Age, Gender, Country, and Language etc.) that will match those of the individual panelist.
+For all Toluna Integration offerings, the Toluna requires partner's members to be registered on the platform.  
+
+Toluna can receive the partner’s panel data via RESTful APIs. A partner can use these APIs to add new members or deactivate  members. 
+
+We currently offer a Member management API in two versions: [Static(v1)](/membermanagement/v1/) and [Dynamic(v2)](/membermanagement/v2/). The core difference in the two is the flexibility in hthe level of member information is able to be conveyed to the Toluna platform. 
+
+We recommended v2 as it will lead to better survey qualification and higher conversion rate. The details of these two version are outlined in their respective sections. 
 
 No personal information regarding the partner’s panel is received or stored by Toluna. The partner need only supply a unique numeric “Member ID”  that will be used to identify the member when interacting with the Toluna platform. 
+
+Mapping Data is availble via our [Refernce Data API](/mapping/referencedataapi) which will aid in mapping demographic values. These values can vary by culture. 
 
 * TOC
 {:toc}
@@ -29,15 +37,6 @@ The following are important notes on the practice of Member Management:
 > - A "GetSurveys" request for a regulated Member will result in "no member found."
 
 ---
-
-## Member Management API Options
-Toluna can receive the partner’s panel data via RESTful APIs. A partner can use these APIs to add new members or deactivate  members. Please request the mapping values for the demographics from your Toluna account representative. Most values vary by culture.
-
-We currently offer a Member management API in two versions: [Static(v1)](/membermanagement/v1/) and [Dynamic(v2)](/membermanagement/v2/). The core difference in the two is the flexibility in hthe level of member information is able to be conveyed to the Toluna platform. 
-
-We recommended v2 as it will lead to better survey qualification and higher conversion rate. The details of these two version are outlined in their respective sections. 
-
-
 ---
 
 ## Member Status Type 
