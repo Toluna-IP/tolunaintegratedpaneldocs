@@ -21,7 +21,7 @@ Returns a list of all device type IDs and names.
 
 ### Route
 ```
-GET {IP_REF_DATA_URL}/ExternalSamplingService/ReferenceData/DeviceTypes HTTP/1.1
+GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/DeviceTypes 
 ```
 
 ### Parameters
