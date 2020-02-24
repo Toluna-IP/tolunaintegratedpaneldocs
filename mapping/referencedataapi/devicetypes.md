@@ -13,7 +13,7 @@ grand_parent: Mapping
 Returns a list of all device type IDs and names.
 
 * TOC
-{.toc}
+{:toc}
 
 ---
 

@@ -13,7 +13,7 @@ grand_parent: Mapping
 Returns a list of all question category names and IDs.
 
 * TOC
-{.toc}
+{:toc}
 
 ---
 

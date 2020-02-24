@@ -13,7 +13,7 @@ grand_parent: Mapping
 Returns a list of all platform questions and their details.
 
 * TOC
-{.toc}
+{:toc}
 
 ---
 
