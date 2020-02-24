@@ -10,7 +10,7 @@ grand_parent: Mapping
 # Currencies
 {: .no_toc }
 
-Returns a list of all study types and their details.
+Returns a list of all currency types.
 
 * TOC
 {:toc}
