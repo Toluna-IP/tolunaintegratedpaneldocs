@@ -32,7 +32,7 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/Cultures
 
 | Name | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
-| Partner_AUTH_Key | ```string``` | Authorization of Reference Data access | Yes |
+| PARTNER_AUTH_KEY | ```string``` | Authorization of Reference Data access | Yes |
 
 ### Body Details
 
@@ -48,7 +48,7 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/Cultures
 | :--- | :--- |
 | 200 | OK. Request processed normally |
 | 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
-| 403 | Forbidden. Invalid Partner_AUTH_Key |
+| 403 | Forbidden. Invalid PARTNER_AUTH_KEY |
 | 500 | Internal Error. An exception occurrec while processing the request. Contact Toluna for resolution. Toluna will likely have the details caputred in its logs |
 
 ### Body Details
