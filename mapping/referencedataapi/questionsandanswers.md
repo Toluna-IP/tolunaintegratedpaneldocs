@@ -98,6 +98,7 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData
 | AnswerValidationRegularExpression | ```string``` | Declares regular expression for open-ended questions. If the question is not open-ended, response will be 'null' |
 
 ### Example Response
+```plaintext
 [
 ...
   {
