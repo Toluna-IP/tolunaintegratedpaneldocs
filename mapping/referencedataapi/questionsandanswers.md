@@ -35,6 +35,17 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData
 | PARTNER_AUTH_KEY | ```string``` | Authorization of Reference Data access | Yes |
 
 ### Body Details
+
+| Name | Type | Description | Required? |
+| :--- | :--- | :--- | :---: |
+| CultureIDs | ```array<int>``` | Culture identifiers for requested cultures. Limit 5 cultures per request. For a list of available cultures, click [here](/mapping/referencedataapi/cultures.html) | Yes |
+| CategoryIDs | ```array<int>``` | Category identifiers that limit the response to questions and answers tied to the specific Category | No |
+| LastUpdateDate | ```dateTime``` | Format YYYY-MM-DDTHH:MM:SS. Any questions and answers modified after the date given will be included in the results. If omitted, all questions and answers will be given regardles of modificaiton date | No |
+| IncludeComputed | ```bool``` | Default true. When true, questions with answer type "Computed" will be included in results. Set to "false" to exclude these questions | No |
+| IncludeRoutables | ```bool``` | Default false. When true, routable questions (IsRoutable=true) will be included in the results. Set to false to exclude these questions.
+| IncludeDemographics | ```bool``` | 
+
+### Example Request
 ```
  {
     "CultureIDs": [{{qAndaCultures}}],                        
