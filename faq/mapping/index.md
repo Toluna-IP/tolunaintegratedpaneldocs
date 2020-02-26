@@ -6,7 +6,7 @@ nav_order: 2
 ---
 
 # API Mapping
-{: no-toc}
+{: .no-toc}
 
 * TOC
 {:toc}
