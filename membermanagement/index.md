@@ -64,6 +64,8 @@ IP APIs will return 400 Bad Requests (except Member ```POST(s)```, which will re
 All versions of the Member API support PII regulation. For technical details, please refer to the route
 documentation [v1](/membermanagement/v1/update.html#remove-personal-information) or [v2](/membermanagement/v2/update.html#remove-personal-information)
  
+After a Member is PII Regulated, Partners will no longer be able to use the [GET](/membermanagement/v1/get.html) API to retrieve the Member's data.
+
 When PII regulation is requested, Toluna removes the following items:
 
 | Toluna QuestionID | Name |
