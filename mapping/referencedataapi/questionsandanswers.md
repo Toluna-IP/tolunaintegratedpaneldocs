@@ -66,7 +66,7 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData
 | IsRoutable | ```bool``` | Declares whether a question is routable or not |
 | InternalName | ```string``` | Toluna's name for a question used only internally |
 | TranslatedQuestion | ```list<object>``` | Shows details for the specific question |
-| ChildQuestions | *to do* | *to do* |
+| ChildQuestions | ```list<object>``` | Shows details for any Childquestions associated with a TranslatedQuestion. Child questions are only associated with Questions that have the answer type "Container" |
 | TranslatedAnswers | ```list<object>``` | List of question answers and their properties |
 
 
@@ -78,6 +78,15 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData
 | CultureID | ```int``` | Toluna's unique identifier for a culture |
 | DisplayNameTranslation | ```string``` | Toluna's name for a question shown to the Repondent |
 
+#### ChildQuestions Objects
+
+| Name | Type | Description | 
+| :--- | :--- | :--- |
+| QuestionID | ```int``` | Toluna's unique identifier for a question |
+| CultureID | ```int``` | Toluna's unique identifier for a culture |
+| DisplayNameTranslation | ```string``` | Toluna's name for a question shown to the Repondent |
+
+
 #### TranslatedAnswers Objects
 
 | Name | Type | Description |
@@ -85,5 +94,5 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData
 | AnswerID | ```int``` | Toluna's unique identifier for an answer |
 | Translation | ```string``` | Answer text as shown to the Respondent |
 | AnswerInternalName | Answer text used internally |
-| AnswerType | ```string``` | Defines how the answer is derived. Possible responses are SingleSelect, ComputedType, MultiSelect, OpenEnded |
+| AnswerType | ```string``` | Defines how the answer is derived. Possible responses are SingleSelect, ComputedType, MultiSelect, OpenEnded, Container |
 | AnswerValidationRegularExpression | ```string``` | Declares regular expression for open-ended questions. If the question is not open-ended, response will be 'null' |
