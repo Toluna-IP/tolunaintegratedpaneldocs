@@ -48,41 +48,6 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
 
 ### Examples
-*To do*
-
----
-
-## Response
-
-### Possible Codes
-
-| Response Code | Etiology, actions |
-| :--- | :--- |
-| 200 | OK. Request processed normally, existing Member Paneling was updated without issue |
-| 400 | Bad Request. Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
-| 404 | Not Found. An attempt to update a Member that does not exist. Existence is determined by the combination of MemberCode and PartnerGUID |
-| 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
-
-### Body Details
-
-| Property | Description |
-| :--- | :--- |
-| PartnerGUID | Unique Partner Code (Please request from Toluna if you don’t have one) |
-| MemberCode | Unique Respondent Code from the Partner |
-| IsActive | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.|
-| Email | Member email. NOTE: When Supplied, this must have a valid email format |
-| BirthDate | MM/DD/YYYY format |
-| PostalCode | Member postal code |
-| IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing |
-
-
-### Notes
-
-> - Only updates existing members. To add a new Member, use the POST route noted [here](/membermanagement/v2 "v2 Post").
-> - Optional Properties can be excluded from the request. "GenderID," "EducationID," "EthnicityID," "RaceID," and "SubProvinceID" can also take "0" to indicate "no value."
-> - Invalid Property data typically returns a 400 response.
-
-### Examples
 
 #### Deactivate Member
 ```plaintext
@@ -131,3 +96,35 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
   "IsPIIDataRegulated": true
  }
 ```
+
+---
+
+## Response
+
+### Possible Codes
+
+| Response Code | Etiology, actions |
+| :--- | :--- |
+| 200 | OK. Request processed normally, existing Member Paneling was updated without issue |
+| 400 | Bad Request. Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
+| 404 | Not Found. An attempt to update a Member that does not exist. Existence is determined by the combination of MemberCode and PartnerGUID |
+| 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
+
+### Body Details
+
+| Property | Description |
+| :--- | :--- |
+| PartnerGUID | Unique Partner Code (Please request from Toluna if you don’t have one) |
+| MemberCode | Unique Respondent Code from the Partner |
+| IsActive | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.|
+| Email | Member email. NOTE: When Supplied, this must have a valid email format |
+| BirthDate | MM/DD/YYYY format |
+| PostalCode | Member postal code |
+| IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing |
+
+
+### Notes
+
+> - Only updates existing members. To add a new Member, use the POST route noted [here](/membermanagement/v2 "v2 Post").
+> - Optional Properties can be excluded from the request. "GenderID," "EducationID," "EthnicityID," "RaceID," and "SubProvinceID" can also take "0" to indicate "no value."
+> - Invalid Property data typically returns a 400 response.

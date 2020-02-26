@@ -36,7 +36,7 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | MemberCode | Unique Respondent Code from the Partner (alphanumeric 256 character limit | Yes |
 | Active | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool | No |
 | GenderID | Values from the data mapping file | No |
-| EducastionID | Values from the data mapping file | No |
+| EducationID | Values from the data mapping file | No |
 | EthicityID | Values from the data mapping file | No |
 | RaceID | Values from the data mapping file | No |
 | SubProvinceID | Values from the data mapping file | No |
@@ -45,6 +45,8 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | PostalCode | Member postal code | No |
 | IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
 | IsPIIDataRegulated | Defaults FALSE. When TRUE, all personally identifiable information is removed. | No |
+
+>Note: only the information being updated needs to be included in the request (i.e. education, , active, IsPIIDataRegulated, etc)
 
 ### Examples
 
@@ -103,7 +105,3 @@ All examples below shown in JSON
 > - Only Updates Existing Members. To Add a new Member, use the POST route noted above.
 > - Optional Properties can be excluded from the request. "GenderID," "EducationID," "EthnicityID," "RaceID," and "SubProvinceID" can also take "0" to indicate "no value."
 > - Invalid Property data typically returns a 400 response.
-
-### Examples
-
-*To do*
