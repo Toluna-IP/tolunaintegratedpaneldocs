@@ -57,3 +57,15 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/Currencies
 | :--- | :--- | :--- |
 | CurrencyID | ```int``` | Unique identifier for a currency |
 | Name | ```string``` | Name of currency |
+
+### Example Response
+```plaintext
+[
+...
+  {
+    "CurrencyID": 12,
+    "Name": "New Zealand Dollar"
+  },
+...
+]
+```

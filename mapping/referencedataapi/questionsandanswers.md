@@ -96,3 +96,36 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData
 | AnswerInternalName | Answer text used internally |
 | AnswerType | ```string``` | Defines how the answer is derived. Possible responses are SingleSelect, ComputedType, MultiSelect, OpenEnded, Container |
 | AnswerValidationRegularExpression | ```string``` | Declares regular expression for open-ended questions. If the question is not open-ended, response will be 'null' |
+
+### Example Response
+[
+...
+  {
+    "IsRoutable": true,
+    "InternalName": "routable question lee",
+    "TranslatedQuestion": {
+      "QuestionID": 20002866,
+      "CultureID": 1,
+      "DisplayNameTranslation": "routable question lee",
+      "HelpTextTranslation": "",
+      "SamplingSequenceNumber": null
+    },
+    "ChildQuestions": null,
+    "TranslatedAnswers": [
+      {
+        "AnswerID": 50006863,
+        "Translation": "routable question lee1",
+        "AnswerInternalName": "routable question lee1"
+      },
+      {
+        "AnswerID": 50006864,
+        "Translation": "routable question lee2",
+        "AnswerInternalName": "routable question lee2"
+      }
+    ],
+    "AnswerType": "SingleSelect",
+    "AnswerValidationRegularExpression": null
+  },
+...
+]
+```

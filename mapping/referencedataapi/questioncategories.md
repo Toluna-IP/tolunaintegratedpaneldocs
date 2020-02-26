@@ -58,3 +58,16 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionCategories
 | Name | ```string``` | Toluna's unique name for a question |
 | Description | ```string``` | Clarifying description of question |
 | CategoryID | ```int``` | Toluna's identifier for the category the question is associated with |
+
+### Example Response
+```plaintext
+[
+    ...
+     {
+    "Name": "Games",
+    "Description": null,
+    "CategoryID": 14
+  },
+  ...
+]
+```

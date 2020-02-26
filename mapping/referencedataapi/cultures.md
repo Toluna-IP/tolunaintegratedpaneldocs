@@ -59,3 +59,15 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/Cultures
 | Name | ```string``` | Name of a culture. Format: XX-YY |
 | Description | ```string``` | Description of the culture |
 
+### Example Response
+```plaintext
+[
+...
+  {
+    "CultureID": 70,
+    "Name": "es-ve",
+    "Description": "Venezuela Spanish"
+  },
+...
+]
+```

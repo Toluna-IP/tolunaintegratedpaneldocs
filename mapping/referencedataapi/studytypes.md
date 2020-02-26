@@ -58,3 +58,16 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/DeviceTypes
 | StudyTypeID | ```int``` | Toluna's identifier for a study type |
 | Name | ```string``` | Name for study type |
 | Description | ```string``` | Description of study type |
+
+### Example Response
+```plaintext
+[
+...
+ {
+    "StudyTypeID": 100133,
+    "Name": "CANDY",
+    "Description": "CANDY"
+  },
+...
+]
+```

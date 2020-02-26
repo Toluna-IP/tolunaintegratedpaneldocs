@@ -57,3 +57,15 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/DeviceTypes
 | :--- | :--- | :--- |
 | DeviceTypeID | ```int``` | Integer value of device type |
 | Type | ```string``` | Name of device type |
+
+### Response Example
+```plaintext
+[
+...
+  {
+    "DeviceTypeID": 3,
+    "Type": "SMARTPHONE"
+  },
+...
+]
+```
