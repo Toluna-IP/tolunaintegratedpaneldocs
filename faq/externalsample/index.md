@@ -2,7 +2,7 @@
 title: External Sample
 has_children: true
 parent: FAQ
-nav_order: 4
+nav_order: 5
 ---
 
 # External Sample FAQs
