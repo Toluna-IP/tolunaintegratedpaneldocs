@@ -6,10 +6,11 @@ nav_order: 50
 
 # Contact Toluna
 
+Any requests sent to Toluna will receive a response within 1 business day.
+
 ## Business Hours
 
-Monday - Friday
- - {hour1} - {hour2}
+8:30am - 5:30pm EST
 
 ## Email
 
