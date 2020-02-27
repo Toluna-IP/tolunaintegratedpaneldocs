@@ -8,7 +8,8 @@ parent: External Sample Offering
 ## Sampling Rules
 
 
-External Sample Partners must comply with Toluna's sampling rules. To be sampled for a Quota, each member must:
+External Sample Partners must comply with Toluna's sampling rules.  To be sampled for a Quota, each member must:
+
  - Be targted for only 1 Quota per Survey
  - Match ALL Layers in the Quota
  - Match ONE of the SubQuotas
@@ -16,6 +17,7 @@ External Sample Partners must comply with Toluna's sampling rules. To be sampled
  - Match at least one "AnswerID" (SubQuotaAttribute) per QuestionID in the SubQuota with multiple QuestionIDs
  
 These rules can be consolidated into simple boolean conditions:
+
  - Quotas are "OR" conditions
  - Layers are "AND" conditions
  - SubQuotas are "OR" conditions
@@ -30,6 +32,6 @@ Click each button to open a new page with the JSON file for the specific example
 
 <a href="http://docs.integratedpanel.toluna.com/externalsample/api/responses/quotamultiplelayer.json" target="_blank" class="btn">Quota with Multiple Layers</a>
 
-<a href="http://docs.integratedpanel.toluna.com/externalsample/api/responses/singlelayermultipleqid.json" target="_blank" class="btn">Quota with Multiple Layers</a>
+<a href="http://docs.integratedpanel.toluna.com/externalsample/api/responses/singlelayermultipleqid.json" target="_blank" class="btn">Quota with Single Layer, Multiple QuestionIDs</a>
 
-<a href="http://docs.integratedpanel.toluna.com/externalsample/api/responses/singlelayersingleqid.json" target="_blank" class="btn">Quota with Multiple Layers</a>
+<a href="http://docs.integratedpanel.toluna.com/externalsample/api/responses/singlelayersingleqid.json" target="_blank" class="btn">Quota with Single Layer, Single QuestionID</a>
