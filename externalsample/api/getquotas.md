@@ -140,9 +140,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 
 [Click Here to Access JSON File](resources\getquotas.json){: .btn }
 
-<p>
 <a href="resources\getquotas.json" target="_blank" class="btn">Click Here to Access JSON File</a>
-</p>
 
 
 #### 400 Response
