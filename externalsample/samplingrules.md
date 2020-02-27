@@ -8,7 +8,7 @@ parent: External Sample Offering
 ## Sampling Rules
 
 
-External Sample Partners must comply with Toluna's samplingrules. To be sampled for a Quota, each member must:
+External Sample Partners must comply with Toluna's sampling rules. To be sampled for a Quota, each member must:
  - Be targted for only 1 Quota per Survey
  - Match ALL Layers in the Quota
  - Match ONE of the SubQuotas
