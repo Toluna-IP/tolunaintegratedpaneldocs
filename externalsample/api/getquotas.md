@@ -138,7 +138,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 
 #### 200 Response
 
-[Click Here to Access JSON File](){: .btn }
+[Click Here to Access JSON File](resources\getquotas.json){: .btn }
 
 #### 400 Response
 ```plaintext
