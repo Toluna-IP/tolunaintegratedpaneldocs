@@ -38,4 +38,4 @@ Click each button to open a new page with the JSON file for the specific example
 
 #### [Quota with Single Layer, SubQuota with Single QuestionID](){: .btn }
 
-<a href="http://docs.integratedpanel.toluna.com/externalsample/api/responses/singlelayermultipleqid.json" target="_blank" class="btn">Quota with Multiple Layers</a>
+<a href="http://docs.integratedpanel.toluna.com/externalsample/api/responses/singlelayersingleqid.json" target="_blank" class="btn">Quota with Multiple Layers</a>
