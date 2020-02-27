@@ -1,0 +1,3468 @@
+{
+  "Surveys": [
+    {
+      "SurveyID": 120429,
+      "SurveyName": "1158361-US-Pappi2",
+      "SurveyTopic": "DIY and Gardening",
+      "WaveID": 167359,
+      "LOI": 12,
+      "IR": 88,
+      "StudyTypeID": 2030,
+      "ScheduledCompletionDate": "2020-05-28T14:23:08.063",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 150,
+      "EstimatedCompletesRemaining": 150,
+      "Quotas": [
+        {
+          "QuotaID": 242586,
+          "CompletesRequired": 50,
+          "EstimatedCompletesRemaining": 50,
+          "Layers": [
+            {
+              "LayerID": 613571,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "18-100"
+                      ],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162737,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            },
+            {
+              "LayerID": 613572,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162739,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 242587,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 613573,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162741,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            },
+            {
+              "LayerID": 613574,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001002,
+                      "AnswerIDs": [
+                        2000240
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162743,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            },
+            {
+              "LayerID": 613575,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001033,
+                      "AnswerIDs": [
+                        2000419,
+                        2000420,
+                        2000422,
+                        2000425,
+                        2000427,
+                        2000429,
+                        2000430,
+                        2000431,
+                        2000436
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162745,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120935,
+      "SurveyName": "1162235-US",
+      "SurveyTopic": "Transportation",
+      "WaveID": 167887,
+      "LOI": 1,
+      "IR": 100,
+      "StudyTypeID": 2002,
+      "ScheduledCompletionDate": "2020-02-10T11:29:33.437",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 100,
+      "EstimatedCompletesRemaining": 99,
+      "Quotas": [
+        {
+          "QuotaID": 243108,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 99,
+          "Layers": [
+            {
+              "LayerID": 614249,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165603,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 50
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165604,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120934,
+      "SurveyName": "1162234-US",
+      "SurveyTopic": "Automotive products",
+      "WaveID": 167886,
+      "LOI": 1,
+      "IR": 100,
+      "StudyTypeID": 2003,
+      "ScheduledCompletionDate": "2020-02-10T11:38:42.85",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 100,
+      "EstimatedCompletesRemaining": 100,
+      "Quotas": [
+        {
+          "QuotaID": 243109,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 614250,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165605,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165606,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": [
+        {
+          "SurveyID": 120935,
+          "WaveID": 0,
+          "ParticipationStatusIDs": [
+            1,
+            9,
+            10,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "SurveyID": 119914,
+      "SurveyName": "1161244-US",
+      "SurveyTopic": "Information Technology",
+      "WaveID": 166843,
+      "LOI": 2,
+      "IR": 50,
+      "StudyTypeID": 2068,
+      "ScheduledCompletionDate": "2020-02-27T19:30:30.573",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 1247,
+      "EstimatedCompletesRemaining": 1245,
+      "Quotas": [
+        {
+          "QuotaID": 242098,
+          "CompletesRequired": 1247,
+          "EstimatedCompletesRemaining": 1245,
+          "Layers": [
+            {
+              "LayerID": 613047,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247,
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2160875,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 2490
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120877,
+      "SurveyName": "1162187-US",
+      "SurveyTopic": "Technology",
+      "WaveID": 167821,
+      "LOI": 2,
+      "IR": 20,
+      "StudyTypeID": 2063,
+      "ScheduledCompletionDate": "2020-02-23T23:59:59",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 5,
+      "EstimatedCompletesRemaining": 5,
+      "Quotas": [
+        {
+          "QuotaID": 243070,
+          "CompletesRequired": 5,
+          "EstimatedCompletesRemaining": 5,
+          "Layers": [
+            {
+              "LayerID": 614210,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165414,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 5
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120892,
+      "SurveyName": "1162201-US",
+      "SurveyTopic": "Employment",
+      "WaveID": 167836,
+      "LOI": 9,
+      "IR": 100,
+      "StudyTypeID": 2006,
+      "ScheduledCompletionDate": "2020-02-10T10:17:52.49",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 10000,
+      "EstimatedCompletesRemaining": 10000,
+      "Quotas": [
+        {
+          "QuotaID": 243074,
+          "CompletesRequired": 10000,
+          "EstimatedCompletesRemaining": 10000,
+          "Layers": [
+            {
+              "LayerID": 614214,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165422,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 5000
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165423,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 5000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120890,
+      "SurveyName": "1162199-US",
+      "SurveyTopic": "Employment",
+      "WaveID": 167834,
+      "LOI": 9,
+      "IR": 100,
+      "StudyTypeID": 2006,
+      "ScheduledCompletionDate": "2020-02-10T10:14:09.827",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 10000,
+      "EstimatedCompletesRemaining": 10000,
+      "Quotas": [
+        {
+          "QuotaID": 243072,
+          "CompletesRequired": 10000,
+          "EstimatedCompletesRemaining": 10000,
+          "Layers": [
+            {
+              "LayerID": 614212,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165418,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 5000
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165419,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 5000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121123,
+      "SurveyName": "1162393-US",
+      "SurveyTopic": "Employment",
+      "WaveID": 168091,
+      "LOI": 5,
+      "IR": 16,
+      "StudyTypeID": 2006,
+      "ScheduledCompletionDate": "2020-03-03T17:36:39.493",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 10000,
+      "EstimatedCompletesRemaining": 10000,
+      "Quotas": [
+        {
+          "QuotaID": 243281,
+          "CompletesRequired": 10000,
+          "EstimatedCompletesRemaining": 10000,
+          "Layers": [
+            {
+              "LayerID": 614431,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166067,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 5000
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166068,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 5000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120306,
+      "SurveyName": "1161638-US",
+      "SurveyTopic": "Health",
+      "WaveID": 167235,
+      "LOI": 1,
+      "IR": 100,
+      "StudyTypeID": 2017,
+      "ScheduledCompletionDate": "2019-12-05T09:00:16.8",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 100,
+      "EstimatedCompletesRemaining": 100,
+      "Quotas": [
+        {
+          "QuotaID": 242474,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 613451,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162095,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162096,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 119713,
+      "SurveyName": "1161067-US-239sl2",
+      "SurveyTopic": "Technology",
+      "WaveID": 166642,
+      "LOI": 1,
+      "IR": 43,
+      "StudyTypeID": 2063,
+      "ScheduledCompletionDate": "2019-10-04T12:35:43.66",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 25,
+      "EstimatedCompletesRemaining": 22,
+      "Quotas": [
+        {
+          "QuotaID": 241882,
+          "CompletesRequired": 15,
+          "EstimatedCompletesRemaining": 12,
+          "Layers": [
+            {
+              "LayerID": 612800,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001012,
+                      "AnswerIDs": [
+                        2000264
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    },
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2160443,
+                  "CurrentCompletes": 3,
+                  "MaxTargetCompletes": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 241883,
+          "CompletesRequired": 10,
+          "EstimatedCompletesRemaining": 10,
+          "Layers": [
+            {
+              "LayerID": 612801,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2160445,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120428,
+      "SurveyName": "1158361-US-Pappi1",
+      "SurveyTopic": "DIY and Gardening",
+      "WaveID": 167358,
+      "LOI": 12,
+      "IR": 88,
+      "StudyTypeID": 2030,
+      "ScheduledCompletionDate": "2020-05-28T14:12:00.523",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 50,
+      "EstimatedCompletesRemaining": 50,
+      "Quotas": [
+        {
+          "QuotaID": 242585,
+          "CompletesRequired": 50,
+          "EstimatedCompletesRemaining": 50,
+          "Layers": [
+            {
+              "LayerID": 613569,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "18-100"
+                      ],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162733,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            },
+            {
+              "LayerID": 613570,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162735,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 119711,
+      "SurveyName": "1161067-US",
+      "SurveyTopic": "Technology",
+      "WaveID": 166640,
+      "LOI": 13,
+      "IR": 50,
+      "StudyTypeID": 2063,
+      "ScheduledCompletionDate": "2019-09-21T12:54:34",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 20,
+      "EstimatedCompletesRemaining": 18,
+      "Quotas": [
+        {
+          "QuotaID": 241868,
+          "CompletesRequired": 20,
+          "EstimatedCompletesRemaining": 18,
+          "Layers": [
+            {
+              "LayerID": 612784,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2160397,
+                  "CurrentCompletes": 2,
+                  "MaxTargetCompletes": 20
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121010,
+      "SurveyName": "1162311-US",
+      "SurveyTopic": "Transportation",
+      "WaveID": 167967,
+      "LOI": 1,
+      "IR": 100,
+      "StudyTypeID": 2002,
+      "ScheduledCompletionDate": "2020-03-03T14:27:33.787",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 100,
+      "EstimatedCompletesRemaining": 98,
+      "Quotas": [
+        {
+          "QuotaID": 243181,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 98,
+          "Layers": [
+            {
+              "LayerID": 614322,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165784,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 50
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165785,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121011,
+      "SurveyName": "1162312-US",
+      "SurveyTopic": "Employment",
+      "WaveID": 167968,
+      "LOI": 1,
+      "IR": 100,
+      "StudyTypeID": 2006,
+      "ScheduledCompletionDate": "2020-02-23T12:32:01.98",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 9999,
+      "EstimatedCompletesRemaining": 9999,
+      "Quotas": [
+        {
+          "QuotaID": 243220,
+          "CompletesRequired": 9999,
+          "EstimatedCompletesRemaining": 9999,
+          "Layers": [
+            {
+              "LayerID": 614361,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165878,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 5000
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165879,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 4999
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121127,
+      "SurveyName": "1162396-US",
+      "SurveyTopic": "Employment",
+      "WaveID": 168095,
+      "LOI": 5,
+      "IR": 16,
+      "StudyTypeID": 2006,
+      "ScheduledCompletionDate": "2020-03-04T14:50:44.427",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 1000,
+      "EstimatedCompletesRemaining": 1000,
+      "Quotas": [
+        {
+          "QuotaID": 243286,
+          "CompletesRequired": 1000,
+          "EstimatedCompletesRemaining": 1000,
+          "Layers": [
+            {
+              "LayerID": 614436,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166077,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 500
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166078,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 500
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120430,
+      "SurveyName": "1158361-US-Pappi3",
+      "SurveyTopic": "DIY and Gardening",
+      "WaveID": 167360,
+      "LOI": 12,
+      "IR": 88,
+      "StudyTypeID": 2030,
+      "ScheduledCompletionDate": "2020-05-28T14:29:53.243",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 200,
+      "EstimatedCompletesRemaining": 200,
+      "Quotas": [
+        {
+          "QuotaID": 242590,
+          "CompletesRequired": 50,
+          "EstimatedCompletesRemaining": 50,
+          "Layers": [
+            {
+              "LayerID": 613581,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [
+                        2006352
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162757,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [
+                        2006353
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162758,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 20
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [
+                        2006354
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162759,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [
+                        2006355
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162760,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                }
+              ]
+            },
+            {
+              "LayerID": 613582,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162762,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            },
+            {
+              "LayerID": 613583,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001002,
+                      "AnswerIDs": [
+                        2000240
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162764,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            },
+            {
+              "LayerID": 613584,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001540,
+                      "AnswerIDs": [
+                        2006372,
+                        2006373,
+                        2006374,
+                        2006375,
+                        2112677
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162766,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 242588,
+          "CompletesRequired": 50,
+          "EstimatedCompletesRemaining": 50,
+          "Layers": [
+            {
+              "LayerID": 613576,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "18-100"
+                      ],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162747,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            },
+            {
+              "LayerID": 613577,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162749,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 242589,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 613578,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162751,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            },
+            {
+              "LayerID": 613579,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001002,
+                      "AnswerIDs": [
+                        2000240
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162753,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            },
+            {
+              "LayerID": 613580,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001033,
+                      "AnswerIDs": [
+                        2000419,
+                        2000420,
+                        2000422,
+                        2000425,
+                        2000427,
+                        2000429,
+                        2000430,
+                        2000431,
+                        2000436
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162755,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 118044,
+      "SurveyName": "1158361-US-IP1",
+      "SurveyTopic": "DIY and Gardening",
+      "WaveID": 164968,
+      "LOI": 12,
+      "IR": 88,
+      "StudyTypeID": 2030,
+      "ScheduledCompletionDate": "2020-03-06T19:48:17",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 23,
+      "EstimatedCompletesRemaining": 18,
+      "Quotas": [
+        {
+          "QuotaID": 240126,
+          "CompletesRequired": 6,
+          "EstimatedCompletesRemaining": 1,
+          "Layers": [
+            {
+              "LayerID": 610847,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2154144,
+                  "CurrentCompletes": 2,
+                  "MaxTargetCompletes": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 240127,
+          "CompletesRequired": 8,
+          "EstimatedCompletesRemaining": 8,
+          "Layers": [
+            {
+              "LayerID": 610849,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [
+                        2006357,
+                        2006358,
+                        2006359,
+                        2006360,
+                        2006361
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2154149,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 4
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [
+                        2006353,
+                        2006354,
+                        2006355,
+                        2006356
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2154151,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 240128,
+          "CompletesRequired": 9,
+          "EstimatedCompletesRemaining": 9,
+          "Layers": [
+            {
+              "LayerID": 610850,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001042,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "018",
+                        "90",
+                        "91"
+                      ],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2154152,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 3
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001568,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "2112093",
+                        "2112101",
+                        "2112106"
+                      ],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2154153,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 3
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001569,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "2111959",
+                        "2111935",
+                        "2111938",
+                        "2111985",
+                        "2111999",
+                        "2112000",
+                        "2111854"
+                      ],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2154154,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": [
+        {
+          "SurveyID": 119729,
+          "WaveID": 0,
+          "ParticipationStatusIDs": [
+            1,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "SurveyID": 120882,
+      "SurveyName": "1162195-US",
+      "SurveyTopic": "Transportation",
+      "WaveID": 167826,
+      "LOI": 9,
+      "IR": 100,
+      "StudyTypeID": 2002,
+      "ScheduledCompletionDate": "2020-02-09T16:25:22.99",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 100,
+      "EstimatedCompletesRemaining": 100,
+      "Quotas": [
+        {
+          "QuotaID": 243059,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 614180,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2164742,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2164743,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120444,
+      "SurveyName": "1158361-US-RnD-3",
+      "SurveyTopic": "DIY and Gardening",
+      "WaveID": 167374,
+      "LOI": 12,
+      "IR": 88,
+      "StudyTypeID": 2030,
+      "ScheduledCompletionDate": "2020-05-31T17:54:19.097",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 200,
+      "EstimatedCompletesRemaining": 199,
+      "Quotas": [
+        {
+          "QuotaID": 242610,
+          "CompletesRequired": 50,
+          "EstimatedCompletesRemaining": 49,
+          "Layers": [
+            {
+              "LayerID": 613619,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "18-100"
+                      ],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162861,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            },
+            {
+              "LayerID": 613620,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162863,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 242612,
+          "CompletesRequired": 50,
+          "EstimatedCompletesRemaining": 50,
+          "Layers": [
+            {
+              "LayerID": 613624,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [
+                        2006352
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162871,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [
+                        2006353
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162872,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 20
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [
+                        2006354
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162873,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [
+                        2006355
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162874,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                }
+              ]
+            },
+            {
+              "LayerID": 613625,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162876,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            },
+            {
+              "LayerID": 613626,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001002,
+                      "AnswerIDs": [
+                        2000240
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162878,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            },
+            {
+              "LayerID": 613627,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001540,
+                      "AnswerIDs": [
+                        2006372,
+                        2006373,
+                        2006374,
+                        2006375,
+                        2112677
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162880,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 242611,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 613621,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162865,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            },
+            {
+              "LayerID": 613622,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001002,
+                      "AnswerIDs": [
+                        2000240
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162867,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            },
+            {
+              "LayerID": 613623,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001033,
+                      "AnswerIDs": [
+                        2000419,
+                        2000420,
+                        2000422,
+                        2000425,
+                        2000427,
+                        2000429,
+                        2000430,
+                        2000431,
+                        2000436
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162869,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121049,
+      "SurveyName": "1162081-US-test2",
+      "SurveyTopic": "Fashion",
+      "WaveID": 168013,
+      "LOI": 2,
+      "IR": 0,
+      "StudyTypeID": 2009,
+      "ScheduledCompletionDate": "2020-01-23T23:59:59",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 20,
+      "EstimatedCompletesRemaining": 20,
+      "Quotas": [
+        {
+          "QuotaID": 243214,
+          "CompletesRequired": 20,
+          "EstimatedCompletesRemaining": 20,
+          "Layers": [
+            {
+              "LayerID": 614355,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165862,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165863,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120442,
+      "SurveyName": "1158361-US-RnD-1",
+      "SurveyTopic": "DIY and Gardening",
+      "WaveID": 167372,
+      "LOI": 12,
+      "IR": 88,
+      "StudyTypeID": 2030,
+      "ScheduledCompletionDate": "2020-05-31T17:50:37.03",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 50,
+      "EstimatedCompletesRemaining": 50,
+      "Quotas": [
+        {
+          "QuotaID": 242606,
+          "CompletesRequired": 50,
+          "EstimatedCompletesRemaining": 50,
+          "Layers": [
+            {
+              "LayerID": 613611,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "18-100"
+                      ],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162845,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            },
+            {
+              "LayerID": 613612,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162847,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120443,
+      "SurveyName": "1158361-US-RnD-2",
+      "SurveyTopic": "DIY and Gardening",
+      "WaveID": 167373,
+      "LOI": 12,
+      "IR": 88,
+      "StudyTypeID": 2030,
+      "ScheduledCompletionDate": "2020-05-31T17:52:38.36",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 200,
+      "EstimatedCompletesRemaining": 200,
+      "Quotas": [
+        {
+          "QuotaID": 242608,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 613615,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162853,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            },
+            {
+              "LayerID": 613616,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001002,
+                      "AnswerIDs": [
+                        2000240
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162855,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            },
+            {
+              "LayerID": 613617,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001033,
+                      "AnswerIDs": [
+                        2000419,
+                        2000420,
+                        2000422,
+                        2000425,
+                        2000427,
+                        2000429,
+                        2000430,
+                        2000431,
+                        2000436
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162857,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 242607,
+          "CompletesRequired": 50,
+          "EstimatedCompletesRemaining": 50,
+          "Layers": [
+            {
+              "LayerID": 613613,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "18-100"
+                      ],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162849,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            },
+            {
+              "LayerID": 613614,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162851,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 242609,
+          "CompletesRequired": 50,
+          "EstimatedCompletesRemaining": 50,
+          "Layers": [
+            {
+              "LayerID": 613618,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "13-100"
+                      ],
+                      "IsRoutable": false
+                    },
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162859,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120885,
+      "SurveyName": "1162196-US",
+      "SurveyTopic": "Magazines",
+      "WaveID": 167829,
+      "LOI": 1,
+      "IR": 100,
+      "StudyTypeID": 2037,
+      "ScheduledCompletionDate": "2020-02-29T17:29:29.56",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 1000,
+      "EstimatedCompletesRemaining": 999,
+      "Quotas": [
+        {
+          "QuotaID": 243065,
+          "CompletesRequired": 1000,
+          "EstimatedCompletesRemaining": 999,
+          "Layers": [
+            {
+              "LayerID": 614204,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165400,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 500
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165401,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 500
+                }
+              ]
+            },
+            {
+              "LayerID": 614205,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001538,
+                      "AnswerIDs": [],
+                      "AnswerValues": [
+                        "16-96"
+                      ],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165402,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 1000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121149,
+      "SurveyName": "1162412-US",
+      "SurveyTopic": "Automotive",
+      "WaveID": 168117,
+      "LOI": 2,
+      "IR": 0,
+      "StudyTypeID": 2004,
+      "ScheduledCompletionDate": "2020-02-26T16:46:36.7",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 20,
+      "EstimatedCompletesRemaining": 20,
+      "Quotas": [
+        {
+          "QuotaID": 243306,
+          "CompletesRequired": 20,
+          "EstimatedCompletesRemaining": 20,
+          "Layers": [
+            {
+              "LayerID": 614458,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166132,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 50
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166133,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": true,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120543,
+      "SurveyName": "1160714-US-IP",
+      "SurveyTopic": "Fashion",
+      "WaveID": 167473,
+      "LOI": 1,
+      "IR": 86,
+      "StudyTypeID": 2009,
+      "ScheduledCompletionDate": "2020-02-25T15:58:54.707",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 20,
+      "EstimatedCompletesRemaining": 14,
+      "Quotas": [
+        {
+          "QuotaID": 242710,
+          "CompletesRequired": 20,
+          "EstimatedCompletesRemaining": 14,
+          "Layers": [
+            {
+              "LayerID": 613730,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2163218,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 10
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2163219,
+                  "CurrentCompletes": 5,
+                  "MaxTargetCompletes": 10
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 119488,
+      "SurveyName": "1160836-US",
+      "SurveyTopic": "Consumer topics",
+      "WaveID": 166417,
+      "LOI": 14,
+      "IR": 82,
+      "StudyTypeID": 1,
+      "ScheduledCompletionDate": "2020-02-27T19:01:34.007",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 3530,
+      "EstimatedCompletesRemaining": 3530,
+      "Quotas": [
+        {
+          "QuotaID": 241630,
+          "CompletesRequired": 3530,
+          "EstimatedCompletesRemaining": 3530,
+          "Layers": [
+            {
+              "LayerID": 612533,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2159624,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 2500
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2159625,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 2500
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121088,
+      "SurveyName": "1162362-US",
+      "SurveyTopic": "Automotive",
+      "WaveID": 168056,
+      "LOI": 1,
+      "IR": 20,
+      "StudyTypeID": 2004,
+      "ScheduledCompletionDate": "2020-02-28T08:09:56.32",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 53,
+      "EstimatedCompletesRemaining": 53,
+      "Quotas": [
+        {
+          "QuotaID": 243248,
+          "CompletesRequired": 53,
+          "EstimatedCompletesRemaining": 53,
+          "Layers": [
+            {
+              "LayerID": 614393,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001101,
+                      "AnswerIDs": [
+                        2002270
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": true
+                    }
+                  ],
+                  "SubQuotaID": 2165953,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 111
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121048,
+      "SurveyName": "1162081-US-testG",
+      "SurveyTopic": "Fashion",
+      "WaveID": 168012,
+      "LOI": 2,
+      "IR": 0,
+      "StudyTypeID": 2009,
+      "ScheduledCompletionDate": "2020-01-23T23:59:59",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 40,
+      "EstimatedCompletesRemaining": 40,
+      "Quotas": [
+        {
+          "QuotaID": 243212,
+          "CompletesRequired": 20,
+          "EstimatedCompletesRemaining": 20,
+          "Layers": [
+            {
+              "LayerID": 614353,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165857,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165858,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 243213,
+          "CompletesRequired": 20,
+          "EstimatedCompletesRemaining": 20,
+          "Layers": [
+            {
+              "LayerID": 614354,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001101,
+                      "AnswerIDs": [
+                        2002273
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": true
+                    }
+                  ],
+                  "SubQuotaID": 2165860,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 20
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121146,
+      "SurveyName": "1162409-US",
+      "SurveyTopic": "Alcohol free beverages",
+      "WaveID": 168114,
+      "LOI": 2,
+      "IR": 0,
+      "StudyTypeID": 2058,
+      "ScheduledCompletionDate": "2020-02-26T16:18:05.07",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 100,
+      "EstimatedCompletesRemaining": 100,
+      "Quotas": [
+        {
+          "QuotaID": 243303,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 614455,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166125,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166126,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": true,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121214,
+      "SurveyName": "1162458-US",
+      "SurveyTopic": "Automotive",
+      "WaveID": 168186,
+      "LOI": 2,
+      "IR": 0,
+      "StudyTypeID": 2004,
+      "ScheduledCompletionDate": "2020-02-28T12:57:48.117",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 40,
+      "EstimatedCompletesRemaining": 40,
+      "Quotas": [
+        {
+          "QuotaID": 243371,
+          "CompletesRequired": 40,
+          "EstimatedCompletesRemaining": 40,
+          "Layers": [
+            {
+              "LayerID": 614540,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166509,
+                  "CurrentCompletes": 2,
+                  "MaxTargetCompletes": 100
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166510,
+                  "CurrentCompletes": 2,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": true,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121230,
+      "SurveyName": "1162448-US-IP",
+      "SurveyTopic": "Fashion",
+      "WaveID": 168204,
+      "LOI": 1,
+      "IR": 0,
+      "StudyTypeID": 2009,
+      "ScheduledCompletionDate": "2020-03-23T14:26:33.907",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 2,
+      "EstimatedCompletesRemaining": 2,
+      "Quotas": [
+        {
+          "QuotaID": 243373,
+          "CompletesRequired": 2,
+          "EstimatedCompletesRemaining": 2,
+          "Layers": [
+            {
+              "LayerID": 614542,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166513,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 2
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166514,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120951,
+      "SurveyName": "1162251-US",
+      "SurveyTopic": "Automotive",
+      "WaveID": 167908,
+      "LOI": 5,
+      "IR": 4,
+      "StudyTypeID": 2004,
+      "ScheduledCompletionDate": "2020-02-15T14:26:57.937",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 200,
+      "EstimatedCompletesRemaining": 200,
+      "Quotas": [
+        {
+          "QuotaID": 243126,
+          "CompletesRequired": 200,
+          "EstimatedCompletesRemaining": 200,
+          "Layers": [
+            {
+              "LayerID": 614267,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165640,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2165641,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120299,
+      "SurveyName": "1161631-US",
+      "SurveyTopic": "Health",
+      "WaveID": 167228,
+      "LOI": 1,
+      "IR": 100,
+      "StudyTypeID": 2017,
+      "ScheduledCompletionDate": "2019-11-26T08:30:24.077",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 100,
+      "EstimatedCompletesRemaining": 99,
+      "Quotas": [
+        {
+          "QuotaID": 242457,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 99,
+          "Layers": [
+            {
+              "LayerID": 613434,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162050,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 50
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2162051,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 121243,
+      "SurveyName": "1162311-US-lidor",
+      "SurveyTopic": "Transportation",
+      "WaveID": 168218,
+      "LOI": 1,
+      "IR": 0,
+      "StudyTypeID": 2002,
+      "ScheduledCompletionDate": "2020-03-03T15:25:19.15",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 100,
+      "EstimatedCompletesRemaining": 100,
+      "Quotas": [
+        {
+          "QuotaID": 243382,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 614551,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166529,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2166530,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 119365,
+      "SurveyName": "1160714-US",
+      "SurveyTopic": "Fashion",
+      "WaveID": 166294,
+      "LOI": 1,
+      "IR": 50,
+      "StudyTypeID": 2009,
+      "ScheduledCompletionDate": "2019-08-08T15:02:32.493",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 8,
+      "EstimatedCompletesRemaining": 5,
+      "Quotas": [
+        {
+          "QuotaID": 241507,
+          "CompletesRequired": 8,
+          "EstimatedCompletesRemaining": 5,
+          "Layers": [
+            {
+              "LayerID": 612389,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2159113,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 4
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2159114,
+                  "CurrentCompletes": 3,
+                  "MaxTargetCompletes": 4
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 119901,
+      "SurveyName": "1158361-US-PS-S3",
+      "SurveyTopic": "DIY and Gardening",
+      "WaveID": 166830,
+      "LOI": 5,
+      "IR": 88,
+      "StudyTypeID": 2030,
+      "ScheduledCompletionDate": "2020-03-23T02:06:43.857",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 10,
+      "EstimatedCompletesRemaining": 10,
+      "Quotas": [
+        {
+          "QuotaID": 242085,
+          "CompletesRequired": 10,
+          "EstimatedCompletesRemaining": 10,
+          "Layers": [
+            {
+              "LayerID": 613034,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2160829,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 5
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2160830,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 5
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120813,
+      "SurveyName": "1162137-US",
+      "SurveyTopic": "Technology",
+      "WaveID": 167745,
+      "LOI": 1,
+      "IR": 86,
+      "StudyTypeID": 2063,
+      "ScheduledCompletionDate": "2020-02-07T05:59:59",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 20,
+      "EstimatedCompletesRemaining": 14,
+      "Quotas": [
+        {
+          "QuotaID": 242997,
+          "CompletesRequired": 20,
+          "EstimatedCompletesRemaining": 14,
+          "Layers": [
+            {
+              "LayerID": 614100,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246,
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2164492,
+                  "CurrentCompletes": 6,
+                  "MaxTargetCompletes": 20
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120811,
+      "SurveyName": "1162135-US",
+      "SurveyTopic": "Automotive",
+      "WaveID": 167743,
+      "LOI": 5,
+      "IR": 100,
+      "StudyTypeID": 2004,
+      "ScheduledCompletionDate": "2020-02-04T10:58:37.79",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1,
+        2,
+        3
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 200,
+      "EstimatedCompletesRemaining": 200,
+      "Quotas": [
+        {
+          "QuotaID": 243023,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 614132,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2164596,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2164597,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "QuotaID": 243020,
+          "CompletesRequired": 100,
+          "EstimatedCompletesRemaining": 100,
+          "Layers": [
+            {
+              "LayerID": 614129,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2164588,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 51
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2164589,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 49
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": true,
+      "SurveyWaveExclusions": []
+    },
+    {
+      "SurveyID": 120584,
+      "SurveyName": "1160714-US-preSc3",
+      "SurveyTopic": "Fashion",
+      "WaveID": 167514,
+      "LOI": 2,
+      "IR": 20,
+      "StudyTypeID": 2009,
+      "ScheduledCompletionDate": "2020-02-29T20:33:44.877",
+      "Price": {
+        "Amount": 1.0,
+        "CurrencyID": 1
+      },
+      "DeviceTypeIDs": [
+        1
+      ],
+      "IsSurveyRecontact": false,
+      "CompletesRequired": 20,
+      "EstimatedCompletesRemaining": 19,
+      "Quotas": [
+        {
+          "QuotaID": 242772,
+          "CompletesRequired": 20,
+          "EstimatedCompletesRemaining": 19,
+          "Layers": [
+            {
+              "LayerID": 613841,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000246
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2163504,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 10
+                },
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 1001007,
+                      "AnswerIDs": [
+                        2000247
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": false
+                    }
+                  ],
+                  "SubQuotaID": 2163505,
+                  "CurrentCompletes": 0,
+                  "MaxTargetCompletes": 10
+                }
+              ]
+            },
+            {
+              "LayerID": 613842,
+              "SubQuotas": [
+                {
+                  "QuestionsAndAnswers": [
+                    {
+                      "QuestionID": 20002802,
+                      "AnswerIDs": [
+                        50003397
+                      ],
+                      "AnswerValues": [],
+                      "IsRoutable": true
+                    }
+                  ],
+                  "SubQuotaID": 2163507,
+                  "CurrentCompletes": 1,
+                  "MaxTargetCompletes": 20
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "IsTqsSurvey": false,
+      "SurveyWaveExclusions": []
+    }
+  ],
+  "CountryID": 2000223,
+  "CacheExpires": "2020-02-27T15:33:00.2172577Z"
+}
