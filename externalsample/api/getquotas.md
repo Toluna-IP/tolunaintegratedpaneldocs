@@ -138,8 +138,6 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 
 #### 200 Response
 
-[Click Here to Access JSON File](http://docs.integratedpanel.toluna.com/resources/getquotas.json){: .btn }
-
 <a href="http://docs.integratedpanel.toluna.com/resources/getquotas.json" target="_blank" class="btn">Click Here to Access JSON File</a>
 
 
