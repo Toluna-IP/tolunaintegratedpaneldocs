@@ -1,0 +1,28 @@
+{
+    "QuotaID": 242098,
+    "CompletesRequired": 1247,
+    "EstimatedCompletesRemaining": 1245,
+    "Layers": [
+      {
+        "LayerID": 613047,
+        "SubQuotas": [
+          {
+            "QuestionsAndAnswers": [
+              {
+                "QuestionID": 1001007,
+                "AnswerIDs": [
+                  2000247,
+                  2000246
+                ],
+                "AnswerValues": [],
+                "IsRoutable": false
+              }
+            ],
+            "SubQuotaID": 2160875,
+            "CurrentCompletes": 0,
+            "MaxTargetCompletes": 2490
+          }
+        ]
+      }
+    ]
+  }
