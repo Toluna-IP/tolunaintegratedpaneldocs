@@ -1,0 +1,42 @@
+{
+    "QuotaID": 243065,
+    "CompletesRequired": 1000,
+    "EstimatedCompletesRemaining": 999,
+    "Layers": [
+      {
+        "LayerID": 614204,
+        "SubQuotas": [
+          {
+            "QuestionsAndAnswers": [
+              {
+                "QuestionID": 1001007,
+                "AnswerIDs": [
+                  2000246
+                ],
+                "AnswerValues": [],
+                "IsRoutable": false
+              }
+            ],
+            "SubQuotaID": 2165400,
+            "CurrentCompletes": 0,
+            "MaxTargetCompletes": 500
+          },
+          {
+            "QuestionsAndAnswers": [
+              {
+                "QuestionID": 1001007,
+                "AnswerIDs": [
+                  2000247
+                ],
+                "AnswerValues": [],
+                "IsRoutable": false
+              }
+            ],
+            "SubQuotaID": 2165401,
+            "CurrentCompletes": 1,
+            "MaxTargetCompletes": 500
+          }
+        ]
+      }
+    ]
+}
