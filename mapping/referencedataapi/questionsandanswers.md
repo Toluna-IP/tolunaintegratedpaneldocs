@@ -10,7 +10,7 @@ grand_parent: Mapping
 # Questions and Answers
 {: .no_toc }
 
-Returns a list of all platform questions and their details.
+Returns a list of all platform questions and their details. Due to the large inventory of questions, Toluna recommends that this tool be used periodically and with a maximum of 5 cultures per call. This will ensure the response is delivered in a timely and easily-absorbable manner.
 
 * TOC
 {:toc}
