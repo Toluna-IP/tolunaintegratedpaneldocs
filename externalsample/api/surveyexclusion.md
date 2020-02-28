@@ -9,14 +9,43 @@ nav_order: 6
 # Survey Wave Exclusion
 {: .no_toc}
 
-The following explains the addition of the Survey Wave Exclusions feature for ES.
+Survey Wave Exclusion is a feature available to ES Partners that allows Members to be excluded from participating in a specified Survey+WavedID based on the Member's participation in a previous Survey or Wave.
 
 * TOC
 {:toc}
 
 ---
 
-## Updated Survey Object returned by GET Quotas response
+## Response Details
+
+SurveyWaveExclusion will be shown when using the [GetQuotas](/externalsample/api/getquotas.html) request. The following are the response details specific to SurveyWaveExclusions. If there are no exclusions specified, the SurveyWaveExclusions object will be empty.
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| SurveyID | ```int``` | The integer idendifier of the excluded Survey |
+| WaveID | ```int```` | The integer identifier of the excluded Wave associated with the excluded Survey. An exclusion with a WaveID=0 should be interpreted as the exclusion applying to any Wave of the associated Survey. WaveID should not be populated if SurveyID is empty |
+| ParticipationStatusID | ```array<int>``` | Should always contain at least one integer. Integers represent the Member's participation statuses of the associated Survey/Wave that should be excluded. Values are as follows: 1 = started (Member accessed the SurveyURL), 3 = Terminated, 9 = Qualified, 10 = QuotaFull |
+
+Exclusions for a Survey can change over type, affecting the number of Members that are excluded from the new SurveyID+WaveID.
+
+---
+
+ - SurveyID is the integer identifier of the excluded Survey
+ - WaveID is the integer identifier of the excluded Wave associated with the excluded Survey
+    - An exclusion with a WaveID=0 should be interpreted as the exclusion applies to any Wave of the associated Survey
+    - There should not be a case in which SurveyID is empty and WaveID is populated
+- ParticipationStatusID arrays hsould contain at least one integer and represent the member participation statuses of the associated Survey/Wave that are excluded
+- ParticipationStatusID values are as follows:
+    - 1: Started (Member accessed Survey URL)
+    - 3: Terminated
+    - 9: Qualified
+    - 10: Quota Full
+- Exclusion for a Survey can change over time
+
+---
+
+
+## Survey Object returned by GET Quotas response
 ```plaintext
 {
 “SurveyID": 48506,
@@ -45,17 +74,3 @@ The following explains the addition of the Survey Wave Exclusions feature for ES
 
  ---
 
-## Details
-
- - SurveyWaveExclusions can be empty if no Exclusions are utilized by a Survey
- - SurveyID is the integer identifier of the excluded Survey
- - WaveID is the integer identifier of the exclufded Wave associated with the excluded Survey
-    - An exclusion with a WaveID=0 should be interpreted as the exclusion applies to any Wave of the associated Survey
-    - There should not be a case in which SurveyID is empty and WaveID is populated
-- ParticipationStatusID arrays hsould contain at least one integer and represent the member participation statuses of the associated Survey/Wave that are excluded
-- ParticipationStatusID values are as follows:
-    - 1: Started (Member accessed Survey URL)
-    - 3: Terminated
-    - 9: Qualified
-    - 10: Quota Full
-- Exclusion for a Survey can change over time
