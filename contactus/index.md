@@ -14,5 +14,5 @@ Any requests sent to Toluna will receive a response within 1 business day.
 
 ## Email
 
-{toluna support email}
+ip_support@toluna.com
 
