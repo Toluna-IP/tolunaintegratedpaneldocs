@@ -16,7 +16,3 @@ Any requests sent to Toluna will receive a response within 1 business day.
 
 {toluna support email}
 
-
-
-
-*contact form for name, email/phone number, question*
