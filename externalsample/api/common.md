@@ -17,7 +17,7 @@ nav_order: 99
 | PANEL_DOES_NOT_EXIST | 3 | The requested "PanelGUID" could not be found |
 | PANEL_NOT_ES_ENABLED | 4 | The requested panel is not enabled for External Sampling |
 | SURVEY_DOES_NOT_EXIST | 5 | The Survey to which the Quota belongs no longer exists |
-| SURVEY_NOT_FOR_RECONTACT | 6 | The Survey to which the Quota belongs is not enabled for Recontact | 
+| SURVEY_NOT_FOR_RECONTACT | 6 | The Survey to which the Quota belongs is not enabled for [Recontact](/externalsample/recontactflow.html) | 
 | QUOTA_NOT_ES_ENABLED | 8 | The requested Quota is not enabled for External Sampling. |
 | QUOTA_NOT_LIVE | 9 | The requested Quota is not live |
 | NO_QUOTA_ID | 10 | The requested QuotaID could not be found |
@@ -26,7 +26,7 @@ nav_order: 99
 | MEMBER_BLOCKED | 14 | The requested MemberCode is currently blocked from taking Surveys. Contact your Toluna representative for details |
 | SURVEY_NOT_ENABLED_FOR_IP_ES | 15 | The Survey to which the Quota belongs is not enabled for Integrated Panel External Sample use. |
 | MEMBER_DOES_NOT_MATCH_QUOTA | 16 | The requested MemberCode does not match the requested QuotaID |
-| NO_RECONTACT_GID | 17 | A request for a Recontact Invite could not be fulfilled due to missing information from the Survey's sponsor |
+| NO_RECONTACT_GID | 17 | A request for a [Recontact](/externalsample/recontactflow.html) Invite could not be fulfilled due to missing information from the Survey's sponsor |
 | PANEL_INVALID_ES_REQUEST | 20 | The requested panel is not configured to ES-based invitations to Toluna Quotas |
 | NON_QUOTA_DEMOGRAPHIC_REJECTION | 21 | The request to get an Invite is rejected due to non-quota demographic reasons. Examples: Prior participation in Quota, Device Type Mismatch, etc |
 | MEMBER_NOT_ACTIVE | 22 | The member is not active in the Toluna system. This can be due to several reasons. Examples: Suspended User, BlockedForAbuse. Contact your Toluna representative for details |
@@ -44,7 +44,8 @@ nav_order: 99
 | SURVEY_VERIFICATION_LEVEL_FAILED | 34 | The Member’s verification score is lower than what the Survey requires |
 | PREVIOUSLY_TERMINATED_SCREENER | 35 | The member has terminated on a TQS prescreener in a previous wave of a tracker survey |
 | TECHNICAL_ERROR | 36 | A system error occurred, Toluna likely has captured details in its logs |
-| UNABLE_TO_GET_GID | 37 | For a Recontact Survey, Toluna is unable to find the recontact member identifier |
+| UNABLE_TO_GET_GID | 37 | For a [Recontact Survey](/externalsample/recontactflow.html), Toluna is unable to find the recontact member identifier |
 | SURVEY_TAKEN | 38 | The member has already taken the requested Survey |
 | MAX_DAILY_EXCEEDED | 39 | The member has exceeded the daily limit of Surveys |
 | MAX_WEEKLY_EXCEEDED | 40 | The member has exceeded the weekly limit of Surveys |
+| MEMBER_GID_NOT_AVAILABLE | 43 | For a [Recontact Survey](/externalsample/recontactflow.html), the Member has not participated in previous/original Survey |
