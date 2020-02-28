@@ -30,20 +30,6 @@ Exclusions for a Survey can change over type, affecting the number of Members th
 
 ---
 
- - SurveyID is the integer identifier of the excluded Survey
- - WaveID is the integer identifier of the excluded Wave associated with the excluded Survey
-    - An exclusion with a WaveID=0 should be interpreted as the exclusion applies to any Wave of the associated Survey
-    - There should not be a case in which SurveyID is empty and WaveID is populated
-- ParticipationStatusID arrays hsould contain at least one integer and represent the member participation statuses of the associated Survey/Wave that are excluded
-- ParticipationStatusID values are as follows:
-    - 1: Started (Member accessed Survey URL)
-    - 3: Terminated
-    - 9: Qualified
-    - 10: Quota Full
-- Exclusion for a Survey can change over time
-
----
-
 
 ## Survey Object returned by GET Quotas response
 ```plaintext
@@ -67,7 +53,7 @@ Exclusions for a Survey can change over type, affecting the number of Members th
 }
 ```
 
-### Interpretation of Response above
+### Interpretation of Response
 
  - Any Member that has either Terminated (ParticipationStatusID=3) or Qualified (9) on Survey 1234+Wave4556 is excluded from participating on Survey 48506
  - Any Member that has been marked as QuotaFull (ParticipationStatusID=10) on *any* Wave of Survey 9784 is excluded from participatng on Survey 48506
