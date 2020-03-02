@@ -28,6 +28,13 @@ SurveyWaveExclusion will be shown when using the [GetQuotas](/externalsample/api
 
 Exclusions for a Survey can change over type, affecting the number of Members that are excluded from the new SurveyID+WaveID.
 
+### Detailed Information on ParticipationStatusIDs
+
+- 1 = Started. The Member was successfully routed to the Survey by the Partner but was never routed back to the Partner. The Partner never received a [MemberStatus Notification.](/notifications/memberstatus.html)
+- 3 = Terminated. The Member was successfully routed to the Survey by the Partner. The Member was either redirected to the Partners's Terminate URL or the Partner received a [Terminated MemberStatus Notification.](/notifications/memberstatus.html#terminates)
+- 9 = Qualified. The Member was returned to the Partner's Qualified URL or the Partner received a [Completed MemberStatus Notification.](/notifications/memberstatus.html#completions)
+- 10 = QuotaFull. The Member was returned to the Partner's QuotaFull URL or the Partner received a [Terminated MemberStatus Notification](/notifications/memberstatus.html#terminates) with a reason of QuotaFull.
+
 ---
 
 
