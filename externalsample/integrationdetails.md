@@ -20,38 +20,9 @@ Toluna’s “External Sample” (ES) capability is an integration option offere
 
 ---
 
-
-## What is needed for ES integration?
-
-### Components 
-
-|  | Notification | Dashboard | External Sample |
-| :--- | :---: | :---: | :---: |
-| Member Management | Required | Required | Required |
-| End Pages | Required | Required | Required |
-| Dashboard API | - | Required | - |
-| External Survey API | - | - | Required |
-| Reporting API | Optional | Optional | Optional |
-
-<br>
-
-### Notifications 
-
-|  | Notification | Dashboard | External Sample |
-| :--- | :---: | :---: | :---: |
-| Invite | Required | - | - |
-| Survey Closed | Recommended | Recommended | Recommended |
-| Member-Status  | Recommended | Recommended | Recommended |
-| Quota Status  | - | - | Required  |
-| Pre-Start  | - | - | Recommended |
-
-
----
-
-
 ## What is the Standard ES Flow?
 
-Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses with its Partners. The first is the Standard Quota, similar to our traditional offerings, but with ES-specific parameters. The second kind is the Recontact Quota, the definition of which will be explained further below. Detailed information on the Standard Flow can be found [here.](/externalsample/standardflow)
+Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses with its Partners. The first is the Standard Quota, similar to our traditional offerings, but with ES-specific parameters. The second kind is the Recontact Quota, the definition of which will be explained further below. Detailed information on the Standard Flow can be found [here.](\externalsample\standardflow)
 
 ---
 
@@ -59,4 +30,4 @@ Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses 
 
 At times, Tluna will seek to "reconnect" specific Members for a Quoa. Typically this is done to facilitate follow-up information for an original study. Since the target Members are already known, the partner has not requirement to sample its membership for the Quota. Instead, they query a Toluna API which will return the list of MemberCodes applicable for recontact. Once Obtained, the Partner should saple the list against the Recontact Quota to validate the targeting and generate an invite request for each match. From here, the process is identical to the interaction with a typical Quota.
 
-Detailed information on the Recontact Flow can be found [here.](/externalsample/recontactflow.html "Recontact ES Flow")
+Detailed information on the Recontact Flow can be found [here.](\externalsample\recontactflow "Recontact ES Flow")
