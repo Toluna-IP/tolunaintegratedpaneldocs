@@ -91,3 +91,11 @@ For response details, please refer to the [Get Quotas Page](/externalsample/api/
 "ResultCode": 42
 }
 ```
+
+#### Survey or Quota No Longer Live
+```plaintext
+{
+"Result": "NO_QUOTA_ID",
+"ResultCode": 10
+}
+```

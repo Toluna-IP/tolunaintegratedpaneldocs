@@ -20,7 +20,7 @@ nav_order: 99
 | SURVEY_NOT_FOR_RECONTACT | 6 | The Survey to which the Quota belongs is not enabled for [Recontact](/externalsample/recontactflow.html) | 
 | QUOTA_NOT_ES_ENABLED | 8 | The requested Quota is not enabled for External Sampling. |
 | QUOTA_NOT_LIVE | 9 | The requested Quota is not live |
-| NO_QUOTA_ID | 10 | The requested QuotaID could not be found |
+| NO_QUOTA_ID | 10 | The requested QuotaID could not be found. The Survey or Quota may no longer be active |
 | NO_MEMBER_FOUND | 12 | The requested MemberCode could not be found |
 | MEMBER_NOT_ROUTABLE | 13 | The requested MemberCode is not in a state eligible for routing to a Quota |
 | MEMBER_BLOCKED | 14 | The requested MemberCode is currently blocked from taking Surveys. Contact your Toluna representative for details |
