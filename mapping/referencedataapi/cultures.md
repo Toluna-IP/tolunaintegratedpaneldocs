@@ -21,7 +21,7 @@ Returns a list of all cultures and their details.
 
 ### Route
 ```
-GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/Cultures 
+GET {IP_REF_DATA_URL}/IPExternalSamplingService/ReferenceData/Cultures 
 ```
 
 ### Parameters

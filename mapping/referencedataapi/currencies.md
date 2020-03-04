@@ -21,7 +21,7 @@ Returns a list of all currency types.
 
 ### Route
 ```
-GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/Currencies 
+GET {IP_REF_DATA_URL}/IPExternalSamplingService/ReferenceData/Currencies 
 ```
 
 ### Parameters

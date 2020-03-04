@@ -21,7 +21,7 @@ Returns a list of all platform questions and their details. Due to the large inv
 
 ### Route
 ```
-GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData 
+GET {IP_REF_DATA_URL}/IPExternalSamplingService/ReferenceData/QuestionsAndAnswersData 
 ```
 
 ### Parameters

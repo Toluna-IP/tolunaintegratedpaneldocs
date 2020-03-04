@@ -21,7 +21,7 @@ Returns a list of all question category names and IDs.
 
 ### Route
 ```
-GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionCategories 
+GET {IP_REF_DATA_URL}/IPExternalSamplingService/ReferenceData/QuestionCategories 
 ```
 
 ### Parameters
