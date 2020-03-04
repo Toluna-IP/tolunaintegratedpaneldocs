@@ -6,6 +6,4 @@ nav_order: 8
 
 # Mapping
 
-The following API calls will allow Partner to request information that can be used in the Partner's data mapping.
-
-> Please note: These API calls are still in development. Breaking changes may occur.
+To assist Partners in their Integration Data-Mapping, Toluna offers an API that allows Partners to access the applicable data.
