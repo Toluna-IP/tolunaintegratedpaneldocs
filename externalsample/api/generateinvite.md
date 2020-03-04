@@ -22,7 +22,7 @@ Once a Member has been matched to a Toluna Quota, this reoute can be used to gen
 
 ### Route
 ```plaintext
-GET http:///{IP_ES_URL}/ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}
+GET http:///{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}
 ```
 
 
@@ -47,7 +47,7 @@ GET http:///{IP_ES_URL}/ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invi
 
 ### Example Request
 ```plaintext
-GET http://{IP_ES_URL}/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/MyMemberCode/Invite/12345
+GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/MyMemberCode/Invite/12345
 API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 ```
 
