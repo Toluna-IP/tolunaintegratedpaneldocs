@@ -57,3 +57,18 @@ The Member attempted to access a Survey that is no longer active.
 ### Not Qualified
 
 The Member does not qualify for the invited Survey. This is rarely seen with Integrated Partners.
+
+---
+
+## Routing Parameters
+
+Toluna can return back to the Partner any query string paramaters that they pass in when routing a member to a Survey. For example, if the Partner passes in "...toluna.com?di=1adsfadf&foo=bar123" we can return "partnerendpage.com/foo=bar123." 
+
+Additionally, Toluna can return the following value on the query string even if the Partner does not pass them in:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| SurveyID | ```int``` | Toluna's identifier of a Survey |
+| SurveyName | ```string``` | Toluna's name of Survey |
+| WaveID | ```int``` | Toluna's identifier of the Wave |
+| MemberCode | ```string``` | Memeber's unique identifier |
