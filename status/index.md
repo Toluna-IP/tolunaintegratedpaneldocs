@@ -18,7 +18,7 @@ Use the following pages to view the statuses of various API features.
 
 ## Training
 
-[ES GetQuotas TRN ENV](http://stats.pingdom.com/oushrv8s0ynu/5782188)
+[ES GetQuotas TRN ENV](http://stats.pingdom.com/oushrv8s0ynu/5782188){: .btn}
 
 ---
 
