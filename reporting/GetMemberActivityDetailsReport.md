@@ -7,7 +7,7 @@ nav_order: 6
 
 ## GetMemberActivityDetailsReport
 
-For a given Member and Survey, returns a list of Member responses tot he survey.
+For a given Member and Survey, returns a list of Member responses to the survey.
 
 ### Route
 ```
