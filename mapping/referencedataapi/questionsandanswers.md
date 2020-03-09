@@ -48,8 +48,10 @@ POST {IP_REF_DATA_URL}/IPExternalSamplingService/ReferenceData/QuestionsAndAnswe
 
 ### Example Request
 ```
+POST {IP_REF_DATA_URL}/IPExternalSamplingService/ReferenceData/QuestionsAndAnswersData HTTP/1.1
+Content-Type: application/json
  {
-    "CultureIDs": [{{qAndaCultures}}],                        
+    "CultureIDs": [1,5],                        
     "CategoryIDs": [],
     "LastUpdateDate": "2000-11-10T13:59:47.0969632+02:00",
     "IncludeComputed" : "true",
