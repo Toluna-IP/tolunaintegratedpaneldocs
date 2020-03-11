@@ -21,7 +21,7 @@ Returns a list of all platform questions and their details. Due to the large inv
 
 ### Route
 ```
-POST {IP_REF_DATA_URL}/IPExternalSamplingService/ReferenceData/QuestionsAndAnswersData 
+POST {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData 
 ```
 
 ### Parameters
@@ -48,7 +48,7 @@ POST {IP_REF_DATA_URL}/IPExternalSamplingService/ReferenceData/QuestionsAndAnswe
 
 ### Example Request
 ```
-POST {IP_REF_DATA_URL}/IPExternalSamplingService/ReferenceData/QuestionsAndAnswersData HTTP/1.1
+POST {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData HTTP/1.1
 Content-Type: application/json
  {
     "CultureIDs": [1,5],                        
