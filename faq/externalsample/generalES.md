@@ -78,4 +78,4 @@ For Recontact Surveys and WaveIDs, Toluna allows Members to be excluded from par
 
 ## For our Age profiler, sometimes Toluna uses only AnswerIDs, and other times they use AnswerValues. What is and where is there this distinction?
 
-If Toluna some custom age range defined, we send the age range in the AnswerValues, otherwise we send AnswerIDs. You will need to accommodate both on your end.
+If has Toluna provides a defined custom age range, the age range will be sent in AnswerValues, otherwise AnswerIDs will be provided. The partner will need to accommodate both on their end.
