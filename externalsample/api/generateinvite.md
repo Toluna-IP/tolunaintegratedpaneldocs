@@ -32,7 +32,7 @@ GET http:///{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGuid:GUID
 | :--- | :--- | :--- | :---: |
 | PanelGUID | ```Guid``` | A Toluna-issued unique identifier for a Partner's culture-specific panel | Yes |
 | MemberCode | ```string``` | Partner's unique identifier for the Member as define when registered with Toluna. The PanelGUID+MemberCode is always unique within the Toluna system | Yes |
-| QuotaID | ```int``` | Toluna's unqiue identifier for a Quota | Yes |
+| QuotaID | ```int``` | Toluna's uniqiue identifier for a Quota | Yes |
 
 ### Header(s) 
 
@@ -72,7 +72,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | :--- | :--- | :--- |
 | SurveyID | int | Toluna's unique identifier for a Survey |
 | WaveID | int | Toluna's unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
-| QuotaID | int | Toluna's unqiue identifier for a Quota |
+| QuotaID | int | Toluna's uniqiue identifier for a Quota |
 | Member Amount | double | Amount Partner has agreed to pay it’s Member for a complete. This is rarely used and Toluna prefers to avoid direct engagement with the Partner-Member relationship |
 | Partner Amount | double | Amount Toluna has agreed to pay Partner for a complete |
 | URL | string | Link to Invite Member to Quota |

@@ -34,6 +34,6 @@ nav_order: 1
 
 6) If the Respondent qualifies and completes the new Survey, the Partner is notified using the Completion notification method described [here.](/notifications/memberstatus.html#completions)
 
-7) If the Respondent terminates from the new Survey, the Partner is notified through the Terminates Notiication method desribed [here.](/notifications/memberstatus.html#terminates)
+7) If the Respondent terminates from the new Survey, the Partner is notified through the Terminates Notiication method described [here.](/notifications/memberstatus.html#terminates)
 
 8) If the routing is turned ON, the Respondent can be offered another Survey directly from the system. The routing feature can be turned on/off at the request of the Partner within 4-8 hours during USA business hours (8am - 5pm EST)
