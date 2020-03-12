@@ -61,7 +61,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | :--- | :--- |
 | 200 | Request processed normally |
 | 400 | Bad Request: See response for details |
-| 500 | Internal Error. An exception has occured while processing the request. Toluna likely has captured the details in its logs |
+| 500 | Internal Error. An exception has occurred while processing the request. Toluna likely has captured the details in its logs |
 | 403 | Forbidden: invalid API_AUTH_KEY. See response for details |
 
 
@@ -70,7 +70,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | CountryID |	```int``` |	Toluna’s unique identifier for the country in which the available Quotas are located. |
-| CacheExpires |	```dateTime``` |	Date at which Toluna’s cache of this Quota data expired. Repreating API calls after this time guarentees an updated result set |
+| CacheExpires |	```dateTime``` |	Date at which Toluna’s cache of this Quota data expired. Repreating API calls after this time guarantees an updated result set |
 | Surveys |	```list<object>``` |	A JSON object containing 1:M Surveys for which Toluna has open Quotas |
 
 #### Survey Object
@@ -86,7 +86,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | StudyTypeID |	```int``` |	The Survey’s “category.” See mapping document for values |
 | ScheduledCompletionDate |	```dateTime``` |	Date at which Survey is set to close |
 | DeviceTypeIDs |	```list<int>``` |	Devices upon which the Survey can be used. See mapping document for details |
-| IsSurveyRecontact |	```boolean``` |	When TRUE, the Survey is looking to engage specific Members for a follow-up study. Please see the “Recontact” section for mor einformation regarding its use |
+| IsSurveyRecontact |	```boolean``` |	When TRUE, the Survey is looking to engage specific Members for a follow-up study. Please see the “Recontact” section for more information regarding its use |
 | CompletesRequired |	```int``` |	The total number of completes required across all Quotas until the ScheduleCompletionDate. This should be considered the limit of completes available. At times, this may be less than the sum of all Quotas |
 | EstimatedCopletesRemaining |	```int``` |	The estimated number of completes remaining until the ScheduleCompletionDate, across all Quotas, until the Survey is full. At times, this may be less than the sum of all Quotas |
 | Price |	```<object>``` |	A JSON object containing details about price Toluna will pay per complete |

@@ -26,7 +26,7 @@ nav_order: 1
 
 2) Survey is closed on Toluna's end because the Respondent answered 12 hours after the invite was sent and the necessary completes were achieved.
 
-3) If this routing is turned off, the Respondent is returned to the Partner and the Partner is notified through the Terminates Notiication method desribed [here.](/notifications/memberstatus.html#terminates)
+3) If this routing is turned off, the Respondent is returned to the Partner and the Partner is notified through the Terminates Notiication method described [here.](/notifications/memberstatus.html#terminates)
 
 4) If this routing is turned on, the Terminates Notification in step 3 still occurs but the Respondent is redirected to another qualifying Survey in the Toluna platform (if a qualifying Survey is available).
 

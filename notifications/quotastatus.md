@@ -8,7 +8,7 @@ nav_order: 4
 # Quota Status Notifications
 {: .no_toc}
 
-A new feature for the ES Integration, Toluna will deliver these notifications when one of its Quotas is no longer available for sampling or any of its perviously on-hold Quotas become available for sampling. 
+A new feature for the ES Integration, Toluna will deliver these notifications when one of its Quotas is no longer available for sampling or any of its previously on-hold Quotas become available for sampling. 
 
 * TOC
 {:toc}
@@ -26,7 +26,7 @@ Toluna will deliver this via HTTP POST when one of its Quotas is no longer avail
 
 ### Route(s)
 
-- Specified by Partner; Toluna will confingure accordingly
+- Specified by Partner; Toluna will configure accordingly
 
 ### Notification Properties
 
@@ -40,7 +40,7 @@ Toluna will deliver this via HTTP POST when one of its Quotas is no longer avail
 
 ### Formats Available
 
-Quota status notifications are avialable in JSON and XML formats. Below are examples in the JSON format.
+Quota status notifications are available in JSON and XML formats. Below are examples in the JSON format.
 
 ### Example JSON Request
 ```plaintext

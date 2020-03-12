@@ -8,11 +8,11 @@ parent: External Sample Offering
 ## Sampling Rules
 
 
-Quotas are borken down into the following components: Surveys, [Waves](/general/common.html#tracking-surveys-and-the-waveid-property), Quotas, Layers, and Subquotas. External Sample Partners must comply with Toluna's sampling rules. Members of ES Partners must be an exact match to the desired Survey based on the parameters listed below.
+Quotas are broken down into the following components: Surveys, [Waves](/general/common.html#tracking-surveys-and-the-waveid-property), Quotas, Layers, and Subquotas. External Sample Partners must comply with Toluna's sampling rules. Members of ES Partners must be an exact match to the desired Survey based on the parameters listed below.
 
 To be sampled for a Quota, a member must:
 
- - Be targted for only 1 Quota per Survey
+ - Be targeted for only 1 Quota per Survey
  - Match ALL Layers in the Quota
  - Match ONE of the SubQuotas
  - Match at least one "AnswerID" (SubQuotaAttribute) per SubQuota with the single QuestionID

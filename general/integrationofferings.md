@@ -24,12 +24,12 @@ This is the original integration offering in which Toluna performs the sampling 
 
 ## [Dashboard Offering](\dashboard)
 
-This offering allows Partners to request a small inventory of current survey opportunities for a member. The Partner then routes the member accordingly to the opportunity through the provided invite url. 
+This offering allows Partners to request a small inventory of current survey opportunities for a member. The Partner then routes the member accordingly to the opportunity through the provided invite URL. 
 
 
 ## [External Sample Offering](\externalsample)
 
-This is the newest offering and places the sampling processs (member -> survey selection) to the partner. The partner requests a real-time inventory of available quotas, selects which members qualify for which quotas, and then requests invite URLs for these member-quota pairs. Once an invite url is provided back by the Toluna platform, the partner can route the member accordingly. 
+This is the newest offering and places the sampling processs (member -> survey selection) to the partner. The partner requests a real-time inventory of available quotas, selects which members qualify for which quotas, and then requests invite URLs for these member-quota pairs. Once an invite URL is provided back by the Toluna platform, the partner can route the member accordingly. 
 
 ---
 

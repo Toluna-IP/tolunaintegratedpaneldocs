@@ -49,7 +49,7 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/Cultures
 | 200 | OK. Request processed normally |
 | 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
 | 403 | Forbidden. Invalid PARTNER_AUTH_KEY |
-| 500 | Internal Error. An exception occurrec while processing the request. Contact Toluna for resolution. Toluna will likely have the details caputred in its logs |
+| 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
 
 ### Body Details
 

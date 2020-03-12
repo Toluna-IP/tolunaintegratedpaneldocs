@@ -23,7 +23,7 @@ When a Respondent attempts to take a Survey they have been invited to, there are
 
 ## AutoRouting
 
-Toluna allows Members to be automatically routed to a separate Survey when they attempt to connect to a Survey that is no longer available or that they no longer qualify for. When a Member is AutoRouted, the Partner will NOT recieve a Terminated notification. Instead, Partner's will receive a Notification when the Member completes the Survey to which they were routed. Included in this Notification will be the following addendum:
+Toluna allows Members to be automatically routed to a separate Survey when they attempt to connect to a Survey that is no longer available or that they no longer qualify for. When a Member is AutoRouted, the Partner will NOT receive a Terminated notification. Instead, Partner's will receive a Notification when the Member completes the Survey to which they were routed. Included in this Notification will be the following addendum:
 
 ```
 ...
@@ -45,7 +45,7 @@ When autorouting Respondents, Partners have two options for their end pages: Sel
 
 ### Self-Hosted Pages
 
-This is the standard and most desired option for Partners. The specific events required Partner-Hosted pages are outlined [here.]\(memberrouting\endpages)
+This is the standard and most desired option for Partners. The specific events required Partner-Hosted pages are outlined [here.](\memberrouting\endpages)
 
 ### Toluna-Hosted Pages
 

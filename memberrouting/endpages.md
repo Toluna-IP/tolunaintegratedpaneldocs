@@ -62,7 +62,7 @@ The Member does not qualify for the invited Survey. This is rarely seen with Int
 
 ## Routing Parameters
 
-Toluna can return back to the Partner any query string paramaters that they pass in when routing a member to a Survey. For example, if the Partner passes in "...toluna.com?di=1adsfadf&foo=bar123" we can return "partnerendpage.com/foo=bar123." 
+Toluna can return back to the Partner any query string parameters that they pass in when routing a member to a Survey. For example, if the Partner passes in "...toluna.com?di=1adsfadf&foo=bar123" we can return "partnerendpage.com/foo=bar123." 
 
 Additionally, Toluna can return the following value on the query string even if the Partner does not pass them in:
 

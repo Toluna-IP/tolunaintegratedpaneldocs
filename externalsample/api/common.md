@@ -34,10 +34,10 @@ nav_order: 99
 | SURVEY_CUSTOMER_EXCLUDED | 24 | Panel has been configured to exclude any Survey hosted by the Customer |
 | SURVEY_EXCLUDED | 25 | Partner is excluded from participation in this Surve |
 | ACCOUNT_GROUP_SURVEY_TAKEN | 26 | The requested Member has already taken the survey, possibly from another account |
-| INTERVALLIC_QUOTA_NOTAVAILBLE | 27 | Information about a rollover Quota is not currently availabl |
+| INTERVALLIC_QUOTA_NOTAVAILBLE | 27 | Information about a rollover Quota is not currently available |
 | QUOTA_FULL | 28 | Requested Quota is Ful |
 | IP_EXTERNAL_RESPONDENTTYPE_FULL | 29 | The allotted completes for External Sample are full |
-| EXCLUDED_SURVEY_TAKEN | 30 | Member has been excluded from the Survey. See Toluna respresentative for details |
+| EXCLUDED_SURVEY_TAKEN | 30 | Member has been excluded from the Survey. See Toluna representative for details |
 | DEVICETYPE_NOT_SUPPORTED_FOR_SURVEY | 31 | The requested device types are not available for the Surve |
 | SURVEY_LOI_MISMATCH | 32 | The requested LOI is higher than the Survey’s upper limit |
 | IP_PROVIDER_COST_NOMATCH | 33 | Partner price is higher than the current limit on the Survey |

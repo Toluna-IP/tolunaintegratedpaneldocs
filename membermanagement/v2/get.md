@@ -52,7 +52,7 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent/?memberCode={memb
 | :--- | :--- |
 | 200 | OK. Request processed normally, existing Member Panelist was updated without issue |
 | 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
-| 500 | Internal Error. An exception occurrec while processing the request. Contact Toluna for resolution. Toluna will likely have the details caputred in its logs |
+| 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
 
 ### Body Details
 

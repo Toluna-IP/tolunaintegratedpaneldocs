@@ -99,7 +99,7 @@ All examples below shown in JSON
 | 200 | OK. Request processed normally, existing Member Panelist was updated without issue |
 | 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
 | 404 | Not Found. An attempt to update a Member that does not exist. Existence is determined by the combination of MemberCode and PartnerGUID |
-| 500 | Internal Error. An exception occured while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
+| 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
 
 ### Notes
 > - Only Updates Existing Members. To Add a new Member, use the POST route noted above.

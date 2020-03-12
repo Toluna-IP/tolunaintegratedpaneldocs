@@ -10,7 +10,7 @@ nav_order: 2
 # Generate Invite
 {: .no_toc }
 
-Once a Member has been matched to a Toluna Quota, this reoute can be used to generate an invitation.
+Once a Member has been matched to a Toluna Quota, this route can be used to generate an invitation.
 
 * TOC
 {:toc}
@@ -61,7 +61,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | :--- | :--- |
 | 200 | Request processed normally |
 | 400 | Bad Request: see response for details |
-| 500 | Internal Error: An exception occured while processing the request. Toluna likely has captured details in its logs |
+| 500 | Internal Error: An exception occurred while processing the request. Toluna likely has captured details in its logs |
 | 403 | Forbidden: Invalid API_AUTH_KEY. See response for details |
 
 
@@ -71,7 +71,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | SurveyID | int | Toluna's unique identifier for a Survey |
-| WaveID | int | Toluna's unique indentifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
+| WaveID | int | Toluna's unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
 | QuotaID | int | Toluna's unqiue identifier for a Quota |
 | Member Amount | double | Amount Partner has agreed to pay it’s Member for a complete. This is rarely used and Toluna prefers to avoid direct engagement with the Partner-Member relationship |
 | Partner Amount | double | Amount Toluna has agreed to pay Partner for a complete |

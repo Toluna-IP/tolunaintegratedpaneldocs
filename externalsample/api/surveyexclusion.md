@@ -22,7 +22,7 @@ SurveyWaveExclusion will be shown when using the [GetQuotas](/externalsample/api
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| SurveyID | ```int``` | The integer idendifier of the excluded Survey |
+| SurveyID | ```int``` | The integer identifier of the excluded Survey |
 | WaveID | ```int```` | The integer identifier of the excluded Wave associated with the excluded Survey. An exclusion with a WaveID=0 should be interpreted as the exclusion applying to any Wave of the associated Survey. WaveID should not be populated if SurveyID is empty |
 | ParticipationStatusID | ```array<int>``` | Should always contain at least one integer. Integers represent the Member's participation statuses of the associated Survey/Wave that should be excluded. Values are as follows: 1 = started (Member accessed the SurveyURL), 3 = Terminated, 9 = Qualified, 10 = QuotaFull |
 
@@ -63,7 +63,7 @@ Exclusions for a Survey can change over type, affecting the number of Members th
 ### Interpretation of Response
 
  - Any Member that has either Terminated (ParticipationStatusID=3) or Qualified (9) on Survey 1234+Wave4556 is excluded from participating on Survey 48506
- - Any Member that has been marked as QuotaFull (ParticipationStatusID=10) on *any* Wave of Survey 9784 is excluded from participatng on Survey 48506
+ - Any Member that has been marked as QuotaFull (ParticipationStatusID=10) on *any* Wave of Survey 9784 is excluded from participating on Survey 48506
 
  ---
 
