@@ -78,9 +78,9 @@ POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | Response Code | Etiology, actions |
 | :--- | :--- |
 | 201 | Created. Request processed normally, resulting in a new Member Panelist |
-| 400 | Bad Request. Request is malformed or incomplete. Review message details and take apporpriate action |
+| 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
 | 409 | Conflict. An attempt to add a Member that already exists. Duplication is determined by the combination of MemberCode and PartnerGUID |
-| 500 | Internal Error. An exception occured while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
+| 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
 
 ### Notes
 

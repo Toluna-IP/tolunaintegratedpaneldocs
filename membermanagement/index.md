@@ -17,7 +17,7 @@ We recommended v2 as it will lead to better survey qualification and higher conv
 
 No personal information regarding the partner’s panel is received or stored by Toluna. The partner need only supply a unique numeric “Member ID”  that will be used to identify the member when interacting with the Toluna platform. 
 
-Mapping Data is availble via our [Refernce Data API](/mapping/referencedataapi) which will aid in mapping demographic values. These values can vary by culture. 
+Mapping Data is available via our [Refernce Data API](/mapping/referencedataapi) which will aid in mapping demographic values. These values can vary by culture. 
 
 * TOC
 {:toc}
@@ -40,7 +40,7 @@ The following are important notes on the practice of Member Management:
 ---
 
 ## Member Status Type 
-Every member that is registered on the Toluna platform has a correspoding status that indicates a general level of their ability to participate on the Toluna platform. We call this the Member Status Ttype, or also known as PanelistStatusType. The details of each status are outlined below. 
+Every member that is registered on the Toluna platform has a corresponding status that indicates a general level of their ability to participate on the Toluna platform. We call this the Member Status Ttype, or also known as PanelistStatusType. The details of each status are outlined below. 
 
 
 | PanelistStatusTypeID | Name | Description | 
@@ -55,7 +55,7 @@ Every member that is registered on the Toluna platform has a correspoding status
 
 ### Blocked For Abuse
 
-An IP Member can be blocked for abuse by the Toluna Administrators due to several reasons. Some of the indicators to block a Member are multiple fraudulent attempts, multiple terminations due to Toluna Platform qualify check failture, encrypted URL mismatch, and more.
+An IP Member can be blocked for abuse by the Toluna Administrators due to several reasons. Some of the indicators to block a Member are multiple fraudulent attempts, multiple terminations due to Toluna Platform qualify check failure, encrypted URL mismatch, and more.
 
 IP APIs will return 400 Bad Requests (except Member ```POST(s)```, which will return 401 Conflict) along with an appropriate message in the response when a request is received for a Member in a blocked status. Please review the response message details and take appropriate action.
 

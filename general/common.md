@@ -54,7 +54,7 @@ There are three approaches for pricing that are currently available on the Tolun
 
 ## Content Type
 
-The preferred content type is json. Any new notification developed will only be available in JSON format. Existing content that is also available in XML format will be explicitly described.
+The preferred content type is JSON. Any new notification developed will only be available in JSON format. Existing content that is also available in XML format will be explicitly described.
 
 ---
 
@@ -74,10 +74,10 @@ Toluna recommends that the Partner considers the combination of SurveyID+WaveID 
 
 ## Response Codes
 
-The follow are possible response code categories that a Partner may recieve when interacting with the Toluna API. More specific codes will be found in the documentation of each API route throughout this guide.
+The follow are possible response code categories that a Partner may receive when interacting with the Toluna API. More specific codes will be found in the documentation of each API route throughout this guide.
 
 | Code | Description |
 | :--- | :--- |
 | 200 | OK. The request has been processed normally without issue |
 | 400 | Bad Request. Possible missing information in request or Toluna database |
-| 500 | Internal Error. An error has occured within Toluna. Contact Toluna as they likely have details captured in their logs |
+| 500 | Internal Error. An error has occurred within Toluna. Contact Toluna as they likely have details captured in their logs |
