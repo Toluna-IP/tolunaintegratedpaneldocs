@@ -41,7 +41,7 @@ GET http://{PI_CORE_URL}/IntegratedPanelService/api/Reports/Survey/{SurveyName}/
 | Code | Etiology, actions |
 | 200 | OK. Request processed normally; results returned without issue |
 | 404 | Not Found. Could not find a Survey for the input |
-| 500 | Internal Error. An exception occurred while processing the request. Toluna likey has details captured in its logs |
+| 500 | Internal Error. An exception occurred while processing the request. Toluna likely has details captured in its logs |
 
 ### Example Response
 ```plaintext

@@ -44,7 +44,7 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Members/{Membercode}
 
 | Code | Etiology, actions |
 | :--- | :--- | 
-| 200 | OK. Request processed normally, resulsts returned without issue |
+| 200 | OK. Request processed normally, results returned without issue |
 | 404 | Not Found. Could not find a survey for the SurveyName |
 | 400 | {StartDate} must precede {EndDate} |
 | 400 | Search date range cannot exceed 30 days |

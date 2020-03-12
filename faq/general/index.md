@@ -109,7 +109,7 @@ No, Toluna does not require its Partners use IP whitelists.
 
 ---
 
-## If a Panelist  a Survey and, upon completion, is routed directly a separate Survey, how can a Partner update the transactions for bothn Surveys?
+## If a Panelist  a Survey and, upon completion, is routed directly a separate Survey, how can a Partner update the transactions for both Surveys?
 
 Example:
 
