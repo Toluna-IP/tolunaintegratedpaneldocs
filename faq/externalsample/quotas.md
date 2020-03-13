@@ -63,3 +63,9 @@ The Tolunma Platform requires complete match to all questions on a Quota unless 
 ## What happens when Toluna attempts to send us a notification and we do not receive it due to connection issues?
 
 If an error occurs in sending the Quota notification, Toluna will try the message again after processing the rest of the current message Queue.
+
+---
+
+## What does the Parameter "IsRoutable" mean?
+
+For a Member to be selected for a Survey, they must be an exact match to the desired quota. Questions that are "routable" allow Members to be invited to a Survey even if they do not have a Question/Answer set that is required by the Quota. Instead, Toluna will route the Member to a "prescreener" survey. This is prescreener survey will ask the missing question of the Member. If the Memeber selects an answer that matches the quota, they will be directed to the final Survey. If they don't match, they will be directed to the [Not Qualified URL](/memberrouting/endpages.html#not-qualified).
