@@ -50,6 +50,7 @@ POST {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData
 ```
 POST {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData HTTP/1.1
 Content-Type: application/json
+PARTNER_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
  {
     "CultureIDs": [1,5],                        
     "CategoryIDs": [],

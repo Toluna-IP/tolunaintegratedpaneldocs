@@ -38,6 +38,14 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/Cultures
 
  - None
 
+### Example Request
+```plaintext
+GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/Cultures 
+Content-type: application/json
+PARTNER_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+```
+
+
 ---
 
 ## Response
