@@ -27,7 +27,7 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/{SurveyID}/S
 
 #### Route
 ```plaintext
-GET http://{PI_CORE_URL}/IntegratedPanelService/api/Reports/Survey/{SurveyName}/StatusByName/?SamplePartnerGUID={PartnerGUID}
+GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Survey/{SurveyName}/StatusByName/?SamplePartnerGUID={PartnerGUID}
 ```
 
 #### Parameters
