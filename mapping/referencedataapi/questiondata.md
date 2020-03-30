@@ -28,7 +28,7 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionAndAnswersData/{que
 | Name | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
 | questionID | ```int``` | Identifier for the desired question | Yes |
-| cultureID | ```int``` | Identifier for the culture to which the question belongs. To find a cultureID, use the route detailed [here](mapping\referencedataapi\cultures) | Yes |
+| cultureID | ```int``` | Identifier for the culture to which the question belongs. To find a cultureID, use the route detailed [here](/mapping/referencedataapi/cultures.html) | Yes |
 
 ### Header
 
