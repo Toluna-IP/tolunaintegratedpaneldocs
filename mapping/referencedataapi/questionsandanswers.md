@@ -108,7 +108,7 @@ PARTNER_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 | :--- | :--- | :--- |
 | AnswerID | ```int``` | Toluna's unique identifier for an answer |
 | Translation | ```string``` | Answer text as shown to the Respondent |
-| AnswerInternalName | Answer text used internally |
+| AnswerInternalName | ```string``` | Answer text used internally |
 | AnswerType | ```string``` | Defines how the answer is derived. Possible responses are SingleSelect, ComputedType, MultiSelect, OpenEnded, Container |
 | AnswerValidationRegularExpression | ```string``` | Declares regular expression for open-ended questions. If the question is not open-ended, response will be 'null' |
 

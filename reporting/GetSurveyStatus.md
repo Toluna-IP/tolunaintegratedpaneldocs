@@ -35,6 +35,7 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Survey/{SurveyName}/
 | Name | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
 | SurveyName | ```string``` | Toluna external Survey Name | Yes |
+| PartnerGUID | ```GUID``` | API key provided by Toluna | Yes |
 
 ### Possible Response Codes
 

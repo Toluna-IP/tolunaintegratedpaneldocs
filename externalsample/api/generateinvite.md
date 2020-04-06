@@ -22,7 +22,7 @@ Once a Member has been matched to a Toluna Quota, this route can be used to gene
 
 ### Route
 ```plaintext
-GET http:///{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGuid:GUID}/{MemberCode:string}/Invite/{QuotaID:int}
+GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGuid}/{MemberCode}/Invite/{QuotaID}
 ```
 
 
