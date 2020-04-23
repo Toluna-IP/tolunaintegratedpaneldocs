@@ -51,7 +51,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  "SurveyID": 99,
  "SurveyRef": "123560-US",
  "Status": "Closed",
- "DateTime": "2014-09-11 16:06:27"
+ "DateTime": "2014-09-11 16:06:27",
  "WaveId": 100
 }
 ```
