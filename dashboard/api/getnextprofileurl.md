@@ -20,7 +20,7 @@ Toluna’s client Surveys are always looking for rich profile information for al
 
 ### Route
 ```plaintext
-GET http://{IP_CORE_URL/IntegratedPanelService/api/Profile/GetNextProfileURL/?memberCode={memberCode}&partnerGuid={partnerGUID}&cancelURL={cancelURL}&returnURL={returnURL}
+GET http://{IP_CORE_URL}/IntegratedPanelService/api/Profile/GetNextProfileURL/?memberCode={memberCode}&partnerGuid={partnerGUID}&cancelURL={cancelURL}&returnURL={returnURL}
 ```
 
 >Note: This request can be made multiple times. Toluna keeps track of the profiles filled by each respondent and will not offer to fill an already filled profile for a respondent.
