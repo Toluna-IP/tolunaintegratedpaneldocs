@@ -15,6 +15,12 @@ IMPORTANT
 
 To access v2 of a route, supply the “Accept” header in your request as directed in the "Add Member," "Get Member," and "Update Member" pages. **This header is required for all Dynamic API Management routes.**
 
+## The following is a video tutorial of the Member Management API
+
+<video class="video-fluid z-depth-1" loop controls muted style="max-width: 800px;">
+  <source src="https://firebasestorage.googleapis.com/v0/b/toluna-ip.appspot.com/o/integration%2Fquick%2Fmember-mgt.mp4?alt=media&token=6b248496-fb79-4fd9-b989-1e31657d244c" type="video/mp4" />
+</video>
+
 ## Question / AnswerIDs
 
 Please note the primary difference with v1 is that demographic characteristics are listed as a series of Question and Answer IDs. Though less readable in JSON notation, this provides true extensibility (all Toluna Demographic information is supported), and provides for much faster results. Every Question has a static QuestionID, which maps to a series of possible static AnswerIDs. This information is clearly noted in the mapping document each partner receives during the integration period. These are the most relevant Questions for IP:
