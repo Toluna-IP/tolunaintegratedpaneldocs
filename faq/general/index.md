@@ -104,7 +104,7 @@ We do not currently have an API which provides metrics on conversion rate. The c
 ---
 
 ## Does Toluna require its Partners to implement IP whitelists?
-
+c
 No, Toluna does not require its Partners use IP whitelists.
 
 ---
@@ -137,3 +137,7 @@ See [Member-Survey Flow](/memberrouting/membersurveyflow#autorouting.html) for m
 These are both computed demographic values that are based off of a Member's zip code (US members) that provide additional context. More details can be found [here.](https://www.digitaladvertising-101.com/blog/digital-101-dma-vs-msa)
 
 ---
+
+## When updating a member using v2, why do I get a 400 Bad Request response?
+
+The most common reason for this error to be shown is if you are trying to add a questionID whose answerType is computed. Computed answers are automatically generated from basic demographic information (i.e. Birthdate and ZipCode). Adding Region or DMA answers will result in this error.
