@@ -13,4 +13,8 @@ For long-term mapping, Toluna suggests that Partners only rely on the Production
 
 > Please note: These API calls are still in development. Breaking changes may occur.
 
+## Video Tutorial
 
+<video class="video-fluid z-depth-1" loop controls muted style="width: 80%;">
+  <source src="https://firebasestorage.googleapis.com/v0/b/toluna-ip.appspot.com/o/integration%2Fquick%2Fref-data.mp4?alt=media&token=8b65074c-59f0-4f2e-b1ea-a2a2e968b432" type="video/mp4" />
+</video>

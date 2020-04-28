@@ -15,7 +15,7 @@ IMPORTANT
 
 To access v2 of a route, supply the “Accept” header in your request as directed in the "Add Member," "Get Member," and "Update Member" pages. **This header is required for all Dynamic API Management routes.**
 
-## The following is a video tutorial of the Member Management API
+## Video Tutorial
 
 <video class="video-fluid z-depth-1" loop controls muted style="width: 80%;">
   <source src="https://firebasestorage.googleapis.com/v0/b/toluna-ip.appspot.com/o/integration%2Fquick%2Fmember-mgt.mp4?alt=media&token=6b248496-fb79-4fd9-b989-1e31657d244c" type="video/mp4" />

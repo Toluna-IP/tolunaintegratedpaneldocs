@@ -13,7 +13,12 @@ nav_order: 3
 
 ---
 
-[in progress]
+## Informational Video
+
+<video class="video-fluid z-depth-1" loop controls muted style="width: 80%;">
+  <source src="https://firebasestorage.googleapis.com/v0/b/toluna-ip.appspot.com/o/integration%2Fquick%2Fredirect-notf.mp4?alt=media&token=1fce7f8a-653b-4d62-9488-8a43d2addbc2" type="video/mp4" />
+</video>
+
 
 ## Routing Respondents
 
