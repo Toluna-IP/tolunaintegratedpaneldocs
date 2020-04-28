@@ -23,7 +23,12 @@ This request is almost an exact parallel to that in the Static Member Management
 ## Request
 
 <iframe width="560" height="315" src="https://firebasestorage.googleapis.com/v0/b/toluna-ip.appspot.com/o/integration%2Fquick%2Fmember-mgt.mp4?alt=media&token=6b248496-fb79-4fd9-b989-1e31657d244c" frameborder="0" allowfullscreen></iframe>
-      </iframe>
+
+---
+
+<video class="video-fluid z-depth-1" loop controls muted>
+  <source src="https://firebasestorage.googleapis.com/v0/b/toluna-ip.appspot.com/o/integration%2Fquick%2Fmember-mgt.mp4?alt=media&token=6b248496-fb79-4fd9-b989-1e31657d244c" type="video/mp4" />
+</video>
 
 ### Route
 ```plaintext
