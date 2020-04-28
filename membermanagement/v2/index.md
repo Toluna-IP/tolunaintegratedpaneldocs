@@ -17,7 +17,7 @@ To access v2 of a route, supply the “Accept” header in your request as direc
 
 ## The following is a video tutorial of the Member Management API
 
-<video class="video-fluid z-depth-1" loop controls muted style="max-width: 800px;">
+<video class="video-fluid z-depth-1" loop controls muted style="width: 80%;">
   <source src="https://firebasestorage.googleapis.com/v0/b/toluna-ip.appspot.com/o/integration%2Fquick%2Fmember-mgt.mp4?alt=media&token=6b248496-fb79-4fd9-b989-1e31657d244c" type="video/mp4" />
 </video>
 
