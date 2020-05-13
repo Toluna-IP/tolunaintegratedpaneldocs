@@ -16,4 +16,4 @@ Please note that the information on this page is specific to IP Integration. For
 
 ## Email
 
-ip_integration@toluna.com
+ip_support@toluna.com
