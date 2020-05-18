@@ -40,7 +40,7 @@ GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/StudyTypes
 
 ### Example Request
 ```plaintext
-GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/DeviceTypes
+GET {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/StudyTypes
 Content-Type: application/json
 PARTNER_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ```
