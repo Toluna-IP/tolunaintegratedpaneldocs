@@ -80,7 +80,7 @@ POST http://myPartnerApi/TolunaComplete
 # Terminates
 
 Toluna provides an automated termination service that notifies the Partner upon a non-qualified
-Survey completion by one of their Members. Terminates, Quota Full, No Survey Available notifications
+Survey completion by one of their Members. Terminates and Quota Full notifications
 are sent this way. This implementation on the partner end is not mandatory.
 
 ### Route
