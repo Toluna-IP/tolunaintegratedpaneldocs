@@ -8,7 +8,9 @@ nav_order: 1
 # Member Status Notifications
 {: .no_toc }
 
-These notifications are issued upon conclusion of a Partner Member’s experience with a Toluna Survey. Partners must consume them in order to understand the outcome of their Member’s invitation to the Survey. In general, they take two forms: Termination and Completion. Both are existing features of the Toluna IP System, and documentation regarding their details can be found in the standard integration guide. ES partners also get ‘QuotaID’ in their notifications.
+These notifications are issued upon conclusion of a Partner Member’s experience with a Toluna Survey. Partners must consume them in order to understand the outcome of their Member’s invitation to the Survey. In general, they take two forms: Termination and Completion. Both are existing features of the Toluna IP System, and documentation regarding their details can be found in the standard integration guide. In addition to the information shown in the example below, ES partners also get ‘QuotaID’ in their notifications.
+
+These notifications can be encrypted at the Partner's request. For more information on Toluna's encryption offering, click [here.](/memberrouting/encryption)
 
 * TOC
 {:toc}
