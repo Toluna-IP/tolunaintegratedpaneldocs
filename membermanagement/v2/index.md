@@ -27,12 +27,12 @@ Please note the primary difference with v1 is that demographic characteristics a
 
 | Question Name | QuestionID | Possible AnswerIDs |
 | :-- | :--- | :--- |
-| GenderID | 1001007 | See mapping document |
-| EducationID | 1001101 | See mapping document |
-| IncomeID | 1001107 | See mapping document |
-| EthnicityID | 1001012 | See mapping document |
-| WorkPositionID | 1005145 | See mapping document |
-| MaritalStatusID | 1001102 | See mapping document |
-| EmploymentStatusID | 1012395 | See mapping document |
-| RaceID | 1002790 | See mapping document |
+| GenderID | 1001007 | See [Reference Data API](/mapping/referencedataapi/) |
+| EducationID | 1001101 | See [Reference Data API](/mapping/referencedataapi/) |
+| IncomeID | 1001107 | See [Reference Data API](/mapping/referencedataapi/) |
+| EthnicityID | 1001012 | See [Reference Data API](/mapping/referencedataapi/) |
+| WorkPositionID | 1005145 | See [Reference Data API](/mapping/referencedataapi/) |
+| MaritalStatusID | 1001102 | See [Reference Data API](/mapping/referencedataapi/) |
+| EmploymentStatusID | 1012395 | See [Reference Data API](/mapping/referencedataapi/) |
+| RaceID | 1002790 | See [Reference Data API](/mapping/referencedataapi/) |
 
