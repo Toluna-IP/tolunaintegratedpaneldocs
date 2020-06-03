@@ -83,9 +83,9 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | WaveID |	```int``` |	Toluna’s unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
 | LOI |	```int``` |	Length of interview in minutes |
 | IR |	```int``` |	Incidence Rate |
-| StudyTypeID |	```int``` |	The Survey’s “category.” See mapping document for values |
+| StudyTypeID |	```int``` |	The Survey’s “category.” See [Reference Data API](/mapping/referencedataapi/) for values |
 | ScheduledCompletionDate |	```dateTime``` |	Date at which Survey is set to close |
-| DeviceTypeIDs |	```list<int>``` |	Devices upon which the Survey can be used. See mapping document for details |
+| DeviceTypeIDs |	```list<int>``` |	Devices upon which the Survey can be used. See [Reference Data API](/mapping/referencedataapi/) for details |
 | IsSurveyRecontact |	```boolean``` |	When TRUE, the Survey is looking to engage specific Members for a follow-up study. Please see the “Recontact” section for more information regarding its use |
 | CompletesRequired |	```int``` |	The total number of completes required across all Quotas until the ScheduleCompletionDate. This should be considered the limit of completes available. At times, this may be less than the sum of all Quotas |
 | EstimatedCopletesRemaining |	```int``` |	The estimated number of completes remaining until the ScheduleCompletionDate, across all Quotas, until the Survey is full. At times, this may be less than the sum of all Quotas |
@@ -98,7 +98,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | Amount |	```double``` |	The monetary amount of the payment per complete |
-| CurrencyID |	```int``` |	Currency in which the payment per complete is denoted. See mapping document for details |
+| CurrencyID |	```int``` |	Currency in which the payment per complete is denoted. See [Reference Data API](/mapping/referencedataapi/) for details |
 
 #### Quota Object
 
@@ -130,7 +130,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | QuestionID |	```int``` |	Toluna's profile attribute identifier |
-| AnswerIDs |	```list<int>``` |	List of Toluna's profile attribute identifiers. When sampling, at least one AnswerID must match. See mapping document for details |
+| AnswerIDs |	```list<int>``` |	List of Toluna's profile attribute identifiers. When sampling, at least one AnswerID must match. See [Reference Data API](/mapping/referencedataapi/) for details |
 | AnswerValues |	```string<int>``` |	List of Answer values of an open ended answers.Example: Custom Age values “18-100”, Postal codes, DMA and MSA. Note: “Age” will be range based. “DMA and MSA” will be comma separated Answer IDs. “Postal codes” will be comma separated postal code values. It can contain partial values. ‘Starts with’ must be applied to match it. API is limited to expose only first 1000 postal codes. |
 | IsRoutable |	```boolean``` |	Indicates whether the question is Routable or not |
 

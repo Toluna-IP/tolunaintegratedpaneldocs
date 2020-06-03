@@ -35,11 +35,11 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | PartnerGUID | Unique Partner Code (Please request from Toluna if you don't have one | Yes |
 | MemberCode | Unique Respondent Code from the Partner (alphanumeric 256 character limit | Yes |
 | Active | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool | No |
-| GenderID | Values from the data mapping file | No |
-| EducationID | Values from the data mapping file | No |
-| EthicityID | Values from the data mapping file | No |
-| RaceID | Values from the data mapping file | No |
-| SubProvinceID | Values from the data mapping file | No |
+| GenderID | Values from the [Reference Data API](/mapping/referencedataapi/) | No |
+| EducationID | Values from the [Reference Data API](/mapping/referencedataapi/) | No |
+| EthicityID | Values from the [Reference Data API](/mapping/referencedataapi/) | No |
+| RaceID | Values from the [Reference Data API](/mapping/referencedataapi/) | No |
+| SubProvinceID | Values from the [Reference Data API](/mapping/referencedataapi/) | No |
 | Email | Member email | No |
 | BirthDate | MM/DD/YYYY format | No |
 | PostalCode | Member postal code | No |

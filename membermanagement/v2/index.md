@@ -23,7 +23,7 @@ To access v2 of a route, supply the “Accept” header in your request as direc
 
 ## Question / AnswerIDs
 
-Please note the primary difference with v1 is that demographic characteristics are listed as a series of Question and Answer IDs. Though less readable in JSON notation, this provides true extensibility (all Toluna Demographic information is supported), and provides for much faster results. Every Question has a static QuestionID, which maps to a series of possible static AnswerIDs. This information is clearly noted in the mapping document each partner receives during the integration period. These are the most relevant Questions for IP:
+Please note the primary difference with v1 is that demographic characteristics are listed as a series of Question and Answer IDs. Though less readable in JSON notation, this provides true extensibility (all Toluna Demographic information is supported), and provides for much faster results. Every Question has a static QuestionID, which maps to a series of possible static AnswerIDs. This information is clearly noted in the [Reference Data API](/mapping/referencedataapi/) each partner receives during the integration period. These are the most relevant Questions for IP:
 
 | Question Name | QuestionID | Possible AnswerIDs |
 | :-- | :--- | :--- |
