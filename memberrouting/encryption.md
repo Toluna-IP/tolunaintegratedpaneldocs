@@ -35,7 +35,7 @@ We provide encryption in two places on the IP Platform: [Member Status Notificat
 
 When redirecting members back to Partner’s end pages, we can append an encrypted value to the query string. (This is only available on the terminate and qualified redirects.) The value being encrypted is the redirect URL itself, including a trailing "&".
 
-> Note: When setting redirect URLs, Toluna will append the trailing "&" automatically. Adding this should not be done by the Partner.
+> Note: When setting redirect URLs, Toluna will append the trailing "&" automatically.
 
 ### Example
 
