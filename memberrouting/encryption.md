@@ -69,18 +69,21 @@ The values being encrypted are the following parameters after being hyrdated for
 | Event Details | surveyID: 12345, waveID: ABCD, memberCode: mymember |
 | Value Being Encrypted | 12345ABCDmymember |
 | Encyrpted Value | 23401fbeded1dcefab22b532b381148a |
-| Resulting Notification Payload Nodes | 
+
+#### Resulting Notification Payload Nodes
+
 **JSON** 
-```
+```json
 {
 ...
 "EncryptedValue": "23401fbeded1dcefab22b532b381148a"
+...
 }
 ```
 
 **XML**
-```
+```xml
 ...
 <EncryptedValue>23401fbeded1dcefab22b532b381148a</EncryptedValue>
 ...
-``` |
+```
