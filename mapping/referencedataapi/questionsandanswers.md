@@ -23,6 +23,7 @@ Returns a list of all platform questions and their details. Due to the large inv
 ```
 POST {IP_REF_DATA_URL}/IPUtilityService/ReferenceData/QuestionsAndAnswersData 
 ```
+> Note: unlike the calls used for other Reference Data routes, this route requires the use of the POST verb.
 
 ### Parameters
 
