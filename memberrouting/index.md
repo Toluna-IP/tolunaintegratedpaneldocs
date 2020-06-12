@@ -16,7 +16,7 @@ nav_order: 3
 ## Informational Video
 
 <video class="video-fluid z-depth-1" loop controls muted style="width: 80%;">
-  <source src="https://firebasestorage.googleapis.com/v0/b/toluna-ip.appspot.com/o/integration%2Fquick%2Fredirect-notf.mp4?alt=media&token=1fce7f8a-653b-4d62-9488-8a43d2addbc2" type="video/mp4" />
+  <source src="https://firebasestorage.googleapis.com/v0/b/toluna-ip.appspot.com/o/integration%2Fquick%2FRedirect%20and%20Notifiation%20URLs.mp4?alt=media&token=996c1c08-4520-4aa2-9a5c-896a88b28800" type="video/mp4" />
 </video>
 
 
