@@ -2,7 +2,7 @@
 title: Invite
 has_children: false
 parent: Notifications
-nav_order: 2
+nav_order: 5
 ---
 
 # Invite  Notifications

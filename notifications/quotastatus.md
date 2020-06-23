@@ -2,7 +2,7 @@
 title: Quota Status
 has_children: false
 parent: Notifications
-nav_order: 4
+nav_order: 3
 ---
 
 # Quota Status Notifications
