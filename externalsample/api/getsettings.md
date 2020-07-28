@@ -45,7 +45,7 @@ GET http://{IP_ES_URL}/IntegratedPanelService/api/Settings?partnerGUID={PanelGUI
 ### Example Request
 
 ```
-GET http://{IP_ES_URL}.com/IntegratedPanelService/api/Settings?partnerGUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX
+GET http://{IP_ES_URL}/IntegratedPanelService/api/Settings?partnerGUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX
 API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX
 ```
 ---
