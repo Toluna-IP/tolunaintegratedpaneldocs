@@ -10,7 +10,7 @@ nav_order: 7
 # Get Settings
 {: .no_toc }
 
-For a Toluna-issued "PanelGUID," returns a list of settings and their associated valuse (end-pages URLs, notifaction URLs, encryption details).
+For a Toluna-issued "PanelGUID," returns a list of settings and their associated values (end-page URLs, notification URLs, encryption details).
 
 * TEST
 {:toc}
