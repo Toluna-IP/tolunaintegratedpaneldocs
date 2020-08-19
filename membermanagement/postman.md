@@ -2,7 +2,7 @@
 title: Postman collection
 has_children: false
 nav_order: 999
-
+parent: Member Management
 grand_parent: Member Management
 
 ---
