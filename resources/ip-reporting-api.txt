@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "bf8d61bf-e0d4-4164-8ad2-e327c66ca506",
+		"name": "IP Reporting",
+		"description": "Toluna offers monthly activity reporting as well as a limited set of reporting API end points, found within this collection.\r\n\r\nIf you have more complicated reporting requirements, or wish to receive monthly activity reports, please contact Toluna.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetSurveyStatus",
+			"item": [
+				{
+					"name": "GetSurveyStatus via SurveyID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP_CORE_URL}}/IntegratedPanelService/api/Reports/Surveys/120846/StatusByID/?SamplePartnerGuid={{panelGUID}}",
+							"host": [
+								"{{IP_CORE_URL}}"
+							],
+							"path": [
+								"IntegratedPanelService",
+								"api",
+								"Reports",
+								"Surveys",
+								"120846",
+								"StatusByID",
+								""
+							],
+							"query": [
+								{
+									"key": "SamplePartnerGuid",
+									"value": "{{panelGUID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSurveyStatus via Survey Name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{IP_CORE_URL}}/IntegratedPanelService/api/Reports/Survey/1162160-UK/StatusByName/?SamplePartnerGUID={{panelGUID}}",
+							"host": [
+								"{{IP_CORE_URL}}"
+							],
+							"path": [
+								"IntegratedPanelService",
+								"api",
+								"Reports",
+								"Survey",
+								"1162160-UK",
+								"StatusByName",
+								""
+							],
+							"query": [
+								{
+									"key": "SamplePartnerGUID",
+									"value": "{{panelGUID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Returns status information for the request survey. Two options available: by ID Parameters or by Name Parameters.",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GetSurveyMemberStatusReport",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{IP_CORE_URL}}/IntergratedPanelService/api/Reports/Surveys/1162160-UK/MemberStatus/?SamplePartnerGUID={{panelGUID}}&StartDate=2020-03-05&EndDate=2020-04-03",
+					"host": [
+						"{{IP_CORE_URL}}"
+					],
+					"path": [
+						"IntergratedPanelService",
+						"api",
+						"Reports",
+						"Surveys",
+						"1162160-UK",
+						"MemberStatus",
+						""
+					],
+					"query": [
+						{
+							"key": "SamplePartnerGUID",
+							"value": "{{panelGUID}}"
+						},
+						{
+							"key": "StartDate",
+							"value": "2020-03-05"
+						},
+						{
+							"key": "EndDate",
+							"value": "2020-04-03"
+						}
+					]
+				},
+				"description": "For a given Survey, returns a list of all associated Members who, at a minimum, started the Survey."
+			},
+			"response": []
+		},
+		{
+			"name": "GetMemberSurveyStatusReport",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{IP_CORE_URL}}/IntegratedPanelService/api/Reports/Members/IP-Test-Member/SurveyStatus/?SamplePartnerGuid={{panelGUID}}&StartDate=2020-03-05&EndDate=2020-04-03",
+					"host": [
+						"{{IP_CORE_URL}}"
+					],
+					"path": [
+						"IntegratedPanelService",
+						"api",
+						"Reports",
+						"Members",
+						"IP-Test-Member",
+						"SurveyStatus",
+						""
+					],
+					"query": [
+						{
+							"key": "SamplePartnerGuid",
+							"value": "{{panelGUID}}"
+						},
+						{
+							"key": "StartDate",
+							"value": "2020-03-05"
+						},
+						{
+							"key": "EndDate",
+							"value": "2020-04-03"
+						}
+					]
+				},
+				"description": "For a given Member, returns a list of all associated Survey responses."
+			},
+			"response": []
+		},
+		{
+			"name": "GetPanelActivitySummaryReport",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{IP_CORE_URL}}/IntegratedPanelService/api/Reports/Surveys/PanelActivitySummary?SamplePartnerGUID={{panelGUID}}&StartDate=2020-03-05&EndDate=2020-04-03",
+					"host": [
+						"{{IP_CORE_URL}}"
+					],
+					"path": [
+						"IntegratedPanelService",
+						"api",
+						"Reports",
+						"Surveys",
+						"PanelActivitySummary"
+					],
+					"query": [
+						{
+							"key": "SamplePartnerGUID",
+							"value": "{{panelGUID}}"
+						},
+						{
+							"key": "StartDate",
+							"value": "2020-03-05"
+						},
+						{
+							"key": "EndDate",
+							"value": "2020-04-03"
+						}
+					]
+				},
+				"description": "Returns the summary of the successfully started Surveys in the given date range."
+			},
+			"response": []
+		},
+		{
+			"name": "GetMemberActivityDetailsReport",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{IP_CORE_URL}}/IntegratedPanelService/api/Reports/Surveys/IP-Test-Member/1162160-UK/ActivityDetails?SamplePartnerGuid={{panelGUID}}",
+					"host": [
+						"{{IP_CORE_URL}}"
+					],
+					"path": [
+						"IntegratedPanelService",
+						"api",
+						"Reports",
+						"Surveys",
+						"IP-Test-Member",
+						"1162160-UK",
+						"ActivityDetails"
+					],
+					"query": [
+						{
+							"key": "SamplePartnerGuid",
+							"value": "{{panelGUID}}"
+						}
+					]
+				},
+				"description": "For a given Member and Survey, returns a list of Member responses to the survey."
+			},
+			"response": []
+		},
+		{
+			"name": "GetPanelCompletesReport",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP_CORE_URL}}/IntegratedPanelService/api/Reports/Surveys/PanelCompletes?SamplePartnerGuid={{panelGUID}}&StartDate=2020-03-05&EndDate=2020-04-03",
+					"host": [
+						"{{IP_CORE_URL}}"
+					],
+					"path": [
+						"IntegratedPanelService",
+						"api",
+						"Reports",
+						"Surveys",
+						"PanelCompletes"
+					],
+					"query": [
+						{
+							"key": "SamplePartnerGuid",
+							"value": "{{panelGUID}}"
+						},
+						{
+							"key": "StartDate",
+							"value": "2020-03-05"
+						},
+						{
+							"key": "EndDate",
+							"value": "2020-04-03"
+						}
+					]
+				},
+				"description": "Returns all completes generated by a panel in the given date range."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

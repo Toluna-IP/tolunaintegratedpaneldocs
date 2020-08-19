@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "c09b5845-b9a0-49a1-a480-8d39aa3ac42e",
+		"name": "Dashboard API",
+		"description": "Toluna provides a RESTful way to get surveys to display to your panel on your own website. This can be accomplished once the respondent data is loaded into Toluna’s system. Please note that Toluna caches the results of this call for 1 minute; repeated calls within this timeframe will NOT consult the Toluna router and will instead return the latest results from cache.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Surveys",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP_CORE_URL}}/IntegratedPanelService/api/Surveys/?memberCode=IP-Test-Member&partnerGuid={{panelGUID}}&numberOfSurveys=5&mobileCompatible=true",
+					"host": [
+						"{{IP_CORE_URL}}"
+					],
+					"path": [
+						"IntegratedPanelService",
+						"api",
+						"Surveys",
+						""
+					],
+					"query": [
+						{
+							"key": "memberCode",
+							"value": "IP-Test-Member"
+						},
+						{
+							"key": "partnerGuid",
+							"value": "{{panelGUID}}"
+						},
+						{
+							"key": "numberOfSurveys",
+							"value": "5"
+						},
+						{
+							"key": "mobileCompatible",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Next Profile URL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP_CORE_URL}}/IntegratedPanelService/api/Profile/GetNextProfileURL/?memberCode=IP-Test-Member&partnerGuid={{panelGUID}}&cancelURL=yahoo.com$guid}}o&returnURL=google.com",
+					"host": [
+						"{{IP_CORE_URL}}"
+					],
+					"path": [
+						"IntegratedPanelService",
+						"api",
+						"Profile",
+						"GetNextProfileURL",
+						""
+					],
+					"query": [
+						{
+							"key": "memberCode",
+							"value": "IP-Test-Member"
+						},
+						{
+							"key": "partnerGuid",
+							"value": "{{panelGUID}}"
+						},
+						{
+							"key": "cancelURL",
+							"value": "yahoo.com$guid}}o"
+						},
+						{
+							"key": "returnURL",
+							"value": "google.com"
+						}
+					]
+				},
+				"description": "Toluna’s client Surveys are always looking for rich profile information for all Respondents. Additional profile information for a Respondent increases the likelihood of a respondent qualifying for a Survey. Toluna provides a RESTful way to get access to these Survey Profiles that can be filled out by your Respondents."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

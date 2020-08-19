@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "e433050a-99b1-4e98-8981-25aa6e7bed58",
+		"name": "External Sample Offering",
+		"description": "## Introduction\r\n\r\n### Background\r\n\r\nToluna’s “External Sample” (ES) capability is an integration option offered as part of the Integrated Panel program.  Its adoption permits the Partner to receive near real-time details about Toluna’s open quotas.  Once obtained, Partners can use their own sampling capabilities to target the most appropriate respondents. This differs from the traditional IP model where Toluna maintains complete control over the sampling, routing, and invitation processes.\r\n\r\n### Incremental Option\r\nInternally at Toluna, the existing IP Framework views ES as simply another option for getting survey invitations into the hands of its Partners.  As such, Partners choosing to adopt this capability requires only a few additional integration points beyond the traditional model.\r\n\r\n### Additional Integration Requirements\r\nWhen evaluating IP Partnership, the Partner should choose ES as the method of invitation (as opposed to Dashboard, Notification, or Direct Email).  After doing so, these are the additional points needed to achieve the full IP integration:\r\n\r\n_Get Quotas From Toluna_\r\n\r\nCall the “GetQuotas” route for an inventory of current, open Quotas.\r\n\r\n_Once Member is Sampled For Quota, Get Invite From Toluna_\r\n\r\nProvide some very basic information and receive an invite from Toluna for your Member.\r\n\r\n_Create API To Receive Quota Status Notifications from Toluna_\r\n\r\nToluna will broadcast changes to its Quotas. Subscribe by establishing an API to handle these events.  Please note: you will receive status changes for all open Quotas, not just those with which you are engaged.\r\n\r\n---\r\n\r\n\r\n# Real-Time Flow\r\n\r\nThis demonstrates the round trip experience between obtaining Toluna quotas and a Partner Member completing a Survey.\r\n\r\n### 1). Get Quotas\r\n\r\nUsing your culture-specific “PanelGUID” provided by Toluna, call this route to obtain a currently inventory of the applicable open Toluna quotas.\r\n\r\n### 2). Sample, Invite\r\n\r\nOnce Quota data is obtained, use your own sampling capability to match a Toluna Quota with one of your Members.  Toluna will provide a document that links its profile attributes to a series of “AnswerIDs” found on each Quota.  Partners can use this to map these details to their own standards.  When a match is found, call Toluna and get an invite for the Member/Quota combination.  Among other things, Toluna will provide a pre-formatted and “ready-to-go” invitation link.\r\n\r\n\r\n### 3). Execute Invitation\r\n\r\nPlace the invitation link in your Member’s possession according to your internal workflow.  Once executed, it behaves just like any other (non-ES) IP invite.\r\n\r\n\r\n### 4). Take Survey\r\n\r\nOnce the invitation is exercised, the Partner Member takes a Survey in the Toluna ecosystem. This process is identical to any other in the IP Program; no special provisions or actions are required for the ES-based experience.\r\n\r\n\r\n### 5). Conclusion\r\n\r\nUpon conclusion of the Survey, the Partner Member is redirected back to a Partner-specific landing page. The options for redirection are identical to non-ES integration and can be found in Toluna’s main integration guide.\r\n\r\n## Back-End Processes\r\n\r\nThis describes several support processes Toluna will operate in the background of an ES integration.\r\n\r\n### A. Member Status Notifications\r\n\r\nWhen a Partner Member has completed interaction with a Toluna Survey, Toluna will deliver a notification signifying this event and its details.  For the most part, these are identical to the “real-time” notifications described in the main Integration Guide. Subscription to these notifications are required for ES Partners.\r\n\r\n\r\n### B. Quota Status Notifications\r\n\r\nWhen a Quota is no longer available, Toluna will broadcast this information to its Partners.  Subscription to this notification is required for ES Partners.  Please note that subscribers will receive updates for all Quotas, not just those with which they are engaged.  Partners should integrate in a manner in which non-relevant Quota updates are ignored.\r\n\r\n\r\n---\r\n\r\n\r\n# Recontact Flow\r\n\r\nThis demonstrates the Partner’s ability to create invites for Recontact Quotas.\r\n\r\n### 1). Get Quotas\r\nUsing your culture-specific “PanelGUID” provided by Toluna, call this route to obtain a currently inventory of the applicable open Toluna quotas.\r\n\r\n### 2). Is Survey Recontact?\r\nOnce Quota data is obtained, each Survey applicable for Recontact will have the “IsSurveyRecontact” property set to “true”. This is an indication to disregard your own sampling capability and, instead, obtain the Quota’s list of “invite-able” MemberCodes from Toluna. Toluna will expose Recontact Surveys to Partners only if they have Members targeted for Recontact; otherwise these Surveys will not appear in the results.\r\n\r\nAs the list of Recontact-eligible Members can be large, Toluna uses a separate API route (“GetRecontactMembersForQuota”) route to provide this information. This takes the Recontact Toluna QuotaID as a parameter and returns, by default, up to 10000 results per-call. It supports batching via the “lastMemberCodeReceived” parameter: provide your last MemberCode obtained for the Quota, and Toluna will begin the result set at the next Member (ordered alphanumerically, ascending). This route also allows consumers to define their own batch size via the “maxResults” parameter.  If not provided, the default “maxResults” of 10000 is used.  Toluna recommends restricting results to less than this value and does not guarantee performance about this limit.  As a single Recontact Survey can have multiple Quotas, repeat this step for each.\r\n\r\n### 3). Validate, Sample, Get Invites\r\nWhen the list of MemberCodes has been obtained, perform any required local validation (ex: are the Members still active on your end?).  Once validated, execute your sampling process against the target recontact Quota for every Member. This will ensure that the targeting is correct and that each Recontact Member matches the Quota Criteria.  Finally, call the Toluna “GenerateInvite” route to obtain a standard Toluna IP Invite for each matched Member. Once obtained, these invites are identical to any other in the IP Program.\r\n\r\n### 3). Execute Invite\r\nUse the Toluna invites according to your own requirements/workflow.  Once executed, the Member’s experience is consistent with the traditional, “real-time” flow.\r\n\r\n---\r\n\r\n# “Tracker” Surveys\r\n\r\nA “tracker” is a series of related surveys. Toluna calls each iteration of these Surveys a “Wave”. Each iteration will share common survey id and it's own wave id. Toluna recommends that the Partner consider the combination of SurveyId + WaveId as the “unique identifier” for a Member’s interaction with a Survey. For the complete details of trackers and its benefits, please refer the main Integration Guide.\r\n\r\n\r\n---\r\n\r\n\r\n# “Bad Request” Result Codes\r\n\r\nIn the event an API request cannot be completed due to an issue with the request, a 400 response will be returned. The response’s content will contain a Toluna Result/ResultCode that describes the issue in detail.\r\n\r\n\r\n| Result                              | ResultCode | Description                                                                                                                                     |\r\n|-------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------|\r\n| PANEL_DOES_NOT_EXIST                | 3          | The requested “panelGuid” could not be found.                                                                                                   |\r\n| PANEL_NOT_ES_ENABLED                | 4          | The requested panel is not enabled for External Sampling.                                                                                       |\r\n| SURVEY_DOES_NOT_EXIST               | 5          | The Survey to which the Quota belongs no longer exists.                                                                                         |\r\n| SURVEY_NOT_FOR_RECONTACT            | 6          | The Survey to which the Quota belongs is not enabled for Recontact usage.                                                                       |\r\n| QUOTA_NOT_ES_ENABLED                | 8          | The requested Quota is not enabled for External Sampling.                                                                                       |\r\n| QUOTA_NOT_LIVE                      | 9          | The requested Quota is not live.                                                                                                                |\r\n| NO_QUOTA_ID                         | 10         | The requested QuotaID could not be found.                                                                                                       |\r\n| NO_MEMBER_FOUND                     | 12         | The requested MemberCode could not be found.                                                                                                    |\r\n| MEMBER_NOT_ROUTABLE                 | 13         | The requested MemberCode is not in a state eligible for routing to a Quota.                                                                     |\r\n| MEMBER_BLOCKED                      | 14         | The requested MemberCode is currently blocked from taking Surveys.                                                                              |\r\n| SURVEY_NOT_ENABLED_FOR_IP_ES        | 15         | The Survey to which the Quota belongs is not enabled for Integrated Panel External Sample  use.                                                 |\r\n| MEMBER_DOES_NOT_MATCH_QUOTA         | 16         | The requested MemberCode does not match the requested QuotaID.                                                                                  |\r\n| NO_RECONTACT_GID                    | 17         | A request for a Recontact Invite could not be fulfilled due to missing information from the Survey’s sponsor.                                   |\r\n| PANEL_INVALID_ES_REQUEST            | 20         | The requested panel is not configured to ES-based invitations to Toluna Quotas.                                                                 |\r\n| NON_QUOTA_DEMOGRAPHIC_REJECTION     | 21         | The request to get an Invite is rejected due to non quota demographic reasons. Examples: Prior participation to Quota, Device Type mismatch etc |\r\n| MEMBER_NOT_ACTIVE                   | 22         | The member is not active in the Toluna system.  This can be due to several reasons. Exampes: Suspended, BlockedForAbuse.                        |\r\n| SURVEY_STUDY_TYPE_EXCLUDED          | 23         | Panel has been configured to exclude any Survey containing the Study Type.                                                                      |\r\n| SURVEY_CUSTOMER_EXCLUDED            | 24         | Panel has been configured to exclude any Survey hosted by the Customer.                                                                         |\r\n| SURVEY_EXCLUDED                     | 25         | Partner is excluded from participation in this Survey.                                                                                          |\r\n| ACCOUNT_GROUP_SURVEY_TAKEN          | 26         | The requested Member has already taken the survey, possibly from another account.                                                               |\r\n| INTERVALLIC_QUOTA_NOTAVAILBLE       | 27         | Information about a rollover Quota is not currently available.                                                                                  |\r\n| QUOTA_FULL                          | 28         | Requested Quota is Full.                                                                                                                        |\r\n| IP_EXTERNAL_RESPONDENTTYPE_FULL     | 29         | The allotted completes for External Sample are full.                                                                                            |\r\n| EXCLUDED_SURVEY_TAKEN               | 30         | Member has been excluded from the Survey.                                                                                                       |\r\n| DEVICETYPE_NOT_SUPPORTED_FOR_SURVEY | 31         | The requested device types are not available for the Survey.                                                                                    |\r\n| SURVEY_LOI_MISMATCH                 | 32         | The requested LOI is higher than the Survey’s upper limit.                                                                                      |\r\n| IP_PROVIDER_COST_NOMATCH            | 33         | Partner price is higher than the current limit on the Survey.                                                                                   |\r\n| SURVEY_VERIFICATION_LEVEL_FAILED    | 34         | The Member’s verification score is lower than what the Survey requires.                                                                         |\r\n| PREVIOUSLY_TERMINATED_SCREENER      | 35         | The member has terminated on a TQS prescreener in a previous wave of a tracker survey.                                                          |\r\n| TECHNICAL_ERROR                     | 36         | A system error occurred, Toluna has captured details in its logs.                                                                               |\r\n| UNABLE_TO_GET_GID                   | 37         | For a Recontact Survey, Toluna is unable to find the recontat member identifier.                                                                |\r\n| SURVEY_TAKEN                        | 38         | The member has already taken the requested Survey.                                                                                              |\r\n| MAX_DAILY_EXCEEDED                  | 39         | The member has exceeded the daily limit of Surveys.                                                                                             |\r\n| MAX_WEEKLY_EXCEEDED                 | 40         | The member has exceeded the weekly limit of Surveys.                                                                                            |\r\n\r\n--- \r\n\r\n\r\n# Sampling Rules\r\n\r\nExternal Sample Partners must comply with Toluna’s sampling rules. To be sampled for a Quota, each Member must:\r\n\r\n- Be targeted for only 1 Quota per Survey\r\n- Match ALL Layers in the Quota\r\n- Match ONE of the SubQuotas\r\n- Match at least one “AnswerID” (SubQuotaAttribute) per SubQuota\r\n\r\nThese rules can be consolidated into simple boolean conditions:\r\n\r\n- Quotas are “OR” conditions\r\n- Layers are “AND” conditions\r\n- SubQuotas are “OR” conditions\r\n- AnswerIDs are “OR” conditions\r\n\r\n\r\n---\r\n# API Documentation\r\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Quotas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API_AUTH_KEY",
+						"value": "{{API_AUTH_KEY}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{IP_ES_URL}}/IPExternalSamplingService/ExternalSample/{{panelGUID}}/Quotas?includeRoutables:TRUE",
+					"host": [
+						"{{IP_ES_URL}}"
+					],
+					"path": [
+						"IPExternalSamplingService",
+						"ExternalSample",
+						"{{panelGUID}}",
+						"Quotas"
+					],
+					"query": [
+						{
+							"key": "includeRoutables:TRUE",
+							"value": null
+						}
+					]
+				},
+				"description": "**Description** \n\nFor a Toluna-issued “Panel GUID”, returns a list of Surveys and their associated Quotas in need of supply.\n\n\n**Headers**\n\nAPI_AUTH_KEY: A partner-specific GUID provided by Toluna that must accompany every request.\n\n\n**Parameters** \n\n| Name      | Type | Description                                                               |\n|-----------|------|---------------------------------------------------------------------------|\n| PanelGuid | Guid | A Toluna-issued unique identifier for a Partner’s culture-specific panel. |\n\n\n**Responses**\n\n| Code | Etiology, Actions                                                                                                      |\n|------|------------------------------------------------------------------------------------------------------------------------|\n| 200  | Request processed normally.                                                                                            |\n| 400  | Bad Request: See response for details.                                                                                 |\n| 500  | Internal Error.  An exception occurred while processing the request. Toluna has captured details captured in its logs. |\n| 403  | Forbidden: invalid api auth key. See response for details                                                              |\n\n\n**Response Properties**\n\n| Name                               | Type         | Description                                                                                                                                                                                                       |\n|------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| PanelGuid                          | Guid         | A Toluna-issued unique identifier for a Partner’s culture-specific panel.                                                                                                                                         |\n| Name                               | Type         | Description                                                                                                                                                                                                       |\n| CountryID                          | int          | Toluna’s unique identifier for the country in which the available Quotas are located.                                                                                                                             |\n| CacheExpires                       | dateTime     | Date at which Toluna’s internal cache of this Quota data expires. Repeating API call after this time guarantees an updated result set.                                                                            |\n| Surveys                            | list<object> | A JSON object containing 1:M Surveys for which Toluna has open Quotas.                                                                                                                                            |\n| Survey.SurveyID                    | int          | Toluna’s internal unique identifier for a Survey.                                                                                                                                                                 |\n| Survey.WaveID                      | int          | Toluna’s internal unique identifier for a single iteration of a Survey.  The SurveyID+WaveID is always unique.                                                                                                    |\n| Survey.LOI                         | int          | Length of Interview.                                                                                                                                                                                              |\n| Survey.IR                          | int          | Incidence Rate.                                                                                                                                                                                                   |\n| Survey.StudyTypeID                 | int          | The Survey’s “category”. See mapping document for values.                                                                                                                                                         |\n| Survey.ScheduledCompletionDate     | dateTime     | Date at which Survey is set to close.                                                                                                                                                                             |\n| Survey.DeviceTypeIDs               | list<int>    | Devices upon which the Survey can be used. See mapping document for details.                                                                                                                                      |\n| Survey.IsSurveyRecontact           | bool         | When true, the Survey is looking to engage specific Members for a follow-up study.  Please see the “Recontact” section for more information regarding its use.                                                    |\n| Survey.CompletesRequired           | int          | The total number of completes required across all Quotas until the ScheduledCompletionDate. This should be considered the limit of completes available.  At times, this may be less than the sum of all Quotas.   |\n| Survey.EstimatedCompletesRemaining | int          | The estimated number of completes remaining until the ScheduledCompletionDate, across all Quotas, until the Survey is full. At times, this may be less than the sum of all Quotas.                                |\n| Survey.Price                       | [object]     | A JSON object containing details about price Toluna will pay per complete.                                                                                                                                        |\n| Price  .Amount                     | double       | The monetary amount of the payment per complete.                                                                                                                                                                  |\n| Price.CurrencyID                   | int          | Currency in which the payment per complete is denoted. See mapping document for details.                                                                                                                          |\n| Survey.Quotas                      | list<object> | A JSON object containing 1:M Quotas for the Survey. Members can be targeted only to one quota within the survey.                                                                                                  |\n| Quota   .QuotaID                   | int          | Toluna’s unique identifier for a Quota.                                                                                                                                                                           |\n| Quota.CompletesRequired            | int          | The total number of completes required to fill the Quota.                                                                                                                                                         |\n| Quota.EstimatedCompletesRemaining  | int          | The estimated number of completes remaining until the Quota is filled.                                                                                                                                            |\n| Quota.Layers                       | list<object> | A JSON object containing groups of Quotas.  When sampling, all Layers must be matched.                                                                                                                            |\n| Layer.LayerID                      | int          | Toluna’s unique identifier for a Layer.                                                                                                                                                                           |\n| Layer.SubQuotas                    | list<object> | A JSON object contains 1:M SubQuotas. When sampling, one SubQuota must be matched.                                                                                                                                |\n| SubQuota.SubQuotaID                | int          | Toluna’s unique identifier for a SubQuota.                                                                                                                                                                        |\n| SubQuota.QuestionsAndAnswers       | list<object> | A JSON object contains collection of Question and Answers per SubQuota                                                                                                                                            |\n| QuestionAndAnswers.QuestionID      | int          | Toluna internal profile attribute identifier                                                                                                                                                                      |\n| QuestionAndAnswers.AnswerIDs       | list<int>    | List of Toluna internal profile attribute identifiers. When sampling, at least one AnswerID must match.  See mapping document for details.                                                                        |\n| QuestionAndAnswers.AnswerValues    | string<int>  | List of Answer values of an open ended answers. Example: Custom Age values “18-100”, Postal codes, DMA and MSA.                                                                                                   |\n|                                    |              | Note: “Age” will be range based.                                                                                                                                                                                  |\n|                                    |              | “DMA and MSA” will be comma separated Answer IDs.                                                                                                                                                                 |\n|                                    |              | “Postal codes” will be comma separated postal code values. It can contain partial values.  ‘Starts with’ must be applied to match it. API is limited to expose only first 1000 postal codes.                      |"
+			},
+			"response": [
+				{
+					"name": "Get Quotas - 200 Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "API_AUTH_KEY",
+								"value": "10B1BF48-F141-41CD-850F-4DE5A8BA44EB",
+								"description": "A partner-specific GUID provided by Toluna that must accompany every request.",
+								"type": "text"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/ExternalSample/10B1BF48-F141-41CD-850F-4DE5A8BA44EB/Quotas",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"ExternalSample",
+								"10B1BF48-F141-41CD-850F-4DE5A8BA44EB",
+								"Quotas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"CountryID\": 200223,\n    \"CacheExpires\": \"2019-03-03 18:42:34.000\",\n    \"Surveys\": [\n        {\n            \"SurveyID\": 48506,\n            \"WaveID\": 51270,\n            \"LOI\": 12,\n            \"IR\": 78,\n            \"StudyTypeID\": 2031,\n            \"ScheduledCompletionDate\": \"2019-06-14T19:35:08.4\",\n            \"Price\": {\n                \"Amount\": 1,\n                \"CurrencyID\": 1\n            },\n            \"DeviceTypeIDs\": [\n                1\n            ],\n            \"IsSurveyRecontact\": false,\n            \"CompletesRequired\": 10,\n            \"EstimatedCompletesRemaining\": 9,\n            \"Quotas\": [\n                {\n                    \"QuotaID\": 47655,\n                    \"CompletesRequired\": 10,\n                    \"EstimatedCompletesRemaining\": 9,\n                    \"Layers\": [\n                        {\n                            \"LayerID\": 63256,\n                            \"SubQuotas\": [\n                                {\n                                    \"QuestionsAndAnswers\": [\n                                        {\n                                            \"QuestionID\": 1001007,\n                                            \"AnswerIDs\": [\n                                                2000246,\n                                                2000247\n                                            ],\n                                            \"AnswerValues\": []\n                                        },\n                                        {\n                                            \"QuestionID\": 1001538,\n                                            \"AnswerIDs\": [],\n                                            \"AnswerValues\": [\n                                                \"18-130\"\n                                            ]\n                                        }\n                                    ],\n                                    \"SubQuotaID\": 204954,\n                                    \"CurrentCompletes\": 1,\n                                    \"MaxTargetCompletes\": 10\n                                }\n                            ]\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"SurveyID\": 48027,\n            \"WaveID\": 50784,\n            \"LOI\": 12,\n            \"IR\": 78,\n            \"StudyTypeID\": 2031,\n            \"ScheduledCompletionDate\": \"2019-05-02T17:56:14.557\",\n            \"Price\": {\n                \"Amount\": 1,\n                \"CurrencyID\": 1\n            },\n            \"DeviceTypeIDs\": [\n                1\n            ],\n            \"IsSurveyRecontact\": false,\n            \"CompletesRequired\": 51,\n            \"EstimatedCompletesRemaining\": 51,\n            \"Quotas\": [\n                {\n                    \"QuotaID\": 47108,\n                    \"CompletesRequired\": 30,\n                    \"EstimatedCompletesRemaining\": 30,\n                    \"Layers\": [\n                        {\n                            \"LayerID\": 62550,\n                            \"SubQuotas\": [\n                                {\n                                    \"QuestionsAndAnswers\": [\n                                        {\n                                            \"QuestionID\": 1001033,\n                                            \"AnswerIDs\": [\n                                                2000441\n                                            ],\n                                            \"AnswerValues\": []\n                                        }\n                                    ],\n                                    \"SubQuotaID\": 202170,\n                                    \"CurrentCompletes\": 0,\n                                    \"MaxTargetCompletes\": 10\n                                },\n                                {\n                                    \"QuestionsAndAnswers\": [\n                                        {\n                                            \"QuestionID\": 1001033,\n                                            \"AnswerIDs\": [\n                                                2000449\n                                            ],\n                                            \"AnswerValues\": []\n                                        }\n                                    ],\n                                    \"SubQuotaID\": 202171,\n                                    \"CurrentCompletes\": 0,\n                                    \"MaxTargetCompletes\": 10\n                                },\n                                {\n                                    \"QuestionsAndAnswers\": [\n                                        {\n                                            \"QuestionID\": 1001033,\n                                            \"AnswerIDs\": [\n                                                2000452\n                                            ],\n                                            \"AnswerValues\": []\n                                        }\n                                    ],\n                                    \"SubQuotaID\": 202172,\n                                    \"CurrentCompletes\": 0,\n                                    \"MaxTargetCompletes\": 10\n                                }\n                            ]\n                        }\n                    ]\n                },\n                {\n                    \"QuotaID\": 47107,\n                    \"CompletesRequired\": 21,\n                    \"EstimatedCompletesRemaining\": 21,\n                    \"Layers\": [\n                        {\n                            \"LayerID\": 62548,\n                            \"SubQuotas\": [\n                                {\n                                    \"QuestionsAndAnswers\": [\n                                        {\n                                            \"QuestionID\": 1001007,\n                                            \"AnswerIDs\": [\n                                                2000246\n                                            ],\n                                            \"AnswerValues\": []\n                                        }\n                                    ],\n                                    \"SubQuotaID\": 202163,\n                                    \"CurrentCompletes\": 0,\n                                    \"MaxTargetCompletes\": 10\n                                },\n                                {\n                                    \"QuestionsAndAnswers\": [\n                                        {\n                                            \"QuestionID\": 1001007,\n                                            \"AnswerIDs\": [\n                                                2000247\n                                            ],\n                                            \"AnswerValues\": []\n                                        }\n                                    ],\n                                    \"SubQuotaID\": 202164,\n                                    \"CurrentCompletes\": 0,\n                                    \"MaxTargetCompletes\": 11\n                                }\n                            ]\n                        },\n                        {\n                            \"LayerID\": 62549,\n                            \"SubQuotas\": [\n                                {\n                                    \"QuestionsAndAnswers\": [\n                                        {\n                                            \"QuestionID\": 1001538,\n                                            \"AnswerIDs\": [\n                                                2006358,\n                                                2006359,\n                                                2006360,\n                                                2006361\n                                            ],\n                                            \"AnswerValues\": []\n                                        }\n                                    ],\n                                    \"SubQuotaID\": 202166,\n                                    \"CurrentCompletes\": 0,\n                                    \"MaxTargetCompletes\": 7\n                                },\n                                {\n                                    \"QuestionsAndAnswers\": [\n                                        {\n                                            \"QuestionID\": 1001538,\n                                            \"AnswerIDs\": [\n                                                2006355,\n                                                2006356,\n                                                2006357\n                                            ],\n                                            \"AnswerValues\": []\n                                        }\n                                    ],\n                                    \"SubQuotaID\": 202168,\n                                    \"CurrentCompletes\": 0,\n                                    \"MaxTargetCompletes\": 7\n                                },\n                                {\n                                    \"QuestionsAndAnswers\": [\n                                        {\n                                            \"QuestionID\": 1001538,\n                                            \"AnswerIDs\": [\n                                                2006352,\n                                                2006353,\n                                                2006354\n                                            ],\n                                            \"AnswerValues\": []\n                                        }\n                                    ],\n                                    \"SubQuotaID\": 202169,\n                                    \"CurrentCompletes\": 0,\n                                    \"MaxTargetCompletes\": 7\n                                }\n                            ]\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get Quotas - 400 Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "API_AUTH_KEY",
+								"value": "10B1BF48-F141-41CD-850F-4DE5A8BA44EB",
+								"description": "A partner-specific GUID provided by Toluna that must accompany every request.",
+								"type": "text"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/ExternalSample/invalid-panel-guid/Quotas",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"ExternalSample",
+								"invalid-panel-guid",
+								"Quotas"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Result\": \"PANEL_DOES_NOT_EXIST\",\n    \"ResultCode\": 3\n}"
+				}
+			]
+		},
+		{
+			"name": "Generate Invite",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "A partner-specific GUID provided by Toluna that must accompany every request.",
+						"key": "API_AUTH_KEY",
+						"type": "text",
+						"value": "{{API_AUTH_KEY}}"
+					}
+				],
+				"url": {
+					"raw": "{{IP_ES_URL}}/IPExternalSamplingService/ExternalSample/{{panelGUID}}/IP-Test-Member/Invite/243030",
+					"host": [
+						"{{IP_ES_URL}}"
+					],
+					"path": [
+						"IPExternalSamplingService",
+						"ExternalSample",
+						"{{panelGUID}}",
+						"IP-Test-Member",
+						"Invite",
+						"243030"
+					]
+				},
+				"description": "**Description**\n\nOnce a Member has been matched to a Toluna Quota, this route can be used to generate an invitation.\n\n**Headers**\n\nAPI_AUTH_KEY: A partner-specific GUID provided by Toluna that must accompany every request.\n\n\n**Parameters**\n\n| Name       | Type   | Description                                                                                                                                             |\n|------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------|\n| PanelGuid  | Guid   | A Toluna-issued unique identifier for a Partner’s culture-specific panel.                                                                               |\n| MemberCode | string | Partner’s unique identifier for the Member as defined when registered with Toluna.  The PanelGuid+MemberCode is always unique within the Toluna system. |\n| QuotaID    | int    | Toluna’s unique identifier for a Quota.                                                                                                                 |\n\n**Responses**\n\n| Code | Etiology, Actions                                                                                                     |\n|------|-----------------------------------------------------------------------------------------------------------------------|\n| 200  | Request processed normally.                                                                                           |\n| 400  | Bad Request: See response for details.                                                                                |\n| 500  | Internal Error.  An exception occurred while processing the request. Toluna hs captured details captured in its logs. |\n| 403  | Forbidden: invalid api auth key. See response for details                                                             |\n\n**Response Properties**\n\n| Name          | Type   | Description                                                                                                                                                           |\n|---------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| SurveyID      | int    | Toluna’s internal unique identifier for a Survey.                                                                                                                     |\n| WaveID        | int    | Toluna’s internal unique identifier for a single iteration of a Survey.  The SurveyID+WaveID is always unique.                                                        |\n| QuotaID       | int    | Toluna’s unique identifier for a Quota.                                                                                                                               |\n| MemberAmount  | double | Amount Partner has agreed to pay it’s Member for a complete.  This is rarely used and Toluna prefers to avoid direct engagement with the Partner-Member relationship. |\n| PartnerAmount | double | Amount Toluna has agreed to pay Partner for a complete.                                                                                                               |\n| URL           | string | Link to invite Member to Quota.                                                                                                                                       |\n| LOI           | int    | Length of Interview at the time of invite generation.                                                                                                                 |\n| IR            | int    | Incidence Rate at the time of invite generation.                                                                                                                      |"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Recontact Members For Quota",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "A partner-specific GUID provided by Toluna that must accompany every request.",
+						"key": "API_AUTH_KEY",
+						"type": "text",
+						"value": "{{API_AUTH_KEY}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{IP_ES_URL}}/ExternalSample/{panelGuid:GUID}/Recontact/243030/MemberCodes?maxResults=10",
+					"host": [
+						"{{IP_ES_URL}}"
+					],
+					"path": [
+						"ExternalSample",
+						"{panelGuid:GUID}",
+						"Recontact",
+						"243030",
+						"MemberCodes"
+					],
+					"query": [
+						{
+							"key": "maxResults",
+							"value": "10"
+						}
+					]
+				},
+				"description": "**Description**\n\nFor the requested Quota, returns a list of MemberCodes eligible for a recontact.\n\n**Headers**\n\nAPI_AUTH_KEY: A partner-specific GUID provided by Toluna that must accompany every request.\n\n\n**Parameters**\n\n| Name                   | Type   | Description                                                                                                                                                                                                                                                 |\n|------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| panelGuid              | Guid   | A Toluna-issued unique identifier for a Partner’s culture-specific panel.                                                                                                                                                                                   |\n| quotaID                | int    | Toluna’s unique identifier for a Quota.                                                                                                                                                                                                                     |\n| maxResults             | int    | [OPTIONAL] The maximum number of MemberCodes that will be returned for the request. If not provided, defaults to a Toluna-configurable value (for, v0.1: 10000).                                                                                            |\n| lastMemberCodeReceived | string | [OPTIONAL] When dealing with batched results for a single Quota, supply this value to signal the last result received. The batch results will start with the MemberCode AFTER this value. Note that MemberCodes for recontact are ordered alphanumerically. |\n\n\n\n**Responses**\n\n| Code | Etiology, Actions                                                                                                     |\n|------|-----------------------------------------------------------------------------------------------------------------------|\n| 200  | Request processed normally.                                                                                           |\n| 400  | Bad Request: See response for details.                                                                                |\n| 500  | Internal Error.  An exception occurred while processing the request. Toluna hs captured details captured in its logs. |\n| 403  | Forbidden: invalid api auth key. See response for details                                                             |\n\n**Response Properties**\n\n| Name                 | Type         | Description                                                                                                                                |\n|----------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------|\n| MaxResults           | int          | The number of MemberCodes included in the response.                                                                                        |\n| HasAdditionalMembers | bool         | When true, the Quota has more MemberCodes for recontact. Obtain them by repeating the request with the “lastMemberCodeReceived” parameter. |\n| MemberCodes          | List<string> | The MemberCodes Toluna would like to recontact for the Quota.                                                                              |"
+			},
+			"response": [
+				{
+					"name": "Get Recontact Members For Quota - 400 Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "A partner-specific GUID provided by Toluna that must accompany every request.",
+								"key": "API_AUTH_KEY",
+								"type": "text",
+								"value": "96B52BEE-32FE-4A23-8FEE-821F6AAA5CA5"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/ExternalSample/10B1BF48-F141-41CD-850F-4DE5A8BA44EB/Recontact/MemberCodes?maxResults=25&lastMemberCodeReceived=myLastResult",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"ExternalSample",
+								"10B1BF48-F141-41CD-850F-4DE5A8BA44EB",
+								"Recontact",
+								"MemberCodes"
+							],
+							"query": [
+								{
+									"key": "maxResults",
+									"value": "25"
+								},
+								{
+									"key": "lastMemberCodeReceived",
+									"value": "myLastResult"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Result\": \"NO_QUOTA_ID\",\n    \"ResultCode\": 10\n}"
+				},
+				{
+					"name": "Get Recontact Members For Quota - 200 Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "API_AUTH_KEY",
+								"value": "10B1BF48-F141-41CD-850F-4DE5A8BA44EB",
+								"description": "A partner-specific GUID provided by Toluna that must accompany every request.",
+								"type": "text"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{IP_ES_URL}}/ExternalSample/10B1BF48-F141-41CD-850F-4DE5A8BA44EB/Recontact/12345/MemberCodes?maxResults=25&lastMemberCodeReceived=myLastResult",
+							"host": [
+								"{{IP_ES_URL}}"
+							],
+							"path": [
+								"ExternalSample",
+								"10B1BF48-F141-41CD-850F-4DE5A8BA44EB",
+								"Recontact",
+								"12345",
+								"MemberCodes"
+							],
+							"query": [
+								{
+									"key": "maxResults",
+									"value": "25"
+								},
+								{
+									"key": "lastMemberCodeReceived",
+									"value": "myLastResult"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\r\n    \"MaxResults\": 25,\r\n    \"HasAdditionalMembers\": false,\r\n    \"MemberCodes\": [\r\n        \"memberCode1\",\r\n        \"memberCode2\",\r\n        \"memberCode3\"\r\n    ]\r\n}\r\n"
+				}
+			]
+		},
+		{
+			"name": "Get Quota Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API_AUTH_KEY",
+						"value": "{{API_AUTH_KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{IP_ES_URL}}/IPExternalSamplingService/ExternalSample/{{panelGUID}}/QuotaStatus/242436",
+					"host": [
+						"{{IP_ES_URL}}"
+					],
+					"path": [
+						"IPExternalSamplingService",
+						"ExternalSample",
+						"{{panelGUID}}",
+						"QuotaStatus",
+						"242436"
+					]
+				},
+				"description": "The method reveals if the requested Quota is available for ES, if the Partner qualifies for the Quota, and the Quota details (provided the Partner qualifies)."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "310f765d-5e58-443e-86bb-2feb9ea5fe0d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "67adb775-e361-4354-80ff-81b25e16f94d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
