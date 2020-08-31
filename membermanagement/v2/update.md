@@ -46,6 +46,7 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | BirthDate | ```string``` | MM/DD/YYYY format | No |
 | PostalCode | ```string``` | Member postal code | No |
 | IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
+| IsPIIDataRegulated | ```bool``` | Defaults FALSE. When TRUE, all personally identifiable information is removed | No |
 
 ### Examples
 

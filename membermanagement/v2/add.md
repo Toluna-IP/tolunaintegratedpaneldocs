@@ -47,7 +47,6 @@ POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | BirthDate | ```string``` | MM/DD/YYYY format | No |
 | PostalCode | ```string``` | Member postal code | No |
 | IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
-| IsPIIDataRegulated | ```bool``` | Defaults FALSE. When TRUE, all personally identifiable information is removed | No |
 | AnsweredQuestions | ```string``` | A collection of 0:M demographic Question and Answer ID pairs, | No |
 
 ### Example
@@ -59,7 +58,6 @@ POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
  "Email": "member@yopmail.com",
  "BirthDate": "6/21/1992",
  "PostalCode": "15235",
- “IsPIIDataRegulated”: false
  "AnsweredQuestions":
    [
     {"QuestionID":1001007,"AnswerID":2000247},
@@ -98,7 +96,6 @@ POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | BirthDate | MM/DD/YYYY format |
 | PostalCode | Member postal code |
 | IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing |
-| IsPIIDataRegulated | Defaults FALSE. When TRUE, all personally identifiable information is removed |
 | AnsweredQuestions | A collection of 0:M demographic Question and Answer ID pairs, |
 
 
