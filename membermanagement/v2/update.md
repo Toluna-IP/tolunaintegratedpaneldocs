@@ -12,7 +12,7 @@ nav_order: 3
 
 Existing Members can be updated using HTTP PUT. “PartnerGUID” and “MemberCode” are required. Combine them with optional properties to update a Member according to your requirements.
 
- ** This API will not support near-simultaneous calls. To avoid duplication errors, subsequent calls referencing the same MemberCode should be made no more frequently than once per 1000ms (1 sec) **
+ **This API will not support near-simultaneous calls. To avoid duplication errors, subsequent calls referencing the same MemberCode should be made no more frequently than once per 1000ms (1 sec)**
 
 * TOC
 {:toc}
@@ -131,4 +131,4 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 > - Only updates existing members. To add a new Member, use the POST route noted [here](/membermanagement/v2 "v2 Post").
 > - Optional Properties can be excluded from the request. "GenderID," "EducationID," "EthnicityID," "RaceID," and "SubProvinceID" can also take "0" to indicate "no value."
 > - Invalid Property data typically returns a 400 response.
-> - ** This API will not support near-simultaneous calls. To avoid duplication errors, subsequent calls referencing the same MemberCode should be made no more frequently than once per 1000ms (1 sec) **
+> - **This API will not support near-simultaneous calls. To avoid duplication errors, subsequent calls referencing the same MemberCode should be made no more frequently than once per 1000ms (1 sec)**

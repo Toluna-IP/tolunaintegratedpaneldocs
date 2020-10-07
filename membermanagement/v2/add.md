@@ -14,7 +14,7 @@ A partner can add new members to the Toluna IP Database using an HTTP POST. This
 
 This request is almost an exact parallel to that in the Static Member Management section, with a few key differences. The most important being the Header, shown below.
 
-** IMPORTANT NOTE: This API will not support near-simultaneous calls. To avoid duplication errors, subsequent calls referencing the same MemberCode should be made no more frequently than once per 1000ms (1 sec) **
+**IMPORTANT NOTE: This API will not support near-simultaneous calls. To avoid duplication errors, subsequent calls referencing the same MemberCode should be made no more frequently than once per 1000ms (1 sec)**
 
 * TOC
 {:toc}
@@ -105,5 +105,5 @@ POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 
 > - Only new Members can be added. To update, use the PUT route noted below
 > - Invalid Property data typically returns a 400 response that contains explanation for the rejection
-> - ** This API will not support near-simultaneous calls. To avoid duplication errors, subsequent calls referencing the same MemberCode should be made no more frequently than once per 1000ms (1 sec) **
+> - **This API will not support near-simultaneous calls. To avoid duplication errors, subsequent calls referencing the same MemberCode should be made no more frequently than once per 1000ms (1 sec)**
 
