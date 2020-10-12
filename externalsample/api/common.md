@@ -50,4 +50,3 @@ nav_order: 99
 | MAX_WEEKLY_EXCEEDED | 40 | The member has exceeded the weekly limit of Surveys |
 | MEMBER_GID_NOT_AVAILABLE | 43 | For a [Recontact Survey](/externalsample/recontactflow.html), the Member has not participated in previous/original Survey |
 | STARTS_THRESHOLD_ACHIEVED | 45 | Member rejected due to throttling further starts at this moment |
-| SUBQUOTA_THROTTLED | 46 | Member rejected because the sub-quota is throttled |
