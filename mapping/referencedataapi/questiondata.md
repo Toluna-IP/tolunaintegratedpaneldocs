@@ -60,6 +60,12 @@ PARTNER_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 | 403 | Forbiddent. Invalid PARTER_AUTH_KEY |
 | 500 | Internal Error. An exception occurred while processing the request. Contact Toluna for resolution. Toluna will likely have the details captured in its logs |
 
+### Notes
+
+An empty 200 response indicates that the question has a computed answer type.
+Computed answers are automatically generated from basic demographic information (i.e., Birthdate and ZipCode).
+
+
 ### Body Details
 
 | Name | Type | Description |
