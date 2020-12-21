@@ -16,7 +16,7 @@ This request is almost an exact parallel to that in the Static Member Management
 
 **IMPORTANT NOTE: This API will not support near-simultaneous calls. To avoid duplication errors, subsequent calls referencing the same MemberCode should be made no more frequently than once per 1000ms (1 sec)**
 
-** In order to place a Member into a Survey, Toluna must know - at a minimum - the panelist Date of Birth and Gender. ** 
+**In order to place a Member into a Survey, Toluna must know - at a minimum - the panelist Date of Birth and Gender.** 
 
 * TOC
 {:toc}

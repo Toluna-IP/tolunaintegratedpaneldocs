@@ -14,7 +14,7 @@ To Toluna's Platform, the existing IP Framework views ES as simply another optio
 
 ## Demographic Requirements
 
-** In order to place a Member into a Survey, Toluna must know - at a minimum - the panelist Date of Birth and Gender. **
+**In order to place a Member into a Survey, Toluna must know - at a minimum - the panelist Date of Birth and Gender.**
 
 ### Getting Started
 
