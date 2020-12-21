@@ -12,6 +12,9 @@ Toluna’s “External Sample” (ES) capability is an integration option offere
 
 To Toluna's Platform, the existing IP Framework views ES as simply another option for getting survey invitations into the hands of its Partners. As such, Partners choosing to adopt this capability are required to add only a few additional integration points beyond the traditional model.
 
+## Demographic Requirements
+
+** In order to place a Member into a Survey, Toluna must know - at a minimum - the panelist Date of Birth and Gender. **
 
 ### Getting Started
 
