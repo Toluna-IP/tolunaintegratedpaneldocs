@@ -30,7 +30,7 @@ GET  http://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={Member
 | MemberCode | ```int``` | Unique Respondent Code from the Partner |
 | PartnerGUID | ```Guid``` | Unique Partner code provided by Toluna |
 | NumberOfSurveys | ```string``` | Number of Surveys the Partner is requesting to receive to show the Member (maximum 5 available) |
-| MobileCompatible | ```bool``` | When TRUE, only mobile compatible surveys will be shown. *Depreciate as of v2.3. Use DeviceTypeIDs instead* |
+| MobileCompatible | ```bool``` | When TRUE, only mobile compatible surveys will be shown. This Optional Property will be deprecated in the future with the proper announcement. Use DeviceTypeIDs instead.  |
 | DeviceTypeIDs | ```int``` | Indicated the device types for which Surveys should be returned. Supported values: 1=Desktop/Laptop, 2=Tablet, 3=Phone. *When "DeviceTypeIDs" are supplied, the "MobileCompatible" parameter is ignored* |
 
 ---
