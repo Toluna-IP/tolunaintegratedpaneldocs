@@ -56,13 +56,6 @@ The External Sample API will contain the same projects presented in the current 
 
 ---
 
-## What are the new features introduced with “External sample”? 
-
-Besides exposing the inventory/open quotas via the API, below are the new features available for the ES partners.
- - Pre-Start Notification: All pre-start failures will be sent as “terminate” notifications. Examples: SurveyTaken, QuotaFull, NoSurveysFound, BlockedIPAddress etc.
- - Quota Status Notification: Notifictions are sent to the Partner's URL if a Quota's status changes from active to inactive or vice versa.
-
- ---
 
 ## How does the ES process vary from the regular IP integration after obtaining the invite link?
 
