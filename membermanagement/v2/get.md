@@ -147,4 +147,3 @@ Sample GET response:
     ]
  }
 ```
---!!!!!!!!!!! same answers will be shown in both objects
