@@ -48,6 +48,8 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | BirthDate | ```string``` | MM/DD/YYYY format | No |
 | PostalCode | ```string``` | Member postal code | No |
 | IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
+| AnsweredQuestions | ```string``` | A collection of 0:M demographic Question and Answer ID pairs - **Currently available - will be marked as "obsolete" and deprecated in an year**  | No |
+| RegistrationAnswers | ```string``` | Supports multi-select and open-ended answers. This will also maintain current single select responses| No |
 | IsPIIDataRegulated | ```bool``` | Defaults FALSE. When TRUE, all personally identifiable information is removed | No |
 
 ### Examples
@@ -68,6 +70,45 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
   "MemberCode": "111",
   "Email": "test@test.com"
  }
+ ```
+
+ #### Add RegistrationAnswers
+ ```plaintext
+ {
+  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "MemberCode": "111",
+  "Email": "test@test.com",
+  "RegistrationAnswers":
+[
+   {
+      "QuestionID":1012227, 
+      "Answers":
+        [
+          {"AnswerID":3055267}, 
+          {"AnswerID":3055271}
+       ]
+  }
+]
+ }
+ ```
+
+ #### Add Open-Ended Answers beyond Postal code, Birthdate and Emai
+ ```plaintext
+ {
+  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "MemberCode": "111",
+  "Email": "test@test.com",
+   "RegistrationAnswers":
+[
+   {
+      "QuestionID":1001032, 
+      "Answers":
+        [
+          {"AnswerID":2224508, AnswerValue = "New York"} 
+        ]
+  }
+]
+}
  ```
  
 #### Use Member for Testing
@@ -123,6 +164,8 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | Email | Member email. NOTE: When Supplied, this must have a valid email format |
 | BirthDate | MM/DD/YYYY format |
 | PostalCode | Member postal code |
+| AnsweredQuestions | ```string``` | A collection of 0:M demographic Question and Answer ID pairs - **Currently available - will be marked as "obsolete" and deprecated in an year**  | No |
+| RegistrationAnswers | ```string``` | Supports multi-select and open-ended answers. This will also maintain current single select responses | 
 | IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing |
 
 
@@ -131,4 +174,5 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 > - Only updates existing members. To add a new Member, use the POST route noted [here](/membermanagement/v2 "v2 Post").
 > - Optional Properties can be excluded from the request. "GenderID," "EducationID," "EthnicityID," "RaceID," and "SubProvinceID" can also take "0" to indicate "no value."
 > - Invalid Property data typically returns a 400 response.
+> - If RegistrationAnswers is supplied, AnswerQuestions will be ignored
 > - **This API will not support near-simultaneous calls. To avoid duplication errors, subsequent calls referencing the same MemberCode should be made no more frequently than once per 1000ms (1 sec)**

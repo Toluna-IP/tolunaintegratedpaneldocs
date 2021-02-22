@@ -66,9 +66,10 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent/?memberCode={memb
 | PostalCode | ```string``` | Member postal code | No |
 | IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
 | IsPIIDataRegulated | ```bool``` | Defaults FALSE. When TRUE, all personally identifiable information is removed | No |
-| AnsweredQuestions | ```string``` | A collection of 0:M demographic Question and Answer ID pairs, | No |
+| AnsweredQuestions | A collection of 0:M demographic Question and Answer ID pairs - **Currently available - will be marked as "obsolete" and deprecated in an year**  | |
+| RegistrationAnswers | Supports multi-select and open-ended answers. This will also maintain current single select responses |
 
-### Example
+### Example - AnsweredQuestions
 ```
  {
   "PartnerGUID": "93A6D55C-D4E7-49FC-8D68-671165ADE463",
@@ -89,3 +90,61 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent/?memberCode={memb
    ]
  }
 ```
+
+AnsweredQuestions and RegistrationAnswers will contain the same member responses, and Partner can use their choice. If Partner wants to supply multi-select and open-ended, then using RegistrationAnswers in all the methods will be appropriate.
+Sample GET response:
+
+### Example - RegistrationAnswers
+```
+ {
+  "PartnerGUID": "93A6D55C-D4E7-49FC-8D68-671165ADE463",
+  "MemberCode": "AUniquePartnerCode",
+  "Email": "member@yopmail.com",
+  "BirthDate": "6/21/1992",
+  "PostalCode": "15235",
+  "IsPIIDataRegulated": false,
+  "RegistrationAnswers": [
+        {
+            "QuestionID": 1001001,
+            "Answers": [
+                {
+                    "AnswerID": 2000223,
+                    "AnswerValue": null
+                }
+            ]
+        },
+        {
+            "QuestionID": 1001002,
+            "Answers": [
+                {
+                    "AnswerID": 2000240,
+                    "AnswerValue": null
+                }
+            ]
+        },
+        {
+            "QuestionID": 1001007,
+            "Answers": [
+                {
+                    "AnswerID": 2000246,
+                    "AnswerValue": null
+                }
+            ]
+        },
+        {
+            "QuestionID": 1012227,
+            "Answers": [
+                {
+                    "AnswerID": 3055267,
+                    "AnswerValue": null
+                },
+                {
+                    "AnswerID": 3055271,
+                    "AnswerValue": null
+                }
+            ]
+        }
+    ]
+ }
+```
+--!!!!!!!!!!! same answers will be shown in both objects
