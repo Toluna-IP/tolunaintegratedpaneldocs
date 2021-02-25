@@ -11,8 +11,8 @@ As the platform matures, any recent changes to its behavior will be noted here.
 | Release Date | UPS Version | TEF Version | IP Version | See more details |
 | :--- | :---: | :---: | :--- | :--- | :--- |
 | March 1, 2020 | 15.8.7 | 3.0.1013.0 |  2.5.5 | [See more](/general/changelog.html#ip-version-255){: .btn .btn-green } |
-| June 7, 2020 | 15.5.1020 | 3.0.1013.0 |  2.5.6  [See more](/general/changelog.html#ip-version-256){: .btn .btn-green } |
-| February 23, 2021 | 15.5.1289 | 3.0.1304 |  2.5.7  | [See more](/general/changelog.html#ip-version-27){: .btn .btn-purple } |
+| June 7, 2020 | 15.5.1020 | 3.0.1013.0 |  2.5.6 | [See more](/general/changelog.html#ip-version-256){: .btn .btn-green } |
+| February 23, 2021 | 15.5.1289 | 3.0.1304 |  2.5.7  | [See more](/general/changelog.html#ip-version-257){: .btn .btn-green } |
 
 
 ## IP Version 2.5.5
