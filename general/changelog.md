@@ -15,25 +15,9 @@ As the platform matures, any recent changes to its behavior will be noted here.
 | March 1, 2020 | 15.8.7 | 3.0.1013.0 |  2.5.5 | [See more](/general/changelog.html#255){: .btn .btn-green } |
 
 
-
-
-##  2.5.5
-### Changes 
-• #New Feature: GetQuotaDetails 
-
-• A detailed explanation of the new feature can be found [here.](/externalsample/api/QuotaDetails.html)
-
-
-## 2.5.6
-### Changes
-• #New Feature: Standard Encryption
-
-• A detailed explanation of the new feature can be found [here.](/memberrouting/encryption)
-
-
 ## 2.5.7
 ### Changes
-• #New Feature: Multiple Select/ Open-ended questions
+# • New Feature: Multiple Select/ Open-ended questions; Minor change on the response message for duplicate members; New Questions; 
 
 • IP Member API v2 will now support both multipleselect and open-ended answers along with the existing single-select answers. A detailed explanation of the new change can be found [here.](/membermanagement/v2/add.html)
 
@@ -48,3 +32,19 @@ _An IP Member for MemberCode {MemberCode} and PartnerGUID {PartnerGUID} already 
 | 2910040  | MobileAdvertisingID | 
 | 2910041  | HashedEmail   | 
 | 2910042  | HashType      | 
+
+
+## 2.5.6
+### Changes
+# • New Feature: Standard Encryption
+
+• A detailed explanation of the new feature can be found [here.](/memberrouting/encryption)
+
+
+
+##  2.5.5
+### Changes 
+# • New Feature: GetQuotaDetails 
+
+• A detailed explanation of the new feature can be found [here.](/externalsample/api/QuotaDetails.html)
+
