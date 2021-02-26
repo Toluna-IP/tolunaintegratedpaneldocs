@@ -17,7 +17,7 @@ As the platform matures, any recent changes to its behavior will be noted here.
 
 ## 2.5.7
 ### Changes
-# • New Feature: Multiple Select/ Open-ended questions; Minor change on the response message for duplicate members; New Questions; 
+#### • New Feature: Multiple Select/ Open-ended questions; Minor change on the response message for duplicate members; New Questions; 
 
 • IP Member API v2 will now support both multipleselect and open-ended answers along with the existing single-select answers. A detailed explanation of the new change can be found [here.](/membermanagement/v2/add.html)
 
@@ -36,7 +36,7 @@ _An IP Member for MemberCode {MemberCode} and PartnerGUID {PartnerGUID} already 
 
 ## 2.5.6
 ### Changes
-# • New Feature: Standard Encryption
+#### • New Feature: Standard Encryption
 
 • A detailed explanation of the new feature can be found [here.](/memberrouting/encryption)
 
@@ -44,7 +44,7 @@ _An IP Member for MemberCode {MemberCode} and PartnerGUID {PartnerGUID} already 
 
 ##  2.5.5
 ### Changes 
-# • New Feature: GetQuotaDetails 
+#### • New Feature: GetQuotaDetails 
 
 • A detailed explanation of the new feature can be found [here.](/externalsample/api/QuotaDetails.html)
 
