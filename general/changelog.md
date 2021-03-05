@@ -17,11 +17,12 @@ As the platform matures, any recent changes to its behavior will be noted here.
 
 ## 2.5.7
 ### Changes
-#### • New Feature: Multiple Select/ Open-ended questions; Minor change on the response message for duplicate members; New Questions; 
 
-• IP Member API v2 will now support both multipleselect and open-ended answers along with the existing single-select answers. A detailed explanation of the new change can be found [here.](/membermanagement/v2/add.html)
 
-• IP Member Add endpoint (v1 &v2): a minor change in the response message when a duplicate member adds a request sent for a member in blocked status. It is updated to align with our standard duplication handling process. Below is an example of the response message.
+• (New Feature) IP Member API v2 will now support both multipleselect and open-ended answers along with the existing single-select answers. A detailed explanation of the new change can be found [here.](/membermanagement/v2/add.html)
+
+• (Change) IP Member Add endpoint (v1 &v2): a minor change in the response message when a duplicate member adds a request sent for a member in blocked status. It is updated to align with our standard duplication handling process. Below is an example of the response message.
+
 _An IP Member for MemberCode {MemberCode} and PartnerGUID {PartnerGUID} already exists. To update a Member, please use the PUT verb._
 
 
