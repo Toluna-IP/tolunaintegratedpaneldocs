@@ -102,9 +102,8 @@ PUT http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 [
    {
       "QuestionID":1001032, 
-      "Answers":
-        [
-          {"AnswerID":2224508, AnswerValue = "New York"} 
+      "Answers": [
+          {"AnswerID":2224508, "AnswerValue" = "New York"} 
         ]
   }
 ]

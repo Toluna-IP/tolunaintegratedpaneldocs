@@ -110,9 +110,8 @@ Open-Ended Answers beyond Postal code, Birthdate, and Email can be supplied as b
 [
    {
       "QuestionID":1001032, 
-      "Answers":
-             [
-                {"AnswerID":2224508, AnswerValue = "New York"} ]
+      "Answers": [
+                {"AnswerID":2224508, "AnswerValue" = "New York"} ]
   }
 ]
 
