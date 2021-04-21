@@ -40,7 +40,7 @@ When redirecting members back to Partner’s end pages, we can append an encrypt
 ### Example
 
 | :--- | :--- |
-| Partner Bade Redirect URL | https://partnerA.com?status=qualified&mc=mymember |
+| Partner Base Redirect URL | https://partnerA.com?status=qualified&mc=mymember |
 | Encryption Algorithm | HMAC SHA256 |
 | Secret Key | supersecret |
 | Encrypted Value QSP Name | encValue |
