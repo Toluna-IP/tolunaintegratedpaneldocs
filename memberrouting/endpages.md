@@ -79,4 +79,4 @@ Additionally, Toluna can return the following value on the query string even if 
 | SurveyID | ```int``` | Toluna's identifier of a Survey |
 | SurveyName | ```string``` | Toluna's name of Survey |
 | WaveID | ```int``` | Toluna's identifier of the Wave |
-| MemberCode | ```string``` | Memeber's unique identifier |
+| MemberCode | ```string``` | Member's unique identifier |
