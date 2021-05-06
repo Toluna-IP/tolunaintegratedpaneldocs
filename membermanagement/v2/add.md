@@ -134,17 +134,8 @@ Open-Ended Answers beyond Postal code, Birthdate, and Email can be supplied as b
 
 ### Body Details
 
-| Property | Description |
-| :--- | :--- |
-| PartnerGUID | Unique Parnter Code (Please request from Toluna if you don't have one) |
-| MemberCode | Unique Respondent Code from the Partner |
-| IsActive | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool |
-| Email | Member email. NOTE: when supplied, this must have a valid email format |
-| BirthDate | MM/DD/YYYY format |
-| PostalCode | Member postal code |
-| IsTest | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing |
-| AnsweredQuestions | A collection of 0:M demographic Question and Answer ID pairs - **Currently available - will be marked as "obsolete" and deprecated in an year**  | |
-| RegistrationAnswers | Supports multi-select and open-ended answers. This will also maintain current single select responses |
+> - No body will be included with a 201 response.
+> - 400 and 409 responses will contain response bodies with additional details explaining the nature of the failure.
 
 
 ### Notes
