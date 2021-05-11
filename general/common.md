@@ -68,7 +68,7 @@ Since each iteration of the Tracker shares the same SurveyID, a Survey can be in
 
 ### Removing WaveID from Your Integration Profile
 
-Toluna recommends that the Partner considers the combination of SurveyID+WaveID as the "unique identifier" for a Respondent's interaction with a Survey. If you wish to remove WaveID from your profile, please contact your Toluna representative. This requires a simple configuration change on the Toluna side.
+Toluna recommends that the Partner considers the combination of SurveyID+WaveID as the "unique identifier" for a Respondent's interaction with a Survey. If you wish to remove WaveID from your profile, please contact your Toluna representative. Partners utilizing the [External Sample](/externalsample/integrationdetails.html) offering need simply to ignore the WaveID object.
 
 ---
 
