@@ -14,7 +14,7 @@ To be sampled for a Quota, a member must:
 
  - Be targeted for only 1 Quota per Survey
  - Match ALL Layers in the Quota
- - Match ONE of the SubQuotas
+ - Match at least ONE of the SubQuotas in each layer.
  - Match at least one "AnswerID" (SubQuotaAttribute) per SubQuota with the single QuestionID
  - Match at least one "AnswerID" (SubQuotaAttribute) per QuestionID in the SubQuota with multiple QuestionIDs
  
