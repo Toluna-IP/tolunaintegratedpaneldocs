@@ -55,7 +55,7 @@ This is the newest offering and places the sampling processs (member -> survey s
 | Survey Closed | Recommended | Recommended | Recommended |
 | Member-Status  | Recommended | Recommended | Recommended |
 | Quota Status  | - | - | Required  |
-| Pre-Start  | - | - | Recommended |
+| Pre-Start  | - | Recommended | Recommended |
 
 
 ---

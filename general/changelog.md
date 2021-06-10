@@ -21,6 +21,8 @@ As the platform matures, any recent changes to its behavior will be noted here.
 
 • (Change) [Standard Encryption](\memberrouting\encryption.html) has been expanded to enclude encryption of all end page redirects. For a list of our redirect events, please click [here.](\memberrouting\endpages.html)
 > Note: If Standard Encryption was enabled for your integration prior to this update, you will be automatically opted in to encrypt all redirects. If for any reason this cannot be supported on your end, please contact your Toluna Business Representative.
+
+• (Change) [Pre-Start Notifications](\notifications\prestart.html) are now available to Partners utilizing the [Dashboard Integration Offering](\dashboard\index.html). If you are currently integrated with the Dashboard Offering and would like to receive Pre-Start Notifications, please contact your Toluna Business Representative.
  
 
 ## 2.5.7
