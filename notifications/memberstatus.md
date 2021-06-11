@@ -104,6 +104,9 @@ POST http://myPartnerAPI/TolunaTerminate
 | AdditionalData | ```string``` | Query string argument in the completion URL with its data replaced |
 | IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
+| RejectionID | ```int``` | Toluna's unique identifier for the nature of the rejection. See [RejectionTypes](\mapping\referencedataapi\rejectiontypes.html) for more details |
+| RejectionName | ```string``` | Toluna's name for the nature of the rejection. Correlates with RejectionID. See [RejectionTypes](\mapping\referencedataapi\rejectiontypes.html) for more details |
+> Note: RejectionID and RejectionName will only be included if the partner opts in to Enhanced Terminate Notifications. If you are a partner and would like to opt in to these Notifications, please contact your Toluna Business Representative.
 
 
 ### Example XML Termination
@@ -116,6 +119,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  <SurveyRef>123560-US</SurveyRef>
  <DateTime>2014-09-11 16:06:27</DateTime>
  <Reason>Terminated</Reason>
+ <RejectionID>4</RejectionID>
+ <RejectionName>Terminated</RejectionName>
  <WaveId>100</WaveId>
  <AdditionalData>clickid=1234</AdditionalData>
 <IsAutoRouted>true</IsAutoRouted>
@@ -130,6 +135,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  "SurveyId": 123,
  "SurveyRef": "123560-US",
  "Reason": "Terminated",
+ "RejectionID": 4,
+ "RejectionName": "Terminated",
  "DateTime": "2014-09-11 16:06:27",
  "WaveId": 100,
  "AdditionalData": "clickid=1234",
