@@ -80,3 +80,4 @@ Additionally, Toluna can return the following value on the query string even if 
 | SurveyName | ```string``` | Toluna's name of Survey |
 | WaveID | ```int``` | Toluna's identifier of the Wave |
 | MemberCode | ```string``` | Member's unique identifier |
+| RejectionID | ```int``` | Toluna's unqiue identifier for a rejection type. SeeSee [RejectionTypes](\mapping\referencedataapi\rejectiontypes.html) for more details |
