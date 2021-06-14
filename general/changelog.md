@@ -10,22 +10,10 @@ As the platform matures, any recent changes to its behavior will be noted here.
 
 | Release Date | UPS Version | TEF Version | IP Version |    |
 | :--- | :---: | :---: | :--- | :--- | :--- |
-| June 13, 2021 | **replace** | **replace** | **replace** | [See more](/general/changelog.html#613){: .btn .btn-green }
 | February 23, 2021 | 15.5.1289 | 3.0.1304 |  2.5.7  | [See more](/general/changelog.html#257){: .btn .btn-green } |
 | June 7, 2020 | 15.5.1020 | 3.0.1013.0 |  2.5.6 | [See more](/general/changelog.html#256){: .btn .btn-green } |
 | March 1, 2020 | 15.8.7 | 3.0.1013.0 |  2.5.5 | [See more](/general/changelog.html#255){: .btn .btn-green } |
 
-
-## 6.13
-### Changes
-
-• (Change) [Standard Encryption](\memberrouting\encryption.html) has been expanded to enclude encryption of all end page redirects. For a list of our redirect events, please click [here.](\memberrouting\endpages.html)
-> Note: If Standard Encryption was enabled for your integration prior to this update, you will be automatically opted in to encrypt all redirects. If for any reason this cannot be supported on your end, please contact your Toluna Business Representative.
-
-• (Change) [Pre-Start Notifications](\notifications\prestart.html) are now available to Partners utilizing the [Dashboard Integration Offering](\dashboard\index.html). If you are currently integrated with the Dashboard Offering and would like to receive Pre-Start Notifications, please contact your Toluna Business Representative.
-
-• (Feature Enhancement) [Enhanced Terminate Notifications](\notifications\memberstatus.html#terminates) provide additional details on Terminate Notifications. Opting in this enhancement will also add a query string parameter to [End Page URLs](\memberrouting\endpages.html). To opt in, please contact your Toluna Business Representative
- 
 
 ## 2.5.7
 ### Changes
