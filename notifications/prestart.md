@@ -3,8 +3,6 @@ title: Pre-Start
 has_children: false
 parent: Notifications
 nav_order: 999
-nav_exclude: true
-search_exclude: true
 ---
 
 
