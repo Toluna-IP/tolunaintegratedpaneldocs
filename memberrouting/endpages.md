@@ -87,4 +87,4 @@ Upon opting in to [Enhanced Terminate Notifications](/general/changelog.html#620
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| rejectionID | ```int``` | Toluna's unqiue identifier for a rejection. See [Rejection Types](mapping/referencedataapi/rejectiontypes.html) for more details |
+| rejectionID | ```int``` | Toluna's unqiue identifier for a rejection. See [Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for more details |
