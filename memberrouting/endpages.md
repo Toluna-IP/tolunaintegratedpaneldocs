@@ -80,3 +80,11 @@ Additionally, Toluna can return the following value on the query string even if 
 | SurveyName | ```string``` | Toluna's name of Survey |
 | WaveID | ```int``` | Toluna's identifier of the Wave |
 | MemberCode | ```string``` | Member's unique identifier |
+
+## Enhanced Terminate Parameter
+
+Upon opting in to [Enhanced Terminate Notifications](/general/changelog.html#620), the following parameter will also be included on non-Qualified end pages.
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| rejectionID | ```int``` | Toluna's unqiue identifier for a rejection. See [Rejection Types](mapping/referencedataapi/rejectiontypes.html) for more details |
