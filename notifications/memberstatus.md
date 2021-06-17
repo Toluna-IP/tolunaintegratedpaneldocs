@@ -104,8 +104,8 @@ POST http://myPartnerAPI/TolunaTerminate
 | AdditionalData | ```string``` | Query string argument in the completion URL with its data replaced |
 | IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
-| RespondentRejectionTypeID | ```int``` | (Optional feature; To opt-in, please contact your Toluna Business Representative.) Toluna's unqiue identifier for a rejection. See [Respondent Rejection Types](mapping/referencedataapi/rejectiontypes.html) for mapping details |
-| PartnerRejectionName | ```string``` | (Optional feature; To opt-in, please contact your Toluna Business Representative.) Name of a rejection. See [Respondent Rejection Types](mapping/referencedataapi/rejectiontypes.html) for mapping details |
+| RespondentRejectionTypeID | ```int``` | (Optional feature; To opt-in, please contact your Toluna Business Representative.) Toluna's unqiue identifier for a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |
+| PartnerRejectionName | ```string``` | (Optional feature; To opt-in, please contact your Toluna Business Representative.) Name of a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |
 
 
 ### Example XML Termination
