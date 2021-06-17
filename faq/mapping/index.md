@@ -19,4 +19,4 @@ Toluna is currently developing a system to display the Question Answers and requ
 
 ## What database does Toluna use to map GEO attributes?
 
-For all cultures and region computation, Toluna uses [Melissa](melissa.com). Please visit the Melissa website for more details.
+For all cultures and region computation, Toluna uses [Melissa](https://www.melissa.com/). Please visit the Melissa website for more details.
