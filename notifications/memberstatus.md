@@ -104,6 +104,8 @@ POST http://myPartnerAPI/TolunaTerminate
 | AdditionalData | ```string``` | Query string argument in the completion URL with its data replaced |
 | IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
+| RespondentRejectionTypeID | ```int``` | (Optional feature; To opt-in, please contact your Toluna Business Representative.) Toluna's unqiue identifier for a rejection. See [Respondent Rejection Types](mapping/referencedataapi/rejectiontypes.html) for mapping details |
+| PartnerRejectionName | ```string``` | (Optional feature; To opt-in, please contact your Toluna Business Representative.) Name of a rejection. See [Respondent Rejection Types](mapping/referencedataapi/rejectiontypes.html) for mapping details |
 
 
 ### Example XML Termination
@@ -120,6 +122,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  <AdditionalData>clickid=1234</AdditionalData>
 <IsAutoRouted>true</IsAutoRouted>
 <OriginalSurveyID>100</OriginalSurveyID>
+<RespondentRejectionTypeID>57</RespondentRejectionTypeID>
+<PartnerRejectionName>AccountGroupSurveyTaken</PartnerRejectionName>
 </termination>
 ```
 
@@ -134,6 +138,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  "WaveId": 100,
  "AdditionalData": "clickid=1234",
 "IsAutoRouted": true,
-"OriginalSurveyID": 100
+"OriginalSurveyID": 100,
+"RespondentRejectionTypeID": 103,
+"PartnerRejectionName": "NonQuotaDemographicRejection"
 }
 ```
