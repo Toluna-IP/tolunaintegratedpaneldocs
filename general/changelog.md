@@ -10,13 +10,13 @@ As the platform matures, any recent changes to its behavior will be noted here.
 
 | Release Date | UPS Version | TEF Version | IP Version |    |
 | :--- | :---: | :---: | :--- | :--- | :--- |
-| June 20, 2021 | TBA | TBA | TBA | [See more](/general/changelog.html#620){: .btn .btn-green } |
+| June 20, 2021 | 15.5.1425 | 3.0.1359 | 2.5.8 | [See more](/general/changelog.html#258){: .btn .btn-green } |
 | February 23, 2021 | 15.5.1289 | 3.0.1304 |  2.5.7  | [See more](/general/changelog.html#257){: .btn .btn-green } |
 | June 7, 2020 | 15.5.1020 | 3.0.1013.0 |  2.5.6 | [See more](/general/changelog.html#256){: .btn .btn-green } |
 | March 1, 2020 | 15.8.7 | 3.0.1013.0 |  2.5.5 | [See more](/general/changelog.html#255){: .btn .btn-green } |
 
 
-## 6.20
+## 2.5.8
 ### Changes
 
 • (Change) [Standard Encryption](/memberrouting/encryption.html) now applies to all redirect URLs. For full list of end page scenarios, please click [here](/memberrouting/endpages.html).
