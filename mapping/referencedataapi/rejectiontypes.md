@@ -7,7 +7,7 @@ grand_parent: Mapping
 
 ---
 
-# Cultures
+# Respondent Rejection Types
 {: .no_toc }
 
 Returns a list of all rejection types and their details.
