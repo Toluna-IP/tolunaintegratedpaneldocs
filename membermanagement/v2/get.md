@@ -69,7 +69,7 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent/?memberCode={memb
 | AnsweredQuestions | A collection of 0:M demographic Question and Answer ID pairs - **Currently available - will be marked as "obsolete" and deprecated in an year**  | |
 | RegistrationAnswers | Supports multi-select and open-ended answers. This will also maintain current single select responses |
 
-### Example - AnsweredQuestions
+### 200 Response - AnsweredQuestions
 ```
  {
   "PartnerGUID": "93A6D55C-D4E7-49FC-8D68-671165ADE463",
@@ -90,6 +90,15 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent/?memberCode={memb
    ]
  }
 ```
+
+### 400 Response
+```
+{
+  "Message": "No member found with member code AUniquePartnerCode and partner Guid 93A6D55C-D4E7-49FC-8D68-671165ADE463"
+}
+```
+
+
 
 AnsweredQuestions and RegistrationAnswers will contain the same member responses, and Partner can use their choice. If Partner wants to supply multi-select and open-ended, then using RegistrationAnswers in all the methods will be appropriate.
 Sample GET response:
