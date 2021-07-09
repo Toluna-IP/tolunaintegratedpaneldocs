@@ -74,7 +74,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | WaveID | int | Toluna's unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
 | QuotaID | int | Toluna's uniqiue identifier for a Quota |
 | Member Amount | double | Amount Partner has agreed to pay it’s Member for a complete. This is rarely used and Toluna prefers to avoid direct engagement with the Partner-Member relationship |
-| Partner Amount | double | Amount Toluna has agreed to pay Partner for a complete |
+| Partner Amount | double | Amount Toluna has agreed to pay Partner for a complete. The value shown is linked to the URL and is valid for any complete generated from a member's interaction with the link, regardless of changes to the LOI and IR of the survey |
 | URL | string | Link to Invite Member to Quota |
 | LOI | int | Length of Interview at the time of invite generation. Valued in minutes |
 | IR | int | Incidence Rate at the time fo invite generation |
