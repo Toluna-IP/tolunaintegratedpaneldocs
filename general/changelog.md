@@ -10,6 +10,7 @@ As the platform matures, any recent changes to its behavior will be noted here.
 
 | Release Date | UPS Version | TEF Version | IP Version |    |
 | :--- | :---: | :---: | :--- | :--- | :--- |
+| July 18, 2021 | 15.5.1454 | 3.0.1359 | 2.5.8 | Minor bug fixes and platform optimization |
 | June 20, 2021 | 15.5.1425 | 3.0.1359 | 2.5.8 | [See more](/general/changelog.html#258){: .btn .btn-green } |
 | May 23, 2021 | 15.5.1393 | 3.0.1330 | 2.5.7 | Minor bug fixes and platform optimization |
 | May 2, 2021 | 15.5.1361 | 3.0.1330 | 2.5.7 | Minor bug fixes and platform optimization |
