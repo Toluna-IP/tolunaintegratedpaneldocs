@@ -7,4 +7,4 @@ nav_order: 2
 
 # Dashboard Sample API
 
-*To Do* 
+Below are links explaining the additional Dashboard-specific API features and instructions on using them from the Partner’s perspective.
