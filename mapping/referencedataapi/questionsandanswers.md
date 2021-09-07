@@ -147,7 +147,7 @@ PARTNER_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ]
 ```
 
-#### Question And Answers for **Age**
+#### Question And Answers for Age
 
 | QuestionID | AnswerID | Translation |
 | :--- | :--- | :--- |
