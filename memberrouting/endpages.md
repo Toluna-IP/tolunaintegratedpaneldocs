@@ -32,7 +32,7 @@ Also known as "Qualified Complete." The Member has successfully completed the Su
 
 ### No Surveys
 
-There are no Surveys let available for the Member at this time. This is uncommon for Integrated Partners.
+There are no Surveys left available for the Member at this time. This is uncommon for Integrated Partners.
 
 ### Terminated
 
