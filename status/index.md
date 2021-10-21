@@ -26,22 +26,17 @@ Use the following pages to view the statuses of various API features.
 
 ### Asia-Pacific
 
-[IP Dashboard Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/5418829){: .btn }
-
-[IP Get Quotas](http://stats.pingdom.com/oushrv8s0ynu/5418881){: .btn }
+[IP MemberManagement Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/5418829){: .btn }
 
 ---
 
 ### Europe
 
-[IP Dashboard Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/5418817){: .btn }
-
-[IP ES Get Quotas](http://stats.pingdom.com/oushrv8s0ynu/5418846){: .btn }
+[IP MemberManagement Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/5418817){: .btn }
 
 ---
 
 ### North America
 
-[IP Dashboard Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/4534068){: .btn }
+[IP MemberManagement Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/4534068){: .btn }
 
-[IP ES Get Quotas](http://stats.pingdom.com/oushrv8s0ynu/5418836){: .btn }
