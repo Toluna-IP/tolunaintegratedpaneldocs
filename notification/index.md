@@ -1,6 +1,6 @@
 ---
 title: Notification Offering
-has_children: true
+has_children: false
 nav_order: 4
 ---
 
