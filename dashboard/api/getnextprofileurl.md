@@ -42,12 +42,3 @@ GET http://{IP_CORE_URL}/IntegratedPanelService/api/Profile/GetNextProfileURL/?m
 | 400 | Bad Request. Request is malformed or incomplete. Review message details and take appropriate action |
 | 500 | Internal Error. An exception occurred while processing the request. Toluna likely has details captured in its logs |
 
-### Example Response
-
-To view a sample result, paste the following URL in your browser.
-
-http://ups.surveyrouter.com/TrafficUI/MSCUI/Profilepage.aspx?guid=ce009f76-2076-4a16-89a1-714fe356af38&rt=9&pt=1000080&bid=200&cid=1&brandcss=1&redirect=http%3a%2f%2fwww.google.com&cancel=http%3a%2f%2fwww.google.com
-
-This page can be hosted in an iframe on your website. When the respondent clicks save, the data will be saved on Toluna’s site and the user will be able to qualify for more surveys
-
----
