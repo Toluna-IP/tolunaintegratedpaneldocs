@@ -1,6 +1,6 @@
 ---
 title: Standard Flow
-has_children: true
+has_children: false
 nav_order: 2
 parent: External Sample Offering
 ---
