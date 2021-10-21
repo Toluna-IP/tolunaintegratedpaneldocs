@@ -40,3 +40,8 @@ Use the following pages to view the statuses of various API features.
 
 [IP MemberManagement Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/4534068){: .btn }
 
+---
+
+### Global
+
+[IP Dashboard GetSurveys](http://stats.pingdom.com/oushrv8s0ynu/9606146){: .btn }
