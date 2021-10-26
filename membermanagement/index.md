@@ -40,7 +40,7 @@ The following are important notes on the practice of Member Management:
 ---
 
 ## Member Status Type 
-Every member that is registered on the Toluna platform has a corresponding status that indicates a general level of their ability to participate on the Toluna platform. We call this the Member Status Ttype, or also known as PanelistStatusType. The details of each status are outlined below. 
+Every member that is registered on the Toluna platform has a corresponding status that indicates a general level of their ability to participate on the Toluna platform. We call this the Member Status Type, or also known as PanelistStatusType. The details of each status are outlined below. 
 
 
 | PanelistStatusTypeID | Name | Description | 
