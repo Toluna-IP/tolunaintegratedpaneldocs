@@ -17,4 +17,4 @@ In order to recieve an invite, a Partner must first register one more more membe
 
 Below a visual outlining the general flow of this Offering.
 
-![Notiication Offering Flow](https://github.com/josh-toluna/tolunaintegratedpaneldocs/blob/master/resources/flows/IP%20Flow%20Diagrams-Notification.png?raw=true)
+![Notification Offering Flow](https://github.com/josh-toluna/tolunaintegratedpaneldocs/blob/master/resources/flows/IP%20Flow%20Diagrams-Notification.png?raw=true)
