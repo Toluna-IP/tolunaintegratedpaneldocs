@@ -46,7 +46,7 @@ Our platform will need to know where to send members throughout the [member surv
 Mapping your platform's data to our platform's is a critical part of the integration process. Please check out the [Mapping](/mapping) section which demonstrates how to go about translating data points between our two platforms. 
 
 ## Step 8 - Notifications
-Along with each integration offering there come notifications (webhooks) that can be consumed by your platform to help with performance and security. Check our the [notifications](/notifications) section to learn about the various notification types and their needed integration points. 
+Along with each integration offering there come notifications (webhooks) that can be consumed by your platform to help with performance and security. Check our [notifications](/notifications) section to learn about the various notification types and their needed integration points. 
 
 ## Step 9 - Test
 Once the required integration pints have been setup, please test the integration through mimicking member behavior and tracing the flow from start to finish. Please reach out with any questions or for help assistance. 

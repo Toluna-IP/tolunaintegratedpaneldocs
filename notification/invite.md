@@ -1,7 +1,7 @@
 ---
-title: Invite
+title: Offering Flow
 has_children: false
-parent: Notifications
+parent: Notification Offering
 nav_order: 5
 ---
 

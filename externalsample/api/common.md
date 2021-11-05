@@ -7,10 +7,7 @@ nav_order: 99
 ---
 
 
-# ES API Common Items
-
-
-## Bad Request Response Codes
+# ES API - Bad Request Response Codes
 
 | Result | ResultCode | Description |
 | :--- | :--- | :--- |

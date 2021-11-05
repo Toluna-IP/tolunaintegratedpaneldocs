@@ -52,7 +52,7 @@ POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | PostalCode | ```string``` | Member postal code | No |
 | IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
 | AnsweredQuestions | ```string``` | A collection of 0:M demographic Question and Answer ID pairs - **Currently available - will be marked as "obsolete" and deprecated in an year**  | No |
-| RegistrationAnswers | ```string``` | Supports multi-select and open-ended answers. This will also maintain current single select responses | 
+| RegistrationAnswers | ```string``` | Supports multi-select and open-ended answers. This will also maintain current single select responses | No |
 
 ### Example - AnsweredQuestions
 

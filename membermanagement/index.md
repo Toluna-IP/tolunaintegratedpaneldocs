@@ -17,7 +17,7 @@ We recommended v2 as it will lead to better survey qualification and higher conv
 
 No personal information regarding the partner’s panel is received or stored by Toluna. The partner need only supply a unique numeric “Member ID”  that will be used to identify the member when interacting with the Toluna platform. 
 
-Mapping Data is available via our [Refernce Data API](/mapping/referencedataapi) which will aid in mapping demographic values. These values can vary by culture. 
+Mapping Data is available via our [Reference Data API](/mapping/referencedataapi) which will aid in mapping demographic values. These values can vary by culture. 
 
 * TOC
 {:toc}

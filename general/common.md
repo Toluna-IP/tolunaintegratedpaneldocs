@@ -39,7 +39,6 @@ There are three approaches for pricing that are currently available on the Tolun
 
 - Pricing is by Culture
 - Pricing is across all integrations for a Partner
-- Grid pricing is the standard 
 
 ### Pricing Models
 
@@ -47,7 +46,7 @@ There are three approaches for pricing that are currently available on the Tolun
 | :--- | :--- |
 | Fixed |  Pricing that is consistent across all surveys regardless of LOI or IR.|
 | Dynamic |  Pricing that is based off of a calculation/set function and uses LOI, IR, and other parameters.  |
-| Grid | Pricing that is based off a survey's LOI and IR values.  |
+| Grid | Pricing that is based off a survey's LOI and IR values. This is our standard pricing model. |
 
 
 ---
@@ -64,17 +63,13 @@ A “Tracker” is a series of related surveys. Toluna calls each iteration of t
 
 ### Benefits of Using WaveID
 
-Since each iteration of the Tracker shares the same SurveyID, a Survey can be interpreted as duplicate if the WaveID is not included. Including WaveID eliminates the potential for "false duplicates" and increases the number of invites and the potential for a corresponding increase in completes.
-
-### Removing WaveID from Your Integration Profile
-
-Toluna recommends that the Partner considers the combination of SurveyID+WaveID as the "unique identifier" for a Respondent's interaction with a Survey. If you wish to remove WaveID from your profile, please contact your Toluna representative. Partners utilizing the [External Sample](/externalsample/integrationdetails.html) offering need simply to ignore the WaveID object.
+Since each iteration of the Tracker shares the same SurveyID, a Survey can be interpreted as duplicate if the WaveID is not included. Including WaveID eliminates the potential for "false duplicates" and increases the number of invites and the potential for a corresponding increase in completes. Toluna recommends that the Partner considers the combination of SurveyID+WaveID as the "unique identifier" for a Respondent's interaction with a Survey.
 
 ---
 
 ## Response Codes
 
-The follow are possible response code categories that a Partner may receive when interacting with the Toluna API. More specific codes will be found in the documentation of each API route throughout this guide.
+The following are possible response code categories that a Partner may receive when interacting with the Toluna API. More specific codes will be found in the documentation of each API route throughout this guide.
 
 | Code | Description |
 | :--- | :--- |
