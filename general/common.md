@@ -17,7 +17,106 @@ The following are important features and notes on the Toluna Platform that are u
 
 ## Culture Driven
 
-Within Toluna's API, all endpoints are "culture driven," meaning that Toluna requires and organizes it's information based on a Partner's culture (a combination of language and country, such as "EN-GB" for "English-Great Britain") and a PanelGUID (provided by Toluna).
+Within Toluna's API, all endpoints are "culture driven," meaning that Toluna requires and organizes it's information based on a Partner's culture (a combination of language and country, such as "EN-GB" for "English-Great Britain") and a PanelGUID (provided by Toluna). 
+
+Below is a list of Cultures currently supported on the Toluna platform (bearing in mind that new cultures may be added in the future):
+
+| Country Name               | Language Name       | Culture |
+| -------------------------- | ------------------- | ------- |
+| Algeria                    | Arabic              | AR-DZ   |
+| Argentina                  | Spanish             | ES-AR   |
+| Australia                  | English             | EN-AU   |
+| Austria                    | German              | DE-AT   |
+| Bahrain                    | Arabic              | AR-BH   |
+| Belgium                    | French              | FR-BE   |
+| Belgium                    | Dutch               | NL-BE   |
+| Brazil                     | Portuguese          | PT-BR   |
+| Bulgaria                   | Bulgarian           | BG-BG   |
+| Canada                     | English             | EN-CA   |
+| Canada                     | French              | FR-CA   |
+| Chile                      | Spanish             | ES-CL   |
+| China                      | Mandarin Chinese    | ZH-CN   |
+| Colombia                   | Spanish             | ES-CO   |
+| Costa Rica                 | Spanish             | ES-CR   |
+| Croatia                    | Croatian            | HR-HR   |
+| Czech Republic             | Czech               | CS-CZ   |
+| Denmark                    | Danish              | DA-DK   |
+| Dominican Republic         | English             | EN-DO   |
+| Ecuador                    | Spanish             | ES-EC   |
+| Egypt                      | Arabic              | AR-EG   |
+| Egypt                      | English             | EN-EG   |
+| Estonia                    | Estonian            | ET-EE   |
+| Finland                    | Finnish             | FI-FI   |
+| France                     | French              | FR-FR   |
+| Germany                    | German              | DE-DE   |
+| Greece                     | Greek               | EL-GR   |
+| Hong Kong                  | English             | EN-HK   |
+| Hong Kong                  | Mandarin Chinese    | ZH-HK   |
+| Hungary                    | Hungarian           | HU-HU   |
+| India                      | English             | EN-IN   |
+| Indonesia                  | Indonesian          | ID-ID   |
+| Iran (Islamic Republic Of) | Farsi               | FA-IR   |
+| Iraq                       | Arabic              | AR-IQ   |
+| Ireland                    | English             | EN-IE   |
+| Israel                     | Hebrew              | HE-IL   |
+| Italy                      | Italian             | IT-IT   |
+| Japan                      | Japanese            | JA-JP   |
+| Jordan                     | Arabic              | AR-JO   |
+| Jordan                     | English             | EN-JO   |
+| Kenya                      | English             | EN-KE   |
+| Korea, Republic of         | English             | EN-KR   |
+| Korea, Republic of         | Korean              | KO-KR   |
+| Kuwait                     | Arabic              | AR-KW   |
+| Latvia                     | Latvian             | LV-LV   |
+| Lebanon                    | Arabic              | AR-LB   |
+| Lithuania                  | Lithuanian          | LT-LT   |
+| Malaysia                   | English             | EN-MY   |
+| Malaysia                   | Malay               | MS-MY   |
+| Mexico                     | Spanish             | ES-MX   |
+| Morocco                    | Arabic              | AR-MA   |
+| Morocco                    | French              | FR-MA   |
+| Netherlands                | Dutch               | NL-NL   |
+| New Zealand                | English             | EN-NZ   |
+| Nigeria                    | English             | EN-NG   |
+| Norway                     | Norwegian           | NO-NO   |
+| Oman                       | Arabic              | AR-OM   |
+| Pakistan                   | English             | EN-PK   |
+| Pakistan                   | Urdu                | UR-PK   |
+| Paraguay                   | Spanish             | ES-PY   |
+| Peru                       | Spanish             | ES-PE   |
+| Philippines                | English             | EN-PH   |
+| Philippines                | Filipino            | PH-PH   |
+| Poland                     | Polish              | PL-PL   |
+| Portugal                   | Portuguese          | PT-PT   |
+| Qatar                      | Arabic              | AR-QA   |
+| Qatar                      | English             | EN-QA   |
+| Romania                    | Romanian            | RO-RO   |
+| Russian Federation         | Russian             | RU-RU   |
+| Saudi Arabia               | Arabic              | AR-SA   |
+| Saudi Arabia               | English             | EN-SA   |
+| Singapore                  | English             | EN-SG   |
+| Singapore                  | Mandarin Chinese    | ZH-SG   |
+| Slovakia                   | Slovak              | SK-SK   |
+| South Africa               | English             | EN-ZA   |
+| Spain                      | Spanish             | ES-ES   |
+| Sweden                     | Swedish             | SV-SE   |
+| Switzerland                | German              | DE-CH   |
+| Switzerland                | French              | FR-CH   |
+| Switzerland                | Italian             | IT-CH   |
+| Taiwan                     | Traditional Chinese | CT-TW   |
+| Thailand                   | English             | EN-TH   |
+| Thailand                   | Thai                | TH-TH   |
+| Tunisia                    | French              | FR-TN   |
+| Turkey                     | Turkish             | TR-TR   |
+| Ukraine                    | Ukrainian           | UK-UA   |
+| United Arab Emirates       | Arabic              | AR-AE   |
+| United Arab Emirates       | English             | EN-AE   |
+| United Kingdom             | English             | EN-GB   |
+| United States              | English             | EN-US   |
+| United States              | Spanish             | ES-US   |
+| Uruguay                    | Spanish             | ES-UY   |
+| Venezuela                  | Spanish             | ES-VE   |
+| Vietnam                    | Vietnamese          | VI-VN   |
 
 ---
 
