@@ -28,10 +28,13 @@ Toluna can integrate the invite process with an existing Partner web service:
 
 The preferred content type is json. Any new notification developed will only be available in JSON format. Some notifications are avialable in either format, in which case the XML format will be shown.
 
-### Route
-```plaintext
-POST {Partner-defined endpoint}
-```
+### HTTP Verb
+
+- POST
+
+### Route(s)
+
+- Specified by Partner; Toluna will configure accordingly
 
 #### XML
 ```

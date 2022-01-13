@@ -16,10 +16,13 @@ Toluna provides a notification service to alert the partner when a survey closes
 
 ---
 
-## Route
-```plaintext
-POST http://myPartnerApi/TolunaNotify
-```
+### HTTP Verb
+
+- POST
+
+### Route(s)
+
+- Specified by Partner; Toluna will configure accordingly
 
 ## Notiication Body Details
 
