@@ -30,7 +30,7 @@ The preferred content type is json. Any new notification developed will only be 
 
 ### Route
 ```plaintext
-POST http://myPartherApi/tolunaInvite
+POST {Partner-defined endpoint}
 ```
 
 #### XML
