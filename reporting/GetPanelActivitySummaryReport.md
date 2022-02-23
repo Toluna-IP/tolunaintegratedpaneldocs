@@ -3,6 +3,8 @@ title: GetPanelActivitySummaryReport
 has_children: false
 parent: Reporting
 nav_order: 5
+nav_exclude: true
+search_exclude: true
 ---
 
 ## GetPanelActivitySummaryReport
