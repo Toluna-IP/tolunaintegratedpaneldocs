@@ -10,6 +10,7 @@ As the platform matures, any recent changes to its behavior will be noted here.
 
 | Release Date | UPS Version | TEF Version | IP Version |    |
 | :--- | :---: | :---: | :--- | :--- | :--- |
+| March 13, 2022 | 15.5.707 | 3.0.615 | 2.5.8 | Improved Geo Computation for Registered Members, Minor bug fixes, and platform optimization |
 | November 7, 2021 | 15.5.1516 | 3.0.1477 | 2.5.8 | Improved Geo Computation for Registered Members, Minor bug fixes, and platform optimization |
 | July 18, 2021 | 15.5.1454 | 3.0.1359 | 2.5.8 | Minor bug fixes and platform optimization |
 | June 20, 2021 | 15.5.1425 | 3.0.1359 | 2.5.8 | [See more](/general/changelog.html#258){: .btn .btn-green } |
