@@ -22,7 +22,7 @@ A partner can add new members to the Toluna IP Database using an HTTP POST. This
 ### Route
 
 ```plaintext
-POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
+POST https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 ```
 
 ### Parameters

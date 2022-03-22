@@ -32,8 +32,8 @@ These rules can be consolidated into simple boolean conditions:
 
 Click each button to open a new page with the JSON file for the specific example.
 
-<a href="http://docs.integratedpanel.toluna.com/externalsample/api/responses/quotamultiplelayer.json" target="_blank" class="btn">Quota with Multiple Layers</a>
+<a href="https://docs.integratedpanel.toluna.com/externalsample/api/responses/quotamultiplelayer.json" target="_blank" class="btn">Quota with Multiple Layers</a>
 
-<a href="http://docs.integratedpanel.toluna.com/externalsample/api/responses/singlelayermultipleqid.json" target="_blank" class="btn">Quota with Single Layer, Multiple QuestionIDs</a>
+<a href="https://docs.integratedpanel.toluna.com/externalsample/api/responses/singlelayermultipleqid.json" target="_blank" class="btn">Quota with Single Layer, Multiple QuestionIDs</a>
 
-<a href="http://docs.integratedpanel.toluna.com/externalsample/api/responses/singlelayersingleqid.json" target="_blank" class="btn">Quota with Single Layer, Single QuestionID</a>
+<a href="https://docs.integratedpanel.toluna.com/externalsample/api/responses/singlelayersingleqid.json" target="_blank" class="btn">Quota with Single Layer, Single QuestionID</a>

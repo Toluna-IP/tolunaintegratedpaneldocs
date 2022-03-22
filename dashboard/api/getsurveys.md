@@ -20,7 +20,7 @@ nav_order: 1
 
 ### Route
 ```plaintext
-GET  http://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={MemberCode}&partnerGuid={PartnerGUID}&numberOfSurveys=2&mobileCompatible=false&deviceTypeIDs=1&deviceTypeIDs=2
+GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={MemberCode}&partnerGuid={PartnerGUID}&numberOfSurveys=2&mobileCompatible=false&deviceTypeIDs=1&deviceTypeIDs=2
 ```
 
 ### Parameters
@@ -68,7 +68,7 @@ GET  http://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={Member
  "SurveyID": 21737,
  "Name": "1063626-US-IP1",
  "URL":
-"http://ups.surveyrouter.com/TrafficUI/MSCUI/Page.aspx?pgtid=20&di=zi19HDWwzDwhDXE2DjZ8NIlZX8LPjuUJh
+"https://ups.surveyrouter.com/TrafficUI/MSCUI/Page.aspx?pgtid=20&di=zi19HDWwzDwhDXE2DjZ8NIlZX8LPjuUJh
 kV37eSE1dC3kE4",
  "Description": "Entertainment",
  "Duration": 0,

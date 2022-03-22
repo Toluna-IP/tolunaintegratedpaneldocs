@@ -12,7 +12,7 @@ For a given Member, returns a list of all associated Survey responses.
 
 ### Route
 ```plaintext
-GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Members/{Membercode}/SurveyStatus/?SamplePartnerGuid={PartnerGUID}&StartDate={StartDate}&EndDate={EndDate}
+GET https://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Members/{Membercode}/SurveyStatus/?SamplePartnerGuid={PartnerGUID}&StartDate={StartDate}&EndDate={EndDate}
 ```
 
 ### Request Parameters

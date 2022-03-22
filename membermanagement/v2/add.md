@@ -27,7 +27,7 @@ This request is almost an exact parallel to that in the Static Member Management
 
 ### Route
 ```plaintext
-POST http://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
+POST https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 ```
 
 ### Request Parameters

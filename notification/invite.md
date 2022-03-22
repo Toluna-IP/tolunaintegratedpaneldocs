@@ -30,16 +30,16 @@ The preferred content type is json. Any new notification developed will only be 
 
 ### Route
 ```plaintext
-POST http://myPartherApi/tolunaInvite
+POST https://myPartherApi/tolunaInvite
 ```
 
 #### XML
 ```
 <?xml version="1.0"?>
-<invite xmlns:xsd="http://www.w3.org/2001/XMLSchema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+<invite xmlns:xsd="https://www.w3.org/2001/XMLSchema"xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"> 
   <UniqueCode>myCode</UniqueCode>
 <SamplePartnerGuid>CC265C63-F887-4366-9ED1-7B2B3BD94C2B</SamplePartnerGuid>
-  <SurveyURL>http://myPartnerService.com</SurveyURL>
+  <SurveyURL>https://myPartnerService.com</SurveyURL>
   <SurveyId>99</SurveyId>
   <SurveyRef>mySurveyRef</SurveyRef>
   <Topic>myTopic</Topic>
@@ -62,7 +62,7 @@ POST http://myPartherApi/tolunaInvite
 {
   "UniqueCode": "111",
   "SamplePartnerGuid”: “CC265C63-F887-4366-9ED1-7B2B3BD94C2B”,
-  "SurveyUrl": "http://ups.surveyrouter.com/Page.aspx?pgtid=20&di=fUAZ",
+  "SurveyUrl": "https://ups.surveyrouter.com/Page.aspx?pgtid=20&di=fUAZ",
   "SurveyId": 123,
   "SurveyRef": "123560-US",
   "Topic": "Health Products",

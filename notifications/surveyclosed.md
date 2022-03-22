@@ -18,7 +18,7 @@ Toluna provides a notification service to alert the partner when a survey closes
 
 ## Route
 ```plaintext
-POST http://myPartnerApi/TolunaNotify
+POST https://myPartnerApi/TolunaNotify
 ```
 
 ## Notiication Body Details
@@ -35,8 +35,8 @@ POST http://myPartnerApi/TolunaNotify
 ### Example XML Notification
 ```xml
 <?xml version="1.0"?>
-<survey xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<survey xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
    <SurveyId>99</SurveyId>
    <SurveyRef>123560-US</SurveyRef>
    <Status>Closed</Status>

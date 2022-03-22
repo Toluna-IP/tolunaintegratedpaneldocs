@@ -4,4 +4,4 @@ search_enabled: true
 heading_anchors: true
 aux_links:
   "Contact Us":
-    - "http://docs.integratedpanel.toluna.com/contactus/"
+    - "https://docs.integratedpanel.toluna.com/contactus/"

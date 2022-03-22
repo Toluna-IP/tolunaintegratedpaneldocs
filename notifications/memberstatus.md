@@ -26,7 +26,7 @@ revenue generating survey completion by one of their members.
 
 ### Route
 ```
-POST http://myPartnerApi/TolunaComplete
+POST https://myPartnerApi/TolunaComplete
 ```
 
 ### Body Details
@@ -47,7 +47,7 @@ POST http://myPartnerApi/TolunaComplete
 
 ### Example XML Response
 ```xml
-<confirmation xmlns:xsd="http://www.w3.org/2001/XMLSchema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<confirmation xmlns:xsd="https://www.w3.org/2001/XMLSchema"xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
  <UniqueCode>myCode</UniqueCode>
  <SurveyId>99</SurveyId>
  <SurveyRef>mySurveyRef</SurveyRef>
@@ -87,7 +87,7 @@ are sent this way. This implementation on the partner end is not mandatory.
 
 ### Route
 ```
-POST http://myPartnerAPI/TolunaTerminate
+POST https://myPartnerAPI/TolunaTerminate
 ```
 
 ### Body Details
@@ -111,8 +111,8 @@ POST http://myPartnerAPI/TolunaTerminate
 ### Example XML Termination
 ```xml
 <?xml version="1.0"?>
-<termination xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<termination xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
  <UniqueCode>111</UniqueCode>
  <SurveyId>123</SurveyId>
  <SurveyRef>123560-US</SurveyRef>
