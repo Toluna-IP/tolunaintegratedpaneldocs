@@ -24,11 +24,20 @@ revenue generating survey completion by one of their members.
 
 >Note: Completion notifications may be sent multiple times if the user refreshes the end page of the survey. Toluna will only mark the Survey complete once even in this case. If the Partner is paying incentives to the Respondent, Toluna recommends that the Partner programs to check for duplicate completion notification based on the SurveyID and UniqueCode passed.
 
+<<<<<<< HEAD
 ### Route
 ```
 POST https://myPartnerApi/TolunaComplete
 ```
+=======
+### HTTP Verb
+>>>>>>> 8456abc2a24873653d230477962d163ca2321220
 
+- POST
+
+### Route(s)
+
+- Specified by Partner; Toluna will configure accordingly
 ### Body Details
 
 | Name | Type | Description |
@@ -85,10 +94,20 @@ Toluna provides an automated termination service that notifies the Partner upon 
 Survey completion by one of their Members. Terminates and Quota Full notifications
 are sent this way. This implementation on the partner end is not mandatory.
 
+<<<<<<< HEAD
 ### Route
 ```
 POST https://myPartnerAPI/TolunaTerminate
 ```
+=======
+### HTTP Verb
+
+- POST
+
+### Route(s)
+
+- Specified by Partner; Toluna will configure accordingly
+>>>>>>> 8456abc2a24873653d230477962d163ca2321220
 
 ### Body Details
 

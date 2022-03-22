@@ -17,9 +17,13 @@ Since the Member does not start the Survey experience before they are Terminated
 {:toc}
 
 
-## Route
+### HTTP Verb
 
- - None
+- POST
+
+### Route(s)
+
+- Specified by Partner; Toluna will configure accordingly
 
 
 ## Body Details

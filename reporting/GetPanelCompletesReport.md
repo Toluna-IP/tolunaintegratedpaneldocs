@@ -3,6 +3,8 @@ title: GetPanelCompletesReport
 has_children: false
 parent: Reporting
 nav_order: 7
+nav_exclude: true
+search_exclude: true
 ---
 
 ## GetPanelCompletesReport

@@ -3,6 +3,8 @@ title: GetSurveyStatus
 has_children: false
 parent: Reporting
 nav_order: 2
+nav_exclude: true
+search_exclude: true
 ---
 
 ## GetSurveyStatus

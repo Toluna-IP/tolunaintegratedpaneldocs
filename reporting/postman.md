@@ -3,6 +3,8 @@ title: Postman collection
 has_children: false
 parent: Reporting
 nav_order: 999
+nav_exclude: true
+search_exclude: true
 ---
 
 ## POSTMAN collection

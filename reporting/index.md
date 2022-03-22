@@ -2,6 +2,8 @@
 title: Reporting
 has_children: true
 nav_order: 9
+nav_exclude: true
+search_exclude: true
 ---
 
 # Reporting API
