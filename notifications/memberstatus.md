@@ -24,14 +24,11 @@ revenue generating survey completion by one of their members.
 
 >Note: Completion notifications may be sent multiple times if the user refreshes the end page of the survey. Toluna will only mark the Survey complete once even in this case. If the Partner is paying incentives to the Respondent, Toluna recommends that the Partner programs to check for duplicate completion notification based on the SurveyID and UniqueCode passed.
 
-<<<<<<< HEAD
 ### Route
 ```
 POST https://myPartnerApi/TolunaComplete
 ```
-=======
 ### HTTP Verb
->>>>>>> 8456abc2a24873653d230477962d163ca2321220
 
 - POST
 
