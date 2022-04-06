@@ -64,7 +64,7 @@ PARTNER_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | RespondentRejectionTypeID | ```int``` | Toluna's unqiue identifier for a rejection |
-| NaPartnerRejectionNameme | ```string``` | Name of a rejection |
+| PartnerRejectionName | ```string``` | Name of a rejection |
 | PartnerRejectionDescription | ```string``` | Description of the rejection |
 
  - Please note: RespondentRejectionTypeID 99 refers to a screenout after a member has entered the survey.
