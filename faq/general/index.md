@@ -33,13 +33,6 @@ The route for a Partner to obtain their set(s) of questions and answers differs 
  - [Dashboard Offering](/dashboard)
  - [External Sampling](/externalsample)
 
----
-
-## Is there an API to get the current stats of a survey, such as conversion rate?
-
-Toluna has a significant inventory of Reporting APIs that Partners can use to obtain information on Surveys, Members, and Panels, such as the details of a Survey, including LOI and IR.
-
-Detailed information on this and other useful Reports can be found [here.](/reporting/api)
 
 ---
 

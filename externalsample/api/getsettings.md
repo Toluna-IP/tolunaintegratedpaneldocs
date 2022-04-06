@@ -22,7 +22,7 @@ For a Toluna-issued "PanelGUID," returns a list of settings and their associated
 
 ### Route
 ```plaintext
-GET http://{IP_ES_URL}/IntegratedPanelService/api/Settings?partnerGUID={PanelGUID}
+GET https://{IP_ES_URL}/IntegratedPanelService/api/Settings?partnerGUID={PanelGUID}
 ```
 
 ### Parameters
@@ -45,7 +45,7 @@ GET http://{IP_ES_URL}/IntegratedPanelService/api/Settings?partnerGUID={PanelGUI
 ### Example Request
 
 ```
-GET http://{IP_ES_URL}/IntegratedPanelService/api/Settings?partnerGUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX
+GET https://{IP_ES_URL}/IntegratedPanelService/api/Settings?partnerGUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX
 API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX
 ```
 ---

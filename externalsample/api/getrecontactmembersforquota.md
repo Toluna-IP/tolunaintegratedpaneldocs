@@ -21,7 +21,7 @@ For the requested Quota, returns a list of MemberCodes eligible for a recontact.
 
 ### Route 
 ```plaintext
-GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{panelGuid}/Recontact/{quotaID}/MemberCodes?maxResults={maxResults}&lastMemberCodeReceived={lastMemberCodeReceived}
+GET https://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{panelGuid}/Recontact/{quotaID}/MemberCodes?maxResults={maxResults}&lastMemberCodeReceived={lastMemberCodeReceived}
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{panelGuid}/Reco
  
 ### Example Request
 ```plaintext
-GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/Recontact/12345/MemberCodes?maxResults=25&lastMemberCodeReceived=myLastResult
+GET https://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/Recontact/12345/MemberCodes?maxResults=25&lastMemberCodeReceived=myLastResult
 API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 ```
 

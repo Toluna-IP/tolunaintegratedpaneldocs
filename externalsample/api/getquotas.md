@@ -23,7 +23,7 @@ For a Toluna-issued "PanelGUID," returns a list of Surveys and their associated 
 
 ### Route
 ```plaintext
-GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGUID}/Quotas?includeRoutables:{bool}
+GET https://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGUID}/Quotas?includeRoutables:{bool}
 ```
 
 ### Parameters
@@ -48,7 +48,7 @@ GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGUID}/Quot
 ### Example Request
 
 ```
-GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/Quotas
+GET https://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/Quotas
 API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 ```
 ---
@@ -140,7 +140,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 
 #### 200 Response
 
-<a href="http://docs.integratedpanel.toluna.com/resources/getquotas.json" target="_blank" class="btn">Click Here to Access JSON File</a>
+<a href="https://docs.integratedpanel.toluna.com/resources/getquotas.json" target="_blank" class="btn">Click Here to Access JSON File</a>
 
 
 #### 400 Response

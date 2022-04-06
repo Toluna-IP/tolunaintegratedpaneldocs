@@ -13,7 +13,7 @@ For a given Member and Survey, returns a list of Member responses to the survey.
 
 ### Route
 ```
-GET http://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/{MemberCode}/{SurveyName}/ActivityDetails?SamplePartnerGuid={PartnerGUID}
+GET https://{IP_CORE_URL}/IntegratedPanelService/api/Reports/Surveys/{MemberCode}/{SurveyName}/ActivityDetails?SamplePartnerGuid={PartnerGUID}
 ```
 
 ### Request Parameters

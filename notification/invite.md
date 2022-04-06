@@ -28,21 +28,18 @@ Toluna can integrate the invite process with an existing Partner web service:
 
 The preferred content type is json. Any new notification developed will only be available in JSON format. Some notifications are avialable in either format, in which case the XML format will be shown.
 
-### HTTP Verb
-
-- POST
-
-### Route(s)
-
-- Specified by Partner; Toluna will configure accordingly
+### Route
+```plaintext
+POST https://myPartherApi/tolunaInvite
+```
 
 #### XML
 ```
 <?xml version="1.0"?>
-<invite xmlns:xsd="http://www.w3.org/2001/XMLSchema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+<invite xmlns:xsd="https://www.w3.org/2001/XMLSchema"xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"> 
   <UniqueCode>myCode</UniqueCode>
 <SamplePartnerGuid>CC265C63-F887-4366-9ED1-7B2B3BD94C2B</SamplePartnerGuid>
-  <SurveyURL>http://myPartnerService.com</SurveyURL>
+  <SurveyURL>https://myPartnerService.com</SurveyURL>
   <SurveyId>99</SurveyId>
   <SurveyRef>mySurveyRef</SurveyRef>
   <Topic>myTopic</Topic>
@@ -65,7 +62,7 @@ The preferred content type is json. Any new notification developed will only be 
 {
   "UniqueCode": "111",
   "SamplePartnerGuid”: “CC265C63-F887-4366-9ED1-7B2B3BD94C2B”,
-  "SurveyUrl": "http://ups.surveyrouter.com/Page.aspx?pgtid=20&di=fUAZ",
+  "SurveyUrl": "https://ups.surveyrouter.com/Page.aspx?pgtid=20&di=fUAZ",
   "SurveyId": 123,
   "SurveyRef": "123560-US",
   "Topic": "Health Products",

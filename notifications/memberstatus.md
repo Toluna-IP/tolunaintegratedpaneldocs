@@ -24,6 +24,10 @@ revenue generating survey completion by one of their members.
 
 >Note: Completion notifications may be sent multiple times if the user refreshes the end page of the survey. Toluna will only mark the Survey complete once even in this case. If the Partner is paying incentives to the Respondent, Toluna recommends that the Partner programs to check for duplicate completion notification based on the SurveyID and UniqueCode passed.
 
+### Route
+```
+POST https://myPartnerApi/TolunaComplete
+```
 ### HTTP Verb
 
 - POST
@@ -49,7 +53,7 @@ revenue generating survey completion by one of their members.
 
 ### Example XML Response
 ```xml
-<confirmation xmlns:xsd="http://www.w3.org/2001/XMLSchema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<confirmation xmlns:xsd="https://www.w3.org/2001/XMLSchema"xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
  <UniqueCode>myCode</UniqueCode>
  <SurveyId>99</SurveyId>
  <SurveyRef>mySurveyRef</SurveyRef>
@@ -87,6 +91,12 @@ Toluna provides an automated termination service that notifies the Partner upon 
 Survey completion by one of their Members. Terminates and Quota Full notifications
 are sent this way. This implementation on the partner end is not mandatory.
 
+<<<<<<< HEAD
+### Route
+```
+POST https://myPartnerAPI/TolunaTerminate
+```
+=======
 ### HTTP Verb
 
 - POST
@@ -94,6 +104,7 @@ are sent this way. This implementation on the partner end is not mandatory.
 ### Route(s)
 
 - Specified by Partner; Toluna will configure accordingly
+>>>>>>> 8456abc2a24873653d230477962d163ca2321220
 
 ### Body Details
 
@@ -116,8 +127,8 @@ are sent this way. This implementation on the partner end is not mandatory.
 ### Example XML Termination
 ```xml
 <?xml version="1.0"?>
-<termination xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<termination xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
  <UniqueCode>111</UniqueCode>
  <SurveyId>123</SurveyId>
  <SurveyRef>123560-US</SurveyRef>

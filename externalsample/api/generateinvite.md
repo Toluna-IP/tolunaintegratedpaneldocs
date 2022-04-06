@@ -22,7 +22,7 @@ Once a Member has been matched to a Toluna Quota, this route can be used to gene
 
 ### Route
 ```plaintext
-GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGuid}/{MemberCode}/Invite/{QuotaID}
+GET https://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGuid}/{MemberCode}/Invite/{QuotaID}
 ```
 
 
@@ -47,7 +47,7 @@ GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGuid}/{Mem
 
 ### Example Request
 ```plaintext
-GET http://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/MyMemberCode/Invite/12345
+GET https://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX/MyMemberCode/Invite/12345
 API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 ```
 
@@ -91,7 +91,7 @@ Content-Type: application/json; charset=utf-8
  "QuotaID": 3445365,
  "MemberAmount": 0.5,
  "PartnerAmount": 1,
- "URL": "http://[ROOT]/TrafficUI/MSCUI/Page.aspx?pgtid=20&od=kqe0mda072UagaQSVQIlgUX1QE4E41107",
+ "URL": "https://[ROOT]/TrafficUI/MSCUI/Page.aspx?pgtid=20&od=kqe0mda072UagaQSVQIlgUX1QE4E41107",
  "LOI": 5,
  "IR": 40
 }

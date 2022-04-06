@@ -18,7 +18,7 @@ Use the following pages to view the statuses of various API features.
 
 ## Training
 
-[ES GetQuotas TRN ENV](http://stats.pingdom.com/oushrv8s0ynu/5782188){: .btn}
+[ES GetQuotas TRN ENV](https://stats.pingdom.com/oushrv8s0ynu/5782188){: .btn}
 
 ---
 
@@ -26,22 +26,22 @@ Use the following pages to view the statuses of various API features.
 
 ### Asia-Pacific
 
-[IP MemberManagement Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/5418829){: .btn }
+[IP MemberManagement Get Respondent](https://stats.pingdom.com/oushrv8s0ynu/5418829){: .btn }
 
 ---
 
 ### Europe
 
-[IP MemberManagement Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/5418817){: .btn }
+[IP MemberManagement Get Respondent](https://stats.pingdom.com/oushrv8s0ynu/5418817){: .btn }
 
 ---
 
 ### North America
 
-[IP MemberManagement Get Respondent](http://stats.pingdom.com/oushrv8s0ynu/4534068){: .btn }
+[IP MemberManagement Get Respondent](https://stats.pingdom.com/oushrv8s0ynu/4534068){: .btn }
 
 ---
 
 ### Global
 
-[IP Dashboard GetSurveys](http://stats.pingdom.com/oushrv8s0ynu/9606146){: .btn }
+[IP Dashboard GetSurveys](https://stats.pingdom.com/oushrv8s0ynu/9606146){: .btn }
