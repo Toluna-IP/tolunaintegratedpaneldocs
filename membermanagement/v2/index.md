@@ -8,7 +8,7 @@ nav_order: 2
 
 # V2 - Dynamic
 
-Version 2 of the Member API is focused on speed, simplicity, improved support for demographic characteristics. It’s “closer to the metal” of the underlying Toluna Panel Management System and is optimized to remove internal dependencies. To the Partner, it’s faster and has more capability. It is independent of Static v1 and is managed separately. For the time being, both versions will continue to exist and be supported. 
+Version 2 of the Member API is focused on speed, simplicity, improved support for demographic characteristics. It’s “closer to the metal” of the underlying Toluna Panel Management System and is optimized to remove internal dependencies. To the Partner, it’s faster and has more capability. It is independent of Static v1 and is managed separately. 
 
 {: .label .label-red }
 IMPORTANT
@@ -23,7 +23,7 @@ To access v2 of a route, supply the “Accept” header in your request as direc
 
 ## Question / AnswerIDs
 
-Please note the primary difference with v1 is that demographic characteristics are listed as a series of Question and Answer IDs. Though less readable in JSON notation, this provides true extensibility (all Toluna Demographic information is supported), and provides for much faster results. Every Question has a static QuestionID, which maps to a series of possible static AnswerIDs. This information is clearly noted in the [Reference Data API](/mapping/referencedataapi/) each partner receives during the integration period. These are the most relevant Questions for IP:
+Every Question has a static QuestionID, which maps to a series of possible static AnswerIDs. This information is clearly noted in the [Reference Data API](/mapping/referencedataapi/) each partner receives during the integration period. These are the most relevant Questions for IP:
 
 | Question Name | QuestionID | Possible AnswerIDs |
 | :-- | :--- | :--- |
