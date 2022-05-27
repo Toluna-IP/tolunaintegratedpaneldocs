@@ -38,14 +38,6 @@ There are no Surveys left available for the Member at this time. This is uncommo
 
 The Member accessed the Survey but was screened out before completing.
 
-### Digital Finger Printing Failure
-
-The Member accessed the Survey but was not able to be fingerprinted (fraud reduction)
-
-### Fraud Terminate
-
-The Member accessed the Survey but was marked as fraudulent activity in a survey 
-
 ### Quota Full
 
 No further Panelists are needed to fulfill the Quota.
