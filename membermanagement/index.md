@@ -11,10 +11,6 @@ For all Toluna Integration offerings, the Toluna requires partner's members to b
 
 Toluna can receive the partner’s panel data via RESTful APIs. A partner can use these APIs to add new members or deactivate  members. 
 
-We currently offer a Member management API in two versions: [Static(v1)](/membermanagement/v1/) and [Dynamic(v2)](/membermanagement/v2/). The core difference in the two is the flexibility in the level of member information is able to be conveyed to the Toluna platform. 
-
-We recommended v2 as it will lead to better survey qualification and higher conversion rate. The details of these two version are outlined in their respective sections. 
-
 No personal information regarding the partner’s panel is received or stored by Toluna. The partner need only supply a unique numeric “Member ID”  that will be used to identify the member when interacting with the Toluna platform. 
 
 Mapping Data is available via our [Reference Data API](/mapping/referencedataapi) which will aid in mapping demographic values. These values can vary by culture. 
@@ -62,7 +58,7 @@ IP APIs will return 400 Bad Requests (except Member ```POST(s)```, which will re
 ### PII Regulation
 
 All versions of the Member API support PII regulation. For technical details, please refer to the route
-documentation [v1](/membermanagement/v1/update.html#remove-personal-information) or [v2](/membermanagement/v2/update.html#remove-personal-information)
+documentation [v2](/membermanagement/v2/update.html#remove-personal-information)
  
 After a Member is PII Regulated, Partners will no longer be able to use the [GET](/membermanagement/v1/get.html) API to retrieve the Member's data.
 
