@@ -35,7 +35,7 @@ nav_order: 99
 | QUOTA_FULL | 28 | Requested Quota is Ful |
 | IP_EXTERNAL_RESPONDENTTYPE_FULL | 29 | The allotted completes for External Sample are full |
 | EXCLUDED_SURVEY_TAKEN | 30 | Member has been excluded from the Survey. See Toluna representative for details |
-| DEVICETYPE_NOT_SUPPORTED_FOR_SURVEY | 31 | The requested device types are not available for the Surve |
+| DEVICETYPE_NOT_SUPPORTED_FOR_SURVEY | 31 | The requested device types are not available for the Survey |
 | SURVEY_LOI_MISMATCH | 32 | The requested LOI is higher than the Survey’s upper limit |
 | IP_PROVIDER_COST_NOMATCH | 33 | Partner price is higher than the current limit on the Survey |
 | SURVEY_VERIFICATION_LEVEL_FAILED | 34 | The Member’s verification score is lower than what the Survey requires |
@@ -47,3 +47,4 @@ nav_order: 99
 | MAX_WEEKLY_EXCEEDED | 40 | The member has exceeded the weekly limit of Surveys |
 | MEMBER_GID_NOT_AVAILABLE | 43 | For a [Recontact Survey](/externalsample/recontactflow.html), the Member has not participated in previous/original Survey |
 | STARTS_THRESHOLD_ACHIEVED | 45 | Member rejected due to throttling further starts at this moment |
+| SURVEY_COMPLETES_CAP_ACHIEVED | 46 | The survey has reached or exceeded the completes allotted for IP |
