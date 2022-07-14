@@ -24,7 +24,7 @@ Toluna strongly recommends Partners supplying unique Redirect URLs for each of t
 
 ### Max Survey Reached
 
-Used when a Member as already completed the daily maximum number of Surveys allowed.
+Used when a Member has already completed the daily maximum number of Surveys allowed.
 
 ### Qualified
 
