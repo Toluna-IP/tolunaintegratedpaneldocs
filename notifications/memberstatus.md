@@ -91,12 +91,6 @@ Toluna provides an automated termination service that notifies the Partner upon 
 Survey completion by one of their Members. Terminates and Quota Full notifications
 are sent this way. This implementation on the partner end is not mandatory.
 
-<<<<<<< HEAD
-### Route
-```
-POST https://myPartnerAPI/TolunaTerminate
-```
-=======
 ### HTTP Verb
 
 - POST
@@ -104,7 +98,6 @@ POST https://myPartnerAPI/TolunaTerminate
 ### Route(s)
 
 - Specified by Partner; Toluna will configure accordingly
->>>>>>> 8456abc2a24873653d230477962d163ca2321220
 
 ### Body Details
 
@@ -115,7 +108,7 @@ POST https://myPartnerAPI/TolunaTerminate
 | SurveyRef | ```string``` | Toluna Survey name |
 | Reason | ```string``` | Reason for the Termination. Possible values: "QuotaFull," "SurveyTaken," "Terminated," "SurveyNotAvailable," "NoSurveysAvailable," "NoCookie," "MaxSurveysReached," or "NotQualified" |
 | DateTime | ```string``` | Date and time of Respondent Termination. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
-| WaveiD | ```int``` | Current iteration of the Survey. Studies related to one another can be sent in "waves" that the Member will experience as a unique Survey |
+| WaveDD | ```int``` | Current iteration of the Survey. Studies related to one another can be sent in "waves" that the Member will experience as a unique Survey |
 | Incidence Rate | ```int``` | Incidence Rate of the Survey |
 | AdditionalData | ```string``` | Query string argument in the completion URL with its data replaced |
 | IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
@@ -147,11 +140,11 @@ xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
 ```plaintext
 {
  "UniqueCode": "111",
- "SurveyId": 123,
+ "SurveyID": 123,
  "SurveyRef": "123560-US",
  "Reason": "Terminated",
  "DateTime": "2014-09-11 16:06:27",
- "WaveId": 100,
+ "WaveID": 100,
  "AdditionalData": "clickid=1234",
 "IsAutoRouted": true,
 "OriginalSurveyID": 100,
