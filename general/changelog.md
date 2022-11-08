@@ -29,7 +29,7 @@ As the platform matures, any recent changes to its behavior will be noted here.
 
 • (Change) [PreStart Notifications](/notifications/prestart.html) now available to partners utilizing the [Dashboard API](/dashboard/integrationdetails.html). To opt in to these Notifications, please contact your Toluna Business Representative.
 
-• (New Feature) Enhanced Terminate Notifications: [Terminate Notifications](/notifications/memberstatus.html#terminates) can now include additional objects defining the nature of the respondent's rejection. Top opt-in, please contact your Toluna Representative. If opted-in, parameters will also be automatically added to End Pages. Please see [Enhanced Terminate Parameters](/memberrouting/endpages.html#enhanced-terminate-parameter) for more details.
+• (New Feature) Enhanced Terminate Notifications: [Pre-Start Notifications](/notifications/prestart.html) can now include additional objects defining the nature of the respondent's rejection. Top opt-in, please contact your Toluna Representative. If opted-in, parameters will also be automatically added to End Pages. Please see [Enhanced Terminate Parameters](/memberrouting/endpages.html#enhanced-terminate-parameter) for more details.
 
 
 ## 2.5.7
