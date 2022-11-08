@@ -2,7 +2,7 @@
 title: Enhanced Terminate Notifications
 has_children: false
 parent: Notifications
-nav_order: 999
+nav_order: 2
 ---
 
 
