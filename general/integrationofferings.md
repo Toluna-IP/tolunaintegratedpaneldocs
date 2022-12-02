@@ -45,13 +45,12 @@ This is the newest offering and places the sampling processs (member -> survey s
 
 ### [Notifications](\notifications) 
 
-|  | Notification | Dashboard | External Sample |
+|   | Dashboard | External Sample |
 | :--- | :---: | :---: | :---: |
-| Invite | Required | - | - |
-| Survey Closed | Recommended | Recommended | Recommended |
-| Member-Status  | Recommended | Recommended | Recommended |
-| Quota Status  | - | - | Required  |
-| Pre-Start  | - | - | Recommended |
+| Survey Closed  | Recommended | Recommended |
+| Member-Status  | Recommended | Recommended |
+| Quota Status   | - | Recommended  |
+| Pre-Start  | - | Recommended |
 
 
 ---
