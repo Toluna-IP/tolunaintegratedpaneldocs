@@ -50,7 +50,7 @@ This is the newest offering and places the sampling processs (member -> survey s
 | Survey Closed  | Recommended | Recommended |
 | Member-Status  | Recommended | Recommended |
 | Quota Status   | Optional | Recommended  |
-| [Pre-Start](\notifications\etn)  | Recommended | Recommended |
+| [Pre-Start](/notifications/etns.html)  | Recommended | Recommended |
 
 
 ---
