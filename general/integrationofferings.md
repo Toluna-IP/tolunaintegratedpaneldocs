@@ -17,10 +17,6 @@ We offer several ways to integrate into our platform and they are listed below. 
 
 ---
 
-## [Notification Offering](\notification)
-
-This is the original integration offering in which Toluna performs the sampling and sends [Invite Notifications](/notifications/invite.html) to the Partner and they are able to pass along the opportunity to the member.
-
 
 ## [Dashboard Offering](\dashboard)
 
@@ -37,13 +33,13 @@ This is the newest offering and places the sampling processs (member -> survey s
 
 ### Components 
 
-|  | Notification | Dashboard | External Sample |
+|  | Dashboard | External Sample |
 | :--- | :---: | :---: | :---: |
-| [Member Management](\membermanagement) | Required | Required | Required |
-| [End Pages](\memberrouting\endpages) | Required | Required | Required |
-| [Dashboard API](\dashboard) | - | Required | - |
-| [External Sample API](\externalsample\api) | - | - | Required |
-| [Reporting API](\reporting) | Optional | Optional | Optional |
+| [Member Management](\membermanagement) | Required | Required |
+| [End Pages](\memberrouting\endpages) | Required | Required |
+| [Dashboard API](\dashboard) | Required | - |
+| [External Sample API](\externalsample\api) | - | Required |
+| [Reference Data API](\mapping\referencedataapi\) | Recommended | Recommended |
 
 <br>
 
