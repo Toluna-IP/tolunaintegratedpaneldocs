@@ -28,7 +28,7 @@ POST https://myPartnerApi/TolunaNotify
 
 - Specified by Partner; Toluna will configure accordingly
 
-## Notiication Body Details
+## Notification Body Details
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
