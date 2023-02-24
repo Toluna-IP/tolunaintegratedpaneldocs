@@ -91,7 +91,6 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | EstimatedCopletesRemaining |	```int``` |	The estimated number of completes remaining until the ScheduleCompletionDate, across all Quotas, until the Survey is full. At times, this may be less than the sum of all Quotas |
 | Price |	```<object>``` |	A JSON object containing details about price Toluna will pay per complete |
 | Quotas |	```list<object>``` |	A JSON object containing 1:M Quotas for the Survey. Members can be targeted only to one quota within the Survey |
-| IsTqsSurvey | ```bool``` | Indicates whether the Survey returned from Dashboard belongs to Toluna Quick Survey. For non-TQS surveys, this property will not appear |
 | [SurveyWaveExclusions](/externalsample/api/surveyexclusion) | ```list<object>``` | A JSON object containing details on the exclusions that can be set by a Partner based on a Member's previous participation status. More detailed information can be found [here](/externalsample/api/surveyexclusion)  |
 
 #### Price Object
