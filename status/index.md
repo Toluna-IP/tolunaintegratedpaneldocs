@@ -16,11 +16,6 @@ Use the following pages to view the statuses of various API features.
 
 ---
 
-## Alin Training
-
-| :--- | :---: | ---: |
-| IsAlin Training? | Yes | kind of |
-
 ## Training
 
 [ES GetQuotas TRN ENV](https://stats.pingdom.com/oushrv8s0ynu/5782188){: .btn}
