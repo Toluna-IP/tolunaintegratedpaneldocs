@@ -16,4 +16,4 @@ parent: Dashboard Offering
 
 ## What is the Flow?
 
-Within the realms of the ES Offering, there are two kinds of Quotas Toluna uses with its Partners. The first is the Standard Quota, similar to our traditional offerings, but with ES-specific parameters. The second kind is the Recontact Quota, the definition of which will be explained further below. Detailed information on the Standard Flow can be found [here.](/externalsample/standardflow "Standard ES Flow")
+The basic flow of the Dashboard integration is to first use the [Member Management API](/membermanagement/) to register a member with as many attributes as known to the partner. Then, the [GetSurveys Call](/dashboard/api/getsurveys.html) will be used to pull a list of surveys for which the member is eligible. This list can be used as the discetion of the Partner and may provide varying opportunities upon subsequent calls.
