@@ -86,7 +86,6 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | StudyTypeID |	```int``` |	The Survey’s “category.” See [Reference Data API](/mapping/referencedataapi/) for values |
 | ScheduledCompletionDate |	```dateTime``` |	Date at which Survey is set to close |
 | DeviceTypeIDs |	```list<int>``` |	Devices upon which the Survey can be used. See [Reference Data API](/mapping/referencedataapi/) for details |
-| IsSurveyRecontact |	```boolean``` |	When TRUE, the Survey is looking to engage specific Members for a follow-up study. Please see the “Recontact” section for more information regarding its use |
 | CompletesRequired |	```int``` |	The total number of completes required across all Quotas until the ScheduleCompletionDate. This should be considered the limit of completes available. At times, this may be less than the sum of all Quotas |
 | EstimatedCopletesRemaining |	```int``` |	The estimated number of completes remaining until the ScheduleCompletionDate, across all Quotas, until the Survey is full. At times, this may be less than the sum of all Quotas |
 | Price |	```<object>``` |	A JSON object containing details about price Toluna will pay per complete |
