@@ -62,7 +62,7 @@ The Member does not qualify for the invited Survey. This is rarely seen with Int
 
 ## Routing Parameters
 
-Toluna can return back to the Partner any query string parameters that they pass in when routing a member to a Survey. For example, if the Partner passes in "...toluna.com?di=1adsfadf&foo=bar123" we can return "partnerendpage.com/foo=bar123." 
+Toluna can return to the Partner any query string parameters they pass in when routing a member to a Survey. For example, if the Partner passes in “…toluna.com?di=1adsfadf&customParam=param123” in the invite URL, we can return “partnerendpage.com?customParam=param123.”
 
 Additionally, Toluna can return the following value on the query string even if the Partner does not pass them in:
 
@@ -72,6 +72,10 @@ Additionally, Toluna can return the following value on the query string even if 
 | SurveyName | ```string``` | Toluna's name of Survey |
 | WaveID | ```int``` | Toluna's identifier of the Wave |
 | MemberCode | ```string``` | Member's unique identifier |
+
+To do this, the partner must provide these parameters in the URL structure, as presented in the below example.
+
+https://thisisanexample.com/survey/complete?Source=toluna&completionStatus=5&**SurveyID=[SurveyID]&WaveID=[WaveID]&MemberCode=[MemberCode]**
 
 ## Enhanced Terminate Parameter
 
