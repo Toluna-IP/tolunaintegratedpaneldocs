@@ -51,7 +51,7 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Germany                    | German              | DE-DE   |
 | Greece                     | Greek               | EL-GR   |
 | Hong Kong                  | English             | EN-HK   |
-| Hong Kong                  | Mandarin Chinese    | ZH-HK   |
+| Hong Kong                  | Traditional Chinese    | ZH-HK   |
 | Hungary                    | Hungarian           | HU-HU   |
 | India                      | English             | EN-IN   |
 | Indonesia                  | Indonesian          | ID-ID   |

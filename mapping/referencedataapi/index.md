@@ -11,7 +11,6 @@ The following API calls will allow Partner to request information that can be us
 
 For long-term mapping, Toluna suggests that Partners only rely on the Production Repsonses for these calls and they will provide a larger and more accurate inventory.
 
-> Please note: These API calls are still in development. Breaking changes may occur.
 
 ## Video Tutorial
 

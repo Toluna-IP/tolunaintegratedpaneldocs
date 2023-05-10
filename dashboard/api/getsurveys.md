@@ -52,13 +52,12 @@ GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={Membe
 | SurveyID | ```int``` | Toluna-specified Survey identifier |
 | Name | ```string``` | Toluna-specified Survey name |
 | URL | ```string``` | Clicking on the URL will take this specific Respondent to the survey. URL’s are unique to the respondent and are **NOT** to be used by other respondents. |
-| Desription | ```string``` | Description of the Survey |
+| Description | ```string``` | Description of the Survey |
 | Duration | ```int``` | Estimated length of interview |
 | IR | ```int``` | Incidence rate fo the Survey in % |
 | MemberAmount | ```decimal``` | This is currently only returned as a value > 0 if the partner has a specific amount that is paid to each of their respondents for a survey |
 | PartnerAmount | ```decimal``` | Amount Toluna has agreed to pay Partner for a complete. The value shown is linked to the URL and is valid for any complete generated from a member's interaction with the link, regardless of changes to the LOI and IR of the survey |
 | WaveID | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member experiences as unique surveys. SurveyID+WaveID is always unique |
-| IsTqsSurvey | ```bool``` | Indicates whether the Survey returned from Dashboard belongs to Toluna Quick Survey. For non-TQS surveys, this property will not appear |
 
 
 ### Example Response
