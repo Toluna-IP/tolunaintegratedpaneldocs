@@ -44,7 +44,6 @@ PUT https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | PartnerGUID | ```GUID``` | Unique Partner Code (Please request from Toluna if you don’t have one) | Yes |
 | MemberCode | ```string``` | Unique Respondent Code from the Partner | Yes |
 | IsActive | ```bool``` | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.| No |
-| Email | ```string``` | Member email. NOTE: When Supplied, this must have a valid email format | No |
 | BirthDate | ```string``` | MM/DD/YYYY format | No |
 | PostalCode | ```string``` | Member postal code | No |
 | IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
@@ -62,22 +61,12 @@ PUT https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
   "IsActive": "false"
  }
  ```
- 
-#### Change Email
- ```plaintext
- {
-  "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
-  "MemberCode": "111",
-  "Email": "test@test.com"
- }
- ```
 
  #### Add RegistrationAnswers
  ```plaintext
  {
   "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
   "MemberCode": "111",
-  "Email": "test@test.com",
   "RegistrationAnswers":
 [
    {
@@ -97,7 +86,6 @@ PUT https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
  {
   "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
   "MemberCode": "111",
-  "Email": "test@test.com",
    "RegistrationAnswers":
 [
    {
