@@ -81,7 +81,7 @@ PUT https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
  }
  ```
 
- #### Add Open-Ended Answers beyond Postal code, Birthdate and Emai
+ #### Add Open-Ended Answers beyond Postal code and Birthdate
  ```plaintext
  {
   "PartnerGUID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
