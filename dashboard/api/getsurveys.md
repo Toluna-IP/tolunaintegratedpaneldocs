@@ -52,7 +52,6 @@ GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={Membe
 | SurveyID | ```int``` | Toluna-specified Survey identifier |
 | Name | ```string``` | Toluna-specified Survey name |
 | URL | ```string``` | Clicking on the URL will take this specific Respondent to the survey. URL’s are unique to the respondent and are **NOT** to be used by other respondents. |
-| Description | ```string``` | Description of the Survey |
 | Duration | ```int``` | Estimated length of interview |
 | IR | ```int``` | Incidence rate fo the Survey in % |
 | MemberAmount | ```decimal``` | This is currently only returned as a value > 0 if the partner has a specific amount that is paid to each of their respondents for a survey |

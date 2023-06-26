@@ -56,7 +56,7 @@ When sending server-to-server (S2S) notifications (aka webhook notification), th
 
 > Note: This is only available for terminate and qualified notifications in JSON or XML format. 
 
-The values being encrypted are the following parameters after being hyrdated for the corresponding event:
+The values being encrypted are the following parameters after being replaced for the corresponding event:
 - [surveyID]
 - [waveID]
 - [memberCode]

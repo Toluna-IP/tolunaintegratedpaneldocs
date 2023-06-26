@@ -33,7 +33,6 @@ Review the [Member Routing](/memberrouting) section as it outlines the flow of t
 
 Begin integrating the needed connection points for the desired integrating offering. We currently offer the following options:
 
-- [Notification](/notification)
 - [Dashboard](/dashboard)
 - [External Sample](/externalsample)
 
@@ -49,7 +48,7 @@ Mapping your platform's data to our platform's is a critical part of the integra
 Along with each integration offering there come notifications (webhooks) that can be consumed by your platform to help with performance and security. Check our [notifications](/notifications) section to learn about the various notification types and their needed integration points. 
 
 ## Step 9 - Test
-Once the required integration pints have been setup, please test the integration through mimicking member behavior and tracing the flow from start to finish. Please reach out with any questions or for help assistance. 
+Once the required integration pints have been setup, please test the integration through mimicking member behavior and tracing the flow from start to finish. Please reach out for any questions or assistance. 
 
 ## Step 10 - Go Live!
 Once tested and ready to go live, Toluna will move your integration to Production and issue updated culture-specific panel-GUIDs and an api key. You are then ready to route members through the integration. 
