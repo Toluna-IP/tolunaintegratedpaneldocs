@@ -144,7 +144,7 @@ There are three approaches for pricing that are currently available on the Tolun
 | Name | Description |
 | :--- | :--- |
 | Fixed |  Pricing that is consistent across all surveys regardless of LOI or IR.|
-| Dynamic |  Pricing that is based off of a calculation/set function and uses LOI, IR, and other parameters.  |
+| Programmatic |  Pricing that is based off of a calculation/set function utilizing LOI, IR, and other parameters.  |
 | Grid | Pricing that is based off a survey's LOI and IR values. This is our standard pricing model. |
 
 

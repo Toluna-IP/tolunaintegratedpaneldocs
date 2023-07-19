@@ -79,7 +79,6 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | :--- | :--- | :--- |
 | SurveyID |	```int``` |	Toluna’s unique identifies for a Survey |
 | SurveyName |	```string``` |	Toluna’s name for a Survey |
-| SurveyTopic |	```string``` |	Study type of a Survey |
 | WaveID |	```int``` |	Toluna’s unique identifier for a single iteration of a Survey. The SurveyID+WaveID is always unique |
 | LOI |	```int``` |	Length of interview in minutes |
 | IR |	```int``` |	Incidence Rate |

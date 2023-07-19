@@ -37,7 +37,7 @@ Toluna allows Members to be automatically routed to a separate Survey when they 
 ...
 ```
 
-Where the "OriginalSurveyID" will the SurveyID of the Survey from which the Member was Routed (typically the Survey to which they received the link from the Partner).
+Where the “OriginalSurveyID” will be the SurveyID of the Survey from which the Member was Routed (typically the Survey to which they received the link from the Partner).
 
 This feature is not automatically enabled when a Partner connects with Toluna's Integrated Panel Platform. To enable this feature, please contact your Toluna representative.
 
@@ -46,12 +46,5 @@ This feature is not automatically enabled when a Partner connects with Toluna's 
 
 ## Routing Options
 
-When autorouting Respondents, Partners have two options for their end pages: Self-Hosted or Toluna-Hosted.
+In order to route respondents accordingly, partners will need to provide endpages for their users to return to upon completing the survey flow. The specific events required for Partner-Hosted pages are outlined [here.](\memberrouting\endpages)
 
-### Self-Hosted Pages
-
-This is the standard and most desired option for Partners. The specific events required Partner-Hosted pages are outlined [here.](\memberrouting\endpages)
-
-### Toluna-Hosted Pages
-
-Toluna understands that it is desirable to have the Panelist experience branded to the Partner offering the invite. What the Panelist will see then is starting and ending pages that show a combination of logos, banners and copy matching the partner’s site.

@@ -33,7 +33,7 @@ Once the invitation is exercised, the Partner Member takes a Survey in the Tolun
 
 ### Survey Conclusion
 
-Upon conclusion of the Survey, the Partner Member is redirected ack to a Partner-specific landing page. The options for redirection are identical to non-ES integration and can be found in Toluna's main integration guide.
+Upon conclusion of the Survey, the Partner Member is redirected back to a Partner-specific landing page. The options for redirection are identical to non-ES integration and can be found in Toluna's main integration guide.
 
 ### Video Tutorial
 

@@ -19,8 +19,8 @@ To quickly get integrated with our platform, here's how to go about it. In all c
 # External Sample
 
 1. Register Member to [Member Management API](/membermanagement/v2/add)
-2. Provide [End Page Urls](/memberrouting/endpages) to Toluna so we can know where to send the member when Survey is over. 
+2. Provide [End Page Urls](/memberrouting/endpages) to Toluna so we can know where to send the member when Survey is over
 3. Request Quota Inventory from Toluna via  [Get Quotas call](/externalsample/api/getquotas)
-4. Match member to survey.
+4. Match member to survey, in accordance with [Sampling Rules](/https://docs.integratedpanel.toluna.com/externalsample/samplingrules.html)
 5. Request Invite URL for Member to Survey via [Get Invite call](/externalsample/api/generateinvite)
 6. Route Member to provided Invite Url ([Member Survey Flow](/memberrouting/membersurveyflow))
