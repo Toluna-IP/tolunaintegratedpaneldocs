@@ -69,6 +69,7 @@ GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={Membe
 "https://ups.surveyrouter.com/TrafficUI/MSCUI/Page.aspx?pgtid=20&di=zi19HDWwzDwhDXE2DjZ8NIlZX8LPjuUJh
 kV37eSE1dC3kE4",
  "Duration": 0,
+ "IR": 100,
  "MemberAmount": 0,
  "PartnerAmount": 2,
  "WaveId": 100,
