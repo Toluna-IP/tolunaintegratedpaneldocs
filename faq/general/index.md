@@ -84,7 +84,7 @@ We do not currently have an API which provides metrics on conversion rate. The c
 
 ## What is the difference between a Redirect URL and a Notification URL?
 
-[Redirect URL](/memberrouting/) is where Toluna’s platform is sending Respondents in certain situations. A [Notification])(/notifications/quotastatus.html) is Toluna’s platform sending information to a Partner about an event.
+[Redirect URL](/memberrouting/) is where Toluna’s platform is sending Respondents in certain situations. A [Notification](/notifications/quotastatus.html) is Toluna’s platform sending information to a Partner about an event.
 
 ---
 
