@@ -36,7 +36,7 @@ POST https://myPartnerApi/TolunaNotify
 | SurveyRef | ```string``` | Toluna Survey name |
 | Status | ```string``` | Toluna Survey status - Always "Closed" |
 | DateTime | ```string``` | Date and time the Survey was closed. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
-| WaveID | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member experiences as unique surveys. SurveyID+WaveID will always be unique |
+| WaveId | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member experiences as unique surveys. SurveyID+WaveID will always be unique |
 
 
 ### Example XML Notification

@@ -56,7 +56,7 @@ GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={Membe
 | IR | ```int``` | Incidence rate fo the Survey in % |
 | MemberAmount | ```decimal``` | This is currently only returned as a value > 0 if the partner has a specific amount that is paid to each of their respondents for a survey |
 | PartnerAmount | ```decimal``` | Amount Toluna has agreed to pay Partner for a complete. The value shown is linked to the URL and is valid for any complete generated from a member's interaction with the link, regardless of changes to the LOI and IR of the survey |
-| WaveID | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member experiences as unique surveys. SurveyID+WaveID is always unique |
+| WaveId | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member experiences as unique surveys. SurveyID+WaveId is always unique |
 
 
 ### Example Response
@@ -68,8 +68,8 @@ GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={Membe
  "URL":
 "https://ups.surveyrouter.com/TrafficUI/MSCUI/Page.aspx?pgtid=20&di=zi19HDWwzDwhDXE2DjZ8NIlZX8LPjuUJh
 kV37eSE1dC3kE4",
- "Description": "Entertainment",
  "Duration": 0,
+ "IR": 100,
  "MemberAmount": 0,
  "PartnerAmount": 2,
  "WaveId": 100,

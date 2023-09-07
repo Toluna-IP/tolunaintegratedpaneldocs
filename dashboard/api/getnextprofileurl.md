@@ -1,7 +1,7 @@
 ---
 title: Get Next Profile Url
 has_children: false
-parent: Dashboard API
+parent: 
 grand_parent: Dashboard Offering
 nav_order: 2
 nav_exclude: true
