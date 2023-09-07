@@ -1,7 +1,7 @@
 ---
 title: Common Attributes
 has_children: false
-Parent: Member Management
+parent: Member Management
 nav_order: 3
 ---
 
