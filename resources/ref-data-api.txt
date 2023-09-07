@@ -27,7 +27,7 @@
 					"raw": " {\r\n    \"CultureIDs\": [5],                        \r\n    \"CategoryIDs\": [],\r\n    \"LastUpdateDate\": \"2000-11-10\",\r\n    \"IncludeComputed\" : \"true\",\r\n    \"IncludeRoutables\": \"true\",\r\n    \"IncludeDemographics\": \"true\"\r\n}"
 				},
 				"url": {
-					"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/QuestionsAndAnswersData ",
+					"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/QuestionsAndAnswersData",
 					"host": [
 						"{{IP_REF_DATA_URL}}"
 					],
@@ -61,7 +61,7 @@
 							"raw": " {\r\n    \"CultureIDs\": [5],                        \r\n    \"CategoryIDs\": [],\r\n    \"LastUpdateDate\": \"2000-11-10\",\r\n    \"IncludeComputed\" : \"true\",\r\n    \"IncludeRoutables\": \"true\",\r\n    \"IncludeDemographics\": \"true\"\r\n}"
 						},
 						"url": {
-							"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/QuestionsAndAnswersData ",
+							"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/QuestionsAndAnswersData",
 							"host": [
 								"{{IP_REF_DATA_URL}}"
 							],
@@ -176,7 +176,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/Cultures ",
+					"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/Cultures",
 					"host": [
 						"{{IP_REF_DATA_URL}}"
 					],
@@ -219,7 +219,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/StudyTypes ",
+					"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/StudyTypes",
 					"host": [
 						"{{IP_REF_DATA_URL}}"
 					],
@@ -250,7 +250,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/DeviceTypes ",
+					"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/DeviceTypes",
 					"host": [
 						"{{IP_REF_DATA_URL}}"
 					],
@@ -281,7 +281,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/QuestionCategories ",
+					"raw": "{{IP_REF_DATA_URL}}/IPUtilityService/ReferenceData/QuestionCategories",
 					"host": [
 						"{{IP_REF_DATA_URL}}"
 					],
