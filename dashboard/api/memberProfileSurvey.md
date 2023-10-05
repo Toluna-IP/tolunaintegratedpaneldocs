@@ -28,11 +28,15 @@ The method to produce the Member Profile Survey is identical to that of the [Get
 {: .highlight }
 Note: Toluna does not request or store PII Regulated information.
 
+## Post-Completion 
+
+Once a member has returned from the Member Profile Survey, their newly-updated information can be retrieved using the [GET Member Route](/membermanagement/v2/get.md) of the Member Management API. The member will also be eligible for survey at this time. Repeat the [Get Surveys API](/dashboard/api/getsurveys.html) call to pull a list of surveys the member now qualifies for.
+
 ## Request
 
 ### Route
 ```plaintext
-GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={MemberCode}&partnerGuid={PartnerGUID}&numberOfSurveys=2&mobileCompatible=false&deviceTypeIDs=1&deviceTypeIDs=2
+GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={MemberCode}&partnerGuid={PartnerGUID}&numberOfSurveys=2&deviceTypeIDs=1
 ```
 
 ### Parameters
