@@ -10,7 +10,6 @@ nav_order: 1
 # Get Surveys
 {: .no_toc }
 
-* TEST
 {:toc}
 
 ---
