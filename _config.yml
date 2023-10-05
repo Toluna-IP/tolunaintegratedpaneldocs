@@ -2,6 +2,7 @@ title: "Toluna IP Platform"
 remote_theme: pmarsceill/just-the-docs
 search_enabled: true
 heading_anchors: true
+search.button: true
 aux_links:
   "Contact Us":
     - "https://docs.integratedpanel.toluna.com/contactus/"
