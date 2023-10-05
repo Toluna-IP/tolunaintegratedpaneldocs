@@ -12,7 +12,7 @@ search_exclude: true
 # Profiling Survey
 {: .no_toc }
 
-## Table of Contents
+* TOC
 {:toc}
 
 ---
