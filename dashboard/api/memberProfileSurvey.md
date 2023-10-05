@@ -30,7 +30,7 @@ Note: Toluna does not request nor store PII Regulated information.
 
 ## Post-Completion 
 
-Once a member has returned from the Member Profile Survey, their newly-updated information can be retrieved using the [GET Member Route](/membermanagement/v2/get.md) of the Member Management API. The member will also be eligible for surveys at this time. Repeat the [Get Surveys API](/dashboard/api/getsurveys.html) call to pull a list of surveys the member now qualifies for.
+Once a member has returned from the Member Profile Survey, their newly-updated information can be retrieved using the [GET Member Route](/membermanagement/v2/get.html) of the Member Management API. The member will also be eligible for surveys at this time. Repeat the [Get Surveys API](/dashboard/api/getsurveys.html) call to pull a list of surveys the member now qualifies for.
 
 ## Request
 
