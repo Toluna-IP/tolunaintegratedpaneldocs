@@ -4,7 +4,7 @@ has_children: false
 nav_order: 99
 parent: Dashboard API
 grand_parent: Dashboard Offering
-nav_exclude: false
+nav_exclude: true
 search_exclude: true
 ---
 
