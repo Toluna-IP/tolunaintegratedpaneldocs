@@ -19,18 +19,18 @@ search_exclude: true
 
 ## Use Case
 
-In genral, the minimum attributes Toluna needs to know about a member in order to match them to a survey are BirthDate and Gender. There may be cases, however, when a Partner does not have access to this information. If you are on this page, it's highly likely you currently do or will fall into this category.  
+In general, the minimum attributes Toluna needs to know about a member in order to match them to a survey are BirthDate and Gender. There may be cases, however, when a Partner does not have access to this information. If you are on this page, it's highly likely you currently do or will fall into this category.  
 
-For members without BirthDate or Gender assigned, Toluna can route them through a Member Profile Survey. This survey will ask the member a few questions and assign those answers to the member's profile. At the completion of the survey, the member will be returned to the Partner's defined End Page. 
+For members without BirthDate or Gender assigned, Toluna can route them through a Member Profile Survey. This survey will ask the member a few questions and assign those answers to the member's profile automatically. At the completion of the survey, the member will be returned to the Partner's defined End Page. 
 
 The method to produce the Member Profile Survey is identical to that of the [Get Surveys API](/dashboard/api/getsurveys.html). The Member Profiling Survey will be automatically returned whenever surveys are requested of a member registered without the minimum attributes needed
 
 {: .highlight }
-Note: Toluna does not request or store PII Regulated information.
+Note: Toluna does not request nor store PII Regulated information.
 
 ## Post-Completion 
 
-Once a member has returned from the Member Profile Survey, their newly-updated information can be retrieved using the [GET Member Route](/membermanagement/v2/get.md) of the Member Management API. The member will also be eligible for survey at this time. Repeat the [Get Surveys API](/dashboard/api/getsurveys.html) call to pull a list of surveys the member now qualifies for.
+Once a member has returned from the Member Profile Survey, their newly-updated information can be retrieved using the [GET Member Route](/membermanagement/v2/get.md) of the Member Management API. The member will also be eligible for surveys at this time. Repeat the [Get Surveys API](/dashboard/api/getsurveys.html) call to pull a list of surveys the member now qualifies for.
 
 ## Request
 
