@@ -46,4 +46,4 @@ The following are common attributes that are applicable in all cultures. These a
 
 Members under a certain age may not be registered with Toluna. Attempting to register a member below the minimum age will generate an error and the member will not be created. This age differs between countries. A list of age requires can be found by clicking the following:
 
-<a href="https://docs.integratedpanel.toluna.com/resources/resources\IP min allowed age - Aug 2023.xlsx" target="_blank" class="btn">Click Here to Access Excel File with Minimum Ages</a>
+<a href="ms-excel:ofe|u|https://docs.integratedpanel.toluna.com/resources/resources\IP min allowed age - Aug 2023.xlsx" target="_blank" class="btn">Click Here to Access Excel File with Minimum Ages</a>
