@@ -71,4 +71,4 @@ For Surveys, and even specific Waves, Toluna allows Members to be excluded from 
 
 ## For our Age profiler, sometimes Toluna uses only AnswerIDs, and other times they use AnswerValues. What is and where is there this distinction?
 
-If has Toluna provides a defined custom age range, the age range will be sent in AnswerValues, otherwise AnswerIDs will be provided. The partner will need to accommodate both on their end.
+Toluna has predefined answerIDs for Age, which can be found [here.](/membermanagement/commonattributes.html#questionid-1001538). If a client chooses age ranges outside of this predefined set, AnswerValues will be used. The partner will need to accommodate both AnswerIDs and AnswerValues.
