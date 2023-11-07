@@ -69,3 +69,9 @@ If an error occurs in sending the Quota notification, Toluna will try the messag
 ## What does the Parameter "IsRoutable" mean?
 
 For a Member to be selected for a Survey, they must be an exact match to the desired quota. Questions that are "routable" allow Members to be invited to a Survey even if they do not have a Question/Answer set that is required by the Quota. Instead, Toluna will route the Member to a "prescreener" survey. This is prescreener survey will ask the missing question of the Member. If the Member selects an answer that matches the quota, they will be directed to the final Survey. If they don't match, they will be directed to the [Not Qualified URL](/memberrouting/endpages.html#not-qualified).
+
+---
+
+## For our Age profiler, sometimes Toluna uses only AnswerIDs, and other times they use AnswerValues. What is and where is there this distinction?
+
+Toluna has predefined answerIDs for Age, which can be found [here.](/membermanagement/commonattributes.html#questionid-1001538) If a client chooses age ranges outside of this predefined set, AnswerValues will be used. The partner will need to accommodate both AnswerIDs and AnswerValues.
