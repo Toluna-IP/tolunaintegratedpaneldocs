@@ -70,7 +70,7 @@ API_AUTH_KEY: XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | CountryID |	```int``` |	Toluna’s unique identifier for the country in which the available Quotas are located. |
-| CacheExpires |	```dateTime``` |	Date at which Toluna’s cache of this Quota data expired. Repreating API calls after this time guarantees an updated result set |
+| CacheExpires |	```dateTime``` |	Date at which Toluna’s cache of this data was last updated. |
 | Surveys |	```list<object>``` |	A JSON object containing 1:M Surveys for which Toluna has open Quotas |
 
 #### Survey Object
