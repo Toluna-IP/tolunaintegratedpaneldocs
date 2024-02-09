@@ -44,7 +44,7 @@ POST https://myPartnerApi/TolunaNotify
 <?xml version="1.0"?>
 <survey xmlns:xsd="https://www.w3.org/2001/XMLSchema"
 xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
-   <SurveyId>99</SurveyId>
+   <SurveyID>99</SurveyID>
    <SurveyRef>123560-US</SurveyRef>
    <Status>Closed</Status>
    <DateTime>2014-09-11 16:06:27</DateTime>

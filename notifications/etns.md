@@ -30,7 +30,7 @@ Since the Member does not start the Survey experience before they are Terminated
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | UniqueCode | ```string``` | Unique Respondent Code from the Partner |
-| SurveyID | ```int``` | Tolujna Survey identifier |
+| SurveyId | ```int``` | Tolujna Survey identifier |
 | SurveyRef | ```string``` | Toluna Survey name |
 | Reason | ```string``` | Reason for the Termination. Possible values: "QuotaFull," "SurveyTaken," "Terminated," "SurveyNotAvailable," "NoSurveysAvailable," "NoCookie," "MaxSurveysReached," or "NotQualified" |
 | DateTime | ```string``` | Date and time of Respondent Termination. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
@@ -69,7 +69,7 @@ xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
 ```plaintext
 {
  "UniqueCode": "111",
- "SurveyID": 123,
+ "SurveyId": 123,
  "SurveyRef": "123560-US",
  "Reason": "Terminated",
  "DateTime": "2014-09-11 16:06:27",
@@ -77,7 +77,7 @@ xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
  "QuotaID": 987654,
  "AdditionalData": "clickid=1234",
 "IsAutoRouted": true,
-"OriginalSurveyID": 100,
+"OriginalSurveyId": 100,
 "RespondentRejectionTypeID": 103,
 "RejectionName": "NonQuotaDemographicRejection"
 }
