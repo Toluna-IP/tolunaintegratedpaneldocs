@@ -45,7 +45,7 @@ Every member that is registered on the Toluna platform has a corresponding statu
 | 2 | OptOut | Member is opted-out of future involvement on the Toluna Platform |
 | 3 | Suspended | Member is temporarily not able to participate on Toluna Platform |
 | 4 | BlockedForAbuse | Member has been blocked from participating on Toluna platform |
-| 5 | Registered | Member Data obfuscated due to PII Data Regulation |
+| 5 | PII Data Regulated | Member Data obfuscated due to PII Data Regulation |
 
 
 
