@@ -3,9 +3,9 @@ title: Get Recontact Members For Quota
 has_children: false
 parent: ES API
 grand_parent: External Sample Offering
-nav_order: 99
-nav_exclude: true
-search_exclude: true
+nav_order: 3
+nav_exclude: false
+search_exclude: false
 ---
 
 
@@ -31,7 +31,7 @@ GET https://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{panelGuid}/Rec
 | Name | Type | Description | Required? |
 | :--- | :-- | :--- | :---: |
 | panelGUID | ```Guid``` | A Toluna-issued unique identifier for a Partner's culture-specific panel | Yes |
-| quotaID | ```int``` | Tluna's unique identifier for a Quota | Yes |
+| quotaID | ```int``` | Toluna's unique identifier for a Quota | Yes |
 | maxResult| ```int``` | The maximum number of MemberCodes that will be returned for the request. If not provided, defaults to a Toluna-configurable value (for, v0.1:10000) | No |
 | lastMemberCodeReceived | ```string``` | When dealing with batched results for a single Quota, supply this value to signal the last result received. The batch results will start with the MemberCode AFTER this value. Note that MemberCodes for recontact are ordered alphanumerically | No |
 
