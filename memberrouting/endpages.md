@@ -32,7 +32,7 @@ Also known as "Qualified Complete." The Member has successfully completed the Su
 
 ### No Surveys
 
-There are no Surveys left available for the Member at this time. This is uncommon for Integrated Partners.
+There are no Surveys left available for the Member at this time or the member was not eligible to take the survey due to non-attribute related criteria.
 
 ### Terminated
 
@@ -56,7 +56,7 @@ The Member attempted to access a Survey that is no longer active.
 
 ### Not Qualified
 
-The Member does not qualify for the invited Survey. This is rarely seen with Integrated Partners.
+The Member does not qualify for the invited Survey, often after the member has answered questions in the Prescreener survey.
 
 ---
 
