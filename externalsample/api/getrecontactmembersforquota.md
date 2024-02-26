@@ -99,14 +99,3 @@ Content-Type: application/json; charset=utf-8
   "ResultCode": 10
  }
 ```
-
-#### 400 Response
-```plaintext
-HTTP/1.1 400
-Content-Type: application/json; charset=utf-8
-
-{
- "Result": "NO_QUOTA_ID",
- "ResultCode": 10
-}
-```
