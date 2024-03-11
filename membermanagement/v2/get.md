@@ -61,7 +61,7 @@ GET https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent/?memberCode={mem
 | PartnerGUID | ```GUID``` | Unique Partner Code (Please request from Toluna if you don’t have one) | Yes |
 | MemberCode | ```string``` | Unique Respondent Code from the Partner | Yes |
 | IsActive | ```bool``` | Defaults TRUE. When TRUE, Member is eligible to take Surveys. When FALSE, Member is excluded from the Survey Routing pool.| No |
-| BirthDate | ```string``` | MM/DD/YYYY format | No |
+| BirthDate | ```string``` | YYYY-MM-DD format | No |
 | PostalCode | ```string``` | Member postal code | No |
 | IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
 | IsPIIDataRegulated | ```bool``` | Defaults FALSE. When TRUE, all personally identifiable information is removed | No |
@@ -73,7 +73,7 @@ GET https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent/?memberCode={mem
  {
   "PartnerGUID": "93A6D55C-D4E7-49FC-8D68-671165ADE463",
   "MemberCode": "AUniquePartnerCode",
-  "BirthDate": "6/21/1992",
+  "BirthDate": "1987-01-25",
   "PostalCode": "15235",
   "IsPIIDataRegulated": false,
   "AnsweredQuestions":
