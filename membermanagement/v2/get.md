@@ -73,11 +73,7 @@ GET https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent/?memberCode={mem
  {
   "PartnerGUID": "93A6D55C-D4E7-49FC-8D68-671165ADE463",
   "MemberCode": "AUniquePartnerCode",
-<<<<<<< HEAD
-  "BirthDate": "1987-01-25",
-=======
   "BirthDate": "1992/6/21",
->>>>>>> 847bb4b4d826b2d74d5527215da3853314f9d87f
   "PostalCode": "15235",
   "IsPIIDataRegulated": false,
   "AnsweredQuestions":
