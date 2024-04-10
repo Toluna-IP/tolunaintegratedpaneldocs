@@ -1,5 +1,5 @@
 ---
-title: Common Items
+title: 400 ResponseCodes
 has_children: false
 parent: ES API
 grand_parent: External Sample Offering
@@ -24,6 +24,8 @@ nav_order: 99
 | SURVEY_NOT_ENABLED_FOR_IP_ES | 15 | The Survey to which the Quota belongs is not enabled for Integrated Panel External Sample use. |
 | MEMBER_DOES_NOT_MATCH_QUOTA | 16 | The requested MemberCode does not match the requested QuotaID |
 | NO_RECONTACT_GID | 17 | A request for a [Recontact](/externalsample/recontactflow.html) Invite could not be fulfilled due to missing information from the Survey's sponsor |
+| NO_PANEL_GUID | 18 | No panelGuid was provided with the request |
+| NO_MEMBER_CODE | 19 | No memberCode was provided with the request |
 | PANEL_INVALID_ES_REQUEST | 20 | The requested panel is not configured to ES-based invitations to Toluna Quotas |
 | NON_QUOTA_DEMOGRAPHIC_REJECTION | 21 | The request to get an Invite is rejected due to non-quota demographic reasons. Examples: Prior participation in Quota, Device Type Mismatch, etc |
 | MEMBER_NOT_ACTIVE | 22 | The member is not active in the Toluna system. This can be due to several reasons. Examples: Suspended User, BlockedForAbuse. Contact your Toluna representative for details |
@@ -45,6 +47,9 @@ nav_order: 99
 | SURVEY_TAKEN | 38 | The member has already taken the requested Survey |
 | MAX_DAILY_EXCEEDED | 39 | The member has exceeded the daily limit of Surveys |
 | MAX_WEEKLY_EXCEEDED | 40 | The member has exceeded the weekly limit of Surveys |
+| SUB_QUOTA_FULL | 41 | The subQuota for which the member would qualify has been filled |
+| SURVEY_NOT_AVAILABLE_FOR_PARTNER | 42 | The partner is no longer eligible for this survey |
 | MEMBER_GID_NOT_AVAILABLE | 43 | For a [Recontact Survey](/externalsample/recontactflow.html), the Member has not participated in previous/original Survey |
 | STARTS_THRESHOLD_ACHIEVED | 45 | Member rejected due to throttling further starts at this moment |
 | SURVEY_COMPLETES_CAP_ACHIEVED | 46 | The survey has reached or exceeded the completes allotted for IP |
+| SURVEY_IPPARTNER_COMPLETES_ALLOCATION_ACHIEVED | 47 | The partner has achieved their total alloted completes for this survey |
