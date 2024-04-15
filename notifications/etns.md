@@ -39,8 +39,8 @@ Since the Member does not start the Survey experience before they are Terminated
 | AdditionalData | ```string``` | Query string argument in the completion URL with its data replaced |
 | IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
-| RespondentRejectionTypeID | ```int``` | (Optional feature; To opt-in, please contact your Toluna Business Representative.) Toluna's unqiue identifier for a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |
-| RejectionName | ```string``` | (Optional feature; To opt-in, please contact your Toluna Business Representative.) Name of a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |
+| RejectionID | ```int``` | Toluna's unqiue identifier for a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |
+| RejectionName | ```string``` | Name of a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |
 | QuotaID | ```int``` | (Applicable for Partners utilizing the [External Sample Offering](/externalsample/) only) Toluna's unique identifier for a quota |
 
 > Please note: To prevent breaking changes, panels existing before June 20, 2021, have been excluded from receiving RespondentRejectionTypeID and RejectionName. If you have a panel that predates these additions and would like to enable them, please contact your Toluna Representative.
