@@ -97,7 +97,7 @@ We do not currently have an API which provides metrics on conversion rate. The c
 ---
 
 ## Does Toluna require its Partners to implement IP whitelists?
-c
+
 No, Toluna does not require its Partners use IP whitelists.
 
 ---
@@ -127,7 +127,7 @@ See [Member-Survey Flow](/memberrouting/membersurveyflow#autorouting.html) for m
 
 ## What are DMA and MSA?
 
-These are both computed demographic values that are based off of a Member's zip code (US members) that provide additional context. More details can be found [here.](https://www.digitaladvertising-101.com/blog/digital-101-dma-vs-msa)
+These are both computed demographic values that are based off of a Member's zip code (US members) that provide additional context. More details can be found [here.](https://www.agilitypr.com/pr-news/media-relations/local-market-designations/)
 
 ---
 
