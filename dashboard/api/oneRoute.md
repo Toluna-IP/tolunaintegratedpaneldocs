@@ -18,9 +18,9 @@ search_exclude: true
 
 ## Background
 
-Toluna offers a one-route option to register a new member and retrieve a number of surveys for the newly-created member using a single API call. Details of this call can be found below. 
+Toluna offers a one-route option to register a new member and retrieve a number of surveys for the newly-created member using a single API call. Details of this call can be found below. Notably, the parameters included in the body of the call are identical to the parameter of the [Register Member API](membermanagement\v2\add.md) and [GetSurvey API](dashboard\api\getsurveys.md).
 
-Notably, the parameters included in the body of the call are identical to the parameter of the [Register Member API](membermanagement\v2\add.md) and [GetSurvey API](dashboard\api\getsurveys.md). Furthermore, this route can only register new members. Calling this route for existing members will cause an error. For existing members, please use the [Update Member API](membermanagement\v2\update.md) to update existing members and [GetSurvey API](dashboard\api\getsurveys.md) to retrieve invite links for an existing member. 
+This route can be used for preexisting members. In the case of an existing member, any updates or changes made to the "NewIPMemberInfo" object will be ignored. If you would like to update an existing member, you must use the [Update Member API](membermanagement\v2\update.md).
 
 ## Request
 
@@ -37,6 +37,8 @@ POST https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/RegisterMemberAndG
 | SurveysRequest | ```list<object>``` | Survey request information | Yes |
 
 #### NewIPMemberInfo Object 
+
+> Note: while the object states "New", this route can also be used for existing members.
 
 | Property | Description | Type | Required? |
 | :--- | :--- | :--- | :---: |
@@ -56,6 +58,31 @@ POST https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/RegisterMemberAndG
 | :--- | :--- | :--- | :---: |
 | NumberOfSurveys | Number of Surveys the Partner is requesting to receive to show the Member (maximum 5 available) | ```int``` | Yes |
 | DeviceTypeIDs | Indicated the device types for which Surveys should be returned. Supported values: 1=Desktop/Laptop, 2=Tablet, 3=Phone | ```list<int>``` | Yes |
+
+#### Example API Body
+
+```plaintext
+{
+    "NewIPMemberInfo": {
+        "PartnerGUID": "{{partnerGuid}}",
+        "MemberCode": "OneRouteAPI-test-01",
+        "BirthDate": "3/7/1982",
+        "IsActive": true,
+        "IsTest": false,
+        "AnsweredQuestions": [
+        {
+            "QuestionID": 1001007,
+            "AnswerID": 2000246
+        }
+        ]
+    },
+    "SurveysRequest":{
+        "NumberOfSurveys":5,
+        "DeviceTypeIDs": [1]
+    }
+}
+```
+
 
 ## Response
 
@@ -80,7 +107,7 @@ POST https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/RegisterMemberAndG
 | PartnerAmount | ```decimal``` | Amount Toluna has agreed to pay Partner for a complete. The value shown is linked to the URL and is valid for any complete generated from a member's interaction with the link, regardless of changes to the LOI and IR of the survey |
 | WaveId | ```int``` | Current iteration of the survey. Studies related to one another can be sent in “waves” that the Member experiences as unique surveys. SurveyID+WaveId is always unique |
 
-### Example Response
+### Example 200 Response
 ```plaintext
     {
         "SurveyID": 3588164,
