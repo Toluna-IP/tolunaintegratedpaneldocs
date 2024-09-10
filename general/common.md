@@ -23,10 +23,12 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 
 | Country Name               | Language Name       | Culture |
 | -------------------------- | ------------------- | ------- |
+| Afghanistan                | English             | EN-AF   |
 | Algeria                    | Arabic              | AR-DZ   |
 | Argentina                  | Spanish             | ES-AR   |
 | Australia                  | English             | EN-AU   |
 | Austria                    | German              | DE-AT   |
+| Azerbaijan                 | English             | EN-AZ   |
 | Bahrain                    | Arabic              | AR-BH   |
 | Belgium                    | French              | FR-BE   |
 | Belgium                    | Dutch               | NL-BE   |
@@ -38,6 +40,8 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | China                      | Mandarin Chinese    | ZH-CN   |
 | Colombia                   | Spanish             | ES-CO   |
 | Costa Rica                 | Spanish             | ES-CR   |
+| Cote D'Ivoire              | English             | EN-CI   |
+| Cote D'Ivoire              | French              | FR-CI   |
 | Croatia                    | Croatian            | HR-HR   |
 | Czech Republic             | Czech               | CS-CZ   |
 | Denmark                    | Danish              | DA-DK   |
@@ -49,9 +53,12 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Finland                    | Finnish             | FI-FI   |
 | France                     | French              | FR-FR   |
 | Germany                    | German              | DE-DE   |
+| Ghana                      | English             | EN-GH   |
 | Greece                     | Greek               | EL-GR   |
+| Guatemala                  | English             | EN-GT   |
+| Guatemala                  | Spanish             | ES-GT   |
 | Hong Kong                  | English             | EN-HK   |
-| Hong Kong                  | Traditional Chinese    | ZH-HK   |
+| Hong Kong                  | Traditional Chinese | ZH-HK   |
 | Hungary                    | Hungarian           | HU-HU   |
 | India                      | English             | EN-IN   |
 | Indonesia                  | Indonesian          | ID-ID   |
@@ -63,6 +70,8 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Japan                      | Japanese            | JA-JP   |
 | Jordan                     | Arabic              | AR-JO   |
 | Jordan                     | English             | EN-JO   |
+| Kazakstan                  | English             | EN-KZ   |
+| Kazakstan                  | Russian             | RU-KZ   |
 | Kenya                      | English             | EN-KE   |
 | Korea, Republic of         | English             | EN-KR   |
 | Korea, Republic of         | Korean              | KO-KR   |
@@ -82,21 +91,28 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Oman                       | Arabic              | AR-OM   |
 | Pakistan                   | English             | EN-PK   |
 | Pakistan                   | Urdu                | UR-PK   |
+| Panama                     | Spanish             | ES-PA   |
 | Paraguay                   | Spanish             | ES-PY   |
 | Peru                       | Spanish             | ES-PE   |
 | Philippines                | English             | EN-PH   |
 | Philippines                | Filipino            | PH-PH   |
 | Poland                     | Polish              | PL-PL   |
 | Portugal                   | Portuguese          | PT-PT   |
+| Puerto Rico                | English             | EN-PR   |
+| Puerto Rico                | Spanish             | ES-PR   |
 | Qatar                      | Arabic              | AR-QA   |
 | Qatar                      | English             | EN-QA   |
 | Romania                    | Romanian            | RO-RO   |
 | Russian Federation         | Russian             | RU-RU   |
 | Saudi Arabia               | Arabic              | AR-SA   |
 | Saudi Arabia               | English             | EN-SA   |
+| Senegal                    | English             | EN-SN   |
+| Senegal                    | French              | FR-SN   |
+| Serbia                     | Serbian             | SR-SR   |  
 | Singapore                  | English             | EN-SG   |
 | Singapore                  | Mandarin Chinese    | ZH-SG   |
 | Slovakia                   | Slovak              | SK-SK   |
+| Slovenia                   | Slovenian           | SL-SI   |
 | South Africa               | English             | EN-ZA   |
 | Spain                      | Spanish             | ES-ES   |
 | Sweden                     | Swedish             | SV-SE   |
@@ -115,6 +131,7 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | United States              | English             | EN-US   |
 | United States              | Spanish             | ES-US   |
 | Uruguay                    | Spanish             | ES-UY   |
+| Vanutau                    | English             | EN-VU   |
 | Venezuela                  | Spanish             | ES-VE   |
 | Vietnam                    | Vietnamese          | VI-VN   |
 
