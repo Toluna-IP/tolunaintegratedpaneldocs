@@ -44,6 +44,8 @@ The following are common attributes that are applicable in all cultures. These a
 
 ### Minimum Age Requirements
 
-Members under a certain age may not be registered with Toluna. Attempting to register a member below the minimum age will generate an error and the member will not be created. This age differs between countries. A list of age requires can be found by clicking the following:
+Members under a certain age may not be registered with Toluna. Attempting to register a member below the minimum age will generate an error and the member will not be created. This age differs between countries. A list of default age limitations can be found by clicking the link below. 
+
+>Note: The ages in the document below represent default ages allowed for registration. Additional agreements can be put in place to allow for younger ages if the Partner would like. Please contact your Toluna Business Representative for more details.
 
 <a href="https://docs.integratedpanel.toluna.com/resources/IPminimumAgesAugust2023.csv" target="_blank" class="btn">Click Here to Download CSV File with Minimum Age Per Country</a>
