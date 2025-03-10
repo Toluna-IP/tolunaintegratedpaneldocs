@@ -15,10 +15,10 @@ Below you will find information applicable on the SDK stack that is applicable t
 
 ## Supported Platforms
 
-- [SwiftUI](sdk\swiftui.md) (iOS) - Version 14.2 and above
-- [Fluter](sdk\flutter.md) - Version 2.10.0 and above
+- [SwiftUI](/sdk/swiftui.html) (iOS) - Version 14.2 and above
+- [Fluter](/sdk/flutter.html) - Version 2.10.0 and above
 - [React Native](sdk\reactnative.md) - Version 0.64 and above
-- [Kotlin](sdk\kotlin.md) (Android) - Version 6 and above
+- [Kotlin](/sdk/reactnative.html) (Android) - Version 6 and above
 
 ## Prerequisites
 
