@@ -5,7 +5,6 @@ nav_order: 9
 ---
 
 # Software Development Kit
-{: .no_toc }
 
 Toluna offers an SDK to allow Partners to integrate and begin sending traffic to Toluna-hosted studies quickly and with limited resources.
 
