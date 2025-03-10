@@ -1,5 +1,5 @@
 ---
-title: SDK
+title: SDK Offering
 has_children: true
 nav_order: 9
 ---
