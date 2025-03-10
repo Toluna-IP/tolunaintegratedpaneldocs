@@ -61,7 +61,7 @@ void main() {
 }
 ```
 
-Step 3: Use SDK Methods
+## Step 3: Use SDK Methods
 
 
 ### Registration Method
