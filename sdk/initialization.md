@@ -2,7 +2,7 @@
 title: Initialization
 has_children: false
 nav_order: 2
-parent: SDK
+parent: SDK Offering
 ---
 
 # Initialization Details

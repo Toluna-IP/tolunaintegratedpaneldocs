@@ -2,7 +2,7 @@
 title: Methods
 has_children: false
 nav_order: 3
-parent: SDK
+parent: SDK Offering
 ---
 
 # Methods

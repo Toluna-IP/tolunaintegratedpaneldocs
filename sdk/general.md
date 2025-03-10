@@ -2,7 +2,7 @@
 title: General
 has_children: false
 nav_order: 1
-parent: SDK
+parent: SDK Offering
 ---
 
 # General
