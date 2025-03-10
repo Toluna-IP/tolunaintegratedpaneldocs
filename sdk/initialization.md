@@ -25,7 +25,7 @@ Parameters and objects needed for SDK initialization are listed and described be
 
 ### MemberDetails Object
 
-Members can be registered via the SDK's [Registration Method](sdk\methods.md#Registration) or through use of the [Member Management API](/membermanagement/). The Registration Method can be used directly by the Partner before providing the Member with a Survey/Offer wall. To do so, include the following properties for the MemberDetails object. Without MemberDetails, the Registration Method will prompt a Member to answer demographic questions before routing to the Survey/Offer wall.
+Members can be registered via the SDK's [Registration Method](/sdk/methods.html#registration) or through use of the [Member Management API](/membermanagement/). The Registration Method can be used directly by the Partner before providing the Member with a Survey/Offer wall. To do so, include the following properties for the MemberDetails object. Without MemberDetails, the Registration Method will prompt a Member to answer demographic questions before routing to the Survey/Offer wall.
 
 #### Properties
 
