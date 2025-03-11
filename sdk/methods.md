@@ -41,4 +41,4 @@ This method simplifies the integration process by managing the flow between regi
 
 The following flowchart provides a detailed explanation of each method in the SDK
 
-![SDKmethodFlowchart](https://github.com/Toluna-IP/tolunaintegratedpaneldocs/blob/15db0d8d308ebc453de75563baf54cebcd06c6df/resources/SDKflowchart.png)
+![SDKmethodFlowchart](https://github.com/Toluna-IP/tolunaintegratedpaneldocs/blob/15db0d8d308ebc453de75563baf54cebcd06c6df/resources/SDKflowchart.png?raw=true)

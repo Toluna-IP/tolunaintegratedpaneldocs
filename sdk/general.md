@@ -50,13 +50,13 @@ Before launching in a culture, the Partner will need to acquire a cultureGuid fr
 [
   {
     "cultureId": 5,
-    "cultureGuid": "AC7286DF-7775-40F8-A8B6-F1EB8509AB10",
+    "cultureGuid": "AC7286DF-XXXX-XXXX-XXXX-F1EB8509AB10",
     "name": "United Kingdom (English)",
     "isDefault": false
   },
   {
     "cultureId": 1,
-    "cultureGuid": "5EEBF4DD-D7A6-4762-93DB-928B66FC043F",
+    "cultureGuid": "5EEBF4DD-XXXX-XXXX-XXXX-928B66FC043F",
     "name": "United States (English)",
     "isDefault": true
   }
