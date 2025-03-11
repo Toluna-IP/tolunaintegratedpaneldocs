@@ -8,7 +8,7 @@ parent: SDK Offering
 # General
 {: .no_toc }
 
-Below you will find information applicable on the SDK stack that is applicable to its general use.
+Below you will find information on the SDK stack that is applicable to its general use.
 
 * TOC
 {:toc}
