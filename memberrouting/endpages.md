@@ -58,6 +58,14 @@ The Member attempted to access a Survey that is no longer active.
 
 The Member does not qualify for the invited Survey, often after the member has answered questions in the Prescreener survey.
 
+### Not Qualified
+
+The Member does not qualify for the invited Survey, often after the member has answered questions in the Prescreener survey.
+
+### Fraud Terminate
+
+The Member accesed the Survey but was screened out due to fraudulent behaviour.
+
 ---
 
 ## Routing Parameters
