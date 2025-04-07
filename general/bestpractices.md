@@ -5,7 +5,7 @@ parent: General
 nav_order: 5
 ---
 
-# Best practices to improve your click to conversion rate and respondent Survey experience
+# Best Practices to Improve Click-to-Conversion Rates and Respondent Survey Experience
 {: .no_toc}
 
 At Toluna, we recognize the importance of continuous improvement and excellence, and
