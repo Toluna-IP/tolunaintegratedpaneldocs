@@ -6,7 +6,9 @@ nav_order: 0
 ---
 
 # Quick Start
-To quickly get integrated with our platform, here's how to go about it. In all cases, API access to the platform will have to be given by Toluna representatives.
+Below are steps to quickly get integrated with Toluna's platform depending on the Integration Offering. If you are an existing Partner and would like help improving your integration, please see our [Best Practices Guide](/general/bestpractices.html). 
+
+In all cases, API access to the platform will have to be given by Toluna representatives.
 
 
 # Dashboard 
