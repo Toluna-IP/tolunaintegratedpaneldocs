@@ -23,7 +23,7 @@ survey experience.
 
 ## Pre-Start Rejections
 
-These statuses correlate with [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.md) and are provided by Toluna automatically if the Partner is configured to receive [Enhanced Terminate Notification](/notifications/etns.md).
+These statuses correlate with [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) and are provided by Toluna automatically if the Partner is configured to receive [Enhanced Terminate Notification](/notifications/etns.html).
 
 ### DeviceTypeIDNotSupportForSurvey
 
@@ -31,14 +31,14 @@ This Rejection correlates with RespondentRejectionTypeID 96.
 
 These Rejections occur when there is a mismatch between the device used by the Member and the devices supported by the Survey. To avoid these Rejections, ensure only Members that use a device supported by the Survey are invited to it.
 
-- External Sampling: Partners can use the device user agent or other means to determine which device the Member is using and make sure that the device type is found in the DeviceTypeIds section from the [Survey object](/externalsample/api/getquotas.md#survey-object). The DeviceTypeIDs section from the Survey object specifies which devices are supported by the Survey.
+- External Sampling: Partners can use the device user agent or other means to determine which device the Member is using and make sure that the device type is found in the DeviceTypeIds section from the [Survey object](/externalsample/api/getquotas.html#survey-object). The DeviceTypeIDs section from the Survey object specifies which devices are supported by the Survey.
 - Dashboard: Partners can use the device user agent or other means to determine which device the Member is using and then specify the device type parameter in the [GetSurveys API request](/dashboard/api/getsurveys.html).
 
 ### ExcludedSurveyTaken
 
 This Rejection correlates with RespondentRejectionTypeID 23.
 
-These Rejections occur when the Member is invited to a Survey from which they’re excluded based on a previous Survey participation. To avoid these Rejections, the Partner's system should check the [SurveyWaveExclusions](/externalsample/api/surveyexclusion.md) from the Survey object within the [GetQuotas API response](/externalsample/api/getquotas.md). Partners integrated with the Dashboard API should not see such Rejections since the sampling part is done on Toluna’s side
+These Rejections occur when the Member is invited to a Survey from which they’re excluded based on a previous Survey participation. To avoid these Rejections, the Partner's system should check the [SurveyWaveExclusions](/externalsample/api/surveyexclusion.html) from the Survey object within the [GetQuotas API response](/externalsample/api/getquotas.html). Partners integrated with the Dashboard API should not see such Rejections since the sampling part is done on Toluna’s side
 
 ### VerificationFailed
 
@@ -62,10 +62,10 @@ Toluna has a threshold of 5 completes or 25 starts per day (UTC). Once your Memb
 
 This Rejection correlates with RespondentRejectionTypeID 11.
 
-This Rejection occurs when the Member is invited to a Quota that is on hold. To avoid such Rejections, Toluna recommend Partners to call the [GetQuotas endpoint](/externalsample/api/getquotas.md) every 1 minute. This will ensure that Partners are seeing a fresh Survey inventory. Calling the GetQuotas
+This Rejection occurs when the Member is invited to a Quota that is on hold. To avoid such Rejections, Toluna recommend Partners to call the [GetQuotas endpoint](/externalsample/api/getquotas.html) every 1 minute. This will ensure that Partners are seeing a fresh Survey inventory. Calling the GetQuotas
 endpoint every less frequently might expose the Partner to Surveys that already reached their Quota size and are no longer in need of traffic. 
 
-Likewise, enabling and processing the [Quota](/notifications/quotastatus.md)/[Survey](/notifications/surveyclosed.md) notifications can help Partners decide which Surveys they should stop exposing. Furthermore, reducing the time elapsed between generating the Survey invite and the click should help reduce these Rejections. This approach is applicable to Partners integrated with the [Dashboard Offering](/dashboard/index.md) as well. Implementing the aforementioned suggestions will also help to reduce other Rejection types such as SurveyClosed, SurveyNotLive, SurveyOnHold.
+Likewise, enabling and processing the [Quota](/notifications/quotastatus.html)/[Survey](/notifications/surveyclosed.html) notifications can help Partners decide which Surveys they should stop exposing. Furthermore, reducing the time elapsed between generating the Survey invite and the click should help reduce these Rejections. This approach is applicable to Partners integrated with the [Dashboard Offering](/dashboard/index.html) as well. Implementing the aforementioned suggestions will also help to reduce other Rejection types such as SurveyClosed, SurveyNotLive, SurveyOnHold.
 
 ### RestartNotAllowed
 
@@ -77,7 +77,7 @@ To reduce these Rejections, it is important to remove the Survey link from a Mem
 
 This Rejection correlates with RespondentRejectionTypeIDs 19 and 163.
 
-By taking into account the MaxTargetCompletes and CurrentCompletes from the [SubQuota object](/externalsample/api/getquotas.md#subquota) in the GetQuotas API response, Partners can decide how much traffic should be sent to a certain Quota. Calling the GetQuotas endpoint more frequently will also allow Partners to see updated details regarding the Survey.
+By taking into account the MaxTargetCompletes and CurrentCompletes from the [SubQuota object](/externalsample/api/getquotas.html#subquota) in the GetQuotas API response, Partners can decide how much traffic should be sent to a certain Quota. Calling the GetQuotas endpoint more frequently will also allow Partners to see updated details regarding the Survey.
 
 ### Survey Taken
 
@@ -91,7 +91,7 @@ This Rejection correlates with RespondentRejectionTypeIDs 14, 123, and 124.
 
 These Rejections occur whenever a Member is invited to a Survey for which they’re not qualified. These Members are rejected after going through the Prescreener. To reduce these Rejections, the Partner should add as many attributes as possible to a Member's profile before inviting them to a Survey. 
 
-The [ReferenceData API](/mapping/referencedataapi/index.md) can be used to view information on attributes that may be used for Quota targeting. Toluna also publishes quarterly reports showing the most requested attributes. Those can be found [here](https://drive.google.com/drive/u/1/folders/1MsAUeldUTmWqYlTrfhf-1EFSGWTSlkJN). 
+The [ReferenceData API](/mapping/referencedataapi/index.html) can be used to view information on attributes that may be used for Quota targeting. Toluna also publishes quarterly reports showing the most requested attributes. Those can be found [here](https://drive.google.com/drive/u/1/folders/1MsAUeldUTmWqYlTrfhf-1EFSGWTSlkJN). 
 
 ## In-Survey Terminations
 
@@ -114,4 +114,4 @@ Toluna also suggests excluding Members access Surveys with VPNs.
 
 ### QuotaFull
 
-These Terminations can be reduced by implementing the same logic as with the [QuotaOnHold Pre-Survey Rejections](/general/bestpractices.md#QuotaOnHold). Additionally, checking the CompletesRequired and EstimatedCompletesRemaining sections from the [Survey object](/externalsample/api/getquotas.md#survey-object) can help Partners decide how much traffic to send to a certain Quota.
+These Terminations can be reduced by implementing the same logic as with the [QuotaOnHold Pre-Survey Rejections](/general/bestpractices.html#QuotaOnHold). Additionally, checking the CompletesRequired and EstimatedCompletesRemaining sections from the [Survey object](/externalsample/api/getquotas.html#survey-object) can help Partners decide how much traffic to send to a certain Quota.
