@@ -64,7 +64,7 @@ The Member does not qualify for the invited Survey, often after the member has a
 
 ### Fraud Terminate
 
-The Member accesed the Survey but was screened out due to fraudulent behaviour.
+The Member accessed the Survey but was screened out due to fraudulent behaviour.
 
 ---
 
