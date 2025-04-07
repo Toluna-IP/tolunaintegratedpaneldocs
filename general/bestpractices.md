@@ -114,4 +114,4 @@ Toluna also suggests excluding Members access Surveys with VPNs.
 
 ### QuotaFull
 
-These Terminations can be reduced by implementing the same logic as with the [QuotaOnHold Pre-Survey Rejections](/general/bestpractices.html#QuotaOnHold). Additionally, checking the CompletesRequired and EstimatedCompletesRemaining sections from the [Survey object](/externalsample/api/getquotas.html#survey-object) can help Partners decide how much traffic to send to a certain Quota.
+These Terminations can be reduced by implementing the same logic as with the [QuotaOnHold Pre-Survey Rejections](/general/bestpractices.html#quotaonhold). Additionally, checking the CompletesRequired and EstimatedCompletesRemaining sections from the [Survey object](/externalsample/api/getquotas.html#survey-object) can help Partners decide how much traffic to send to a certain Quota.
