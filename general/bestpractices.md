@@ -8,15 +8,10 @@ nav_order: 5
 # Best Practices to Improve Click-to-Conversion Rates and Respondent Survey Experience
 {: .no_toc}
 
-At Toluna, we recognize the importance of continuous improvement and excellence, and
-we want to support our Partners in maximizing their performance and achieving outstanding
-results. To this end, we have compiled a comprehensive list of best practices which are designed
-to help Partners optimize their integration. By adopting these best practices, we believe Partners will be
-better equipped to navigate challenges and enhance their overall performance.
+Toluna recognizes the importance of continuous improvement and excellence, and we want to support Partners in maximizing their performance and achieving outstanding results. To this end, we have compiled a comprehensive list of best practices which are designed to help Partners optimize their integration. By adopting these best practices, Partners will be better equipped to navigate challenges and enhance their overall performance.
 
 These guidelines specifically focus on Survey Rejections and Survey Terminations. By
-applying the following suggestions, you will optimize your traffic and enhance your Members'
-survey experience.
+applying the following suggestions, can optimize their traffic and enhance their Members' survey experience.
 
 * TOC
 {:toc}
@@ -44,7 +39,7 @@ These Rejections occur when the Member is invited to a Survey from which they’
 
 This Rejection correlates with RespondentRejectionTypeIDs 97 and 98.
 
-The Toluna system rejects respondents with an IPQS fraud score >=90. There are other parameters that our system takes into account, but these Rejections can also be reduced by not inviting Members with an IPQS fraud score >=90. Our recommendation for Partners is to implement industry-standard solutions such as IPQualityScore or Research Defender to determine a Member's fraud score.
+The Toluna system rejects respondents with an IPQS fraud score >=90. There are other parameters that Toluna's system takes into account, but these Rejections can also be reduced by not inviting Members with an IPQS fraud score >=90. It is recommended that Partners to implement industry-standard solutions such as IPQualityScore or Research Defender to determine a Member's fraud score.
 
 ### IncorrectRespondentCountry
 
@@ -56,7 +51,7 @@ During pre-survey checks, Toluna's system will reject any Member that is in a di
 
 This Rejection correlates with RespondentRejectionTypeID 2.
 
-Toluna has a threshold of 5 completes or 25 starts per day (UTC). Once your Member reaches that threshold, any further attempt from that Member will be rejected.
+Toluna has a threshold of 5 completes or 25 starts per day (UTC). Once a Member reaches that threshold, any further attempt from that Member will be rejected.
 
 ### QuotaOnHold
 
