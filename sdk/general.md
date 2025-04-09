@@ -73,3 +73,12 @@ The Partner can add a custom logo to be shown on the Member's survey/offer wall.
 ### Fonts
 
 The Partner can add custom fonts to be used when displaying information to the Member on their survey/offer wall. To do so, add the font file(s) to the assets folder.
+
+
+## Incentivizing Members
+
+Partner's utilizing the SDK can specify how much a Member can expect to be incentivized based on the metrics (Length of survey, incidence rate, etc.) of a survey. They may also specify the currency used when displaying the incentive to the member or opt to display the reward in points. To set up the incentives and currency, please speak with your Toluna Representative.
+
+In any case, Member incentives will be managed by the Partner. Toluna recommends Partners develop an API endpoint to which they can receive notice when a Member completes a Survey. This feature is known as a Member Status Notification, the details of which can be found [here](/notifications/memberstatus.html#completions).
+
+> Note: Partners may also subscribed to [Termination Member Status Notifications](/notifications/memberstatus.html#terminates) if they want to be notified of non-completes as well.
