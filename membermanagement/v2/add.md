@@ -42,7 +42,7 @@ POST https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 
 ### Body Details
 
-| Property | Description | Type | Required? |
+| Property | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
 | PartnerGUID | ```GUID``` | Unique Partner Code (Please request from Toluna if you don’t have one) | Yes |
 | MemberCode | ```string``` | Unique Respondent Code from the Partner | Yes |
