@@ -34,7 +34,7 @@
 					"path": [
 						"IPUtilityService",
 						"ReferenceData",
-						"QuestionsAndAnswersData "
+						"QuestionsAndAnswersData"
 					]
 				},
 				"description": "Returns a list of all platform questions and their details. Due to the large inventory of questions, Toluna recommends that this tool be used periodically and with a maximum of 5 cultures per call. This will ensure the response is delivered in a timely and easily-absorbable manner."
@@ -68,7 +68,7 @@
 							"path": [
 								"IPUtilityService",
 								"ReferenceData",
-								"QuestionsAndAnswersData "
+								"QuestionsAndAnswersData"
 							]
 						}
 					},
@@ -183,7 +183,7 @@
 					"path": [
 						"IPUtilityService",
 						"ReferenceData",
-						"Cultures "
+						"Cultures"
 					]
 				},
 				"description": "Returns a list of all cultures and their details."
@@ -226,7 +226,7 @@
 					"path": [
 						"IPUtilityService",
 						"ReferenceData",
-						"StudyTypes "
+						"StudyTypes"
 					]
 				},
 				"description": "Returns a list of all study types and their details."
@@ -257,7 +257,7 @@
 					"path": [
 						"IPUtilityService",
 						"ReferenceData",
-						"DeviceTypes "
+						"DeviceTypes"
 					]
 				},
 				"description": "Returns a list of all device types and their details."
@@ -288,7 +288,7 @@
 					"path": [
 						"IPUtilityService",
 						"ReferenceData",
-						"QuestionCategories "
+						"QuestionCategories"
 					]
 				},
 				"description": "Returns a list of all question category names and IDs."
