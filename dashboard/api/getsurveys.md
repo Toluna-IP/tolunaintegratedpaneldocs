@@ -72,8 +72,7 @@ kV37eSE1dC3kE4",
  "IR": 100,
  "MemberAmount": 0,
  "PartnerAmount": 2,
- "WaveId": 100,
- "IsTqsSurvey": true
+ "WaveId": 100
  }
 ]
 ```
