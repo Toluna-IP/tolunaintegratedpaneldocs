@@ -20,15 +20,15 @@ Toluna’s “External Sample” (ES) capability is an integration option offere
 
 ---
 
-## We’ve recently changed to External Sample offering from Notification or Dashboard. Do we need to re-PUT all panelists to a new panel? If so, can they be copied over on your end?
+## We’ve recently changed to External Sample offering from Notification or Dashboard. Do we need to re-POST all panelists to a new panel? If so, can they be copied over on your end?
 
-
+All existing members can be used with the new integration. No need to copy them over.
 
 ---
 
 ## Can other integration option(s) can be operated in parallel with IP ES? Will the current Integration work?
 
-Yes. This is just another integration option. If you are a Dashboard partner and willing to integrate as an ES partner, it is possible, and both the integrations will work seamlessly.
+Technically speaking, Dashboard can be operated in parallel. However, Toluna finds it much more efficient to work on and improve a single integration type. Once a partner moves into production, they will need to decide which integration to proceed with.
 
 ---
 
