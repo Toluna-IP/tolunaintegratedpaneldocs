@@ -70,7 +70,7 @@ Computed answers are automatically generated from basic demographic information 
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| IsRoutable | ```bool``` | Defines whether or not a member can be routed to this question before proceeding to an invited survey. For more information, click [here])(/faq/externalsample/quotas.html#can-i-send-usersmemberspanelists-to-quotas-with-unansweredunknown-subquotas) |
+| IsRoutable | ```bool``` | Defines whether or not a member can be routed to this question before proceeding to an invited survey. For more information, click [here](/faq/externalsample/quotas.html#can-i-send-usersmemberspanelists-to-quotas-with-unansweredunknown-subquotas) |
 | InternalName | ```string``` | Toluna's name for a question used only internally |
 | TranslatedQuestion | ```list<object>``` | Shows the details for the specified question |
 | ChildQuestions | ```list<object>``` | Shows details for any Childquestions associated with a TranslatedQuestion. Child questions are only associated with Questions that have the answer type “Container” |
