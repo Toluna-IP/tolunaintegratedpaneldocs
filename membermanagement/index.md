@@ -11,7 +11,7 @@ For all Toluna Integration offerings, the Toluna requires partner's members to b
 
 Toluna can receive the partner’s panel data via RESTful APIs. A partner can use these APIs to add new members or deactivate  members. 
 
-No personal information regarding the partner’s panel is received or stored by Toluna. The partner need only supply a unique numeric “Member ID”  that will be used to identify the member when interacting with the Toluna platform. 
+No personal information regarding the partner’s panel is received or stored by Toluna. The partner needs only supply a unique value, “MemberCode”, that will be used to identify the member when interacting with the Toluna platform. 
 
 Mapping Data is available via our [Reference Data API](/mapping/referencedataapi) which will aid in mapping demographic values. These values can vary by culture. 
 

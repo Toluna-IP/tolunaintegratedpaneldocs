@@ -50,8 +50,24 @@ POST https://{IP_CORE_URL}/IntegratedPanelService/api/Respondent
 | BirthDate | ```string``` | MM/DD/YYYY format | No |
 | PostalCode | ```string``` | Member postal code | No |
 | IsTest | ```bool``` | Defaults FALSE. When TRUE the Member by-passes all Toluna duplication validation routines. Among other things, this makes the eligible to take Surveys multiple times from the same physical machine. Should be used **ONLY** during testing | No |
-| AnsweredQuestions | ```string``` | A collection of 0:M demographic Question and Answer ID pairs - **Currently available - will be marked as "obsolete" and deprecated in an year**  | No |
-| RegistrationAnswers | ```string``` | Supports multi-select and open-ended answers. This will also maintain current single select responses | No |
+| AnsweredQuestions | ```list<object>``` | A collection of 0:M demographic Question and Answer ID pairs - **Currently available - will be marked as "obsolete" and deprecated in an year**  | No |
+| RegistrationAnswers | ```list<object>``` | Supports multi-select and open-ended answers. This will also maintain current single select responses | No |
+
+#### AnsweredQuestions Object
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| QuestionID | ```int``` | Toluna's unique ID for a question |
+| AnswerID | ```int``` | Toluna's unique ID for an answer |
+
+#### RegistrationAnswers
+
+| Propperty | Type | Description | 
+| :--- | :--- | :--- |
+| QuestionID | ```int``` | Toluna's unique ID for a question |
+| Answers | ```list<object>``` | List of AnswerIDs or AnswerValues |
+| AnswerID | ```int``` | Toluna's unique ID for an answer |
+| AnswerValue | ```string``` | String name of an answered. Pulled from "Translation" value in [Reference Data API](/mapping/referencedataapi/questionsandanswers.html). AnswerValue must always be accompanied by an AnswerID. See example below |
 
 ### Example - AnsweredQuestions
 
