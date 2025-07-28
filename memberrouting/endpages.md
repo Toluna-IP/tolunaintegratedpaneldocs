@@ -77,7 +77,7 @@ Additionally, Toluna can return the following value on the query string even if 
 | WaveID | ```int``` | Toluna's identifier of the Wave |
 | MemberCode | ```string``` | Member's unique identifier |
 
-To facilitate any of these parameters, the Partner must provide these parameters in the URL structure, as presented in the below example:
+To facilitate any of these parameters, the Partner must provide these parameters in the URL structure when defining their endpages, as presented in the below example:
 
 https://thisisanexample.com/survey/complete?Source=toluna&completionStatus=5&**SurveyID=[SurveyID]&WaveID=[WaveID]&MemberCode=[MemberCode]&customParam=[customParam]**
 
