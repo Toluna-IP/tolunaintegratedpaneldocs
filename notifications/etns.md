@@ -35,7 +35,7 @@ Since the Member does not start the Survey experience before they are Terminated
 | Reason | ```string``` | Reason for the Termination. Possible values: "QuotaFull," "SurveyTaken," "Terminated," "SurveyNotAvailable," "NoSurveysAvailable," "NoCookie," "MaxSurveysReached," or "NotQualified" |
 | DateTime | ```string``` | Date and time of Respondent Termination. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
 | WaveId | ```int``` | Current iteration of the Survey. Studies related to one another can be sent in "waves" that the Member will experience as a unique Survey |
-| Incidence Rate | ```int``` | Incidence Rate of the Survey |
+| IncidenceRate | ```int``` | Incidence Rate of the Survey |
 | AdditionalData | ```string``` | Full QueryString from the inviteURL. Custom parameters appended by the Partner to the inviteURL will also be included |
 | IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
