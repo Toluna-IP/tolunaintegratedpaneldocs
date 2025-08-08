@@ -37,7 +37,7 @@ Since the Member does not start the Survey experience before they are Terminated
 | WaveId | ```int``` | Current iteration of the Survey. Studies related to one another can be sent in "waves" that the Member will experience as a unique Survey |
 | IncidenceRate | ```int``` | Incidence Rate of the Survey |
 | AdditionalData | ```string``` | Full QueryString from the inviteURL. Custom parameters appended by the Partner to the inviteURL will also be included |
-| IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
+| IsAutoRouted | ```bool``` | Indcates whether the Member was auto-routed or not |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
 | RejectionID | ```int``` | Toluna's unqiue identifier for a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |
 | RejectionName | ```string``` | Name of a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |

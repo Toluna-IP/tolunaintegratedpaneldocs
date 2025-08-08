@@ -44,7 +44,7 @@ revenue generating survey completion by one of their members.
 | QuotaID | ```int``` | (Applicable for Partners utilizing the [External Sample Offering](/externalsample/) only) Toluna's unique identifier for a quota |
 | IncidenceRate | ```int``` | Incidence Rate of the Survey |
 | AdditionalData | ```string``` | Full QueryString from the inviteURL. Custom parameters appended by the Partner to the inviteURL will also be included |
-| IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
+| IsAutoRouted | ```bool``` | Indcates whether the Member was auto-routed or not |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
 
 
@@ -110,7 +110,7 @@ are sent this way. This implementation on the partner end is not mandatory.
 | WaveId | ```int``` | Current iteration of the Survey. Studies related to one another can be sent in "waves" that the Member will experience as a unique Survey |
 | IncidenceRate | ```int``` | Incidence Rate of the Survey |
 | AdditionalData | ```string``` | Full QueryString from the inviteURL. Custom parameters appended by the Partner to the inviteURL will also be included |
-| IsAutoReouted | ```bool``` | Indcates whether the Member was auto-routed or not |
+| IsAutoRouted | ```bool``` | Indcates whether the Member was auto-routed or not |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
 | QuotaID | ```int``` | (Applicable for Partners utilizing the [External Sample Offering](/externalsample/) only) Toluna's unique identifier for a quota |
 
