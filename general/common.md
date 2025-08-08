@@ -55,7 +55,6 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Germany                    | German              | DE-DE   |
 | Ghana                      | English             | EN-GH   |
 | Greece                     | Greek               | EL-GR   |
-| Guatemala                  | English             | EN-GT   |
 | Guatemala                  | Spanish             | ES-GT   |
 | Hong Kong                  | English             | EN-HK   |
 | Hong Kong                  | Traditional Chinese | ZH-HK   |
@@ -70,7 +69,6 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Japan                      | Japanese            | JA-JP   |
 | Jordan                     | Arabic              | AR-JO   |
 | Jordan                     | English             | EN-JO   |
-| Kazakstan                  | English             | EN-KZ   |
 | Kazakstan                  | Russian             | RU-KZ   |
 | Kenya                      | English             | EN-KE   |
 | Korea, Republic of         | English             | EN-KR   |
