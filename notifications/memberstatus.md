@@ -36,7 +36,7 @@ revenue generating survey completion by one of their members.
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | UniqueCode | ```string``` | Unique Respondent Code from the Partner |
-| SurveyID | ```int``` | Tolujna Survey identifier |
+| SurveyId | ```int``` | Tolujna Survey identifier |
 | SurveyRef | ```string``` | Toluna Survey name |
 | Revenue | ```int``` | Amount of Revenue in 1/100 of the currency units (eg 100=100 cents or $1 USD) |
 | DateTime | ```string``` | Date and time of Respondent completion. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
@@ -52,7 +52,7 @@ revenue generating survey completion by one of their members.
 ```xml
 <confirmation xmlns:xsd="https://www.w3.org/2001/XMLSchema"xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
  <UniqueCode>myCode</UniqueCode>
- <SurveyID>99</SurveyID>
+ <SurveyId>99</SurveyID>
  <SurveyRef>mySurveyRef</SurveyRef>
  <Revenue>99</Revenue>
  <DateTime>2014-09-11 16:06:27</DateTime>
@@ -69,7 +69,7 @@ revenue generating survey completion by one of their members.
 ```plaintext
 {
  "UniqueCode": "111",
- "SurveyID": 123,
+ "SurveyId": 123,
  "SurveyRef": "123560-US",
  "Revenue": 100,
  "DateTime": "2014-09-11 16:06:27",
@@ -103,7 +103,7 @@ are sent this way. This implementation on the partner end is not mandatory.
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | UniqueCode | ```string``` | Unique Respondent Code from the Partner |
-| SurveyID | ```int``` | Tolujna Survey identifier |
+| SurveyId | ```int``` | Tolujna Survey identifier |
 | SurveyRef | ```string``` | Toluna Survey name |
 | Reason | ```string``` | Reason for the Termination. Possible values: "QuotaFull," "SurveyTaken," "Terminated," "SurveyNotAvailable," "NoSurveysAvailable," "NoCookie," "MaxSurveysReached," or "NotQualified" |
 | DateTime | ```string``` | Date and time of Respondent Termination. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
@@ -137,7 +137,7 @@ xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
 ```plaintext
 {
  "UniqueCode": "111",
- "SurveyID": 123,
+ "SurveyId": 123,
  "SurveyRef": "123560-US",
  "Reason": "Terminated",
  "DateTime": "2014-09-11 16:06:27",
