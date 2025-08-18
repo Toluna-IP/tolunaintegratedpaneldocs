@@ -106,7 +106,7 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Saudi Arabia               | English             | EN-SA   |
 | Senegal                    | English             | EN-SN   |
 | Senegal                    | French              | FR-SN   |
-| Serbia                     | Serbian             | SR-SR   |  
+| Serbia                     | Serbian             | SR-RS   |  
 | Singapore                  | English             | EN-SG   |
 | Singapore                  | Mandarin Chinese    | ZH-SG   |
 | Slovakia                   | Slovak              | SK-SK   |
