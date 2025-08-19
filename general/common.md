@@ -50,6 +50,7 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Egypt                      | Arabic              | AR-EG   |
 | Egypt                      | English             | EN-EG   |
 | Estonia                    | Estonian            | ET-EE   |
+| Ethiopia | English | EN-ET |
 | Finland                    | Finnish             | FI-FI   |
 | France                     | French              | FR-FR   |
 | Germany                    | German              | DE-DE   |
@@ -122,6 +123,7 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Thailand                   | Thai                | TH-TH   |
 | Tunisia                    | French              | FR-TN   |
 | Turkey                     | Turkish             | TR-TR   |
+| Uganda | English | EN-UG |
 | Ukraine                    | Ukrainian           | UK-UA   |
 | United Arab Emirates       | Arabic              | AR-AE   |
 | United Arab Emirates       | English             | EN-AE   |
