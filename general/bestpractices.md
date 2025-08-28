@@ -8,7 +8,7 @@ nav_order: 5
 # Best Practices to Improve Click-to-Conversion Rates and Respondent Survey Experience
 {: .no_toc}
 
-Toluna recognizes the importance of continuous improvement and excellence, and we want to support Partners in maximizing their performance and achieving outstanding results. To this end, we have compiled a comprehensive list of best practices which are designed to help Partners optimize their integration. By adopting these best practices, Partners will be better equipped to navigate challenges and enhance their overall performance.
+Toluna recognizes the importance of continuous improvement and excellence,, and we want to support Partners in maximizing their performance and achieving outstanding results. To this end, we have compiled a comprehensive list of best practices which are designed to help Partners optimize their integration. By adopting these best practices, Partners will be better equipped to navigate challenges and enhance their overall performance.
 
 These guidelines specifically focus on Survey Rejections and Survey Terminations. By
 applying the following suggestions, can optimize their traffic and enhance their Members' survey experience.
