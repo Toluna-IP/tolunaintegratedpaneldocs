@@ -22,7 +22,7 @@ Below are instructions on using the SDK Kotlin package.
 
 ## Step 2: Initialize the SDK
 
-```plain text
+```
 import com.example.ipsdk.IntegratedPanel
 
 class MyApplication : Application() {
