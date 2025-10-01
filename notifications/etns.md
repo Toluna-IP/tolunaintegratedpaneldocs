@@ -43,7 +43,7 @@ Since the Member does not start the Survey experience before they are Terminated
 | RejectionName | ```string``` | Name of a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |
 | QuotaID | ```int``` | (Applicable for Partners utilizing the [External Sample Offering](/externalsample/) only) Toluna's unique identifier for a quota |
 
-> Please note: To prevent breaking changes, panels existing before June 20, 2021, have been excluded from receiving RespondentRejectionTypeID and RejectionName. If you have a panel that predates these additions and would like to enable them, please contact your Toluna Representative.
+> Please note: To prevent breaking changes, panels existing before June 20, 2021, have been excluded from receiving RejectionID and RejectionName. If you have a panel that predates these additions and would like to enable them, please contact your Toluna Representative.
 
 ### Example XML Termination
 ```xml
@@ -60,7 +60,7 @@ xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
  <AdditionalData>clickid=1234</AdditionalData>
 <IsAutoRouted>true</IsAutoRouted>
 <OriginalSurveyID>100</OriginalSurveyID>
-<RespondentRejectionTypeID>57</RespondentRejectionTypeID>
+<RejectionID>57</RejectionID>
 <RejectionName>AccountGroupSurveyTaken</RejectionName>
 </termination>
 ```
@@ -78,7 +78,7 @@ xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
  "AdditionalData": "clickid=1234",
 "IsAutoRouted": true,
 "OriginalSurveyId": 100,
-"RespondentRejectionTypeID": 103,
+"RejectionID": 103,
 "RejectionName": "NonQuotaDemographicRejection"
 }
 ```
