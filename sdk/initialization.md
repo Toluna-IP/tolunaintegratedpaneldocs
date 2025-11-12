@@ -22,6 +22,7 @@ Parameters and objects needed for SDK initialization are listed and described be
 | MemberDetails | ```object``` | Object that includes mapped user details and responses to corresponding Toluna question options | No |
 | DebugMode | ```bool``` | Enable logs in console for debugging | No |
 | MockMode | ```bool``` | Enable mock data in Surveys Wall | No |
+| ProdMode| ```bool``` | Set to true to point to Production. "False" will point to Sandbox for testings | No |
 
 ### MemberDetails Object
 

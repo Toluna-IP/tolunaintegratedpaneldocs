@@ -16,12 +16,25 @@ Below are instructions on using the SDK React Native package.
 ## Step 1: Download and Link the SDK
 
 
-1.	Download the SDK package for React Native
-2.	Create a package of the SDK using ```npm pack``` inside the SDK project terminal
-3.	Add the package (.tgz) reference to the package.json file of the app
-- ``` “dependencies”:{ "react-native-rn-ip-sdk":"<Path to the package>"}```
-4. Install the package in the app project
-- ```npm install 'react-native-rn-ip-sdk'```
+1. Download the SDK package for React Native
+2. Run ```npm install``` command to install the necessary packages
+3. Setup cultures in cultures.json file in src/assets folder.
+    - Optional: Place your company logo in png format in src/assets folder. Note: company logo should have the name company_logo.png
+4. Create a tarball using ```npm pack``` inside the SDK project terminal
+5. Add the following packages and tarball file (.tgz) reference to the ```package.json``` file of the app
+```
+“dependencies”:{
+"react-native-rn-ip-sdk":"<Path to the package>",
+"react-native-native-log":"^0.1.3",
+"react-native-svg-transformer":"^1.5.0",
+"react-native-webview":"^11.23.1",
+"@react-native-async-storage/async-storage":"^2.1.0",
+"react-native-svg":"^15.11.2",
+}
+```
+6. Add the support of svg and ttf in the metro.config file of the application
+7. Run ```npm install``` to install the necessary packages
+
 
 ## Step 2: Initialize the SDK
 
@@ -46,6 +59,9 @@ const memberDetails = new memberDetails(
     ]
 );
 
+const debugMode = true;
+const mockMode = true;
+const prodMode = true;
 const customization = new customize(
     '<Primary Color Hex Code>',
     '<Secondary Color Hex Code>',
@@ -53,20 +69,17 @@ const customization = new customize(
     20,
     1,
     '<Font Family>',
-    true,
-    true,
+    mockMode,
+    prodMode,
+    debugMode,
     '<Logo Name>'
 );
-
-const debugMode = true;
-const mockMode = true;
 
 IPSDK.initialize(
     partnerAuthKey,
     memberDetails,
     customization,
-    debugMode,
-    mockMode
+    );
 );
 ```
 

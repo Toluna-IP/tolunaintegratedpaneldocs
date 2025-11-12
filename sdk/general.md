@@ -33,7 +33,7 @@ A link to the appropriate SDK package for your target platform will be provided 
 
 Toluna operates on a **culture** basis, where culture is defined as a country-language pairing. A list of available cultures can be found [here.](/general/common.html#culture-driven)
 
-Before launching in a culture, the Partner will need to acquire a cultureGuid from Toluna. To make a culture available to their members, a Partner must add it to a file named culture.json. This file must, in turn, be added to the assests folder of the SDK package.
+Before launching in a culture, the Partner will need to acquire a cultureGuid from Toluna. To make a culture available to their members, a Partner must add it to a file named cultures.json. This file must, in turn, be added to the assests folder of the SDK package.
 
 ### cultures.json Objects
 
@@ -43,10 +43,12 @@ Before launching in a culture, the Partner will need to acquire a cultureGuid fr
 | cultureGuid | ```guid``` | A Toluna-provided Guid used to identify the panel when connecting to Toluna's APIs | Yes|
 | name | ```string``` | A descriptor for the culture which will be shown to the member in the event the partner does not the cultureGuid beforehand in the member flow. The partner can choose how to present the culture to the member (e.g. English-United States, USA (English), etc.) | Yes |
 | isDefault | ```bool``` | Defines if the culture should be used as the default for members. Only one culture can have this value as "true". | Yes |
+| customCurrency | ```string``` | A custom currency to be shown to the member (e.g. "Points", "Starts", etc.) | No |
+| customCurrencyPosition | ```string``` | Defines which side of the reward value the custom currency should be shown. Options are "L" to put the currency on the left of the reward or "R" to put it on the right | No |
 
 ### Example cultures.json File
 
-```plaintext
+```json
 [
   {
     "cultureId": 5,
@@ -58,6 +60,8 @@ Before launching in a culture, the Partner will need to acquire a cultureGuid fr
     "cultureId": 1,
     "cultureGuid": "5EEBF4DD-XXXX-XXXX-XXXX-928B66FC043F",
     "name": "United States (English)",
+    "customCurrency": "$$",
+    "customCurrencyPosition": "L", 
     "isDefault": true
   }
 ]

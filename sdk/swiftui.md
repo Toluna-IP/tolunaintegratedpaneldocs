@@ -18,6 +18,7 @@ Below are instructions on using the SDK SwiftUI package.
 1.	Build the SDK for obtaining the .framework folder in the Build directory
 2.	Drag and drop the downloaded framework into your XCode project
 3.	Make sure the framework is embedded in your General > Frameworks, Libraries, and Embedded Content section
+4.  Add cultures.json file in the assets of the application
 
 ## Step 2: Initialize the SDK
 
@@ -47,7 +48,10 @@ struct MyApp: App {
                 )
             ]
         )
-        
+        let debugMode: Bool = true
+        let mockMode: Bool = true
+        let prodMode: Bool = true
+
         let customization: Customize = Customize(
             PrimaryColor: "#000000",
             SecondaryColor: "#FFFFFF",
@@ -55,22 +59,19 @@ struct MyApp: App {
             MaxLOI: 20,
             SurveyViewType: 1,
             DarkMode: true,
+            DebugMode: debugMode,
+            MockMode: mockMode,
+            ProdMode: prodMode,
             LogoName: nil,
             LogoEnable: false
         )
-        
-        let debugMode: Bool = true
-        let mockMode: Bool = true
-        
+                
         SDK.initialize(
             PartnerAuthKey: partnerAuthKey,
             MemberDetails: memberDetails,
-            Customization: customization,
-            DebugMode: debugMode,
-            MockMode: mockMode
+            Customization: customization
         )
     }
-    
     var body: some Scene {
         WindowGroup {
             ContentView()

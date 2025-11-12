@@ -56,7 +56,8 @@ class MyApplication : Application() {
             customization = customization,
             cultureAssetPath = "<Culture File path>",
             debugMode = false,
-            mockMode = false
+            mockMode = false,
+            prodMode = true,
         )
     }
 }

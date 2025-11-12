@@ -19,7 +19,7 @@ Below are instructions on using the SDK Flutter package.
 2.	Add the SDK dependency to the configuration file pubspec.yaml.
 - ``` dependencies: integrated_panel: ^1.0.0  ```
 3. Get all the package dependencies of Android by running ```flutter pub get. ```
-4. To get all the package dependencies of IOS. Run flutter pod update
+4. To get all the package dependencies of IOS, run flutter pod update
 
 ## Step 2: Initialize the SDK
 
@@ -52,6 +52,7 @@ void main() {
         partnerAuthKey: appkey,
         debugMode: false,
         mockMode: false,
+        prodMode: false,
         customization: customization,
         member: member,
         cultureAssetPath: "< Culture path same as in the pubspec         yaml>",
