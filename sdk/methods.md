@@ -18,7 +18,7 @@ Partners can trigger methods defined by the SDK to register Members and display 
 
 The Registration method is responsible for rendering a registration form to collect the Member's missing information. It determines which questions to display based on the following conditions:
 - Country: Displayed if the culture is not provided.
-- Zip Code: Displayed if the zip-code is not provided.
+- PostalCode: Displayed if the postal code is not provided.
 - Date Of Birth: Displayed if the birth date is not provided. 
 - Gender: Displayed if the gender is not provided.
 
