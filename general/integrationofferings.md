@@ -31,17 +31,17 @@ This is the newest offering and places the sampling processs (member -> survey s
 ## Which integration is best for you?
 
 | Feature / Capability | Dashboard Offering | External Sample Offering |
-| :--- | :--- | :--- |
-| What it is | A way for the partner to manage sampling and routing through a dashboard | A more flexible integration using APIs |
-| Control of Sampling | Sampling and routing logic handled through the dashboard | Partners have full sampling control |
-| API Used | Dashboard API (e.g., Dashboard endpoints) | External Sample API |
-| Routing Logic | Toluna’s router determines routing | Partner determines which surveys to route |
-| Realtime Quota Information | Not available — dashboard-based | Realtime open quota details available |
-| Level of Partner Effort | Lower effort — partner uses dashboard workflows | Higher effort — partner builds integration logic |
-| Member Management Required | Yes — partner must manage members | Yes — partner must manage members |
-| End Pages & Notifications | Required: End pages | Required: End pages |
+|:---|:---|:---|
+| What it is | A way for the partner to request and display a list of survey opportunities for panel members and route them via invite URLs. | A more flexible integration where the partner directly integrates with APIs |
+| Control of Sampling | Sampling and routing logic handled by Toluna through the dashboard | Partners have full control over sampling and routing logic |
+| API Used | Dashboard API (e.g., Gateway APIs) | External Sample API (Gateway APIs) |
+| Routing Logic | Toluna’s router determines which surveys are shown to users | Partner determines which surveys are routed to users |
+| Realtime Quota Information | Not available — dashboard-based visibility only | Realtime open quota details available through APIs |
+| Level of Partner Effort | Lower effort — partner uses prebuilt workflows and UI | Higher effort — partner responsible for building and maintaining integration |
+| Member Management Required | Yes — partner must manage member authentication and identity | Yes — partner must manage member authentication and identity |
+| End Pages & Notifications | Required: End pages must be implemented by the partner | Required: End pages must be implemented by the partner |
 | Quota / Survey Status Notifications | Optional (highly recommended) | Optional (highly recommended) |
-| Best Fit / Use Case | Quick endpoint to show available surveys | Custom quota targeting and advanced routing |
+| Best Fit / Use Case | Quick endpoint to show available surveys with minimal implementation effort | Custom quota targeting, custom routing logic, and advanced integrations |
 
 ---
 
