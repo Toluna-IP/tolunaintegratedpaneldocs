@@ -31,12 +31,13 @@ revenue generating survey completion by one of their members.
 ### Route(s)
 
 - Specified by Partner; Toluna will configure accordingly
+
 ### Body Details
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | UniqueCode | ```string``` | Unique Respondent Code from the Partner |
-| SurveyId | ```int``` | Tolujna Survey identifier |
+| SurveyId | ```int``` | Toluna Survey identifier |
 | SurveyRef | ```string``` | Toluna Survey name |
 | Revenue | ```int``` | Amount of Revenue in 1/100 of the currency units (eg 100=100 cents or $1 USD) |
 | DateTime | ```string``` | Date and time of Respondent completion. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
