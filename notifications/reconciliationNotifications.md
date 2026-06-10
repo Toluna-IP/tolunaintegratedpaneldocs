@@ -34,6 +34,10 @@ Below are details on how Reconciliation Notifications are processed. If you are 
 
 - A single, custom header will be used with Notifications, both of which are specified by the Partner; Toluna will configure accordingly.
 
+| Header Key | Value | Required? |
+| :--- | :--- |
+| {{ProvidedByPartner}} | {{ProvidedByPartner}} | Yes |
+
 ### Body Details
 
 | Name | Type | Description |
