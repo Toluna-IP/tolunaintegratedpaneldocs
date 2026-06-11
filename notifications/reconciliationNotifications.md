@@ -36,7 +36,7 @@ Below are details on how Reconciliation Notifications are processed. If you are 
 
 | Header Key | Value | Required? |
 | :--- | :--- |
-| {{ProvidedByPartner}} | {{ProvidedByPartner}} | Yes |
+| ProvidedByPartner | ProvidedByPartner | Yes |
 
 ### Body Details
 
