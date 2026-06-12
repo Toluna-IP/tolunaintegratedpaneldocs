@@ -84,7 +84,7 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Japan                      | Japanese            | JA-JP   |
 | Jordan                     | Arabic              | AR-JO   |
 | Jordan                     | English             | EN-JO   |
-| Kazakstan                  | English             | EN-KZ   |
+| Kazakstan                  | Kazakh              | KZ-KZ   |
 | Kazakstan                  | Russian             | RU-KZ   |
 | Kenya                      | English             | EN-KE   |
 | Korea, Republic of         | English             | EN-KR   |
