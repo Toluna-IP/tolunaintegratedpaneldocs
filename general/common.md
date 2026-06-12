@@ -35,6 +35,7 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Belarus                    | Russian             | RU-BY   |
 | Belgium                    | French              | FR-BE   |
 | Belgium                    | Dutch               | NL-BE   |
+| Bolivia                    | English             | EN-BO   |
 | Bosnia and Herzegovina     | English             | EN-BA   |
 | Brazil                     | Portuguese          | PT-BR   |
 | Bulgaria                   | Bulgarian           | BG-BG   |
@@ -67,7 +68,9 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Germany                    | German              | DE-DE   |
 | Ghana                      | English             | EN-GH   |
 | Greece                     | Greek               | EL-GR   |
+| Guam                       | English             | EN-GU   |
 | Guatemala                  | Spanish             | ES-GT   |
+| Honduras                   | Spanish             | ES-HN   |
 | Hong Kong                  | English             | EN-HK   |
 | Hong Kong                  | Traditional Chinese | ZH-HK   |
 | Hungary                    | Hungarian           | HU-HU   |
@@ -81,6 +84,7 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Japan                      | Japanese            | JA-JP   |
 | Jordan                     | Arabic              | AR-JO   |
 | Jordan                     | English             | EN-JO   |
+| Kazakstan                  | English             | EN-KZ   |
 | Kazakstan                  | Russian             | RU-KZ   |
 | Kenya                      | English             | EN-KE   |
 | Korea, Republic of         | English             | EN-KR   |
@@ -137,6 +141,7 @@ Below is a list of Cultures currently supported on the Toluna platform (bearing 
 | Syria                      | English             | EN-SY   |
 | Syria                      | Arabic              | AR-SY   |
 | Taiwan                     | Traditional Chinese | CT-TW   |
+| Tanzania                   | English             | EN-TZ   |
 | Thailand                   | English             | EN-TH   |
 | Thailand                   | Thai                | TH-TH   |
 | Tunisia                    | French              | FR-TN   |
