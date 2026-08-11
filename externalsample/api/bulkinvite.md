@@ -48,7 +48,7 @@ POST https://{IP_ES_URL}/IPExternalSamplingService/ExternalSample/{PanelGuid}/{M
 
 | Name | Type | Description | Required? |
 | :--- | :--- | :--- | :---: |
-| QuotaIDs | array ``int``` | List of Quota IDs pulled from the [GetQuotas API](/externalsample/api/getquotas.html). **Note:** No more than 100 quotas should be requested with any one Invites call. | Yes |
+| QuotaIDs | ```arrary<int>``` | List of Quota IDs pulled from the [GetQuotas API](/externalsample/api/getquotas.html). **Note:** No more than 100 quotas should be requested with any one Invites call. | Yes |
 
 
 ### Example Request
