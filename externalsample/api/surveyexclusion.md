@@ -3,7 +3,7 @@ title: Survey Wave Exclusion
 has_children: false
 parent: ES API
 grand_parent: External Sample Offering
-nav_order: 6
+nav_order: 5
 ---
 
 # Survey Wave Exclusion
