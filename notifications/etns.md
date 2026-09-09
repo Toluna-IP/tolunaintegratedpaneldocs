@@ -1,8 +1,10 @@
 ---
-title: Enhanced Terminate Notifications
+title: Enhanced Terminate Notifications-DEPRECIATED 2026-09-09
 has_children: false
 parent: Notifications
 nav_order: 2
+nav_exclude: true
+search_exclude: true
 ---
 
 
