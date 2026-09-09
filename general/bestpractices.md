@@ -18,7 +18,7 @@ applying the following suggestions, can optimize their traffic and enhance their
 
 ## Pre-Start Rejections
 
-These statuses correlate with [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) and are provided by Toluna automatically if the Partner is configured to receive [Enhanced Terminate Notification](/notifications/etns.html).
+These statuses correlate with [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) and are provided by Toluna automatically if the Partner is configured to receive [Enhanced Terminate Notification](/notifications/memberstatus.html#pre-start-terminates).
 
 ### DeviceTypeIDNotSupportForSurvey
 

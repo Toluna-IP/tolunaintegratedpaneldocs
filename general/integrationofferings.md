@@ -66,7 +66,7 @@ This is the newest offering and places the sampling processs (member -> survey s
 | [Survey Closed](/notifications/surveyclosed.html)  | Recommended | Recommended |
 | [Member-Status](/notifications/memberstatus.html)  | Recommended | Recommended |
 | [Quota Status](/notifications/quotastatus.html)   | Optional | Recommended  |
-| [Pre-Start](/notifications/etns.html)  | Recommended | Recommended |
+| [Pre-Start](/notifications/memberstatus.html#pre-start-terminates)  | Recommended | Recommended |
 
 
 ---
