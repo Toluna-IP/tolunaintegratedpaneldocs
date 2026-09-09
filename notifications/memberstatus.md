@@ -46,6 +46,7 @@ revenue generating survey completion by one of their members.
 | AdditionalData | ```string``` | Full QueryString from the inviteURL. Custom parameters appended by the Partner to the inviteURL will also be included |
 | IsAutoRouted | ```bool``` | Indcates whether the Member was auto-routed or not. Will only be include if Member was auto-routed |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited. Will only be include if Member was auto-routed |
+| EncryptedValue | ```string``` | **Optional** Encrypted value based on specifications defined by the Partner. Enabled in conjunction with End Page Redirects. For more information, please visit the [Encryption Offering Page](/memberrouting/encryption.html) |
 
 
 ### Example XML Response
@@ -61,6 +62,7 @@ revenue generating survey completion by one of their members.
  <AdditionalData>clickid=1234</AdditionalData>
  <IsAutoRouted>true</IsAutoRouted>
  <OriginalSurveyID>100</OriginalSurveyID>
+ <EncryptedValue>23401fbeded1dcefab22b532b381148a</EncryptedValue>
 </confirmation>
 ```
 
@@ -77,12 +79,13 @@ revenue generating survey completion by one of their members.
  "AdditionalData": "clickid=1234",
  "IsAutoRouted": true,
  "OriginalSurveyID": 100
+ "EncryptedValue": "23401fbeded1dcefab22b532b381148a"
 }
 ```
 
 ---
 
-# Terminates
+# In-Survey Terminates
 
 Toluna provides an automated termination service that notifies the Partner upon a non-qualified
 Survey completion by one of their Members. Terminates and Quota Full notifications
@@ -110,6 +113,7 @@ are sent this way. This implementation on the partner end is not mandatory.
 | IsAutoRouted | ```bool``` | Indcates whether the Member was auto-routed or not. Will only be include if Member was auto-routed |
 | OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited. Will only be include if Member was auto-routed |
 | QuotaID | ```int``` | (Applicable for Partners utilizing the [External Sample Offering](/externalsample/) only) Toluna's unique identifier for a quota |
+| EncryptedValue | ```string``` | **Optional** Encrypted value based on specifications defined by the Partner. Enabled in conjunction with End Page Redirects. For more information, please visit the [Encryption Offering Page](/memberrouting/encryption.html) |
 
 
 ### Example XML Termination
@@ -127,6 +131,7 @@ xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
  <AdditionalData>clickid=1234</AdditionalData>
 <IsAutoRouted>true</IsAutoRouted>
 <OriginalSurveyID>100</OriginalSurveyID>
+<EncryptedValue>23401fbeded1dcefab22b532b381148a</EncryptedValue>
 </termination>
 ```
 
@@ -143,5 +148,83 @@ xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
  "AdditionalData": "clickid=1234",
 "IsAutoRouted": true,
 "OriginalSurveyID": 100,
+"EncryptedValue": "23401fbeded1dcefab22b532b381148a"
+}
+```
+
+
+# Pre-Start Terminates
+{: .no_toc}
+
+In certain instances, Members will click on a Survey invite but the experience will be Terminated before the Member is routed through the Toluna Platform. These instances can occur for multiple reasons (e.g. the Member attempted to initiate the experience after the Survey or Invite Link has expired). 
+
+Since the Member does not start the Survey experience before they are Terminated, these notifications are also referred to as "Pre-Start" Notifications, and are executed in similar fashion as the Terminate notifications. Pre-Start Terminate Notifications will include two additional properties (explained below): RejectionID and RejectionName.
+
+* Note: Pre-Start Terminates can be distinguished between In-Survey Terminates by the presence of RejectionID and RejectionName objects and the absence of the "EncryptedValue" object for those Partners who are enabled for encryption.
+
+
+### HTTP Verb
+
+- POST
+
+### Route(s)
+
+- Specified by Partner; Toluna will configure accordingly
+
+### Body Details
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| UniqueCode | ```string``` | Unique Respondent Code from the Partner |
+| SurveyId | ```int``` | Tolujna Survey identifier |
+| SurveyRef | ```string``` | Toluna Survey name |
+| Reason | ```string``` | Reason for the Termination. Possible values: "QuotaFull," "SurveyTaken," "Terminated," "SurveyNotAvailable," "NoSurveysAvailable," "NoCookie," "MaxSurveysReached," or "NotQualified" |
+| DateTime | ```string``` | Date and time of Respondent Termination. Format "YYYY-MM-DD HH:MM:SS" in UTC Time |
+| WaveId | ```int``` | Current iteration of the Survey. Studies related to one another can be sent in "waves" that the Member will experience as a unique Survey |
+| IncidenceRate | ```int``` | Incidence Rate of the Survey |
+| AdditionalData | ```string``` | Full QueryString from the inviteURL. Custom parameters appended by the Partner to the inviteURL will also be included |
+| IsAutoRouted | ```bool``` | Indcates whether the Member was auto-routed or not |
+| OriginalSurveyID | ```int``` | SurveyID to which the Member was originally invited |
+| RejectionID | ```int``` | Toluna's unqiue identifier for a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |
+| RejectionName | ```string``` | Name of a rejection. See [Respondent Rejection Types](/mapping/referencedataapi/rejectiontypes.html) for mapping details |
+| QuotaID | ```int``` | (Applicable for Partners utilizing the [External Sample Offering](/externalsample/) only) Toluna's unique identifier for a quota |
+
+> Please note: To prevent breaking changes, panels existing before June 20, 2021, have been excluded from receiving RejectionID and RejectionName. If you have a panel that predates these additions and would like to enable them, please contact your Toluna Representative.
+
+### Example XML Termination
+```xml
+<?xml version="1.0"?>
+<termination xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
+ <UniqueCode>111</UniqueCode>
+ <SurveyId>123</SurveyId>
+ <SurveyRef>123560-US</SurveyRef>
+ <DateTime>2014-09-11 16:06:27</DateTime>
+ <Reason>Terminated</Reason>
+ <WaveId>100</WaveId>
+ <QuotaID>987654</QuotaID>
+ <AdditionalData>clickid=1234</AdditionalData>
+<IsAutoRouted>true</IsAutoRouted>
+<OriginalSurveyID>100</OriginalSurveyID>
+<RejectionID>57</RejectionID>
+<RejectionName>AccountGroupSurveyTaken</RejectionName>
+</termination>
+```
+
+### Example JSON Termination
+```plaintext
+{
+ "UniqueCode": "111",
+ "SurveyId": 123,
+ "SurveyRef": "123560-US",
+ "Reason": "Terminated",
+ "DateTime": "2014-09-11 16:06:27",
+ "WaveId": 100,
+ "QuotaID": 987654,
+ "AdditionalData": "clickid=1234",
+"IsAutoRouted": true,
+"OriginalSurveyId": 100,
+"RejectionID": 103,
+"RejectionName": "NonQuotaDemographicRejection"
 }
 ```
