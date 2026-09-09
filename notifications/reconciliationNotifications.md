@@ -53,6 +53,7 @@ Below are details on how Reconciliation Notifications are processed. If you are 
 | Revenue | ```int``` | Amount paid to the Partner by Toluna for the initial Complete in 1/100 of the currency units (eg 100=100 cents or $1 USD). This amount will be deducted from a future invoice issued to Toluna by the Partner |
 | OriginalCompleteDateTime | ```string``` | Date and time of initial Respondent completion. Format “YYYY-MM-DD HH:MM:SS” in UTC Time |
 | ReconciliationDateTime | ```string ``` | Date and time of reconciliation. Format “YYYY-MM-DD HH:MM:SS” in UTC Time | 
+| AdditionalData | ```string``` | Full QueryString from the inviteURL. Custom parameters appended by the Partner to the inviteURL will also be included |
 
 ### Data Format
 
@@ -72,6 +73,7 @@ Below are details on how Reconciliation Notifications are processed. If you are 
     "ReconciliationId": 90,
     "Revenue": 45,
     "OriginalCompleteDateTime": "2026-05-17T15:40:03.350Z",
-    "ReconciliationDateTime": "2026-06-09T18:06:15.647Z"
+    "ReconciliationDateTime": "2026-06-09T18:06:15.647Z",
+    "AdditionalData": "clickid=1234"
 }
 ```
