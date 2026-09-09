@@ -20,7 +20,7 @@ nav_order: 1
 
 ### Route
 ```plaintext
-GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={MemberCode}&partnerGuid={PartnerGUID}&numberOfSurveys=2&mobileCompatible=false&deviceTypeIDs=1&deviceTypeIDs=2
+GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={MemberCode}&partnerGuid={PartnerGUID}&numberOfSurveys=2&deviceTypeIDs=1&deviceTypeIDs=2
 ```
 
 ### Parameters
@@ -30,8 +30,7 @@ GET  https://{IP_CORE_URL}/IntegratedPanelService/api/Surveys/?memberCode={Membe
 | MemberCode | ```int``` | Unique Respondent Code from the Partner |
 | PartnerGUID | ```Guid``` | Unique Partner code provided by Toluna |
 | NumberOfSurveys | ```string``` | Number of Surveys the Partner is requesting to receive to show the Member |
-| MobileCompatible | ```bool``` | Optional - When TRUE, only mobile compatible surveys will be shown. This property will be deprecated in the future with an announcement. Use DeviceTypeIDs instead.  |
-| DeviceTypeIDs | ```int``` | Indicated the device types for which Surveys should be returned. Supported values: 1=Desktop/Laptop, 2=Tablet, 3=Phone. *When "DeviceTypeIDs" are supplied, the "MobileCompatible" parameter is ignored* |
+| DeviceTypeIDs | ```int``` | Indicated the device types for which Surveys should be returned. Supported values: 1=Desktop/Laptop, 2=Tablet, 3=Phone. |
 
 ---
 
