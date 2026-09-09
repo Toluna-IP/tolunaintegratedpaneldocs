@@ -154,7 +154,6 @@ xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
 
 
 # Pre-Start Terminates
-{: .no_toc}
 
 In certain instances, Members will click on a Survey invite but the experience will be Terminated before the Member is routed through the Toluna Platform. These instances can occur for multiple reasons (e.g. the Member attempted to initiate the experience after the Survey or Invite Link has expired). 
 
