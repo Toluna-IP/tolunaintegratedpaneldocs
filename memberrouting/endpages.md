@@ -83,7 +83,7 @@ https://thisisanexample.com/survey/complete?Source=toluna&completionStatus=5&**S
 
 ## Enhanced Terminate Parameter
 
-Upon opting in to [Enhanced Terminate Notifications](/general/changelog.html#620), the following parameter will also be included on non-Qualified end pages.
+Upon opting in to [Pre-Start Terminate Notifications](/general/changelog.html#620), the following parameter will also be included on non-Qualified end pages.
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
