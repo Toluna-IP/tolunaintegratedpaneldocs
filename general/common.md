@@ -21,144 +21,172 @@ Within Toluna's API, all endpoints are "culture driven," meaning that Toluna req
  
 Below is a list of Cultures currently supported on the Toluna platform (bearing in mind that new cultures may be added in the future):
  
-| Country Name               | Language Name       | Culture |
-| -------------------------- | ------------------- | ------- |
-| Afghanistan                | English             | EN-AF   |
-| Algeria                    | Arabic              | AR-DZ   |
-| Argentina                  | Spanish             | ES-AR   |
-| Australia                  | English             | EN-AU   |
-| Austria                    | German              | DE-AT   |
-| Azerbaijan                 | English             | EN-AZ   |
-| Bahrain                    | Arabic              | AR-BH   |
-| Bangladesh                 | English             | EN-BD   |
-| Belarus                    | Belarusian          | BE-BY   |
-| Belarus                    | Russian             | RU-BY   |
-| Belgium                    | French              | FR-BE   |
-| Belgium                    | Dutch               | NL-BE   |
-| Bolivia                    | English             | EN-BO   |
-| Bosnia and Herzegovina     | English             | EN-BA   |
-| Brazil                     | Portuguese          | PT-BR   |
-| Bulgaria                   | Bulgarian           | BG-BG   |
-| Canada                     | English             | EN-CA   |
-| Canada                     | French              | FR-CA   |
-| Cambodia                   | English             | EN-KH   |
-| Cambodia                   | Khmer               | KH-KH   |
-| Chile                      | Spanish             | ES-CL   |
-| China                      | Mandarin Chinese    | ZH-CN   |
-| Colombia                   | Spanish             | ES-CO   |
-| Congo                      | English             | EN-CD   |
-| Costa Rica                 | Spanish             | ES-CR   |
-| Cote D'Ivoire              | English             | EN-CI   |
-| Cote D'Ivoire              | French              | FR-CI   |
-| Croatia                    | Croatian            | HR-HR   |
-| Cyprus                     | English             | EN-CY   |
-| Czech Republic             | Czech               | CS-CZ   |
-| Denmark                    | Danish              | DA-DK   |
-| Dominican Republic         | English             | EN-DO   |
-| Dominican Republic         | Spanish             | ES-DO   |
-| Ecuador                    | Spanish             | ES-EC   |
-| Egypt                      | Arabic              | AR-EG   |
-| Egypt                      | English             | EN-EG   |
-| El Salvador                | Spanish             | ES-SV   |
-| Estonia                    | Estonian            | ET-EE   |
-| Ethiopia                   | English             | EN-ET   |
-| Finland                    | Finnish             | FI-FI   |
-| France                     | French              | FR-FR   |
-| Georgia                    | English             | EN-GE   |
-| Germany                    | German              | DE-DE   |
-| Ghana                      | English             | EN-GH   |
-| Greece                     | Greek               | EL-GR   |
-| Guam                       | English             | EN-GU   |
-| Guatemala                  | Spanish             | ES-GT   |
-| Honduras                   | Spanish             | ES-HN   |
-| Hong Kong                  | English             | EN-HK   |
-| Hong Kong                  | Traditional Chinese | ZH-HK   |
-| Hungary                    | Hungarian           | HU-HU   |
-| India                      | English             | EN-IN   |
-| Indonesia                  | Indonesian          | ID-ID   |
-| Iran (Islamic Republic Of) | Farsi               | FA-IR   |
-| Iraq                       | Arabic              | AR-IQ   |
-| Ireland                    | English             | EN-IE   |
-| Israel                     | Hebrew              | HE-IL   |
-| Italy                      | Italian             | IT-IT   |
-| Japan                      | Japanese            | JA-JP   |
-| Jordan                     | Arabic              | AR-JO   |
-| Jordan                     | English             | EN-JO   |
-| Kazakstan                  | Kazakh              | KZ-KZ   |
-| Kazakstan                  | Russian             | RU-KZ   |
-| Kenya                      | English             | EN-KE   |
-| Korea, Republic of         | English             | EN-KR   |
-| Korea, Republic of         | Korean              | KO-KR   |
-| Kuwait                     | Arabic              | AR-KW   |
-| Latvia                     | Latvian             | LV-LV   |
-| Lebanon                    | Arabic              | AR-LB   |
-| Lithuania                  | Lithuanian          | LT-LT   |
-| Luxembourg                 | English             | EN-LU   |
-| Malaysia                   | English             | EN-MY   |
-| Malaysia                   | Malay               | MS-MY   |
-| Malta                      | English             | EN-MT   |
-| Mexico                     | Spanish             | ES-MX   |
-| Moldova                    | English             | EN-MD   |
-| Morocco                    | Arabic              | AR-MA   |
-| Morocco                    | French              | FR-MA   |
-| Netherlands                | Dutch               | NL-NL   |
-| New Zealand                | English             | EN-NZ   |
-| Nigeria                    | English             | EN-NG   |
-| Norway                     | Norwegian           | NO-NO   |
-| Oman                       | Arabic              | AR-OM   |
-| Pakistan                   | English             | EN-PK   |
-| Pakistan                   | Urdu                | UR-PK   |
-| Panama                     | Spanish             | ES-PA   |
-| Paraguay                   | Spanish             | ES-PY   |
-| Peru                       | Spanish             | ES-PE   |
-| Philippines                | English             | EN-PH   |
-| Philippines                | Filipino            | PH-PH   |
-| Poland                     | Polish              | PL-PL   |
-| Portugal                   | Portuguese          | PT-PT   |
-| Puerto Rico                | English             | EN-PR   |
-| Puerto Rico                | Spanish             | ES-PR   |
-| Qatar                      | Arabic              | AR-QA   |
-| Qatar                      | English             | EN-QA   |
-| Romania                    | Romanian            | RO-RO   |
-| Russian Federation         | Russian             | RU-RU   |
-| Rwanda                     | English             | EN-RW   |
-| Saudi Arabia               | Arabic              | AR-SA   |
-| Saudi Arabia               | English             | EN-SA   |
-| Senegal                    | English             | EN-SN   |
-| Senegal                    | French              | FR-SN   |
-| Serbia                     | Serbian             | SR-RS   |  
-| Singapore                  | English             | EN-SG   |
-| Singapore                  | Mandarin Chinese    | ZH-SG   |
-| Slovakia                   | Slovak              | SK-SK   |
-| Slovenia                   | Slovenian           | SL-SI   |
-| South Africa               | English             | EN-ZA   |
-| Spain                      | Spanish             | ES-ES   |
-| Sri Lanka                  | English             | EN-LK   |
-| Sweden                     | Swedish             | SV-SE   |
-| Switzerland                | German              | DE-CH   |
-| Switzerland                | French              | FR-CH   |
-| Switzerland                | Italian             | IT-CH   |
-| Syria                      | English             | EN-SY   |
-| Syria                      | Arabic              | AR-SY   |
-| Taiwan                     | Traditional Chinese | CT-TW   |
-| Tanzania                   | English             | EN-TZ   |
-| Thailand                   | English             | EN-TH   |
-| Thailand                   | Thai                | TH-TH   |
-| Tunisia                    | French              | FR-TN   |
-| Turkey                     | Turkish             | TR-TR   |
-| Uganda                     | English             | EN-UG   |
-| Ukraine                    | Ukrainian           | UK-UA   |
-| United Arab Emirates       | Arabic              | AR-AE   |
-| United Arab Emirates       | English             | EN-AE   |
-| United Kingdom             | English             | EN-GB   |
-| United States              | English             | EN-US   |
-| United States              | Spanish             | ES-US   |
-| Uruguay                    | Spanish             | ES-UY   |
-| Uzbekistan                 | English             | EN-UZ   |
-| Vanutau                    | English             | EN-VU   |
-| Venezuela                  | Spanish             | ES-VE   |
-| Vietnam                    | Vietnamese          | VI-VN   |
-| Zambia                     | English             | EN-ZM   |
+| Country Name                   | Language Name       | Culture |
+| ------------------------------ | ------------------- | ------- |
+| Afghanistan                    | English             | EN-AF   |
+| Algeria                        | Arabic              | AR-DZ   |
+| Argentina                      | Spanish             | ES-AR   |
+| Armenia                        | Armenian            | HY-AM   |
+| Australia                      | English             | EN-AU   |
+| Austria                        | German              | DE-AT   |
+| Azerbaijan                     | Azerbaijani         | AZ-AZ   |
+| Azerbaijan                     | English             | EN-AZ   |
+| Bahrain                        | Arabic              | AR-BH   |
+| Bangladesh                     | Bengali             | BN-BD   |
+| Bangladesh                     | English             | EN-BD   |
+| Belarus                        | Belarusian          | BE-BY   |
+| Belarus                        | Russian             | RU-BY   |
+| Belgium                        | French              | FR-BE   |
+| Belgium                        | Dutch               | NL-BE   |
+| Benin                          | English             | EN-BJ   |
+| Bolivia                        | English             | EN-BO   |
+| Bolivia                        | Spanish             | ES-BO   |
+| Bosnia and Herzegovina         | Bosnian             | BS-BA   |
+| Bosnia and Herzegovina         | English             | EN-BA   |
+| Botswana                       | English             | EN-BW   |
+| Brazil                         | Portuguese          | PT-BR   |
+| Bulgaria                       | Bulgarian           | BG-BG   |
+| Burkina Faso                   | English             | EN-BF   |
+| Canada                         | English             | EN-CA   |
+| Canada                         | French              | FR-CA   |
+| Cambodia                       | English             | EN-KH   |
+| Cambodia                       | Khmer               | KH-KH   |
+| Cameroon                       | French              | FR-CM   |
+| Cameroon                       | English             | EN-CM   |
+| Chile                          | Spanish             | ES-CL   |
+| China                          | Mandarin Chinese    | ZH-CN   |
+| Colombia                       | Spanish             | ES-CO   |
+| Congo                          | English             | EN-CD   |
+| Congo, The Democratic Republic | French              | FR-CD   |
+| Costa Rica                     | Spanish             | ES-CR   |
+| Cote D'Ivoire                  | English             | EN-CI   |
+| Cote D'Ivoire                  | French              | FR-CI   |
+| Croatia                        | Croatian            | HR-HR   |
+| Cyprus                         | English             | EN-CY   |
+| Cyprus                         | Greek               | EL-CY   |
+| Czech Republic                 | Czech               | CS-CZ   |
+| Denmark                        | Danish              | DA-DK   |
+| Dominican Republic             | English             | EN-DO   |
+| Dominican Republic             | Spanish             | ES-DO   |
+| Ecuador                        | Spanish             | ES-EC   |
+| Egypt                          | Arabic              | AR-EG   |
+| Egypt                          | English             | EN-EG   |
+| El Salvador                    | Spanish             | ES-SV   |
+| Estonia                        | Estonian            | ET-EE   |
+| Ethiopia                       | Amharic             | AM-ET   |
+| Ethiopia                       | English             | EN-ET   |
+| Finland                        | Finnish             | FI-FI   |
+| Fmr Yugoslav Rep of Macedonia  | Macedonian          | MK-MK   |
+| France                         | French              | FR-FR   |
+| Gabon                          | French              | FR-GA   |
+| Georgia                        | English             | EN-GE   |
+| Georgia                        | Georgian            | KA-GE   |
+| Georgia                        | Russian             | RU-GE   |
+| Germany                        | German              | DE-DE   |
+| Ghana                          | English             | EN-GH   |
+| Greece                         | Greek               | EL-GR   |
+| Guam                           | English             | EN-GU   |
+| Guatemala                      | Spanish             | ES-GT   |
+| Honduras                       | Spanish             | ES-HN   |
+| Hong Kong                      | English             | EN-HK   |
+| Hong Kong                      | Traditional Chinese | ZH-HK   |
+| Hungary                        | Hungarian           | HU-HU   |
+| India                          | English             | EN-IN   |
+| Indonesia                      | Indonesian          | ID-ID   |
+| Iran (Islamic Republic Of)     | Farsi               | FA-IR   |
+| Iraq                           | Arabic              | AR-IQ   |
+| Ireland                        | English             | EN-IE   |
+| Israel                         | Hebrew              | HE-IL   |
+| Italy                          | Italian             | IT-IT   |
+| Japan                          | Japanese            | JA-JP   |
+| Jordan                         | Arabic              | AR-JO   |
+| Jordan                         | English             | EN-JO   |
+| Kazakstan                      | Kazakh              | KZ-KZ   |
+| Kazakstan                      | Russian             | RU-KZ   |
+| Kenya                          | English             | EN-KE   |
+| Korea, Republic of             | English             | EN-KR   |
+| Korea, Republic of             | Korean              | KO-KR   |
+| Kuwait                         | Arabic              | AR-KW   |
+| Latvia                         | Latvian             | LV-LV   |
+| Lebanon                        | Arabic              | AR-LB   |
+| Lithuania                      | Lithuanian          | LT-LT   |
+| Luxembourg                     | English             | EN-LU   |
+| Luxembourg                     | French              | FR-LU   |
+| Luxembourg                     | German              | DE-LU   |
+| Malaysia                       | English             | EN-MY   |
+| Malaysia                       | Malay               | MS-MY   |
+| Mali                           | English             | EN-ML   |
+| Malta                          | English             | EN-MT   |
+| Mexico                         | Spanish             | ES-MX   |
+| Moldova                        | English             | EN-MD   |
+| Moldova                        | Romanian            | RO-MD   |
+| Moldova                        | Russian             | RU-MD   |
+| Morocco                        | Arabic              | AR-MA   |
+| Morocco                        | French              | FR-MA   |
+| Myanmar                        | Burmese             | MY-MM   |
+| Netherlands                    | Dutch               | NL-NL   |
+| New Zealand                    | English             | EN-NZ   |
+| Nigeria                        | English             | EN-NG   |
+| Norway                         | Norwegian           | NO-NO   |
+| Oman                           | Arabic              | AR-OM   |
+| Pakistan                       | English             | EN-PK   |
+| Pakistan                       | Urdu                | UR-PK   |
+| Panama                         | Spanish             | ES-PA   |
+| Paraguay                       | Spanish             | ES-PY   |
+| Peru                           | Spanish             | ES-PE   |
+| Philippines                    | English             | EN-PH   |
+| Philippines                    | Filipino            | PH-PH   |
+| Poland                         | Polish              | PL-PL   |
+| Portugal                       | Portuguese          | PT-PT   |
+| Puerto Rico                    | English             | EN-PR   |
+| Puerto Rico                    | Spanish             | ES-PR   |
+| Qatar                          | Arabic              | AR-QA   |
+| Qatar                          | English             | EN-QA   |
+| Romania                        | Romanian            | RO-RO   |
+| Russian Federation             | Russian             | RU-RU   |
+| Rwanda                         | English             | EN-RW   |
+| Rwanda                         | Kinyarwanda         | RW-RW   |
+| Saudi Arabia                   | Arabic              | AR-SA   |
+| Saudi Arabia                   | English             | EN-SA   |
+| Senegal                        | English             | EN-SN   |
+| Senegal                        | French              | FR-SN   |
+| Serbia                         | Serbian             | SR-RS   |  
+| Singapore                      | English             | EN-SG   |
+| Singapore                      | Mandarin Chinese    | ZH-SG   |
+| Slovakia                       | Slovak              | SK-SK   |
+| Slovenia                       | Slovenian           | SL-SI   |
+| South Africa                   | English             | EN-ZA   |
+| Spain                          | Spanish             | ES-ES   |
+| Sri Lanka                      | English             | EN-LK   |
+| Sri Lanka                      | Sinhalese           | SI-LK   |
+| Sweden                         | Swedish             | SV-SE   |
+| Switzerland                    | German              | DE-CH   |
+| Switzerland                    | French              | FR-CH   |
+| Switzerland                    | Italian             | IT-CH   |
+| Syria                          | English             | EN-SY   |
+| Syria                          | Arabic              | AR-SY   |
+| Taiwan                         | Traditional Chinese | CT-TW   |
+| Tanzania                       | English             | EN-TZ   |
+| Tanzania                       | Swahili             | SW-TZ   |
+| Thailand                       | English             | EN-TH   |
+| Thailand                       | Thai                | TH-TH   |
+| Togo                           | English             | EN-TG   |
+| Tunisia                        | French              | FR-TN   |
+| Turkey                         | Turkish             | TR-TR   |
+| Uganda                         | English             | EN-UG   |
+| Ukraine                        | Ukrainian           | UK-UA   |
+| United Arab Emirates           | Arabic              | AR-AE   |
+| United Arab Emirates           | English             | EN-AE   |
+| United Kingdom                 | English             | EN-GB   |
+| United States                  | English             | EN-US   |
+| United States                  | Spanish             | ES-US   |
+| Uruguay                        | Spanish             | ES-UY   |
+| Uzbekistan                     | English             | EN-UZ   |
+| Uzbekistan                     | Uzbek               | UZ-UZ   |
+| Vanutau                        | English             | EN-VU   |
+| Venezuela                      | Spanish             | ES-VE   |
+| Vietnam                        | Vietnamese          | VI-VN   |
+| Zambia                         | English             | EN-ZM   |
  
 ---
  
