@@ -51,8 +51,8 @@ Below are details on how Reconciliation Notifications are processed. If you are 
 | OriginalSurveyId | ```int``` | SurveyID to which the Member was originally invited. Nullable | 
 | ReconciliationId | ```int``` | Toluna's unique identifier used to indicate the reason for Reconciliation |
 | Revenue | ```int``` | Amount paid to the Partner by Toluna for the initial Complete in 1/100 of the currency units (eg 100=100 cents or $1 USD). This amount will be deducted from a future invoice issued to Toluna by the Partner |
-| OriginalCompleteDateTime | ```string``` | Date and time of initial Respondent completion. Format “YYYY-MM-DD HH:MM:SS” in UTC Time |
-| ReconciliationDateTime | ```string ``` | Date and time of reconciliation. Format “YYYY-MM-DD HH:MM:SS” in UTC Time | 
+| OriginalCompleteDateTime | ```string``` | Date and time of initial Respondent completion. Format “YYYY-MM-DDTHH:MM:SS” in UTC Time |
+| ReconciliationDateTime | ```string ``` | Date and time of reconciliation. Format “YYYY-MM-DDTHH:MM:SS” in UTC Time | 
 | AdditionalData | ```string``` | Full QueryString from the inviteURL. Custom parameters appended by the Partner to the inviteURL will also be included |
 
 ### Data Format
