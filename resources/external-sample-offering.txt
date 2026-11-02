@@ -18,7 +18,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{IP_ES_URL}}/IPExternalSamplingService/ExternalSample/{{panelGUID}}/Quotas?includeRoutables:TRUE",
+					"raw": "{{IP_ES_URL}}/IPExternalSamplingService/ExternalSample/{{panelGUID}}/Quotas?includeRoutables=TRUE",
 					"host": [
 						"{{IP_ES_URL}}"
 					],
@@ -30,7 +30,7 @@
 					],
 					"query": [
 						{
-							"key": "includeRoutables:TRUE",
+							"key": "includeRoutables=TRUE",
 							"value": null
 						}
 					]
